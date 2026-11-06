@@ -1,0 +1,4020 @@
+{
+"episodes": [
+{
+"id": "kSADf4Vx2kk",
+"channel": "jiji",
+"title": "睡眠が最も長い県は青森、短いのは東京。47都道府県の差は1年で5日ぶん【時事】",
+"lead": "日本の中で、睡眠がいちばん長い県と短い県が1日20分ちがうのはなぜかを調べた回です。北か南か、東か西かという光の違いより、通勤・通学の時間の長さのほうがよく合いました。光が睡眠に効くという研究は、ブラジルやアメリカなど世界で見られます。",
+"points": [
+{
+"h": "日本は世界でも短い",
+"t": "OECDの比べでは、日本の睡眠は7時間22分で、調べた33か国の中でいちばん短い国でした。大きな研究のまとめでは、6時間前後以下の人は亡くなる割合が約1割高いという結果もあります。日本では、成人の約4割が6時間より短い睡眠です。"
+},
+{
+"h": "青森と東京で1年に5日ぶん",
+"t": "総務省の2021年の調査で、睡眠がいちばん長いのは青森県の8時間8分、短いのは東京都と神奈川県の7時間48分でした。差は1日20分で、1年にすると約5日ぶんになります。"
+},
+{
+"h": "光より通勤・通学",
+"t": "北か南か、東か西かと睡眠の長さを47県で並べても、関係は弱いか、ほとんどありませんでした。いちばんよく合ったのは通勤・通学の時間で、10分長いと睡眠が約3分短い並びです。ただし、通勤が睡眠を縮めたとまでは言えません。"
+},
+{
+"h": "光が効く国もある",
+"t": "ブラジルの研究では、赤道から遠い南の都市ほど夜型で、昼間の眠気も増えていました。アメリカでは、同じ時間帯でも日没が遅い所ほど睡眠が短く、地域の平均の睡眠が長いと収入が高いという計算もあります。ただ、日本の数字とは見ているものが違います。"
+},
+{
+"h": "答え：日本の差は通勤と重なる",
+"t": "日本は世界でも睡眠が短く、日本の中で睡眠と一緒に動いていたのは、光より通勤・通学の長さでした。光が効く研究は世界にありますが、日本で光が効かないとまでは言えません。シマ先生は、調べてみて、なるべく寝たいと思ったそうです。"
+}
+],
+"timeline": [
+{
+"y": 1940,
+"text": "スペインがドイツと同じ時刻を使うと決める"
+},
+{
+"y": 2010,
+"text": "16の研究・約138万人をまとめた、短い睡眠と死亡の論文が出る"
+},
+{
+"y": 2019,
+"text": "国の調査で、日本の成人の約4割が睡眠6時間未満"
+},
+{
+"y": 2021,
+"text": "総務省の調査で、睡眠がいちばん長いのは青森県の8時間8分"
+}
+],
+"sources": [
+{
+"title": "令和3年社会生活基本調査（統計Viz「都道府県ランキング」睡眠時間・通勤通学時間）",
+"by": "総務省統計局",
+"year": "2021",
+"url": "https://www.stat.go.jp/data/shakai/2026/campaign/ranking/"
+},
+{
+"title": "OECDの国別の睡眠時間の紹介記事",
+"by": "nippon.com",
+"url": "https://www.nippon.com/ja/japan-data/h00424/"
+},
+{
+"title": "健康づくりのための睡眠ガイド",
+"by": "厚生労働省",
+"url": "https://www.mhlw.go.jp/content/001305530.pdf"
+},
+{
+"title": "短い睡眠と死亡率（16の研究のまとめ）",
+"by": "Cappuccio ほか（Sleep）",
+"year": "2010",
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2864873/"
+},
+{
+"title": "Commuting and sleep: results from the Hispanic Community Health Study",
+"by": "Petrov ほか",
+"year": "2018",
+"url": "https://asu.elsevierpure.com/en/publications/commuting-and-sleep-results-from-the-hispanic-community-health-st"
+},
+{
+"title": "日本の労働者の労働時間と睡眠",
+"by": "Journal of Occupational Health",
+"year": "2013",
+"url": "https://www.jstage.jst.go.jp/article/joh/55/4/55_12-0257-BR/_html"
+},
+{
+"title": "PER3 gene regulation of sleep-wake behavior as a function of latitude",
+"by": "Leocadio-Miguel ほか（Sleep Health）",
+"year": "2018",
+"url": "https://doi.org/10.1016/j.sleh.2018.10.002"
+},
+{
+"title": "Time Use and Labor Productivity: The Returns to Sleep",
+"by": "Gibson & Shrader（Review of Economics and Statistics）",
+"year": "2018",
+"url": "https://ideas.repec.org/a/tpr/restat/v100y2018i5p783-798.html"
+},
+{
+"title": "Country differences in nocturnal sleep variability",
+"by": "Willoughby ほか（Sleep Medicine）",
+"year": "2023",
+"url": "https://pubmed.ncbi.nlm.nih.gov/37595432/"
+},
+{
+"title": "Spain looks set to drop its fascist-inspired extra hour",
+"by": "The Christian Science Monitor",
+"year": "2013",
+"url": "https://www.csmonitor.com/World/Europe/2013/1006/Spain-looks-set-to-drop-its-fascist-inspired-extra-hour"
+}
+],
+"published": "2026-11-06"
+},
+{
+"id": "bnsArTrW42c",
+"channel": "main",
+"title": "ヤクルト対西武も8対7！なぜ「ルーズベルトゲーム」？【プロ野球・MLB】",
+"lead": "ルーズベルト大統領は、本当に「8対7がいちばん面白い」と言ったのでしょうか。答えは「言っていない」です。よく言われる話と本物の記録には3つのずれがあることを、1937年の手紙を読みながら確かめました。",
+"points": [
+{
+"h": "ルーズベルトは2人いる",
+"t": "アメリカにはルーズベルトという大統領が2人いて、8対7の話はフランクリン・ルーズベルトのほうです。開幕戦の始球式に大統領でいちばん多く出たほどの野球好きでした。そんな人なら言いそうですが、残っているのは言葉ではありません。"
+},
+{
+"h": "ずれ1：言ったのではなく書いた",
+"t": "8対7の話は、1937年1月に新聞記者へ送った手紙に書かれています。野球記者の夕食会を休むことをわびる手紙で、その中の1段落が出どころです。口で言ったのではなく、手紙に書いたのが1つめのずれです。"
+},
+{
+"h": "ずれ2：合計15点で「だいたい」",
+"t": "手紙に書かれた最高の試合は、両チーム合わせて15点以上入り、それがだいたい8対7に分かれる試合です。ぴったり8対7とは書いていません。打球が飛び、外野手が走り、ランナーが回る、動きの多い試合が好きだということです。"
+},
+{
+"h": "ずれ3：正解ではなく好み",
+"t": "1942年には、戦争中も野球を続けてよいという「青信号の手紙」も書いています。こちらは働く人の息抜きのための話です。2通を比べると、8対7の手紙は野球の正解ではなく、大統領の自分の好みとして書かれたものだとわかります。"
+},
+{
+"h": "呼び名は日本で広まった",
+"t": "8対7を「ルーズベルトゲーム」と呼ぶのは日本で広まった言い方で、だれが名づけたかはわかっていません。記録を数えると、8対7はいちばん多いスコアではありませんが、合計15点の試合の中ではいちばん多いスコアでした。大事な試合の8対7は、勝っても優勝できたのは半分でした。"
+}
+],
+"timeline": [
+{
+"y": 1935,
+"text": "メジャーで初めてのナイター、大統領が明かりの合図を送る"
+},
+{
+"y": 1937,
+"m": 1,
+"d": 23,
+"text": "ルーズベルト、8対7の話を書いた手紙を記者に送る"
+},
+{
+"y": 1942,
+"m": 1,
+"d": 15,
+"text": "ルーズベルト、戦争中も野球を続けてよいと手紙で答える"
+},
+{
+"y": 1945,
+"m": 4,
+"d": 12,
+"text": "フランクリン・ルーズベルト大統領が亡くなる"
+},
+{
+"y": 1950,
+"text": "第1回日本シリーズ、毎日が8対7で勝って日本一を決める"
+},
+{
+"y": 1976,
+"text": "日本シリーズ第6戦、巨人が0対7から8対7でサヨナラ勝ち"
+},
+{
+"y": 1992,
+"text": "日本シリーズ第6戦、ヤクルトの秦真司がサヨナラホームラン"
+},
+{
+"y": 2016,
+"m": 11,
+"d": 2,
+"text": "カブス、ワールドシリーズ第7戦を8対7で制し108年ぶり優勝"
+}
+],
+"sources": [
+{
+"title": "Letter on Baseball, Sports and Sportsmanship（1937年1月23日の手紙）",
+"by": "The American Presidency Project",
+"year": "1937",
+"url": "https://www.presidency.ucsb.edu/documents/letter-baseball-sports-and-sportsmanship"
+},
+{
+"title": "Letter on Professional Baseball During Wartime（1942年1月15日の手紙）",
+"by": "The American Presidency Project",
+"year": "1942",
+"url": "https://www.presidency.ucsb.edu/documents/letter-professional-baseball-during-wartime"
+},
+{
+"title": "Prologue 2002年春号（グリーンライト・レター）",
+"by": "米国国立公文書館",
+"year": "2002",
+"url": "https://www.archives.gov/publications/prologue/2002/spring/greenlight.html"
+},
+{
+"title": "所蔵品目録 Letter from Franklin Roosevelt to Kenesaw Mountain Landis",
+"by": "野球殿堂",
+"url": "https://collection.baseballhall.org/objects/18537/letter-from-franklin-roosevelt-to-kenesaw-mountain-landis"
+},
+{
+"title": "Franklin D. Roosevelt: Life in Brief",
+"by": "Miller Center",
+"url": "https://millercenter.org/president/fdroosevelt/life-in-brief"
+},
+{
+"title": "May 24, 1935: Reds fans see the lights in first night game in MLB history",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/may-24-1935-reds-fans-see-the-lights-in-first-night-game-in-mlb-history/"
+},
+{
+"title": "Who Was the First President to Throw a First Pitch on Opening Day?",
+"by": "History.com",
+"url": "https://www.history.com/news/who-was-the-first-president-to-throw-a-first-pitch-on-opening-day"
+},
+{
+"title": "日本での「ルーズベルトゲーム」の広まり（玉木正之さん・向井万起男さん）",
+"by": "エキサイトニュース",
+"url": "https://www.excite.co.jp/news/article/E1399856134676/"
+},
+{
+"title": "二宮清純さんのコラム（権藤博さんの「3対2」）",
+"by": "現代ビジネス",
+"url": "https://gendai.media/articles/-/59648"
+},
+{
+"title": "Game Logs（メジャーの全試合の記録。8対7の数は自分たちで集計）",
+"by": "Retrosheet",
+"url": "https://www.retrosheet.org/gamelogs/index.html"
+},
+{
+"title": "日程・結果（2016〜2025年。自分たちで集計）",
+"by": "日本野球機構（NPB）",
+"url": "https://npb.jp/games/2024/schedule_04_detail.html"
+},
+{
+"title": "1950年日本シリーズ第6戦 ボックススコア",
+"by": "日本野球機構（NPB）",
+"year": "1950",
+"url": "https://npb.jp/bis/scores/nipponseries/boxscore1950_6.html"
+},
+{
+"title": "1976年日本シリーズ第6戦 ボックススコア",
+"by": "日本野球機構（NPB）",
+"year": "1976",
+"url": "https://npb.jp/bis/scores/nipponseries/boxscore1976_6.html"
+},
+{
+"title": "1992年日本シリーズ第6戦 ボックススコア",
+"by": "日本野球機構（NPB）",
+"year": "1992",
+"url": "https://npb.jp/bis/scores/nipponseries/boxscore1992_6.html"
+},
+{
+"title": "1979年センバツ決勝のサイクル安打",
+"by": "Number Web",
+"url": "https://number.bunshun.jp/articles/-/871913"
+},
+{
+"title": "October 12, 1980: Phillies rally to clinch NL pennant in 10 innings at Astrodome",
+"by": "SABR",
+"year": "1980",
+"url": "https://sabr.org/gamesproj/game/october-12-1980-phillies-rally-to-clinch-nl-pennant-in-10-innings-at-astrodome/"
+},
+{
+"title": "Wild rally revives BoSox（2008年リーグ優勝決定シリーズ第5戦）",
+"by": "AP（The Spokesman-Review 掲載）",
+"year": "2008",
+"url": "https://www.spokesman.com/stories/2008/oct/17/wild-rally-revives-bosox/"
+},
+{
+"title": "World Series Game 7: This Is The Ultimate Dream",
+"by": "NPR",
+"year": "2016",
+"url": "https://www.npr.org/sections/thetwo-way/2016/11/02/500415256/world-series-game-7-this-is-the-ultimate-dream"
+},
+{
+"title": "October 24, 2020: Brett Phillips's walk-off hit lifts Rays over Dodgers in Game 4",
+"by": "SABR",
+"year": "2020",
+"url": "https://sabr.org/gamesproj/game/october-24-2020-brett-phillipss-walk-off-hit-lifts-rays-over-dodgers-in-game-4"
+},
+{
+"title": "ルーズヴェルト・ゲーム",
+"by": "Wikipedia（日本語版）",
+"url": "https://ja.wikipedia.org/wiki/ルーズヴェルト・ゲーム"
+}
+],
+"published": "2026-11-05"
+},
+{
+"id": "N3h9Sn-gUSo",
+"channel": "jiji",
+"title": "クマの出没「過去最多」は、クマの数？秋田のデータとカナダの論文で検証【時事】",
+"lead": "クマの出没「過去最多」というニュースから、増えたのは本当にクマなのかを確かめた回です。出没件数はクマの数ではなく、人が見て知らせた数です。クマが人の近くに来ているのは本当ですが、数字には知らせる人が増えた分も入っている、と答えました。",
+"points": [
+{
+"h": "「出没」はクマの数ではない",
+"t": "出没件数は、人がクマや足あとを見て、役場や警察に知らせた数です。同じクマを2人が見れば2件になることもあり、環境省も住民の関心の高さに左右されると注意しています。全国の出没は増えたり減ったりしながら上がり、2025年度は約5万件で過去最多でした。"
+},
+{
+"h": "クマの数は正確には分からない",
+"t": "秋田県の推定は約1,000頭から4,400頭になりましたが、県は「前の数え方が少なすぎた」と説明しています。今はカメラに写った胸の月の輪の模様で1頭ずつ見分けていますが、それでも2,400〜5,800頭と幅があります。全国で何頭増えたかは分かりません。"
+},
+{
+"h": "人の近くには来ている",
+"t": "ツキノワグマのすむ場所は15年で約1.4倍に広がり、里のほうへ近づいています。秋田県は、人が減って荒れた畑が増え、クマが住みやすい場所が広がっていると見ています。島根県の研究では、里に出て駆除されたクマの多くが、やせてはいませんでした。"
+},
+{
+"h": "カナダの論文と秋田のデータ",
+"t": "カナダの研究では、ある年から住民の苦情だけが増え、わなや駆除の数は変わりませんでした。秋田では2024年に目撃を投稿できる地図サイトができ、ブナが同じくらい不作の2年をくらべると、出没は3.7倍、捕まえたクマは1.2倍とそろいませんでした。"
+},
+{
+"h": "答え：知らせる人も増えた",
+"t": "秋田で2023年度から増えた出没のうち、6割は県民の投稿でした。それでも投稿を除くと2倍あり、柿を食べに来た記録もたくさんあります。クマが人の近くに来ているのは本当ですが、出没の数字には、知らせる人が増えた分も入っています。"
+}
+],
+"timeline": [
+{
+"y": 1999,
+"text": "カナダ・オンタリオ州で春のクマの狩猟がやめになる"
+},
+{
+"y": 2010,
+"text": "カナダの研究者が、住民の苦情とクマのもめごとの論文を出す"
+},
+{
+"y": 2020,
+"m": 4,
+"text": "秋田県のクマの推定が4,400頭になる"
+},
+{
+"y": 2023,
+"text": "秋田でブナの実りが大凶作になる（点数0.1）"
+},
+{
+"y": 2024,
+"m": 7,
+"text": "秋田県でクマの目撃を地図にのせるサイトができる"
+},
+{
+"y": 2025,
+"m": 3,
+"text": "秋田県が「従来の推定が過小評価だった」と管理計画に書く"
+},
+{
+"y": 2025,
+"text": "全国のクマの出没が約5万件で過去最多になる（2025年度）"
+},
+{
+"y": 2026,
+"text": "クマの出没が4〜8月で約2万件と、この5年で最多になる"
+}
+],
+"sources": [
+{
+"title": "クマ類の出没件数（速報値）",
+"by": "環境省",
+"year": "2026",
+"url": "https://www.env.go.jp/nature/choju/effort/effort12/effort12.html"
+},
+{
+"title": "クマ類の出没件数（月別）",
+"by": "環境省",
+"year": "2026",
+"url": "https://www.env.go.jp/nature/choju/effort/effort12/syutubotu.pdf"
+},
+{
+"title": "クマ類の出没と被害の資料",
+"by": "環境省",
+"year": "2025",
+"url": "https://www.env.go.jp/nature/choju/effort/effort12/kuma-docu-r071106.pdf"
+},
+{
+"title": "クマ類保護及び管理に関する検討会の資料",
+"by": "環境省",
+"url": "https://www.env.go.jp/council/content/i_09/000201021.pdf"
+},
+{
+"title": "クマ類の基礎知識",
+"by": "環境省",
+"url": "https://www.env.go.jp/nature/choju/effort/effort5/effort5-3k/kiso/docu_kuma.pdf"
+},
+{
+"title": "東北のクマの出没と捕獲",
+"by": "環境省 東北地方環境事務所",
+"url": "https://tohoku.env.go.jp/content/000404420.pdf"
+},
+{
+"title": "日本のクマ2種類の資料",
+"by": "文部科学省",
+"year": "2026",
+"url": "https://www.mext.go.jp/content/20260525-mxt_kyousei01-000050259_03.pdf"
+},
+{
+"title": "第6次ツキノワグマ管理計画",
+"by": "秋田県",
+"year": "2025",
+"url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000064249_00/"
+},
+{
+"title": "ツキノワグマの推定生息数について",
+"by": "秋田県",
+"year": "2020",
+"url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000048303_00/"
+},
+{
+"title": "クマダスの運用開始（委員会資料）",
+"by": "秋田県",
+"year": "2024",
+"url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000082763_00/R6/"
+},
+{
+"title": "生息数推定調査の結果（委員会資料）",
+"by": "秋田県",
+"year": "2026",
+"url": "https://www.pref.akita.lg.jp/uploads/public/archive_0000094420_00/"
+},
+{
+"title": "ツキノワグマ等情報マップシステム「クマダス」オープンデータ",
+"by": "秋田県",
+"url": "https://ckan.pref.akita.lg.jp/dataset/050008_shizenhogoka_003"
+},
+{
+"title": "ブナの結実の調べ",
+"by": "林野庁 東北森林管理局",
+"url": "https://www.rinya.maff.go.jp/tohoku/sidou/buna.html"
+},
+{
+"title": "Do public complaints reflect trends in human–bear conflict?",
+"by": "Howe, Obbard, Black, Wall（Ursus 21(2)）",
+"year": "2010",
+"url": "https://bioone.org/journals/ursus/volume-21/issue-2/09GR013.1/Do-public-complaints-reflect-trends-in-humanbear-conflict/10.2192/09GR013.1.full"
+},
+{
+"title": "Variation in Fat Accumulation is Associated with Food Availability in Asian Black Bears",
+"by": "Sawada ほか（Mammal Study）",
+"year": "2025"
+},
+{
+"title": "島根県のツキノワグマ651頭の研究（プレスリリース）",
+"by": "東京農工大学",
+"year": "2026",
+"url": "https://www.tuat.ac.jp/documents/tuat/outline/disclosure/pressrelease/2025/20260105_01.pdf"
+},
+{
+"title": "島根の研究を伝える記事",
+"by": "秋田魁新報",
+"year": "2026",
+"url": "https://www.sakigake.jp/news/article/20260115CO0118/"
+},
+{
+"title": "自衛隊のクマ対策の支援を伝える記事",
+"by": "秋田魁新報",
+"year": "2025",
+"url": "https://www.sakigake.jp/news/article/20251105AK0038/"
+}
+],
+"published": "2026-11-04"
+},
+{
+"id": "iQU1KUuaauQ",
+"channel": "jiji",
+"title": "ジャングリア沖縄、道なかば。北部の課題と1年めの数字を、自治体の目で整理【時事】",
+"lead": "開業から1年のジャングリア沖縄は失敗なのかを、北部の課題と町の数字から確かめた回です。来場者は計画に届かず赤字も出ましたが、北部に泊まる人や町の税収への効き目は、まだ数字に出ていません。成功とも失敗とも言えない「道なかば」だと答えました。",
+"points": [
+{
+"h": "北部は「素通り」が課題",
+"t": "沖縄には2025年度に約1,090万人が訪れて過去最多でしたが、多くは那覇のある南に集まります。北部は美ら海水族館を見てそのまま帰る人が多く、泊まってもらうことが長い課題でした。その期待を受けて、2025年7月25日にジャングリア沖縄が開業しました。"
+},
+{
+"h": "1年めの数字はきびしい",
+"t": "1年の来場者は約100万人で、採算の目安とされた150万人の3分の2ほどでした。親会社の決算は最終赤字173億円で、公庫のつなぎ融資を受けながら新しい出資者を探しています。待ち時間や料金、暑さへの不満にも、手を入れているところです。"
+},
+{
+"h": "泊まる人はまだ増えていない",
+"t": "開業直後の3週間ほどの調査では、北部を訪れた人はほとんど変わらず、泊まった人は2.69%減りました。夏休みで宿の部屋が足りなかった影響もあるかもしれません。「素通り」が「1泊」に変わったとは、まだ言えません。"
+},
+{
+"h": "町の財布はこれから分かる",
+"t": "名護市と今帰仁村では、収入を100円とすると自分たちで集めた税金は9〜13円ほどです。ただ、いま見られる決算カードは開業前の2024年度の分で、パークがどう効いたかは、まだ数字では言えません。名護市では家賃が上がっているという報道もあります。"
+},
+{
+"h": "答え：まだ道なかば",
+"t": "50年前の海洋博も見込みに届きませんでしたが、道路や水道が残りました。つまずいたあと立て直した施設もあります。新しい出資者、町の決算、北部に泊まる人の数、2028年6月期の黒字化の目標。これらが見えるまで、成功とも失敗とも言えない「道なかば」です。"
+}
+],
+"timeline": [
+{
+"y": 1975,
+"text": "沖縄国際海洋博覧会が本部町で開かれる"
+},
+{
+"y": 2001,
+"text": "宮崎のシーガイアが会社更生法を申請"
+},
+{
+"y": 2003,
+"text": "長崎のハウステンボスが会社更生法を申請"
+},
+{
+"y": 2022,
+"text": "日本交通公社が観光の集まりと自治体の財政の研究を出す"
+},
+{
+"y": 2025,
+"m": 4,
+"text": "沖縄タイムスが名護市で家賃が上がっていると報じる"
+},
+{
+"y": 2025,
+"m": 7,
+"d": 25,
+"text": "ジャングリア沖縄が名護市・今帰仁村に開業"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 30,
+"text": "ジャングリアの運営会社の代表が会見で収益を残せなかったとおわび"
+}
+],
+"sources": [
+{
+"title": "市町村決算カード（令和6年度）",
+"by": "総務省",
+"year": "2024",
+"url": "https://www.soumu.go.jp/iken/zaisei/card.html"
+},
+{
+"title": "北部振興の資料（令和7年4月）",
+"by": "内閣府",
+"year": "2025",
+"url": "https://www8.cao.go.jp/okinawa/8/2025/0401_hokubu.pdf"
+},
+{
+"title": "沖縄島北部の観光利用の現況と課題",
+"by": "環境省",
+"url": "https://kyushu.env.go.jp/okinawa/amami-okinawa/meeting/region/pdf/D2_d2_h28_2_hokubu/D.2.d2_H28-2_93.pdf"
+},
+{
+"title": "ジャングリア初年度の来場者を伝える記事",
+"by": "読売新聞",
+"year": "2026",
+"url": "https://news.infoseek.co.jp/article/yomiuri_20260726_gyt1t00034/"
+},
+{
+"title": "ジャングリアの赤字173億円を伝える記事",
+"by": "琉球新報",
+"year": "2026",
+"url": "https://ryukyushimpo.jp/editorial/entry-5526429.html"
+},
+{
+"title": "沖縄振興開発金融公庫のつなぎ融資を伝える記事",
+"by": "日本経済新聞",
+"year": "2026",
+"url": "https://www.nikkei.com/article/DGXZQOJC1468T0U6A011C2000000/"
+},
+{
+"title": "10月30日の会見を伝える記事",
+"by": "中日新聞",
+"year": "2026",
+"url": "https://www.chunichi.co.jp/article/1332716"
+},
+{
+"title": "ジャングリア開業（約60ヘクタール・総事業費約700億円）を伝える記事",
+"by": "日本経済新聞",
+"year": "2025",
+"url": "https://www.nikkei.com/article/DGXZQOJC241R70U5A720C2000000/"
+},
+{
+"title": "開業日の名護市長・今帰仁村長の言葉を伝える記事",
+"by": "琉球新報",
+"year": "2025",
+"url": "https://ryukyushimpo.jp/economics/entry-4481287.html"
+},
+{
+"title": "美ら海水族館の入館者を伝える記事",
+"by": "日本経済新聞",
+"url": "https://www.nikkei.com/article/DGXZQOJC225EG0S6A021C2000000/"
+},
+{
+"title": "北部の宿泊を伝える記事",
+"by": "琉球新報",
+"url": "https://ryukyushimpo.jp/economics/entry-4069856.html"
+},
+{
+"title": "開業直後の北部の来訪者と宿泊者の調査",
+"by": "ブログウォッチャー",
+"year": "2025",
+"url": "https://newscast.jp/smart/news/1828579"
+},
+{
+"title": "名護市の賃貸の需給を伝える記事",
+"by": "沖縄タイムス",
+"year": "2025",
+"url": "https://www.okinawatimes.co.jp/articles/-/1558586"
+},
+{
+"title": "観光経済の集積が地方自治体財政に及ぼす影響に関する研究",
+"by": "日本交通公社（観光研究）",
+"year": "2022",
+"url": "https://www.jstage.jst.go.jp/article/jitr/34/3/34_29/_article/-char/ja"
+},
+{
+"title": "沖縄国際海洋博覧会",
+"by": "国立公文書館",
+"url": "https://www.archives.go.jp/publication/archives/no086/12768"
+},
+{
+"title": "ハウステンボスの会社更生法申請",
+"by": "帝国データバンク",
+"url": "https://www.tdb.co.jp/report/bankruptcy/flash/1228/"
+},
+{
+"title": "シーガイアとハウステンボスのその後を伝える記事",
+"by": "J-CAST",
+"year": "2010",
+"url": "https://www.j-cast.com/2010/07/02069878.html"
+},
+{
+"title": "入域観光客統計（2026年8月・9月速報）",
+"by": "沖縄県",
+"year": "2026"
+}
+],
+"published": "2026-11-03"
+},
+{
+"id": "YIjYMYX11pQ",
+"channel": "main",
+"title": "落合博満は、なぜ日本人で初めて年俸1億円を超えたのか【1986年】",
+"lead": "三冠王を3回とった落合博満選手の年俸1億円は、なぜロッテでは届かず、中日に移ってすぐに届いたのかを調べた回です。答えはお金の話だけではなく、ロッテとの別れと、巨人に渡したくない中日が4人を出して取りに行ったことにありました。",
+"points": [
+{
+"h": "1億円はどれくらいの重さ？",
+"t": "落合選手が中日と決めた1987年の年俸1億3000万円は、その年の選手の平均の12倍くらいでした。今の選手の給料で比べると、6億円ほどの重さになります。物の値段で比べると1億7000万円くらいなので、選手のお給料だけが大きく上がったことがわかります。"
+},
+{
+"h": "360万円から9700万円へ",
+"t": "落合選手は25歳でロッテに入り、プロ1年目の年俸は360万円でした。1982年に三冠王をとると5400万円に、1985年にもう一度とると9700万円に上がりました。平均の9倍をこえる額で、ここまで上げたのはロッテです。「ロッテがケチだった」とは言い切れません。"
+},
+{
+"h": "1986年の冬の1対4トレード",
+"t": "1986年の秋、ロッテの稲尾監督がやめさせられ、落合選手は「稲尾さんのいないロッテにいる意味はない」と話したそうです。巨人と中日が落合選手をほしがりましたが、巨人とは交換の話がまとまりませんでした。12月23日の夜、中日が牛島投手ら4人を出すトレードが決まりました。"
+},
+{
+"h": "答え：行き先が変わったから",
+"t": "三冠王を2年続けて、1億円は確実と見られていましたが、ロッテ最後の年は9700万円でした。中日には、落合選手を巨人に渡したくない事情があり、4人を出して取りに行きました。その中日での最初の年俸が1億3000万円です。届いたのは、お金の話だけではなかったのです。"
+},
+{
+"h": "そのあとも行き先を変えた",
+"t": "落合選手はFAで巨人へ移り、1994年の「10.8」で長嶋監督を胴上げしました。そのあと日本ハムで選手を終え、2004年からは中日の監督として8年すべて3位以内でした。1億円を初めてこえた人が、のちにGMとして年俸を決める側にもなりました。"
+}
+],
+"timeline": [
+{
+"y": 1982,
+"text": "落合博満選手、28歳で1回目の三冠王をとる"
+},
+{
+"y": 1986,
+"m": 12,
+"d": 23,
+"text": "落合選手と牛島投手ら4人の、1対4のトレードが決まる"
+},
+{
+"y": 1986,
+"m": 12,
+"d": 26,
+"text": "落合選手が中日と契約、日本人選手で初めて年俸1億円をこえる"
+},
+{
+"y": 1991,
+"m": 3,
+"d": 8,
+"text": "落合選手の年俸調停、球団案の2億2000万円で決まる"
+},
+{
+"y": 1994,
+"m": 10,
+"d": 8,
+"text": "「10.8」で巨人が中日に勝って優勝、落合選手が先制ホームラン"
+},
+{
+"y": 1996,
+"m": 12,
+"d": 9,
+"text": "落合選手、43歳の誕生日に日本ハムへ行くと決める"
+},
+{
+"y": 1998,
+"m": 10,
+"d": 7,
+"text": "落合選手、ロッテ戦の代打で最後の打席に立つ"
+},
+{
+"y": 2007,
+"m": 11,
+"d": 1,
+"text": "中日、日本シリーズ第5戦で日本ハムに勝ち53年ぶりの日本一"
+}
+],
+"sources": [
+{
+"title": "殿堂入りした人 落合博満",
+"by": "野球殿堂博物館",
+"url": "https://baseball-museum.or.jp/hall-of-famers/hof-172/"
+},
+{
+"title": "1986年度 パシフィック・リーグ 成績（1982年・1985年も）",
+"by": "日本野球機構（NPB）",
+"url": "https://npb.jp/bis/yearly/pacificleague_1986.html"
+},
+{
+"title": "2026年 年俸調査（支配下選手の平均）",
+"by": "日本プロ野球選手会",
+"year": "2026",
+"url": "https://jpbpa.net/wp-content/uploads/jpbpa-pdf/26nenpou6.pdf"
+},
+{
+"title": "2026年のプロ野球選手の平均年俸と中央値",
+"by": "nippon.com",
+"year": "2026",
+"url": "https://www.nippon.com/ja/japan-data/h02776/"
+},
+{
+"title": "長期経済統計（消費者物価指数）",
+"by": "内閣府",
+"url": "https://www5.cao.go.jp/keizai3/2023/0213nk/n23_7_data05.html"
+},
+{
+"title": "消費者物価指数（2025年平均）",
+"by": "総務省統計局",
+"url": "https://www.stat.go.jp/data/cpi/sokuhou/nen/index-z.html"
+},
+{
+"title": "日めくりプロ野球（1982年12月の契約更改）",
+"by": "スポーツニッポン",
+"url": "https://web.archive.org/web/20190222204518/https://www.sponichi.co.jp/baseball/yomimono/professional_bbd0712/kiji/K20091201Z00002660.html"
+},
+{
+"title": "1982年のインタビュー「推定なんて言う方が奇妙」",
+"by": "Number Web",
+"year": "2021",
+"url": "https://number.bunshun.jp/articles/-/850554"
+},
+{
+"title": "落合博満さんの年俸の移り変わりと東尾修さん",
+"by": "web Sportiva",
+"year": "2014",
+"url": "https://sportiva.shueisha.co.jp/clm/baseball/npb/2014/12/12/post_485/"
+},
+{
+"title": "落合博満さんの高校・大学のころ",
+"by": "Number Web（中溝康隆）",
+"year": "2024",
+"url": "https://number.bunshun.jp/articles/-/863317"
+},
+{
+"title": "日めくりプロ野球（稲尾監督の解任とトレード）",
+"by": "スポーツニッポン",
+"url": "https://web.archive.org/web/2019/https://www.sponichi.co.jp/baseball/yomimono/professional_bbd0712/kiji/K20101201Z00003350.html"
+},
+{
+"title": "1986年の落合博満さんのトレード",
+"by": "週刊ベースボールONLINE",
+"year": "2022",
+"url": "https://column.sp.baseball.findfriends.jp/?pid=column_detail&id=097-20221213-10"
+},
+{
+"title": "1986年の冬と1億円",
+"by": "Number Web",
+"year": "2021",
+"url": "https://number.bunshun.jp/articles/-/848770"
+},
+{
+"title": "牛島和彦さんが語るトレードの夜",
+"by": "Number Web",
+"url": "https://number.bunshun.jp/articles/-/866751"
+},
+{
+"title": "日めくりプロ野球（1986年12月26日の契約）",
+"by": "スポーツニッポン",
+"url": "https://web.archive.org/web/2019/https://www.sponichi.co.jp/baseball/yomimono/professional_bbd0712/kiji/K20081201Z00002440.html"
+},
+{
+"title": "1991年の年俸調停",
+"by": "週刊ベースボールONLINE",
+"year": "2020",
+"url": "https://column.sp.baseball.findfriends.jp/?pid=column_detail&id=097-20201025-11"
+},
+{
+"title": "落合博満さん、FAで巨人へ",
+"by": "Number Web",
+"url": "https://number.bunshun.jp/articles/-/863300"
+},
+{
+"title": "1994年の「10.8」",
+"by": "週刊ベースボールONLINE",
+"year": "2020",
+"url": "https://column.sp.baseball.findfriends.jp/?pid=column_detail&id=097-20201008-14"
+},
+{
+"title": "落合博満さん、巨人の退団会見",
+"by": "週刊ベースボールONLINE",
+"year": "2017",
+"url": "https://column.sp.baseball.findfriends.jp/?pid=column_detail&id=097-20171128-10"
+},
+{
+"title": "日めくりプロ野球（1996年12月9日、日本ハムへ）",
+"by": "スポーツニッポン",
+"url": "https://web.archive.org/web/2019/https://www.sponichi.co.jp/baseball/yomimono/professional_bbd0712/kiji/K20091201Z00002590.html"
+},
+{
+"title": "1998年の最後の打席",
+"by": "Number Web（中溝康隆）",
+"year": "2021",
+"url": "https://number.bunshun.jp/articles/-/848772?page=2"
+},
+{
+"title": "落合監督の就任と「10%」",
+"by": "デイリースポーツ",
+"year": "2022",
+"url": "https://www.daily.co.jp/opinion-d/2022/03/07/0015116735.shtml"
+},
+{
+"title": "2007年 日本シリーズ",
+"by": "日本野球機構（NPB）",
+"year": "2007",
+"url": "https://npb.jp/nippons/2007/"
+},
+{
+"title": "岩瀬仁紀さんの言葉（2007年の日本シリーズ）",
+"by": "Number Web",
+"year": "2022",
+"url": "https://number.bunshun.jp/articles/-/852862"
+},
+{
+"title": "2021年の1億円プレーヤー",
+"by": "SPAIA",
+"year": "2021",
+"url": "https://spaia.jp/column/baseball/npb/15669"
+},
+{
+"title": "2026年の阪神の1億円プレーヤー",
+"by": "高校野球ドットコム",
+"year": "2026",
+"url": "https://www.hb-nippon.com/articles/12853"
+},
+{
+"title": "落合博満",
+"by": "ウィキペディア"
+},
+{
+"title": "年俸調停",
+"by": "ウィキペディア",
+"url": "https://ja.wikipedia.org/wiki/%E5%B9%B4%E4%BF%B8%E8%AA%BF%E5%81%9C"
+}
+],
+"published": "2026-11-03"
+},
+{
+"id": "WhzjWRdhYCY",
+"channel": "jiji",
+"title": "データセンターの町・印西市。税収は大きいのに、働く人の数はどうなった？【時事】",
+"lead": "千葉県印西市を例に、データセンターは町に仕事を生むのかを確かめた回です。税収は9年で2倍と大きい一方、中で働く人は少なく、市内で働く人の数も2021年から2024年でほぼ変わりませんでした。雇用より税収の目玉と見たほうが分かりやすい、と結びました。",
+"points": [
+{
+"h": "中で働く人は数十人ほど",
+"t": "データセンターは、サーバーというコンピューターがずらっと並ぶ、インターネットの大きな倉庫のような建物です。アイルランド政府の見積もりでは、1か所で働く常勤の人は30〜50人ほど。建物の大きさのわりに、中の仕事は多くありません。"
+},
+{
+"h": "税収は大きく増えた",
+"t": "印西市の固定資産税は9年で2倍になり、2024年度は約165億円と市税の約6割をしめます。2023年度には1年で約36億円も増えました。ただし、そのうちどれだけがデータセンターの分かは、市の統計書にも出ていません。"
+},
+{
+"h": "外の仕事は増えるが控えめ",
+"t": "アメリカの研究では、データセンターができた郡で、データ処理や通信の仕事が100〜200人ほど増えたと計算されました。1,584か所を調べた別の研究では、建設以外の仕事が1,000〜1,300人ほど多く、増えたのは運送・倉庫や専門のサービスでした。どちらも控えめな増え方です。"
+},
+{
+"h": "工場とくらべると",
+"t": "アーカンソー州の試算では、まわりに広がる仕事の数は、州全体だとデータセンターと食品工場でほぼ同じでした。でも人口の少ない郡では、食品工場のほうが地元に残る仕事が多くなりました。税収は、データセンターのほうが大きく出ています。"
+},
+{
+"h": "答え：税収の目玉として見る",
+"t": "印西市で働く人は、2021年も2024年も約34,700人で、ほとんど変わっていません。データセンターが印西市で仕事を増やしたかどうかは、この数字からは言えません。シマ先生は、データセンターは雇用より税収の目玉として見たほうが分かりやすい、と考えました。"
+}
+],
+"timeline": [
+{
+"y": 2021,
+"text": "アイルランド政府がデータセンター1か所の常勤を30〜50人と見積もる"
+},
+{
+"y": 2023,
+"text": "2023年度、印西市の固定資産税が1年で約36億円増える"
+},
+{
+"y": 2024,
+"text": "アイルランドでデータセンターの建設と運用が約19,500人分の仕事に"
+},
+{
+"y": 2024,
+"m": 6,
+"text": "国の調査で、印西市で働く人は約34,700人と3年前とほぼ同じ"
+},
+{
+"y": 2025,
+"m": 2,
+"text": "東洋経済オンラインが印西市のデータセンターは11社30棟前後と報じる"
+},
+{
+"y": 2026,
+"text": "ブルッキングス研究所がデータセンターと雇用の研究を出す"
+}
+],
+"sources": [
+{
+"title": "統計書「データいんざい2025」",
+"by": "印西市",
+"year": "2025",
+"url": "https://www.city.inzai.lg.jp/0000021540.html"
+},
+{
+"title": "市町村決算カード（令和6年度）",
+"by": "総務省",
+"year": "2024",
+"url": "https://www.soumu.go.jp/iken/zaisei/card.html"
+},
+{
+"title": "令和6年経済センサス-基礎調査の結果",
+"by": "総務省統計局",
+"year": "2024",
+"url": "https://www.stat.go.jp/data/e-census/2024/kekka.html"
+},
+{
+"title": "令和6年経済センサス-基礎調査 参考表（e-Stat）",
+"by": "総務省・経済産業省",
+"year": "2024",
+"url": "https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&lid=000001473659"
+},
+{
+"title": "New evidence on data center employment effects",
+"by": "Brookings Institution",
+"year": "2026",
+"url": "https://www.brookings.edu/articles/new-evidence-on-data-center-employment-effects/"
+},
+{
+"title": "We studied 1,584 data centers—and found the buildings full of machines are tied to modest local job growth",
+"by": "phys.org",
+"year": "2026",
+"url": "https://phys.org/news/2026-10-centers-full-machines-modest-local.html"
+},
+{
+"title": "Data Centers vs. Factories: Do AI Facilities Truly Benefit Rural Economies? Evidence from an Arkansas Simulation",
+"by": "Southern Ag Today",
+"year": "2026",
+"url": "https://southernagtoday.org/2026/08/07/data-centers-vs-factories-do-ai-facilities-truly-benefit-rural-economies-evidence-from-an-arkansas-simulation/"
+},
+{
+"title": "The Value of Data Centres to Ireland",
+"by": "アイルランド政府（産業雇用省）",
+"url": "https://enterprise.gov.ie/en/publications/publication-files/the-value-of-data-centres-to-ireland.pdf"
+},
+{
+"title": "データセンターの建設と運用が支えた仕事（2024年）についての発表",
+"by": "アイルランド産業雇用省",
+"year": "2026",
+"url": "https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260602.html"
+},
+{
+"title": "データセンター1か所あたりの常勤の見積もり（議会答弁）",
+"by": "アイルランド産業雇用省",
+"year": "2021"
+},
+{
+"title": "印西市のデータセンター集積を伝える記事",
+"by": "東洋経済オンライン",
+"year": "2025",
+"url": "https://toyokeizai.net/articles/-/857077"
+},
+{
+"title": "印西市のデータセンターと税収を伝える記事（市経済振興課のコメント）",
+"by": "東京新聞",
+"year": "2024",
+"url": "https://www.tokyo-np.co.jp/article/331271"
+}
+],
+"published": "2026-11-02"
+},
+{
+"id": "xEbL1BaO7Ic",
+"channel": "main",
+"title": "なぜ優勝すると胴上げをする？江戸の大掃除から阪神の連覇まで【プロ野球】",
+"lead": "優勝すると、なぜみんなで監督を宙に上げるのかを調べた回です。かぎは2つありました。大掃除や厄年のような「区切りの日」に人を宙に上げてきたこと。そして、昔は落としてこらしめる胴上げもあったからこそ、今は最後まで受け止めることが大切にされていることです。",
+"points": [
+{
+"h": "プロ野球の最初の胴上げ",
+"t": "プロ野球で最初に胴上げされた監督は、1950年に優勝した松竹ロビンスの小西得郎監督だとされています。それより前の記録は、探しても見つかりませんでした。1982年の中日では、選手が「胴上げはしない」と決めていたのに、優勝の瞬間に飛び出して、近藤監督を7回宙に上げました。"
+},
+{
+"h": "回数も形も、チームしだい",
+"t": "何回宙に上げるかに決まりはなく、チームごとに自由です。2023年の阪神は6回目のリーグ優勝なので6回にしました。2020年のソフトバンクはコロナの感染を防ぐために胴上げをやめ、万歳三唱にしました。メジャーリーグには胴上げの習慣がなく、シャンパンをかけ合って祝います。"
+},
+{
+"h": "江戸の大掃除のあとにも",
+"t": "胴上げは、江戸時代にもありました。年の暮れの大掃除「煤払い」が終わると、お店では主人から女中さんまでみんなを胴上げして祝いました。お寺の行事や大相撲でも、厄年の人や結婚した人、行司さんを宙に上げます。どれも、1年や人生の「区切りの日」です。ただ、神様の行事から優勝の胴上げが生まれたのかは、分かっていません。"
+},
+{
+"h": "胴上げは日本だけじゃない",
+"t": "胴上げは日本だけのものではありません。ロシア語には胴上げを表す「カチャーチ」という言葉があり、イタリアのサッカーでも優勝した監督を宙に上げました。韓国には「ヘンガレ」があり、プロ野球でも監督を胴上げします。台湾でも2024年に、日本人の平野恵一監督が宙を舞いました。"
+},
+{
+"h": "こわい昔の顔と、受け止めること",
+"t": "昔は、わざと地面に落として人をこらしめる胴上げもありました。1682年の井原西鶴の小説には、牢屋の新入りを落とす場面があり、韓国の昔話でも罰として使われます。だから今の胴上げでは、最後まで受け止めることが大切です。2009年には、やめていく楽天の野村監督を、相手の日本ハムの教え子たちも一緒に受け止めました。"
+}
+],
+"timeline": [
+{
+"y": 1640,
+"m": 12,
+"d": 13,
+"text": "江戸城で、12月13日の煤払い（大掃除）が始まる"
+},
+{
+"y": 1682,
+"text": "井原西鶴の小説に、牢屋の新入りを胴上げして落とす場面"
+},
+{
+"y": 1950,
+"text": "松竹ロビンスの小西得郎監督が胴上げ。プロ野球で初めてとされる"
+},
+{
+"y": 1975,
+"text": "広島が初優勝。なだれこむお客さんの中で古葉監督が胴上げ"
+},
+{
+"y": 1982,
+"m": 10,
+"d": 18,
+"text": "中日が優勝。「胴上げしない」はずの選手が近藤監督を胴上げ"
+},
+{
+"y": 2005,
+"text": "藤崎観音堂の裸胴上げが、糸魚川市の無形民俗文化財になる"
+},
+{
+"y": 2009,
+"text": "退任する楽天の野村監督を、相手の日本ハムの選手も一緒に胴上げ"
+},
+{
+"y": 2020,
+"text": "優勝したソフトバンク、コロナ対策で胴上げをせず万歳三唱"
+}
+],
+"sources": [
+{
+"title": "1950年、プロ野球で最初の胴上げ",
+"by": "東京プロ野球記者OBクラブ",
+"url": "https://tokyo-proyakyukisya-obclub.jp/archives/1014"
+},
+{
+"title": "1975年、広島の初優勝の胴上げ",
+"by": "現代ビジネス",
+"url": "https://gendai.media/articles/-/50790"
+},
+{
+"title": "1982年、中日の胴上げ",
+"by": "Sportiva（集英社）",
+"year": "2026",
+"url": "https://sportiva.shueisha.co.jp/clm/baseball/npb/2026/07/04/post_140/?page=3"
+},
+{
+"title": "2016年、黒田投手の15回の胴上げ",
+"by": "デイリースポーツ",
+"year": "2016",
+"url": "https://www.daily.co.jp/baseball/carp/2016/11/05/0009640960.shtml"
+},
+{
+"title": "2020年、ソフトバンクの万歳三唱",
+"by": "BASEBALL KING",
+"url": "https://baseballking.jp/ns/253008/"
+},
+{
+"title": "2020年、感染防止策で工藤監督の胴上げを自粛",
+"by": "日刊ゲンダイ",
+"url": "https://www.nikkan-gendai.com/articles/view/sports/280837"
+},
+{
+"title": "2022年、阪神の春のキャンプの予祝の胴上げ",
+"by": "デイリースポーツ",
+"year": "2022",
+"url": "https://www.daily.co.jp/tigers/2022/02/24/0015087193.shtml"
+},
+{
+"title": "2023年、阪神の6回の胴上げ",
+"by": "東洋経済オンライン",
+"url": "https://toyokeizai.net/articles/-/713870?display=b"
+},
+{
+"title": "江戸城の煤払い（『東都歳事記』の引用）",
+"by": "nippon.com",
+"url": "https://www.nippon.com/ja/japan-topics/c11812/"
+},
+{
+"title": "胴上げ（精選版 日本国語大辞典・日本大百科全書・世界大百科事典）",
+"by": "コトバンク",
+"url": "https://kotobank.jp/word/胴上げ"
+},
+{
+"title": "胴を打たす（『好色一代男』の用例）",
+"by": "コトバンク",
+"url": "https://kotobank.jp/word/胴を打たす"
+},
+{
+"title": "藤崎観音堂の裸胴上げ",
+"by": "新潟県観光協会",
+"url": "https://niigata-kankou.or.jp/event/2392"
+},
+{
+"title": "婿の胴上げ",
+"by": "新潟県観光協会",
+"url": "https://niigata-kankou.or.jp/event/2034"
+},
+{
+"title": "大相撲の千秋楽、行司の神送りの胴上げ",
+"by": "Number（文藝春秋）",
+"url": "https://number.bunshun.jp/articles/-/836801"
+},
+{
+"title": "качать（カチャーチ）の意味（ウシャコフ辞典）",
+"by": "kartaslov.ru",
+"url": "https://kartaslov.ru/значение-слова/качать"
+},
+{
+"title": "2021年、インテルの優勝とコンテ監督",
+"by": "インテル（FC Internazionale Milano）",
+"year": "2021",
+"url": "https://www.inter.it/en/news/2021/05/05/scudetto-party-inter-appiano-gentile.html"
+},
+{
+"title": "ゼニトの優勝の式と監督の胴上げ",
+"by": "RT（russiatoday.ru）",
+"url": "https://russiatoday.ru/sport/article/997603-zenit-prazdnovanie-dzyuba"
+},
+{
+"title": "ヘンガレの語源と昔の形",
+"by": "文化日報",
+"url": "https://www.munhwa.com/article/11038473"
+},
+{
+"title": "『興夫伝』でノルブがヘンガレの罰を受ける",
+"by": "京郷新聞",
+"year": "2016",
+"url": "https://www.khan.co.kr/article/201607142043005"
+},
+{
+"title": "日籍總教練平野惠一被球員拋向空中",
+"by": "公共電視（PTS）",
+"year": "2024",
+"url": "https://news.pts.org.tw/article/721273"
+},
+{
+"title": "2009年、野村監督の胴上げ",
+"by": "Number（文藝春秋）",
+"url": "https://number.bunshun.jp/articles/-/12770"
+}
+],
+"published": "2026-11-02"
+},
+{
+"id": "YOgnf4eU1eo",
+"channel": "jiji",
+"title": "東京アプリで東京都が訴えられた。便利にすると、なぜだれかが入れない？【時事】",
+"lead": "東京アプリのポイントをめぐって東京都が訴えられたニュースから、便利にする仕組みはなぜ同じところでつまずくのかを考えた回です。便利にするには最初に線を引く必要があり、線の外に出た人への直しはいつも後から来る、と答えました。",
+"points": [
+{
+"h": "東京都が訴えられたわけ",
+"t": "東京都は2026年2月から、マイナンバーカードで本人確認した15歳以上の都民に、1万1千円分のポイントを配っています。申し込みにはカードと読み取れるスマホが要り、紙や窓口の道はありません。そこで、どちらも持たない都内の13人が、法の下の平等に反するとして都を訴えました。"
+},
+{
+"h": "なぜスマホとカードで線を引いたか",
+"t": "都は、東京アプリを広めることや、早く効率よく届けることを目的にあげています。紙で受け付けると、本当に都民かを確かめる手間を役所が持つことになります。便利にするために、「スマホとカードを持っている人」のところに線を引いたのです。"
+},
+{
+"h": "線はあとから少し動いた",
+"t": "都は7月から対面での手伝いを始め、10月23日には家族などが代わりに申し込める代理申請を発表しました。ただ、代理でも本人のカードが要ります。訴えた側は、デジタルを否定するのではなく、紙や窓口の申請も復活させてほしいと話しています。"
+},
+{
+"h": "国・市・海外にも同じ線",
+"t": "2020年の10万円の給付金では、ネットで申し込むのにカードが要りましたが、持っている人は16パーセントほどでした。ネットの受け付けを止めて郵送にまとめた市もあります。岐阜市のポイントや、イギリス・マレーシア・イスラエル・アメリカにも、それぞれの線がありました。"
+},
+{
+"h": "答え：線を動かせるかが分かれ道",
+"t": "便利にするには、まず「これを持っている人」と線を引くしかなく、最初から全員に合わせると時間もお金もかかります。アメリカのウィスコンシン州では、手続きの手間を州の側に移して、受け取る人を増やしました。引いた線をあとから動かせるかどうかが、分かれ道です。"
+}
+],
+"timeline": [
+{
+"y": 2005,
+"text": "アメリカでREAL IDの決まりの法律ができる"
+},
+{
+"y": 2008,
+"text": "ウィスコンシン州が4万4千人あまりを医療制度に自動で加入させる"
+},
+{
+"y": 2020,
+"m": 5,
+"text": "町田市が10万円給付金のネット申し込みを止め、郵送にまとめる"
+},
+{
+"y": 2025,
+"text": "アメリカの国内線でREAL IDの免許証かパスポートなどが必要になる"
+},
+{
+"y": 2026,
+"m": 2,
+"text": "東京都が「東京アプリ生活応援事業」を始める"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 23,
+"text": "東京都が東京アプリの代理申請を認めると発表"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 28,
+"text": "スマホやカードを持たない都内の13人が東京都を訴える"
+}
+],
+"sources": [
+{
+"title": "東京アプリ事業の提訴を伝える記事",
+"by": "共同通信（Yahoo!ニュース配信）",
+"year": "2026",
+"url": "https://news.yahoo.co.jp/articles/e2e46ce1e72b83b0027e62491de22586c7d51fe0"
+},
+{
+"title": "スマホやマイナカードを持たない都民13人の提訴を伝える記事",
+"by": "毎日新聞",
+"year": "2026",
+"url": "https://news.infoseek.co.jp/article/mainichi_20261028k0000m040121000c/"
+},
+{
+"title": "東京アプリ事業は「違法」",
+"by": "埼玉新聞",
+"year": "2026",
+"url": "https://www.saitama-np.co.jp/articles/220596"
+},
+{
+"title": "東京アプリ訴訟（請求の内訳・本人訴訟・原告代表の言葉）",
+"by": "弁護士ドットコムニュース",
+"year": "2026",
+"url": "https://www.bengo4.com/c_1017/n_21118/"
+},
+{
+"title": "スマホ操作できない人も代理申請容認",
+"by": "CNET Japan（Yahoo!ニュース配信）",
+"year": "2026",
+"url": "https://news.yahoo.co.jp/articles/ea1d4f266eac9e100c97fa72915a30f0b77a0c99"
+},
+{
+"title": "東京アプリ生活応援事業の開始を伝える記事",
+"by": "マイナビニュース",
+"year": "2026",
+"url": "https://news.mynavi.jp/article/20260213-4105381/"
+},
+{
+"title": "東京アプリ生活応援事業の解説",
+"by": "補助金ポータル",
+"url": "https://hojyokin-portal.jp/columns/tokyo_app_mynumber"
+},
+{
+"title": "報道発表（東京アプリ生活応援事業の目的）",
+"by": "東京都",
+"year": "2026",
+"url": "https://www.metro.tokyo.lg.jp/information/press/2026/01/2026011613"
+},
+{
+"title": "報道発表（対面サポートと持ち物）",
+"by": "東京都",
+"year": "2026",
+"url": "https://www.metro.tokyo.lg.jp/information/press/2026/07/2026071006"
+},
+{
+"title": "報道発表（代理申請）",
+"by": "東京都",
+"year": "2026",
+"url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102312"
+},
+{
+"title": "特別定額給付金とマイナンバーカードの交付率を伝える記事",
+"by": "文春オンライン",
+"year": "2020",
+"url": "https://bunshun.jp/articles/-/38596"
+},
+{
+"title": "特別定額給付金の資料",
+"by": "市川市",
+"year": "2020",
+"url": "https://www.city.ichikawa.lg.jp/common/000337184.pdf"
+},
+{
+"title": "特別定額給付金のオンライン申請の休止と郵送への一本化",
+"by": "町田市",
+"year": "2020",
+"url": "https://www.city.machida.tokyo.jp/shisei/koho/faxrelease/2020/202005.files/200525-01.pdf"
+},
+{
+"title": "陳情第10号",
+"by": "岐阜市議会",
+"year": "2026",
+"url": "https://www.city.gifu.lg.jp/_res/projects/default_project/_page_/001/009/455/r8chinjo10.pdf"
+},
+{
+"title": "Too Much Technology, Not Enough Empathy（イギリスのデジタル福祉と障害のある人）",
+"by": "Amnesty International",
+"year": "2025",
+"url": "https://www.amnesty.org/en/latest/news/2025/07/uk-governments-unchecked-use-of-tech-and-ai-systems-leading-to-exclusion-of-people-with-disabilities-and-other-marginalized-groups/"
+},
+{
+"title": "サラワク州の生活支援給付SKASの記事",
+"by": "The Borneo Post",
+"year": "2026",
+"url": "https://www.theborneopost.com/2026/03/12/update-skas-2026-beneficiary-system-urges-dapsy-man/"
+},
+{
+"title": "イスラエルのデジタル行政サービスをめぐる最高裁への申し立て",
+"by": "Firon法律事務所",
+"year": "2025",
+"url": "https://firon.co.il/?p=17977"
+},
+{
+"title": "Shifting Administrative Burden to the State: The Case of Medicaid Take-Up",
+"by": "Herd, DeLeire, Harvey, Moynihan（Public Administration Review）",
+"year": "2013",
+"url": "https://doi.org/10.1111/puar.12114"
+},
+{
+"title": "手続きの手間をめぐる続きの論文（Journal of Public Administration Research and Theory）",
+"by": "Moynihan, Herd, Harvey",
+"year": "2015",
+"url": "https://digitalgovernmenthub.org/wp-content/uploads/2022/07/muu009.pdf"
+}
+],
+"published": "2026-11-01"
+},
+{
+"id": "Z6AEn-k-CJ8",
+"channel": "main",
+"title": "レイエスはなぜメジャーで通用しなかった？データで見る来日まで【プロ野球・MLB・日本ハムファイターズ】",
+"lead": "「メジャーで通用しなかった」と言われるレイエス選手は、本当に打てなかったのでしょうか。この回はメジャーの公開データを数え直し、打率は低くてもOPSは平均より上で、本当に打てなくなったのは2022年だけだったと答えます。日本で変わったのは打球ではなく三振でした。",
+"points": [
+{
+"h": "打球は速いのに、角度が低い",
+"t": "16歳でパドレスと契約し、7年かけてメジャーに上がりました。2019年の打球の速さは、200打席以上の打者360人の中で6位です。ところが打球の角度は282位と低く、打った球の半分近くがゴロでした。だから打率は2割4分9厘にとどまりました。"
+},
+{
+"h": "OPSで見ると平均より上",
+"t": "出塁率と長打率を足したOPSで見ると、2019年は0.82で、リーグ平均の0.76より上でした。2021年も0.85で、平均の0.73を大きく上回っています。移籍のときの球団の発表文も、打率ではなく長打率と本塁打を並べていました。"
+},
+{
+"h": "走塁と守備で点を返していた",
+"t": "打撃だけの指標は平均より上でしたが、打つ・走る・守るをまとめた数字は6年で3.2と小さいものでした。体が大きく走塁でマイナスになり、指名打者は守らないぶん点を引かれる決まりもあります。守備が下手という意味ではなく、打つしかない選手だったということです。"
+},
+{
+"h": "2022年、本当に打てなくなった",
+"t": "2022年、投げられる球のうちスライダー系が17％から29％に増えました。外角低めに逃げるスライダーは、振ると4球に3球が空振りです。OPSは0.64と初めて平均を下回り、8月に40人の枠から外れました。「通用しなかった」と言えるのは、この年だけです。"
+},
+{
+"h": "日本で変わったのは三振",
+"t": "日本に来ても、本塁打のペースや打球の速さ・強さは、メジャーのころとほぼ同じでした。大きく変わったのは三振で、メジャー通算30.6％から、日本の3年目には18.8％まで減りました。構えを少し変えたこの年、パ・リーグの首位打者になりました。"
+}
+],
+"timeline": [
+{
+"y": 2011,
+"m": 11,
+"text": "16歳のレイエス、パドレスと契約金70万ドルで契約"
+},
+{
+"y": 2015,
+"text": "メジャーの全球場に、打球を測る計測機が入る"
+},
+{
+"y": 2018,
+"m": 5,
+"d": 14,
+"text": "レイエス、22歳でメジャーデビュー"
+},
+{
+"y": 2022,
+"m": 8,
+"d": 6,
+"text": "レイエス、クリーブランドの40人の枠から外れる"
+},
+{
+"y": 2024,
+"m": 1,
+"text": "レイエス、日本ハムファイターズと契約"
+},
+{
+"y": 2024,
+"m": 9,
+"text": "レイエス、25試合連続安打で日本ハムの球団新記録"
+},
+{
+"y": 2025,
+"text": "レイエス、本塁打王と打点王の二冠"
+},
+{
+"y": 2026,
+"text": "レイエス、打率3割1分3厘でパ・リーグ首位打者"
+}
+],
+"sources": [
+{
+"title": "Baseball Savant フランミル・レイエスの選手ページ（打球のデータ）",
+"by": "MLB",
+"url": "https://baseballsavant.mlb.com/savant-player/614177"
+},
+{
+"title": "Baseball Savant 打者の一覧（2018〜2023年）",
+"by": "MLB",
+"url": "https://baseballsavant.mlb.com/leaderboard/custom?year=2018,2019,2020,2021,2022,2023&type=batter&min=50"
+},
+{
+"title": "Franmil Reyes Stats（成績とWAR）",
+"by": "FanGraphs",
+"url": "https://www.fangraphs.com/players/franmil-reyes/14566/stats"
+},
+{
+"title": "2011年の海外選手の契約金トップ30",
+"by": "Baseball America",
+"year": "2011",
+"url": "https://www.baseballamerica.com/stories/top-30-international-bonuses-of-2011/"
+},
+{
+"title": "Statcast（用語解説）",
+"by": "MLB.com",
+"url": "https://mlb.com/glossary/statcast"
+},
+{
+"title": "2019年、3球団のトレードでレイエスを獲得した球団の発表文",
+"by": "MLB.com",
+"year": "2019",
+"url": "https://www.mlb.com/press-release/press-release-indians-complete-three-team-trade-with-the-padres-and-reds"
+},
+{
+"title": "Reyes' start: hard hitting and hard luck",
+"by": "MLB.com（AJ Cassavell）",
+"year": "2019",
+"url": "https://www.mlb.com/news/franmil-reyes-hitting-hard-not-getting-hits"
+},
+{
+"title": "2022年、ガーディアンズがレイエスを40人の枠から外す",
+"by": "Sports Illustrated",
+"year": "2022",
+"url": "https://www.si.com/mlb/guardians/onsi/news/guardians-designate-franmil-reyes-for-assignment-in-series-of-roster-moves"
+},
+{
+"title": "2022年、カブスがレイエスを獲得（球団の発表文）",
+"by": "MLB.com",
+"year": "2022",
+"url": "https://www.mlb.com/press-release/press-release-cubs-claim-dh-of-franmil-reyes-off-waivers-from-cleveland"
+},
+{
+"title": "日本ハム、レイエスと契約（2024年1月）",
+"by": "デイリースポーツ",
+"year": "2024",
+"url": "https://www.daily.co.jp/baseball/2024/01/07/0017201219.shtml"
+},
+{
+"title": "25試合連続安打の記事（2024年9月）",
+"by": "パ・リーグ.com",
+"year": "2024",
+"url": "https://pacificleague.com/news/2024/9/65543"
+},
+{
+"title": "シーズン後のレイエスの言葉（2024年10月）",
+"by": "デイリースポーツ",
+"year": "2024",
+"url": "https://daily.co.jp/baseball/2024/10/21/0018252185.shtml"
+},
+{
+"title": "お立ち台の「ホントニ、チョット、オコッテル」（2025年5月）",
+"by": "デイリースポーツ",
+"year": "2025",
+"url": "https://daily.co.jp/baseball/2025/05/30/0019047967.shtml"
+},
+{
+"title": "打球速度と飛距離　日米",
+"by": "広尾晃（baseballstats2011.jp）",
+"year": "2025",
+"url": "https://baseballstats2011.jp/archives/62705781.html"
+},
+{
+"title": "ハードヒット率とバレル率",
+"by": "広尾晃（baseballstats2011.jp）",
+"year": "2025",
+"url": "https://baseballstats2011.jp/archives/62708769.html"
+},
+{
+"title": "NPB+（日本の打球のデータ）",
+"by": "日本野球機構",
+"url": "https://www.japan-baseball.jp/npb-plus/"
+},
+{
+"title": "2026年6月の月間MVP会見（打撃の変化）",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://www.daily.co.jp/baseball/2026/07/08/0020565331.shtml"
+},
+{
+"title": "2026年度 パシフィック・リーグ 個人打撃成績",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/bis/2026/stats/bat_p.html"
+},
+{
+"title": "レイエス、実戦復帰（2026年10月）",
+"by": "時事通信",
+"year": "2026",
+"url": "https://www.jiji.com/jc/article?k=2026100400309&g=spo"
+},
+{
+"title": "レイエス、離日のときの言葉（2026年10月）",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://www.daily.co.jp/baseball/2026/10/17/0020938287.shtml"
+}
+],
+"published": "2026-11-01"
+},
+{
+"id": "pduWqLeQuhc",
+"channel": "main",
+"title": "王と長嶋の番号はなぜ永久欠番？始まりは「待つための番号」【プロ野球・MLB】",
+"lead": "もう誰にも使わせない番号が、なぜ人をたたえる方法になったのかを調べました。いちばん最初の永久欠番は、たたえるためではなく、病気のゲーリッグが戻るのを待つための番号でした。その形が日本や、ほかの競技にも受けつがれていきます。",
+"points": [
+{
+"h": "背番号は最初、打順の番号",
+"t": "1929年、ヤンキースが背中に番号を付けると発表しました。番号は打順のことで、3番を打つルースは3番、4番を打つゲーリッグは4番でした。お客さんは紙の出場表を買って、番号と見くらべていました。"
+},
+{
+"h": "番号が「その人のもの」に",
+"t": "1931年、アメリカン・リーグが背番号を1年を通して変えない決まりにしました。番号は選手の個性を保つのに役立つ、という考えからです。ただ、出場表が売れなくなるのを嫌がって、スコアボードに別の番号を出し続けた球団もありました。"
+},
+{
+"h": "最初の欠番は待つための番号",
+"t": "1939年、ヤンキースはゲーリッグの4番を欠番にしました。病気で休む彼が戻ってくるまで、ほかの誰にも使わせないという意味でした。でも彼は戻れず、1941年に亡くなります。待っていた番号が、そのまま永久になったのです。"
+},
+{
+"h": "42番は競技をこえて広がった",
+"t": "1997年、メジャーリーグは黒人として初めてプレーしたジャッキー・ロビンソンの42番を、全部の球団で欠番にしました。この形は、NHLのグレツキーの99番や、NBAのビル・ラッセルの6番にも受けつがれました。"
+},
+{
+"h": "日本に欠番が少ないわけ",
+"t": "日本でいちばん多い巨人でも6つで、20を超えるヤンキースとは大きくちがいます。選手が70人まで、さらに監督やコーチも2桁の番号を使うので、番号がぎちぎちだからです。欠番の決まりもないので、1つ決めるのが重いのです。"
+}
+],
+"timeline": [
+{
+"y": 1916,
+"text": "クリーブランドの球団が袖に背番号を付ける"
+},
+{
+"y": 1929,
+"m": 1,
+"d": 22,
+"text": "ヤンキースが背中に番号を付けると発表"
+},
+{
+"y": 1931,
+"text": "ア・リーグが背番号を全球団に義務づけ、固定に"
+},
+{
+"y": 1939,
+"m": 7,
+"d": 4,
+"text": "ヤンキースがゲーリッグの4番を欠番にする"
+},
+{
+"y": 1947,
+"m": 7,
+"d": 9,
+"text": "巨人が沢村栄治の14番と黒沢俊夫の4番を欠番に"
+},
+{
+"y": 1997,
+"text": "MLBがロビンソンの42番を全球団で永久欠番に"
+},
+{
+"y": 1999,
+"text": "NHLがグレツキーの99番をリーグ全体で欠番に"
+},
+{
+"y": 2022,
+"text": "NBA全体でビル・ラッセルの6番が永久欠番に"
+}
+],
+"sources": [
+{
+"title": "This day in baseball history: the Yankees become the first MLB team to put numbers on uniforms",
+"by": "MLB.com",
+"url": "https://www.mlb.com/cut4/this-day-in-baseball-history-the-yankees-become-the-first-mlb-team-to-put-number"
+},
+{
+"title": "How the Yankees helped establish uniform numbers",
+"by": "YES Network",
+"url": "https://www.yesnetwork.com/yankees/news/how-the-yankees-helped-establish-uniform-numbers"
+},
+{
+"title": "1929 Yankees",
+"by": "Baseball-Reference（BR Bullpen）",
+"url": "https://www.baseball-reference.com/bullpen/1929_Yankees"
+},
+{
+"title": "Scoreboard Numbers vs. Uniform Numbers: The 1931–34 Detroit Tigers and the Letter of the Law",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/scoreboard-numbers-vs-uniform-numbers-the-1931-34-detroit-tigers-and-the-letter-of-the-law/"
+},
+{
+"title": "Lou Gehrig's Farewell Speech, July 4, 1939",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/lou-gehrigs-farewell-speech-july-4-1939/"
+},
+{
+"title": "Yankees Retired Numbers",
+"by": "MLB.com",
+"url": "https://www.mlb.com/yankees/history/retired-numbers"
+},
+{
+"title": "Red Sox Retired Numbers",
+"by": "MLB.com",
+"url": "https://www.mlb.com/redsox/history/retired-numbers"
+},
+{
+"title": "Remembering the Red Sox's first number retirement ceremony in 1984",
+"by": "SABR",
+"url": "https://sabr.org/latest/armour-remembering-the-red-soxs-first-number-retirement-ceremony-in-1984/"
+},
+{
+"title": "42番（ジャッキー・ロビンソン）",
+"by": "MLB.com",
+"url": "https://www.mlb.com/news//c-26193872"
+},
+{
+"title": "無安打無得点試合",
+"by": "日本野球機構（NPB）",
+"url": "https://npb.jp/history/alltime/nohitnorun.html"
+},
+{
+"title": "野球界の永久欠番",
+"by": "Wikipedia",
+"url": "https://ja.wikipedia.org/wiki/野球界の永久欠番"
+},
+{
+"title": "日本の球団の永久欠番",
+"by": "SPAIA",
+"url": "https://spaia.jp/column/baseball/npb/5281"
+},
+{
+"title": "2026年度 監督・コーチ一覧（読売ジャイアンツ）",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/announcement/2026/managers_g.html"
+},
+{
+"title": "ファイターズ広報、記す。（100番）",
+"by": "Number Web",
+"url": "https://number.bunshun.jp/articles/-/831146"
+},
+{
+"title": "ファイターズの100番",
+"by": "北海道新聞",
+"url": "https://www.hokkaido-np.co.jp/article/787171/"
+},
+{
+"title": "サッカーの永久欠番",
+"by": "Number Web",
+"url": "https://number.bunshun.jp/articles/-/836401"
+},
+{
+"title": "Jリーグの背番号",
+"by": "SPAIA",
+"url": "https://spaia.jp/column/soccer/jleague/5109"
+},
+{
+"title": "サガン鳥栖の背番号17",
+"by": "SPAIA",
+"url": "https://spaia.jp/column/soccer/jleague/3462"
+},
+{
+"title": "サポーターの番号",
+"by": "Jリーグ公式",
+"url": "https://www.jleague.jp/j-tano/2882/"
+},
+{
+"title": "Bill Russell becomes first player in NBA history to have jersey number retired across the whole league",
+"by": "Sky Sports",
+"url": "https://www.skysports.com/nba/news/12040/12670902/bill-russell-becomes-first-player-in-nba-history-to-have-jersey-number-retired-across-the-whole-league"
+},
+{
+"title": "Remembering NBA legend and activist Bill Russell",
+"by": "Jackie Robinson Foundation",
+"url": "https://jackierobinson.org/news/remembering-nba-legend-and-activist-bill-russell/"
+},
+{
+"title": "NHL All-Star Game in Toronto through the decades",
+"by": "NHL.com",
+"url": "https://nhl.com/news/nhl-all-star-game-in-toronto-through-the-decades"
+}
+],
+"published": "2026-10-31"
+},
+{
+"id": "n7XNZgVM8Dg",
+"channel": "jiji",
+"title": "北山村はなぜ飛び地に？和歌山なのに、隣の市町村がゼロの村【地域】",
+"lead": "この回は「和歌山県の北山村は、なぜ隣の市町村がゼロの飛び地になったのか」に答えました。山では奈良や三重が近いのに、木材を筏で川に流して新宮と商売していた村の人たちが、川でつながる和歌山を自分たちで選び、いまも選び続けているからです。",
+"points": [
+{
+"h": "隣の市町村がゼロの村",
+"t": "北山村は和歌山県の村なのに、奈良県と三重県にぐるっと囲まれ、和歌山県のどの市町村とも隣り合っていません。都道府県をまたいで、どこにもくっついていない自治体は、日本で北山村だけです。人口は300人台で、じゃばらという柑橘が特産です。"
+},
+{
+"h": "川で新宮とつながっていた",
+"t": "北山村は昔、林業の村でした。山の木を丸太にして筏に組み、北山川から熊野川へ流して、和歌山県の新宮まで運んでいました。新宮は木材を集める大きな町で、江戸時代からずっと取り引きの相手でした。"
+},
+{
+"h": "明治に和歌山を選んだ",
+"t": "明治時代に県の形が決まるとき、村の人たちは、商売の相手の新宮がある和歌山県に入りたいと希望したと伝えられています。山では奈良や三重のほうが近いのに、川のつながりを取ったのです。1889年に今の北山村ができてから、一度も合併していません。"
+},
+{
+"h": "合併の話でも、自分で選んだ",
+"t": "2003年の住民アンケートでは、合併するなら新宮市側という答えが73.1%でした。それでも翌年、北山村は新宮市との合併協議から離れました。新宮とのつながりは大事にしながら、1つにはならない道を選んだのです。"
+},
+{
+"h": "上から引かれた線ではない",
+"t": "世界にも280をこえる飛び地がありますが、バーレやリビアのように、領主どうしの取り決めや条約で生まれたものが多くあります。北山村は、住んでいる人が和歌山を選んだ点がちがいます。いまは「飛び地の村」を、観光の看板にもしています。"
+}
+],
+"timeline": [
+{
+"y": 1889,
+"text": "5つの村が1つになり、今の北山村ができる"
+},
+{
+"y": 2003,
+"text": "北山村で、合併の相手を問う住民アンケートが行われる"
+},
+{
+"y": 2004,
+"text": "北山村が新宮市との合併協議から離れる"
+},
+{
+"y": 2026,
+"text": "北山村が移住や関係人口向けのお試し住宅を始める"
+}
+],
+"sources": [
+{
+"title": "村の紹介",
+"by": "北山村",
+"url": "https://www.vill.kitayama.wakayama.jp/about/"
+},
+{
+"title": "移住・関係人口お試し住宅",
+"by": "北山村",
+"year": "2026",
+"url": "https://www.vill.kitayama.wakayama.jp/about/2026-1008-0929-20.html"
+},
+{
+"title": "観光筏下り",
+"by": "北山村",
+"url": "https://www.vill.kitayama.wakayama.jp/kanko/ikada/index.html"
+},
+{
+"title": "都道府県市区町村 変遷情報（新宮市。合併協議と2003年の住民アンケート）",
+"by": "都道府県市区町村",
+"url": "https://uub.jp/upd/u/u435.html"
+},
+{
+"title": "知事メッセージ（2019年12月）",
+"by": "和歌山県",
+"year": "2019",
+"url": "https://www.pref.wakayama.lg.jp/chiji/message/20191202.html"
+},
+{
+"title": "県民の友 2026年9月号",
+"by": "和歌山県",
+"year": "2026",
+"url": "https://www.pref.wakayama.lg.jp/bcms/prefg/000200/kenmin/web/202609/kiichan/"
+},
+{
+"title": "資料",
+"by": "国土交通省",
+"url": "https://www.mlit.go.jp/kokudoseisaku/content/001867507.pdf"
+},
+{
+"title": "奥瀞道路Ⅲ期",
+"by": "国土交通省 紀南河川国道事務所",
+"url": "https://www.kkr.mlit.go.jp/kinan/douro/okutoro_sanki/index.html"
+},
+{
+"title": "奥瀞道路Ⅲ期 工事の進み具合",
+"by": "国土交通省 紀南河川国道事務所",
+"url": "https://www.kkr.mlit.go.jp/kinan/douro/okutoro_sanki/k1cog5000000266x-att/10.koujishincyoku.pdf"
+},
+{
+"title": "じゃばらいず北山",
+"by": "農林水産省 近畿農政局",
+"year": "2024",
+"url": "https://www.maff.go.jp/kinki/tiiki/wakayama/photo/img/202405kitayamamura/jabara.html"
+},
+{
+"title": "なぜ村ごと飛び地に",
+"by": "ニッポン旅マガジン",
+"url": "https://tabi-mag.jp/travel-themap48/"
+},
+{
+"title": "A Theory of Enclaves",
+"by": "Evgeny Vinokurov",
+"year": "2007",
+"url": "https://vinokurov.info/a-theory-of-enclaves/"
+},
+{
+"title": "バーレ",
+"by": "DutchNews.nl",
+"year": "2021",
+"url": "https://www.dutchnews.nl/features/2021/08/dutch-destinations-untangle-the-history-of-baarle-nassau-baarle-hertog/"
+},
+{
+"title": "リビア",
+"by": "Amusing Planet",
+"year": "2020",
+"url": "https://amusingplanet.com/2020/06/llivia-curious-spanish-enclave-in-france.html"
+}
+],
+"published": "2026-10-30"
+},
+{
+"id": "ETPjSGwUL4U",
+"channel": "main",
+"title": "阪神ファンの松井秀喜は、なぜ巨人へ行った？最後の2通と長嶋監督の「縁」【プロ野球】",
+"lead": "子どものころ阪神ファンだった松井秀喜さんは、なぜ巨人へ行ったのか。この回では、1992年のドラフトをたどり、「決まったところに行く」という決心、阪神が下を選んだ最後の2通、くじの40日前に「ご縁があれば」と言った長嶋監督の3つが理由だと答えます。",
+"points": [
+{
+"h": "4球団が選んだ阪神ファン",
+"t": "松井選手は阪神の掛布選手にあこがれる阪神ファンでした。1992年のドラフトでは、中日・ダイエー・阪神・巨人の4球団が1位に指名し、くじで決めることになりました。選手は断ることはできても、行き先を選ぶことはできません。松井選手は「決まったところに行く」と決めていて、これが1つめの理由です。"
+},
+{
+"h": "最後の2通と新幹線",
+"t": "阪神の番では封筒が2通残っていて、中村勝広監督は下を選びました。あとで記者に「東京に新幹線で入っただろ？　だから下から」と話したそうですが、なぜそれで下なのかはどこにも書かれていません。残った1通を巨人の長嶋茂雄監督が引き、それが当たりでした。これが2つめの理由です。"
+},
+{
+"h": "40日前の「ご縁があれば」",
+"t": "くじの40日前、巨人の監督にもどると決まった長嶋さんは、松井選手について「ご縁があれば育てたい」と話していました。そして本当に長嶋監督がくじを当て、ドラフトの日には本人に電話もかけています。松井さんはのちに、くじの瞬間から気持ちの切り替えは早かったと話しました。これが3つめの理由です。"
+},
+{
+"h": "くじで逆の道を歩いた投手",
+"t": "1985年、阪神は清原選手のくじを外し、巨人戦を見て育った遠山奬志投手を指名しました。阪神ファンが巨人へ、巨人戦を見て育った人が阪神へと、くじが行き先を逆にしたのです。1999年、遠山投手は42本塁打の松井選手を13打数ノーヒットにおさえましたが、2000年には松井選手が10打数3安打とやり返しました。"
+},
+{
+"h": "くじを「縁」にした人",
+"t": "松井さんは、しかたなく巨人へ行ったわけではありませんでした。2025年、長嶋さんへの弔辞で、阪神ファンだった自分が心の中でズッコケたことも、すぐに心が晴れたことも語っています。2026年に巨人の監督になると、長嶋さんが監督として付けた背番号90を選びました。くじで始まった話を縁にしたのは、松井さん自身だというのがこの回の見方です。"
+}
+],
+"timeline": [
+{
+"y": 1985,
+"text": "阪神、清原選手のくじを外し遠山奬志投手を外れ1位に"
+},
+{
+"y": 1992,
+"text": "松井秀喜選手、夏の甲子園で5打席続けて敬遠される"
+},
+{
+"y": 1992,
+"m": 10,
+"d": 12,
+"text": "巨人、長嶋茂雄監督の復帰を発表"
+},
+{
+"y": 1992,
+"m": 11,
+"d": 21,
+"text": "ドラフトで長嶋監督が松井選手のくじを引き当てる"
+},
+{
+"y": 1999,
+"text": "阪神の遠山投手、松井選手を13打数0安打におさえる"
+},
+{
+"y": 2002,
+"text": "松井選手、巨人での最後の年に遠山投手へバットを渡す"
+},
+{
+"y": 2025,
+"m": 6,
+"d": 8,
+"text": "松井秀喜さん、長嶋茂雄さんへの弔辞を読む"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 23,
+"text": "松井秀喜さん、背番号90で巨人の監督に就任"
+}
+],
+"sources": [
+{
+"title": "松井秀喜さんの巨人監督就任の記事",
+"by": "日本経済新聞",
+"year": "2026",
+"url": "https://www.nikkei.com/article/DGXZQODH235GM0T21C26A0000000/"
+},
+{
+"title": "松井秀喜さんの監督就任と背番号90の記事",
+"by": "時事通信",
+"year": "2026",
+"url": "https://www.jiji.com/jc/article?k=2026102300496&g=spo"
+},
+{
+"title": "松井秀喜監督 就任会見の一問一答",
+"by": "日刊スポーツ",
+"year": "2026",
+"url": "https://news.yahoo.co.jp/articles/23646bb177f3e97c36ec3924614ce6897f9a3b8b"
+},
+{
+"title": "背番号「90」は長嶋さんが監督として初めてつけた番号",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://www.daily.co.jp/baseball/2026/10/24/0020961020.shtml"
+},
+{
+"title": "藤川監督「ニューヨークから東京にゴジラ様襲来ですね」の記事",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://origin.daily.co.jp/tigers/2026/10/23/0020959443.shtml"
+},
+{
+"title": "ドラフト直後、18歳の松井秀喜が校舎の非常階段で漏らした悲哀「僕、行かなきゃいけませんかね？」",
+"by": "Number Web（渋谷真）",
+"year": "2020",
+"url": "https://number.bunshun.jp/articles/-/845304"
+},
+{
+"title": "「僕、行かなきゃいけませんかね？」巨人に1位指名された松井秀喜（18歳）がポツリ…",
+"by": "Number Web",
+"year": "2026",
+"url": "https://number.bunshun.jp/articles/-/872423"
+},
+{
+"title": "長嶋監督の電話についての記事",
+"by": "Number Web（小川勝）",
+"year": "2010",
+"url": "https://number.bunshun.jp/articles/-/56839"
+},
+{
+"title": "ドラフト当日の会見についての記事",
+"by": "Number Web（中溝康隆）",
+"year": "2021",
+"url": "https://number.bunshun.jp/articles/-/850050"
+},
+{
+"title": "長嶋監督の復帰発表についての記事",
+"by": "Number Web（鷲田康）",
+"year": "2020",
+"url": "https://number.bunshun.jp/articles/-/843310"
+},
+{
+"title": "背番号55が決まるまでの記事",
+"by": "Number Web（鷲田康）",
+"year": "2022",
+"url": "https://number.bunshun.jp/articles/-/851642"
+},
+{
+"title": "5打席連続敬遠の試合経過の記事",
+"by": "Number Web（オグマナオト）",
+"year": "2022",
+"url": "https://number.bunshun.jp/articles/-/853500"
+},
+{
+"title": "松井秀喜氏、巨人入りした運命のドラフト回顧",
+"by": "Full-Count",
+"year": "2018",
+"url": "https://full-count.jp/2018/10/23/post233907/"
+},
+{
+"title": "掛布雅之さんと松井秀喜さんの対談の記事",
+"by": "マイナビニュース",
+"year": "2024",
+"url": "https://news.mynavi.jp/article/20240107-2858288/"
+},
+{
+"title": "中村勝広さんの七回忌の記事（色紙の言葉）",
+"by": "デイリースポーツ",
+"year": "2021",
+"url": "https://www.daily.co.jp/opinion-d/2021/09/23/0014701506.shtml"
+},
+{
+"title": "遠山奬志さんの回想",
+"by": "Number Web",
+"year": "2025",
+"url": "https://number.bunshun.jp/articles/-/865605"
+},
+{
+"title": "遠山奬志さんと松井選手、バットの話",
+"by": "Number Web",
+"year": "2025",
+"url": "https://number.bunshun.jp/articles/-/865606"
+},
+{
+"title": "13打数0安打についての記事",
+"by": "Number Web（鷲田康）",
+"year": "2009",
+"url": "https://number.bunshun.jp/articles/-/14295"
+},
+{
+"title": "遠山奬志さんと野村監督についての記事",
+"by": "現代ビジネス（二宮清純）",
+"year": "2013",
+"url": "https://gendai.media/articles/-/37540"
+},
+{
+"title": "元巨人スコアラー三井康浩さんが語る2000年の対戦",
+"by": "web Sportiva",
+"year": "2022",
+"url": "https://sportiva.shueisha.co.jp/clm/baseball/npb/2022/05/25/post_135/?page=4"
+},
+{
+"title": "長嶋茂雄デーのトークショーでの松井さんの言葉",
+"by": "デイリースポーツ",
+"year": "2024",
+"url": "https://www.daily.co.jp/baseball/2024/05/03/0017611235.shtml"
+},
+{
+"title": "長嶋茂雄さんへの松井さんの弔辞",
+"by": "デイリースポーツ",
+"year": "2025",
+"url": "https://www.daily.co.jp/baseball/2025/06/09/0019084859.shtml"
+},
+{
+"title": "1992年度 セントラル・リーグ 順位表",
+"by": "NPB（日本野球機構）",
+"url": "https://npb.jp/bis/yearly/centralleague_1992.html"
+},
+{
+"title": "遠山奬志 個人年度別成績",
+"by": "NPB（日本野球機構）",
+"url": "https://npb.jp/bis/players/51953862.html"
+}
+],
+"published": "2026-10-29"
+},
+{
+"id": "xWcrhveouNk",
+"channel": "jiji",
+"title": "AIの部品工場に1兆5,000億円。なぜ日本の、東広島に？【半導体】",
+"lead": "この回は「AIはアメリカの話なのに、なぜ東広島に1兆5,000億円なのか」に答えました。50年あまり前に大学が来て、国が技術の町に選び、NECの工場ができ、会社がつぶれても工場が残ったからです。AIブームより40年ほど前から、ここには大学と工場がありました。",
+"points": [
+{
+"h": "AIに要るメモリーが足りない",
+"t": "AIの計算をするGPUのすぐ横には、メモリーを12段に積んだHBMという部品が要ります。HBMを大量に作っているのは、韓国の2社とアメリカのマイクロンの、ほぼ3社だけです。HBMを作るぶん、ふつうのメモリーの値段は3か月でほぼ2倍になりました。"
+},
+{
+"h": "東広島の工場に1兆5,000億円",
+"t": "マイクロンは東広島の工場を広げるため、2029年度までに約1兆5,000億円をかけ、国が最大5,360億円を支援します。マイクロンは、日本でDRAMを作るただ1つの会社です。2026年10月には、広島県が空港のそばの県の土地を売る相手に、住友商事を選びました。"
+},
+{
+"h": "空港が理由、は半分だけ",
+"t": "九州では空港が工場の理由の1つになった例があります。でも東広島の工場の会社ができたのは、広島空港が開く5年も前でした。昔の工場について、空港を理由にした資料は見つかっていません。ただ、今度の住友商事の土地は、空港の近さを理由に挙げています。"
+},
+{
+"h": "大学が来て、技術の町に",
+"t": "1973年、広島市などに分かれていた広島大学を、西条町へまとめて移すことが決まりました。1984年には国がこのあたりを「テクノポリス（技術の町）」に選び、1988年、工場用の土地にNECが半導体の会社を作りました。"
+},
+{
+"h": "会社がつぶれても工場は残った",
+"t": "NECの工場はエルピーダメモリのものになり、その会社は2012年に倒産しました。それでも工場は止まらず、次の年にマイクロンが買いました。経済学者マーシャルは、産業は一度場所を選ぶと長くそこにとどまりやすいと書いています。1兆5,000億円は、40年ほど前からある工場を広げるお金なのです。"
+}
+],
+"timeline": [
+{
+"y": 1973,
+"text": "広島大学を西条町へまとめて移すことが決まる"
+},
+{
+"y": 1984,
+"text": "国が東広島のあたりを「テクノポリス」に選ぶ"
+},
+{
+"y": 1988,
+"text": "NECが東広島に半導体の会社を作る"
+},
+{
+"y": 1993,
+"text": "広島空港が今の場所に開港する"
+},
+{
+"y": 2012,
+"m": 2,
+"text": "エルピーダメモリが倒産する"
+},
+{
+"y": 2013,
+"text": "アメリカのマイクロンが広島の工場を買う"
+},
+{
+"y": 2026,
+"m": 7,
+"text": "マイクロン広島工場を広げる工事が始まる"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 19,
+"text": "広島県が空港そばの県の土地の売り先に住友商事を選ぶ"
+}
+],
+"sources": [
+{
+"title": "広島工場のクリーンルームに着工",
+"by": "マイクロン",
+"year": "2026",
+"url": "https://jp.micron.com/about/press/news/micron-breaks-ground-on-hiroshima-cleanroom-to-support-advanced-memory-for-ai"
+},
+{
+"title": "HBM 製品ページ",
+"by": "マイクロン",
+"url": "https://jp.micron.com/products/memory/hbm"
+},
+{
+"title": "特定半導体生産施設整備等計画の概要（マイクロン）",
+"by": "経済産業省",
+"year": "2025",
+"url": "https://www.meti.go.jp/policy/mono_info_service/joho/laws/semiconductor/semiconductor_plan/nintei_tokuteihandoutai_keikaku07.pdf"
+},
+{
+"title": "ニュースイッチ（2025年9月16日）",
+"by": "日刊工業新聞",
+"year": "2025",
+"url": "https://newswitch.jp/p/46964"
+},
+{
+"title": "マイクロン広島工場の起工式",
+"by": "PC Watch",
+"year": "2026",
+"url": "https://pc.watch.impress.co.jp/docs/news/2122472.html"
+},
+{
+"title": "マイクロン広島工場の起工式",
+"by": "マイナビニュース",
+"year": "2026",
+"url": "https://news.mynavi.jp/techplus/article/20260706-4668928/"
+},
+{
+"title": "Global DRAM and HBM Market Share",
+"by": "Counterpoint Research",
+"url": "https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share"
+},
+{
+"title": "DRAMの値段",
+"by": "TrendForce",
+"year": "2026",
+"url": "https://www.trendforce.com/presscenter/news/20260202-12911.html"
+},
+{
+"title": "2026年度決算",
+"by": "Micron Technology（SEC）",
+"year": "2026",
+"url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm"
+},
+{
+"title": "東広島市河内町大仙地区県有地利活用事業 審査結果報告書",
+"by": "広島県",
+"year": "2026",
+"url": "https://www.pref.hiroshima.lg.jp/uploaded/life/1152229_9838747_misc.pdf"
+},
+{
+"title": "住友商事の産業団地の提案（2026年10月22日）",
+"by": "朝日新聞",
+"year": "2026",
+"url": "https://news.yahoo.co.jp/articles/9d78a99c0db513e9081704818073fb36c8f863b2"
+},
+{
+"title": "空港そばの県有地（2026年10月19日）",
+"by": "RCC中国放送",
+"year": "2026",
+"url": "https://news.yahoo.co.jp/articles/d8408a2697f3c46c725ef6331dcaa0620f770232"
+},
+{
+"title": "東広島市域における工業用水道の整備について",
+"by": "広島県",
+"url": "https://www.pref.hiroshima.lg.jp/uploaded/attachment/562898.pdf"
+},
+{
+"title": "次世代学園都市構想",
+"by": "東広島市",
+"url": "https://www.city.higashihiroshima.lg.jp/material/files/group/8/city-concept-part1.pdf"
+},
+{
+"title": "エルピーダメモリ 倒産",
+"by": "東京商工リサーチ",
+"year": "2012",
+"url": "https://www.tsr-net.co.jp/news/process/2012/2/"
+},
+{
+"title": "大分県における半導体産業集積地域の形成過程と企業間連関の空間構造（地理空間8-2）",
+"by": "鹿嶋洋",
+"year": "2015",
+"url": "https://www.jstage.jst.go.jp/article/jags/8/2/8_239/_pdf/-char/ja"
+},
+{
+"title": "経済学原理 第4編第10章",
+"by": "アルフレッド・マーシャル",
+"year": "1890",
+"url": "https://www.econlib.org/library/Marshall/marP.html?chapter_num=25"
+},
+{
+"title": "ひろしまラボ（西条の酒蔵通り・酒まつり）",
+"by": "広島県",
+"year": "2024",
+"url": "https://www.pref.hiroshima.lg.jp/lab/topics/20240920/01/"
+}
+],
+"published": "2026-10-28"
+},
+{
+"id": "qrkjF9BKU74",
+"channel": "main",
+"title": "菅野智之の振り逃げ3ラン！なぜ見逃し三振でも走れる？【プロ野球・MLB】",
+"lead": "バットを振っていない見逃し三振でも、なぜ「振り逃げ」ができるのかを考えました。答えは、三振がもともと「3回空振りしたら打ったことにする」ルールだったことです。見逃しのストライクはあとから空振りと同じ扱いで足されたので、見逃しでも走れます。",
+"points": [
+{
+"h": "振り逃げができる条件",
+"t": "3つめのストライクを、キャッチャーが地面に着く前に捕れなかったときに走れます。一塁にランナーがいるときはふつう走れませんが、2アウトなら走れます。ルールブックには空振りか見逃しかの区別はなく、「振り逃げ」という言葉もありません。"
+},
+{
+"h": "三振は「打った」扱いだった",
+"t": "1845年のニッカボッカーのルールでは、3回空振りして最後の球を捕られたらアウト、捕られなければ打ったのと同じで、走らなければなりませんでした。フライと同じく、捕れたかどうかでアウトが決まっていたのです。"
+},
+{
+"h": "見逃しは空振りと同じ扱い",
+"t": "昔のバッターは好きな球を待ち続けられました。そこで1858年、いい球を見送り続けたら審判がストライクを取ると決め、そのとき「3回空振りしたときと同じルールに従う」と書きました。だから見逃し三振でも、捕れなければ走れるのです。"
+},
+{
+"h": "わざと落とすずるさを防いだ",
+"t": "一塁にランナーがいるとき、キャッチャーがわざと球を落とせば、2つアウトが取れてしまいました。そこで1887年、2アウト前で一塁にランナーがいたら、バッターはそのままアウトと決まりました。2アウトなら1つアウトを取れば終わるので、わざと落としても得がありません。"
+},
+{
+"h": "試合を変えた振り逃げ",
+"t": "1941年のワールドシリーズでは、ドジャースが、あと1人で勝つ場面の振り逃げから逆転されました。2007年の高校野球では、相手がチェンジだと思って引き揚げるあいだに、菅野智之とランナー2人がホームに還る「振り逃げ3ラン」が起きました。振り逃げがあると、1イニングに三振を4つ取ることもできます。"
+}
+],
+"timeline": [
+{
+"y": 1845,
+"text": "ニッカボッカーのクラブが野球のルールを書き残す"
+},
+{
+"y": 1858,
+"text": "野球のルールに見逃しのストライクが加わる"
+},
+{
+"y": 1887,
+"text": "2アウト前で一塁にランナーがいる三振は、そのままアウトに"
+},
+{
+"y": 1941,
+"text": "ドジャース、捕手が三振の球を捕れずワールドシリーズで逆転負け"
+},
+{
+"y": 1994,
+"text": "イチローの三振が振り逃げになり、サヨナラ勝ち"
+},
+{
+"y": 2005,
+"text": "ピアジンスキーが振り逃げで一塁へ、ホワイトソックスがサヨナラ勝ち"
+},
+{
+"y": 2007,
+"text": "高校野球の神奈川大会で、菅野智之が振り逃げ3ラン"
+},
+{
+"y": 2019,
+"text": "バーランダーの通算3000個めの三振が振り逃げになる"
+}
+],
+"sources": [
+{
+"title": "Official Baseball Rules 2026（公認野球規則）",
+"by": "MLB",
+"year": "2026",
+"url": "https://mktg.mlbstatic.com/mlb/official-information/2026-official-baseball-rules.pdf"
+},
+{
+"title": "【記録員コラム】三振＝アウトではない！？",
+"by": "NPB（伊藤亮）",
+"year": "2018",
+"url": "https://npb.jp/news/detail/20180621_01.html"
+},
+{
+"title": "The Dropped Third Strike: The Life and Times of a Rule",
+"by": "Richard Hershberger（SABR Baseball Research Journal）",
+"year": "2015",
+"url": "https://sabr.org/journal/article/the-dropped-third-strike-the-life-and-times-of-a-rule/"
+},
+{
+"title": "The 20 Rules of the Knickerbocker Base Ball Club（1845年のルール）",
+"by": "Protoball",
+"url": "https://protoball.org/The_20_Rules_of_the_Knickerbocker_Base_Ball_Club"
+},
+{
+"title": "1858 NABBP Rules（1858年のルール）",
+"by": "Protoball",
+"url": "https://protoball.org/1858_NABBP_Rules"
+},
+{
+"title": "19世紀のルールの移り変わり",
+"by": "19cbaseball.com",
+"url": "https://19cbaseball.com/rules.html"
+},
+{
+"title": "October 5, 1941: Mickey Owen's dropped third strike costs Dodgers series-tying win",
+"by": "Don Zminda（SABR Games Project）",
+"url": "https://sabr.org/gamesproj/game/october-5-1941-mickey-owens-dropped-third-strike-costs-dodgers-series-tying-win/"
+},
+{
+"title": "October 12, 2005: A.J. Pierzynski's heads-up baserunning leads to Joe Crede's game-winning hit to even ALCS",
+"by": "Joseph Wancho（SABR Games Project）",
+"url": "https://sabr.org/gamesproj/game/october-12-2005-a-j-pierzynskis-heads-up-baserunning-leads-to-joe-credes-game-winning-hit-to-even-alcs/"
+},
+{
+"title": "Odd, but not out: Baseball's most bizarre rule",
+"by": "Anthony Castrovince（MLB.com）",
+"year": "2020",
+"url": "https://www.mlb.com/news/dropped-third-strike-strangest-baseball-rule"
+},
+{
+"title": "Pitchers with 4 strikeouts in one inning",
+"by": "MLB.com",
+"url": "https://www.mlb.com/news/four-strikeout-innings-c265544090"
+},
+{
+"title": "菅野智之の振り逃げ3ラン",
+"by": "鷲田康（Number Web）",
+"year": "2021",
+"url": "https://number.bunshun.jp/articles/-/840205"
+},
+{
+"title": "振り逃げ3ラン",
+"by": "久保田龍雄（BASEBALL KING）",
+"year": "2020",
+"url": "https://baseballking.jp/ns/column/237384"
+},
+{
+"title": "イチローのサヨナラ振り逃げ、後藤駿太の振り逃げ三塁打",
+"by": "久保田龍雄（BASEBALL KING）",
+"year": "2021",
+"url": "https://baseballking.jp/ns/column/294050"
+}
+],
+"published": "2026-10-27"
+},
+{
+"id": "aNahxLI_JGc",
+"channel": "jiji",
+"title": "フランスの高校生デモ、なぜ大人もイタリアの学生も加わった？教室40度と先生不足【時事】",
+"lead": "この回は「教室40度、先生不足という高校生の文句に、なぜ大人が加わり、イタリアの学生も声を上げたのか」に答えました。集団で動く理由の研究を当てはめると、不公平だという怒り、動けば変わるという手ごたえ、「わたしたち」という気持ちの3つが重なって読めます。",
+"points": [
+{
+"h": "教室40度、先生が足りない",
+"t": "2026年9月、パリ近くの高校で、先生が足りない、教室が暑すぎるといった声が上がりました。高校生たちは学校の門をごみ箱などでふさぎ、10月1日には1000をこえる高校で授業が乱れました。国は代わりの先生3000人を送ると発表し、とくに足りない高校は114校から41校に減りました。"
+},
+{
+"h": "大人が加わり、不公平への怒り",
+"t": "秋休みに入った10月17日、物価高に反対する日のデモに高校生も加わり、国の発表で55万人が歩きました。予算案では先生の数が減り、公務員の給料も上げない案なのに、物の値段は上がっています。研究の考え方で見ると、1つめの理由は「不公平だ」という怒りです。"
+},
+{
+"h": "出ていけないから、声を上げる",
+"t": "経済学者ハーシュマンは、質が落ちたとき、人は「出ていく」か「声を上げる」かをすると考えました。高校生は学校から簡単には出ていけず、多くは選挙で投票もできません。声を上げたあと足りない高校が減ったことは、2つめの理由「動けば変わる」という手ごたえに当たります。"
+},
+{
+"h": "イタリアでも「フランスみたいに」",
+"t": "同じころイタリアでも、高校生が学校にすわりこむ抗議が各地に広がりました。バーリでは「フランスみたいにやろう」という横断幕が出て、高校生の団体の人は「フランスの学生の要求はわたしたちの要求」と言ったと報じられています。ただ要求には別のものもあり、秋のすわりこみは前からありました。"
+},
+{
+"h": "答え：3つの気持ちが重なった",
+"t": "大人やイタリアの学生が加わったのは、「かわいそう」だからではありませんでした。研究の考え方を当てはめると、不公平だという怒り、動けば変わるという手ごたえ、「わたしたち」という気持ちの3つが重なって読めます。"
+}
+],
+"timeline": [
+{
+"y": 1970,
+"text": "ハーシュマンが『離脱・発言・忠誠』を書く"
+},
+{
+"y": 2008,
+"text": "ファン・ゾメレンらが、人が集まって動く理由の研究をまとめる"
+},
+{
+"y": 2026,
+"m": 9,
+"text": "フランスのクレテイユの高校で、先生不足などの声が上がる"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 1,
+"text": "フランスで1000をこえる高校の授業が乱れる"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 5,
+"text": "イタリアのトリノで高校生のすわりこみが始まる"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 8,
+"text": "フランスの教育大臣が代わりの先生3000人を送ると発表"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 16,
+"text": "イタリア全国で学生のストライキが行われる"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 17,
+"text": "フランス全国で55万人がデモ（国の発表）"
+}
+],
+"sources": [
+{
+"title": "高校生の運動と学校の封鎖（拘束の数）",
+"by": "Amnesty International France",
+"year": "2026",
+"url": "https://www.amnesty.fr/actualites/france-mouvement-lyceens-blocus-lycees-point-sur-la-situation/"
+},
+{
+"title": "休み前の5つの疑問（高校生の運動）",
+"by": "Sud Radio",
+"year": "2026",
+"url": "https://www.sudradio.fr/societe/avant-les-vacances-scolaires-cinq-questions-sur-le-mouvement-lyceen"
+},
+{
+"title": "2027年予算と教育",
+"by": "Public Sénat",
+"year": "2026",
+"url": "https://www.publicsenat.fr/actualites/economie/mobilisation-des-lyceens-et-des-etudiants-ce-que-prevoit-le-budget-2027-sur-leducation"
+},
+{
+"title": "10月17日のデモ",
+"by": "LCP",
+"year": "2026",
+"url": "https://lcp.fr/actualites/mobilisation-du-17-octobre-des-lyceens-aux-gilets-jaunes-qui-appelle-a-manifester-et"
+},
+{
+"title": "黄色いベスト「高校生を支えに」",
+"by": "Euronews",
+"year": "2026",
+"url": "https://fr.euronews.com/2026/10/18/france-manifestations-les-gilets-jaunes-disent-venir-en-soutien-du-mouvement-lyceen"
+},
+{
+"title": "マクロン大統領の演説",
+"by": "Euronews",
+"year": "2026",
+"url": "https://fr.euronews.com/2026/10/18/17-octobre-ceux-qui-ont-cherche-a-faire-tomber-la-republique-auront-a-en-repondre-affirme-"
+},
+{
+"title": "パリのデモ禁止",
+"by": "France 24",
+"year": "2026",
+"url": "https://www.france24.com/en/europe/20261022-live-paris-bans-protests-after-violent-unrest-as-macron-takes-swipe-at-trump"
+},
+{
+"title": "失業率",
+"by": "INSEE",
+"url": "https://www.insee.fr/fr/statistiques/9032359"
+},
+{
+"title": "Occupati e disoccupati（2026年8月）",
+"by": "ISTAT",
+"year": "2026",
+"url": "https://www.istat.it/comunicati-stampa/occupati-e-disoccupati-dati-provvisori-agosto-2026/"
+},
+{
+"title": "How much does France spend on education compared with the rest of Europe",
+"by": "Al Jazeera",
+"year": "2026",
+"url": "https://www.aljazeera.com/news/2026/10/8/how-much-does-france-spend-on-education-compared-with-the-rest-of-europe"
+},
+{
+"title": "OECD TALIS 先生の4%",
+"by": "Maire-info",
+"url": "https://www.maire-info.com/education/seuls-4-des-professeurs-francais-estiment-etre-valorises-par-la-societe-selon-une-etude-de-locde-art26-30068"
+},
+{
+"title": "パリ・サンジェルマン対ル・マンの横断幕",
+"by": "Footeo",
+"year": "2026",
+"url": "https://news.footeo.com/2026/10/11/psg-le-mans-une-banderole-en-soutien-aux-lyceens-retiree-le-virage-auteuil-reagit-immediatement-14386"
+},
+{
+"title": "イタリアの高校のすわりこみ",
+"by": "Euronews Italia",
+"year": "2026",
+"url": "https://it.euronews.com/2026/10/15/prime-scuole-occupate-in-italia-sulla-scia-delle-proteste-studentesche-francesi"
+},
+{
+"title": "10月16日のイタリアの学生のストライキ",
+"by": "ANSA",
+"year": "2026",
+"url": "https://www.ansa.it/sito/notizie/cronaca/2026/10/16/gli-studenti-in-piazza-cortei-in-tutta-italia.-a-torino-lancio-di-sassi-contro_1e152b63-e67e-4efd-9ec7-0ca3507f55e3.html"
+},
+{
+"title": "イタリアの高校生の団体の言葉",
+"by": "Libero",
+"url": "https://www.liberoquotidiano.it/news/italia/49324395/parigi-italiani-lezioni-rivolta-prendiamoci-anche-noi-piazze.amp"
+},
+{
+"title": "ベルギーの学校の封鎖",
+"by": "Paris Match Belgique",
+"year": "2026",
+"url": "https://www.parismatch.be/actualites/societe/2026/10/07/le-blocus-des-lyceens-francais-sexporte-en-belgique-pourquoi-nos-etudiants-du-secondaire-manifestent-ils-JRSQLVH4TNHWPADWTPONFEUSMU/"
+},
+{
+"title": "Psychological Bulletin 134(4)（人が集まって動く理由の分析）",
+"by": "Van Zomeren ほか",
+"year": "2008",
+"url": "https://research.vu.nl/ws/portalfiles/portal/2391519/Van%20Zomeren%20Psychological%20Bulletin%20134%284%29%202008.pdf"
+},
+{
+"title": "教師不足",
+"by": "文部科学省",
+"year": "2026",
+"url": "https://www.mext.go.jp/content/20260306-kyoikushokuin-000047948_5.pdf"
+},
+{
+"title": "Forbes JAPAN の記事（フランスのデモとストライキ）",
+"by": "Forbes JAPAN",
+"url": "https://forbesjapan.com/articles/detail/106575"
+}
+],
+"published": "2026-10-26"
+},
+{
+"id": "XglfLCuwIwo",
+"channel": "main",
+"title": "工藤公康は27年前、中日に来かけていた。なぜ今、監督に？【プロ野球】",
+"lead": "名古屋生まれの工藤公康さんは、FAで2回とも中日以外を選びました。それなのに、なぜ今、中日の監督になったのでしょうか。白紙から変えてほしい球団と、勝ち方を知る本人の「名古屋に恩返しをしたい」という思いが重なったからです。",
+"points": [
+{
+"h": "地元なのに指名されず",
+"t": "工藤選手は名古屋市の生まれで、名古屋の高校で投げていました。でもドラフトで中日は工藤選手を指名せず、西武が6位で指名しました。そのあと日本シリーズで3回中日と戦い、3回とも工藤選手のいるチームが勝っています。"
+},
+{
+"h": "2回のFAですれ違い",
+"t": "1994年のFAでは、中日とダイエーで迷いに迷い、ダイエーを選びました。1999年には中日の社長がじかに会って頼みましたが、最後は巨人を選びます。初めは中日に傾いていたものの、巨人の熱心さに気持ちが動いたと書かれています。"
+},
+{
+"h": "監督として勝ち続けた",
+"t": "現役を29年続けて224勝し、引退後はソフトバンクの監督になりました。7年で日本シリーズに5回出て、5回とも日本一です。育成選手から千賀滉大選手や甲斐拓也選手などが育ちました。"
+},
+{
+"h": "「43年ぶり」の数え方",
+"t": "ニュースの「外から来た監督は43年ぶり」は、中日で選手もコーチもしたことがない監督で数えた数字です。中日でプレーしていない監督で数えると、2017年の森繁和監督以来の10年ぶりになります。数え方しだいで年数が変わります。"
+},
+{
+"h": "答え：思いが重なった",
+"t": "中日の社長は、白紙から変えてくれて、勝ち方を知っている人を求めました。工藤監督は「名古屋の人に少しでも恩返しをしたい」と話しています。ソフトバンクをやめたとき決めた、監督をしない期間がちょうど明けたところでもありました。"
+}
+],
+"timeline": [
+{
+"y": 1963,
+"text": "工藤公康さん、名古屋市に生まれる"
+},
+{
+"y": 1982,
+"text": "日本シリーズ、西武が中日に4勝2敗で日本一"
+},
+{
+"y": 1988,
+"text": "日本シリーズ、西武が中日に4勝1敗で日本一"
+},
+{
+"y": 1994,
+"text": "工藤公康選手、FAで中日ではなくダイエーを選ぶ"
+},
+{
+"y": 1999,
+"text": "工藤公康選手、FAで中日ではなく巨人を選ぶ"
+},
+{
+"y": 2015,
+"text": "工藤公康さん、ソフトバンクの監督になる"
+},
+{
+"y": 2021,
+"text": "工藤公康さん、ソフトバンクの監督をやめる"
+},
+{
+"y": 2026,
+"text": "工藤公康さん、中日ドラゴンズの監督に決まる"
+}
+],
+"sources": [
+{
+"title": "工藤監督の就任会見（2026年10月15日）",
+"by": "中日ドラゴンズ公式サイト",
+"year": "2026",
+"url": "https://dragons.jp/news/2026/26101501.php"
+},
+{
+"title": "スポーツ報知（2026年10月15日）",
+"by": "スポーツ報知",
+"year": "2026",
+"url": "https://news.yahoo.co.jp/articles/0d4f2df1db763eeef39cc15bb2213208d1e5024b"
+},
+{
+"title": "Full-Count（2026年10月16日）",
+"by": "Full-Count",
+"year": "2026",
+"url": "https://topics.smt.docomo.ne.jp/article/fullcount/sports/fullcount-2031692?page=2"
+},
+{
+"title": "Number（2026年10月19日）",
+"by": "Number",
+"year": "2026",
+"url": "https://news.yahoo.co.jp/articles/b566973e77476cb6353c95207c5a83b76fd59e63"
+},
+{
+"title": "就任会見の一問一答",
+"by": "日刊スポーツ",
+"url": "https://news.yahoo.co.jp/articles/5777056153123abe828811bad8bff76ed6775268"
+},
+{
+"title": "CBCテレビ（2026年10月19日）",
+"by": "CBCテレビ",
+"year": "2026",
+"url": "https://hicbc.com/magazine/article/?id=dragons-post-8803"
+},
+{
+"title": "中日スポーツ（1999年11月17日、保存版）",
+"by": "中日スポーツ",
+"year": "1999",
+"url": "http://web.archive.org/web/20010305200911/http://chuspo.chunichi.co.jp:80/dragons/topics/tp1117-1.htm"
+},
+{
+"title": "夕刊フジ（1999年11月25日、保存版）",
+"by": "夕刊フジ",
+"year": "1999",
+"url": "http://web.archive.org/web/20030708062404/http://zakzak.co.jp:80/spo/s-November99/s_news4899.html"
+},
+{
+"title": "工藤公康さんの著書より",
+"by": "現代ビジネス",
+"year": "2019",
+"url": "https://gendai.media/articles/-/63334"
+},
+{
+"title": "工藤公康さんの寄稿",
+"by": "マネー現代",
+"year": "2025",
+"url": "https://gendai.media/articles/-/155911"
+},
+{
+"title": "日本シリーズの記録",
+"by": "日本野球機構（NPB）",
+"url": "https://npb.jp/bis/scores/nipponseries/yearlyresults1980.html"
+},
+{
+"title": "2026年セ・リーグ",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/bis/2026/stats/std_c.html"
+},
+{
+"title": "2026年の入場者数",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/statistics/2026/attendance.html"
+},
+{
+"title": "ファーム 2026年8月13日 中日－DeNA",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/scores_farm/2026/0813/d-db-19/"
+},
+{
+"title": "セ・リーグの指名打者制（2025年8月4日）",
+"by": "日本野球機構（NPB）",
+"year": "2025",
+"url": "https://npb.jp/news/detail/20250804_05.html"
+},
+{
+"title": "工藤公康",
+"by": "野球殿堂博物館",
+"url": "https://baseball-museum.or.jp/hall-of-famers/hof-189/"
+}
+],
+"published": "2026-10-25"
+},
+{
+"id": "e_PG5SB2ArU",
+"channel": "main",
+"title": "佐藤輝明、ルース、清原。なぜオフの移籍はストーブリーグ？【プロ野球・MLB】",
+"lead": "オフの移籍や契約の話を、なぜ「ストーブリーグ」と呼ぶのでしょうか。もとは、野球のない冬に町の店でストーブを囲み、来年のチームや移籍のうわさを話したファンの呼び名でした。いちばん古い記録は、野球ではなく馬の競走の話です。",
+"points": [
+{
+"h": "熱いのはストーブそのもの",
+"t": "日本の辞書では、ストーブリーグはシーズンオフの契約や移籍の動きのことです。もとの英語は「ホット・ストーブ・リーグ」で、熱いのは話ではなく本物のストーブでした。試合をする本物のリーグでもありません。"
+},
+{
+"h": "囲んでいたのはファン",
+"t": "昔のアメリカのいなかでは、郵便局がお店の中にあり、新聞もそこへ取りに行きました。テレビもラジオもない冬、人はその店のストーブを囲んで、去年のふり返りや来年のチームの話をしました。そのファンの集まりがストーブリーグです。"
+},
+{
+"h": "移籍のうわさは昔から",
+"t": "だれがどこへ行くかのうわさは、昔から話のたねでした。1919年の冬には、レッドソックスがベーブ・ルースをヤンキースへ売り、新聞で賛否が分かれました。アメリカでも移籍の動きをそう呼ぶようになり、日本にもその使い方で入ってきたと考えられます。"
+},
+{
+"h": "いちばん古い記録は馬",
+"t": "野球では1901年の新聞に「ストーブリーグ」が出てきます。もっと古いのは馬の競走で、1877年の記事に、ストーブの前で話すときだけ出る速さ「ストーブスピード」が出てきます。雪がとけて走れない季節、競走は話の中だけになっていました。"
+},
+{
+"h": "答え：ストーブを囲む話",
+"t": "知らせが新聞しかない冬に、新聞の届く町の店でストーブを囲み、来年のチームや移籍のうわさを話したファンをストーブリーグと呼びました。その話のたねだったオフの移籍や契約の動きも、今はアメリカでも日本でもストーブリーグと呼ばれています。"
+}
+],
+"timeline": [
+{
+"y": 1877,
+"text": "馬の「ストーブスピード」という言葉が記事に出る"
+},
+{
+"y": 1886,
+"m": 3,
+"text": "スポーツ新聞に「今の競走は熱いストーブのまわり」の便り"
+},
+{
+"y": 1901,
+"m": 11,
+"d": 2,
+"text": "ミルウォーキーの新聞に野球の「ストーブリーグ」が出る"
+},
+{
+"y": 1919,
+"m": 12,
+"d": 26,
+"text": "レッドソックス、ベーブ・ルースをヤンキースに売ると決める"
+},
+{
+"y": 1921,
+"text": "メジャーリーグの試合が初めてラジオで流れる"
+},
+{
+"y": 1949,
+"m": 1,
+"text": "日本の野球雑誌に「ストーブ・リーグはどう動くか」の題"
+},
+{
+"y": 1993,
+"text": "日本のプロ野球でFAの仕組みが始まる"
+},
+{
+"y": 1996,
+"text": "清原和博選手、FAで西武から巨人へ移る"
+}
+],
+"sources": [
+{
+"title": "hot stove league",
+"by": "Baseball Almanac",
+"url": "https://www.baseball-almanac.com/dictionary-term.php?term=hot+stove+league"
+},
+{
+"title": "Hot stove league",
+"by": "Ken Liss",
+"url": "https://baseballterms.kenliss.com/hot-stove-league/"
+},
+{
+"title": "The hot stove",
+"by": "MLB.com Glossary",
+"url": "https://www.mlb.com/glossary/idioms/the-hot-stove"
+},
+{
+"title": "ストーブリーグ",
+"by": "コトバンク",
+"url": "https://kotobank.jp/word/%E3%81%99%E3%81%A8%E3%83%BC%E3%81%B6%E3%82%8A%E3%83%BC%E3%81%90-3212812"
+},
+{
+"title": "1877年・1886年の用例",
+"by": "The Phrase Finder",
+"url": "https://phrases.org.uk/bulletin_board/28/messages/579.html"
+},
+{
+"title": "Harrisburg Telegraph（1919年10月23日）",
+"by": "Harrisburg Telegraph",
+"year": "1919",
+"url": "https://archive.org/details/per_harrisburg-telegraph_harrisburg-telegraph_1919-10-23_1"
+},
+{
+"title": "Sale of the Century",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/sale-of-the-century-the-yankees-bought-babe-ruth-for-nothing/"
+},
+{
+"title": "The deal that changed the game",
+"by": "アメリカ野球殿堂",
+"url": "https://baseballhall.org/discover-more/stories/short-stops/the-deal-that-changed-the-game"
+},
+{
+"title": "若林忠志",
+"by": "阪神タイガース公式サイト",
+"url": "https://m.hanshintigers.jp/entertainment/wakabayashi/vol_09.html"
+},
+{
+"title": "1949年の野球雑誌",
+"by": "国立国会図書館サーチ",
+"url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000000023266-d1821961"
+},
+{
+"title": "2026年10月3日 阪神の優勝",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/news/detail/20261003_04.html"
+},
+{
+"title": "silly season",
+"by": "Word Histories",
+"year": "2019",
+"url": "https://wordhistories.net/2019/02/17/silly-season-origin/"
+},
+{
+"title": "Hot Stove League",
+"by": "Canadian Communications Foundation",
+"url": "https://broadcasting-history.ca/?p=833"
+},
+{
+"title": "ストーブ列車",
+"by": "津軽鉄道",
+"url": "https://tsutetsu.com/stove"
+}
+],
+"published": "2026-10-24"
+},
+{
+"id": "tTIq2tt96w4",
+"channel": "jiji",
+"title": "ストーカーにGPS、なぜ今までつけられなかった？3つの壁【ストーカー規制法】",
+"lead": "この回は「なぜ、いままでストーカーにGPSをつけられなかったのか」に答えました。壁はお金ではなく、体に機械をつけて見張る決まりがないこと、「近づくな」が罪になる手前でも出せる公安委員会の命令であること、つけられる人の自由と効き目への心配の3つでした。",
+"points": [
+{
+"h": "命令は紙、近づいても分からない",
+"t": "2026年10月、警察が、ストーカーにGPSをつけるかどうかを考える会議を始めました。「もう近づくな」という禁止命令は紙なので、命令を受けた人が近づいてきても、いまは被害を受けている人が気付くまで分かりません。命令のあと、また繰り返した人は100人に8人くらいです。"
+},
+{
+"h": "GPSは追いかける側で法律に",
+"t": "ストーカー規制法は2000年にできました。2020年、最高裁は、車にこっそりGPSをつけて居場所を調べることを、それまでの法律の「見張り」には当たらないとしました。そこで2021年、相手の承諾なくGPSで居場所を調べることが禁止に。法律にGPSが入ったのは、ストーカーが使う側としてでした。"
+},
+{
+"h": "つけられなかった3つの壁",
+"t": "1つめは、体に機械をつけて見張る決まりが、日本になかったことです。2つめは、「近づくな」の命令を出すのが裁判所ではなく公安委員会で、罪になる手前でも出せることです。3つめは、つけられる人の自由と、本当に効くのかという心配です。壁は、お金ではありませんでした。"
+},
+{
+"h": "日本の保釈と、ほかの国",
+"t": "日本でも2023年に、保釈中の人が外国へ逃げないようGPSをつける法律ができました。韓国は2024年から、裁判所が決めてストーカーにつけています。スペインは2009年から、加害者と被害者の両方に機械を渡しています。アメリカの研究では、効果が見られた所と見られなかった所がありました。"
+},
+{
+"h": "これから決めること",
+"t": "日本ではこれから、だれにつけるか、どうやって決めるか、守りたい人とつけられる人の自由のつり合いをどうとるかを話し合います。法律はこれまで、2000年は事件のあと、2021年は判決のあとと、困ったことが起きたあとに変わってきました。"
+}
+],
+"timeline": [
+{
+"y": 2000,
+"m": 5,
+"d": 18,
+"text": "ストーカー規制法ができる"
+},
+{
+"y": 2009,
+"m": 7,
+"text": "スペインが恋人や夫婦の間の暴力の加害者に機械をつけ始める"
+},
+{
+"y": 2013,
+"text": "ストーカー規制法の対象にメールの連続送信が加わる"
+},
+{
+"y": 2020,
+"m": 7,
+"text": "最高裁が、車にGPSをつけるのは「見張り」に当たらないと判断"
+},
+{
+"y": 2021,
+"m": 8,
+"d": 26,
+"text": "相手の承諾なくGPSで居場所を調べることが禁止になる"
+},
+{
+"y": 2023,
+"text": "保釈中の人にGPSをつける法律ができる"
+},
+{
+"y": 2024,
+"m": 1,
+"text": "韓国がストーカー加害者にGPSをつけ始める"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 15,
+"text": "国家公安委員長が、GPSなどを考える有識者検討会を発表"
+}
+],
+"sources": [
+{
+"title": "ストーカー行為等の規制等の在り方に関する有識者検討会",
+"by": "警察庁",
+"year": "2026",
+"url": "https://www.npa.go.jp/bureau/safetylife/stalker/index.html"
+},
+{
+"title": "有識者検討会 第1回資料",
+"by": "警察庁",
+"year": "2026",
+"url": "https://www.npa.go.jp/bureau/safetylife/stalker/1shiryou3.pdf"
+},
+{
+"title": "国家公安委員長 記者会見（2026年10月15日）",
+"by": "国家公安委員会",
+"year": "2026",
+"url": "https://www.npsc.go.jp/pressconf_2026/10_15.htm"
+},
+{
+"title": "詐欺及びストーカー被害拡大防止のための緊急対策",
+"by": "犯罪対策閣僚会議",
+"year": "2026",
+"url": "https://www.npa.go.jp/bureau/safetylife/stalker/260728_taisaku.pdf"
+},
+{
+"title": "ストーカー規制法改正の概要",
+"by": "警察庁",
+"url": "https://www.npa.go.jp/laws/kaisei/01_gaiyou.pdf"
+},
+{
+"title": "警察白書 平成12年版",
+"by": "警察庁",
+"year": "2000",
+"url": "https://www.npa.go.jp/hakusyo/h12/h120001.html"
+},
+{
+"title": "国会会議録（2000年5月15日 参議院行政監視委員会）",
+"by": "国会",
+"year": "2000",
+"url": "https://kokkai.ndl.go.jp/txt/114714281X00820000515/101"
+},
+{
+"title": "国会会議録（2021年5月12日、国家公安委員長の答弁）",
+"by": "国会",
+"year": "2021",
+"url": "https://kokkai.ndl.go.jp/txt/120404889X02320210512/5"
+},
+{
+"title": "有識者検討会報告書（2020年の最高裁判決）",
+"by": "警察庁",
+"year": "2021",
+"url": "https://www.npa.go.jp/safetylife/seianki/stalker/R2-1/houkokusyo.pdf"
+},
+{
+"title": "論文（法学研究98巻12号）",
+"by": "太田達也",
+"year": "2025",
+"url": "https://aslp.law.keio.ac.jp/pdf/AN00224504-20251228-0510.pdf"
+},
+{
+"title": "政府答弁書（2011年6月28日）",
+"by": "衆議院",
+"year": "2011",
+"url": "https://www.shugiin.go.jp/Internet/itdb_shitsumon.nsf/html/shitsumon/b177262.htm"
+},
+{
+"title": "社説（2026年8月19日）",
+"by": "北海道新聞",
+"year": "2026",
+"url": "https://www.hokkaido-np.co.jp/article/1355220/"
+},
+{
+"title": "ストーカー加害者への電子装置",
+"by": "韓国法務部",
+"url": "https://moj.go.kr/bbs/moj/85/580052/artclView.do"
+},
+{
+"title": "電子装置の統計（2024年）",
+"by": "スペイン平等省",
+"url": "https://violenciagenero.igualdad.gob.es/wp-content/uploads/Cap13_Dispositivos_2024.pdf"
+},
+{
+"title": "GPS Monitoring Technologies and Domestic Violence",
+"by": "米司法省 NIJ",
+"url": "https://nij.ojp.gov/library/publications/gps-monitoring-technologies-and-domestic-violence-evaluation-study"
+}
+],
+"published": "2026-10-24"
+},
+{
+"id": "lFFPv4tEMGY",
+"channel": "main",
+"title": "巨人1位・織田翔希選手。なぜアメリカ行きの選手を指名できる？【プロ野球】",
+"lead": "アメリカへ行くと言っていた織田翔希選手を、巨人はなぜ1位で指名できたのでしょうか。ドラフトで球団がもらうのは契約ではなく「話をする権利」で、指名される入口は選手が自分で出した1枚の紙だから、というのがこの回の答えです。",
+"points": [
+{
+"h": "もらえるのは「話す権利」",
+"t": "ドラフトで球団が得るのは、契約ではなく、契約のために話をしていい権利です。公開されている決まりには、本人の同意は出てきません。だから、行かないと言っている選手でも指名すること自体はできます。"
+},
+{
+"h": "入口は自分で出した1枚の紙",
+"t": "高校生がプロの球団と話すには、プロ野球志望届を出す必要があります。この「プロ」には外国の球団も含まれるので、メジャーと話すにも同じ紙が要ります。この紙を出すと、日本のドラフトでも指名できる選手になります。"
+},
+{
+"h": "断ったらどうなるのか",
+"t": "断ると、その球団の交渉権が消えるだけで、プロへの道はふさがれません。話し合いの期限は原則として翌年の3月末で、海外の学校に入った場合は7月末までです。ただ大学に進めば次の指名は4年後など、待つ時間は必ずついてきます。"
+},
+{
+"h": "前にも同じことがあった",
+"t": "1985年には、進学を表明していた桑田真澄選手を巨人だけが指名し、入団しました。2012年には、メジャー行きを表明していた大谷翔平選手を日本ハムが指名し、二刀流の計画が決め手になりました。2025年の佐々木麟太郎選手は、指名を断ってアメリカへ渡りました。"
+},
+{
+"h": "形を変えて続く話し合い",
+"t": "江川卓選手をめぐる大きなもめごとや、選手が球団を選べる制度とその廃止など、ドラフトは形を変えながら議論が続いてきました。職業を選ぶ自由と、不正を防ぐことや戦力をそろえること、どれを大事にするかの答えはまだ出ていません。"
+}
+],
+"timeline": [
+{
+"y": 1973,
+"text": "江川卓選手、阪急の1位指名を断って大学へ"
+},
+{
+"y": 1978,
+"m": 11,
+"d": 21,
+"text": "江川卓選手、交渉権が切れた翌日に巨人と契約"
+},
+{
+"y": 1985,
+"text": "巨人、進学を表明していた桑田真澄選手を1位で指名"
+},
+{
+"y": 2008,
+"text": "田澤純一選手、指名の見送りを求めてレッドソックスへ"
+},
+{
+"y": 2012,
+"text": "日本ハム、メジャー志望の大谷翔平選手を1位で単独指名"
+},
+{
+"y": 2020,
+"text": "海外へ行った選手の帰国後を縛る「田澤ルール」がなくなる"
+},
+{
+"y": 2023,
+"text": "海外の学校へ進んだ選手の交渉期限を7月末にする決まりができる"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 22,
+"text": "巨人、アメリカ行きを考える織田翔希選手を1位で指名"
+}
+],
+"sources": [
+{
+"title": "高等学校野球部員のプロ野球団との関係についての規定",
+"by": "日本高等学校野球連盟",
+"url": "https://www.jhbf.or.jp/summary/proteam/rule_proteam.html"
+},
+{
+"title": "ドラフト会議2026",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://draft.npb.jp/draft/2026/information.html"
+},
+{
+"title": "野球協約2008（PDF）",
+"by": "日本プロ野球選手会",
+"year": "2008",
+"url": "https://jpbpa.net/wp-content/uploads/2021/12/rp2008.pdf"
+},
+{
+"title": "織田翔希選手のプロ志望届提出・会見",
+"by": "Yahoo!ニュース",
+"url": "https://news.yahoo.co.jp/articles/83d07fe47f3c0a132c42d0f2b423eb2b4df1412c"
+},
+{
+"title": "2026年ドラフト",
+"by": "NHK",
+"year": "2026",
+"url": "https://news.web.nhk/newsweb/na/nd-20261022de63461"
+},
+{
+"title": "江川卓選手と小林繁選手のトレード",
+"by": "web Sportiva（集英社）",
+"year": "2012",
+"url": "https://sportiva.shueisha.co.jp/clm/baseball/npb/2012/02/01/post_117/"
+},
+{
+"title": "1985年のドラフト、桑田選手と清原選手",
+"by": "Number Web",
+"url": "https://number.bunshun.jp/articles/-/859413"
+},
+{
+"title": "逆指名から希望入団枠まで",
+"by": "ベースボールチャンネル",
+"url": "https://www.baseballchannel.jp/npb/165346/"
+},
+{
+"title": "菅野智之選手と2011年のドラフト",
+"by": "Number Web",
+"url": "https://number.bunshun.jp/articles/-/864251"
+},
+{
+"title": "田澤ルールの撤廃",
+"by": "Full-Count",
+"year": "2020",
+"url": "https://full-count.jp/2020/10/26/post945747/"
+},
+{
+"title": "佐々木麟太郎選手とマーリンズ",
+"by": "日本経済新聞",
+"url": "https://www.nikkei.com/article/DGXZQODH1607U0W6A710C2000000/"
+}
+],
+"published": "2026-10-23"
+},
+{
+"id": "1ZuZd4dm6PI",
+"channel": "jiji",
+"title": "2026年、相次ぐ情報漏えい。本当に増えている？個人情報の135年【ニュース解説】",
+"lead": "この回は「なぜ、いま情報漏えいのニュースばかり聞くのか」に答えました。国の数えでは件数はむしろ減っていて、増えたのは1回の大きさです。そして昔は名前も住所も公開されていて、隠すようになってはじめて「漏れる」と言えるようになった、というのが答えです。",
+"points": [
+{
+"h": "件数は減り、1回が大きくなった",
+"t": "2026年の秋、大きな漏えいの公表が続きました。でも国の数えでは、不正な目的の漏えいは7,604件から3,822件に減っています。増えたのは件数ではなく、100万件をこえるような1回の大きさでした。"
+},
+{
+"h": "攻める側も守る側もAIを使う",
+"t": "警察に届いた被害では、入り口のおよそ半分が、会社の外から中に入るためのVPN機器でした。攻める側はAIを使い始めています。守る側もAIで欠陥を見つけたり、AIにわざと侵入させて穴を探したりしています。"
+},
+{
+"h": "昔は名前も住所も公開されていた",
+"t": "1890年に始まった電話帳には、1990年度には個人の電話番号のおよそ6割が載っていました。1967年の住民基本台帳法は「公開原則」で、2006年まで、市役所の窓口でだれでも他人の名前や住所を見ることができました。"
+},
+{
+"h": "事件のあとに決まりができた",
+"t": "1999年の宇治市の流出のあとに個人情報保護法ができました。2014年のベネッセの流出のあとには、だれに渡したかを記録する決まりができました。2022年には、漏れたら国に報告し、本人に知らせることが義務になりました。"
+},
+{
+"h": "隠すから「漏れる」と言える",
+"t": "最近ニュースが多いのは、1回が大きくなったことと、漏れたら知らせる決まりができたからです。そもそも「漏えい」という言葉は、先に「隠す」がないと成り立ちません。公開されていたものを隠すようになり、隠したものが漏れるようになったのです。"
+}
+],
+"timeline": [
+{
+"y": 1890,
+"text": "日本で最初の電話帳ができる（載ったのは197件）"
+},
+{
+"y": 1967,
+"text": "住民基本台帳法ができる（はじめから公開原則）"
+},
+{
+"y": 1999,
+"text": "京都の宇治市から住民の記録21万件あまりが流出"
+},
+{
+"y": 2003,
+"text": "個人情報保護法ができる"
+},
+{
+"y": 2006,
+"m": 11,
+"text": "住民基本台帳の営利目的の閲覧ができなくなる"
+},
+{
+"y": 2014,
+"text": "ベネッセから約3,504万件の個人情報が流出"
+},
+{
+"y": 2015,
+"text": "日本年金機構から約125万件の情報が流出"
+},
+{
+"y": 2022,
+"m": 4,
+"d": 1,
+"text": "漏えい時の国への報告と本人への通知が義務になる"
+}
+],
+"sources": [
+{
+"title": "漏えい等の報告等",
+"by": "個人情報保護委員会",
+"url": "https://www.ppc.go.jp/news/kaiseihou_feature/roueitouhoukoku_gimuka/"
+},
+{
+"title": "住民基本台帳の閲覧制度のあり方に関する検討会 報告書",
+"by": "総務省",
+"year": "2005",
+"url": "https://www.soumu.go.jp/main_sosiki/kenkyu/daityo_eturan/pdf/j_daityo_eturan07_s01.pdf"
+},
+{
+"title": "上場企業の個人情報漏えい・紛失事故",
+"by": "東京商工リサーチ",
+"year": "2026",
+"url": "https://www.tsr-net.co.jp/data/detail/1203305_1527.html"
+},
+{
+"title": "令和8年上半期におけるサイバー空間をめぐる脅威の情勢等について",
+"by": "警察庁",
+"year": "2026",
+"url": "https://www.npa.go.jp/publications/statistics/cybersecurity/"
+},
+{
+"title": "古川デジタル大臣の記者会見（不正目的の漏えい等の件数）",
+"by": "ScanNetSecurity",
+"year": "2026",
+"url": "https://scan.netsecurity.ne.jp/article/2026/10/08/56413.html"
+},
+{
+"title": "個人情報保護法の「過剰反応」に関する実態調査",
+"by": "消費者庁",
+"year": "2011",
+"url": "https://www.ppc.go.jp/files/pdf/personal_report_2303caa_kajohanno.pdf"
+},
+{
+"title": "宇治市住民基本台帳データ流出",
+"by": "JPCERT/CC",
+"year": "2007",
+"url": "https://www.jpcert.or.jp/tips/2007/wr071501.html"
+},
+{
+"title": "最高裁 平成14年7月11日判決（宇治市）の解説",
+"url": "https://www.mc-law.jp/?p=9055"
+},
+{
+"title": "日本年金機構の不正アクセス事案",
+"by": "厚生労働省",
+"year": "2015",
+"url": "https://www.mhlw.go.jp/kinkyu/dl/houdouhappyou_jps_150601-01.pdf"
+},
+{
+"title": "日本年金機構における不正アクセスによる情報流出事案",
+"by": "IPA（情報処理推進機構）",
+"url": "https://www.ipa.go.jp/archive/publish/wp-security/qv6pgp0000000uuo-att/000053658.pdf"
+},
+{
+"title": "タウンページ・番号案内のサービス終了",
+"by": "NTT東日本",
+"year": "2024",
+"url": "https://www.ntt-east.co.jp/release/detail/20240719_01.html"
+},
+{
+"title": "ハローページ発行終了",
+"by": "日経クロステック",
+"year": "2020",
+"url": "https://xtech.nikkei.com/atcl/nxt/news/18/08162/"
+},
+{
+"title": "住民基本台帳の閲覧制度の見直し（立法と調査）",
+"by": "参議院",
+"year": "2006",
+"url": "https://www.sangiin.go.jp/japanese/annai/chousa/rippou_chousa/backnumber/2006pdf/2006040711.pdf"
+},
+{
+"title": "プライバシーの権利（憲法調査会資料）",
+"by": "衆議院",
+"url": "https://www.shugiin.go.jp/internet/itdb_kenpou.nsf/html/kenpou/chosa/shukenshi028.pdf/$File/shukenshi028.pdf"
+},
+{
+"title": "GDPR 第33条",
+"url": "https://gdpr-info.eu/art-33-gdpr/"
+},
+{
+"title": "不正アクセス抜き打ちテスト",
+"by": "GMOサイバーセキュリティ byイエラエ",
+"url": "https://group.gmo/news/article/10255/"
+},
+{
+"title": "横浜東京電話交換加入者名簿 明治27年",
+"by": "国立国会図書館デジタルコレクション",
+"year": "1894",
+"url": "https://dl.ndl.go.jp/pid/805625"
+}
+],
+"published": "2026-10-22"
+},
+{
+"id": "3uvWRKGnt2o",
+"channel": "main",
+"title": "セ・リーグも指名打者へ。なぜピッチャーは打たなくなった？【プロ野球・MLB】",
+"lead": "ピッチャーの代わりに打つ専門の選手が立つDHは、なぜ生まれたのでしょうか。アメリカでは点もお客さんも少なかったアメリカン・リーグが1973年に、日本ではお客さんが少なかったパ・リーグが人気を取り戻そうと1975年に入れました。",
+"points": [
+{
+"h": "100年前に出ていた案",
+"t": "DHの案は、1928年にナショナル・リーグの会長が言い出しました。ピッチャーは打つのが弱く、打席に立つと試合が止まるという考えです。でもアメリカン・リーグが反対し、案はすぐに棚上げになりました。"
+},
+{
+"h": "「9人でやるもの」という考え",
+"t": "野球が9人と決まったのは1857年です。1906年の新聞には「全員が守って、全員が打つのが野球の根本」と書かれていました。ベーブ・ルースも、作戦がだいなしになるとDHに反対していました。"
+},
+{
+"h": "困っていたアメリカン・リーグ",
+"t": "1968年のアメリカン・リーグは、リーグ全体の打率が歴史上いちばん低く、お客さんもナショナル・リーグより大きく少ない状態でした。点とお客さんを増やそうと、1973年にDHを入れました。かつて反対した側が先に始めたことになります。"
+},
+{
+"h": "パ・リーグは人気回復のため",
+"t": "1974年のパ・リーグは、お客さんがセ・リーグの半分もいませんでした。人気を取り戻す作戦として、1975年からDHを使い始めます。ただ1年目は、完投が増えたものの、点はほとんど増えませんでした。"
+},
+{
+"h": "9人野球にも理由がある",
+"t": "ピッチャーも打つ野球には、代打を出すか迷うおもしろさがあります。セ・リーグはそれを大事にして50年以上9人野球を守ってきました。それでも高校野球がDHを使うことなどを理由に、2027年からDHを入れることになりました。"
+}
+],
+"timeline": [
+{
+"y": 1857,
+"text": "ニューヨークのクラブの集まりで、野球は9人と決まる"
+},
+{
+"y": 1928,
+"m": 12,
+"d": 12,
+"text": "ナショナル・リーグ会長のDH案が新聞にのる"
+},
+{
+"y": 1969,
+"text": "アメリカのマイナーリーグでDHが初めて試される"
+},
+{
+"y": 1973,
+"m": 4,
+"d": 6,
+"text": "アメリカン・リーグで最初のDHが打席に立つ"
+},
+{
+"y": 1975,
+"text": "パ・リーグがDHを使い始める"
+},
+{
+"y": 1983,
+"text": "オールスターでセ・リーグ、DHを使わずピッチャーを打順に"
+},
+{
+"y": 2022,
+"text": "ナショナル・リーグもDHを使い、「大谷ルール」もできる"
+},
+{
+"y": 2025,
+"text": "セ・リーグが2027年からDHを入れると決める"
+}
+],
+"sources": [
+{
+"title": "The New York Times 1928年12月12日・13日・14日（Internet Archive）",
+"by": "The New York Times",
+"year": "1928",
+"url": "https://archive.org/details/per_new-york-times-magazine_the-new-york-times_1928-12-12_78_25890/page/n38/mode/1up"
+},
+{
+"title": "The New York Times 1929年1月4日・2月7日（Internet Archive）",
+"by": "The New York Times",
+"year": "1929",
+"url": "https://archive.org/details/per_new-york-times-magazine_the-new-york-times_1929-02-07_78_25947/page/n21/mode/1up"
+},
+{
+"title": "Sporting Life 1906年2月3日（LA84）",
+"by": "Sporting Life",
+"year": "1906",
+"url": "https://digital.la84.org/digital/collection/p17103coll17/id/36567"
+},
+{
+"title": "The Historical Evolution of the Designated Hitter Rule",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/the-historical-evolution-of-the-designated-hitter-rule/"
+},
+{
+"title": "1857 Winter Meetings",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/1857-winter-meetings-the-first-baseball-convention/"
+},
+{
+"title": "April 25, 1969: Ted Simmons",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/april-25-1969-ted-simmons-drives-in-four-runs-as-designated-pinch-hitter-for-tulsa-oilers/"
+},
+{
+"title": "American League changed the game",
+"by": "アメリカ野球殿堂",
+"url": "https://baseballhall.org/discover/american-league-changed-the-game-with-historic-designation"
+},
+{
+"title": "American League adopts designated hitter rule",
+"by": "HISTORY.com",
+"url": "https://www.history.com/this-day-in-history/american-league-adopts-designated-hitter-rule"
+},
+{
+"title": "ロン・ブロンバーグの記事",
+"by": "ESPN",
+"year": "2003",
+"url": "https://www.espn.com/mlb/s/2003/0327/1530427.html"
+},
+{
+"title": "A Brief History of the Designated Hitter",
+"by": "The Ringer",
+"year": "2020",
+"url": "https://www.theringer.com/mlb/2020/7/22/21334094/brief-history-of-the-designated-hitter-nl-al"
+},
+{
+"title": "2021年の投手の打率",
+"by": "The Ringer",
+"year": "2022",
+"url": "https://www.theringer.com/2022/04/14/mlb/greatest-pitcher-hitting-moments-bartolo-colon-madison-bumgarner"
+},
+{
+"title": "Gallup Vault（好きな観戦スポーツの調査）",
+"by": "Gallup",
+"url": "https://news.gallup.com/vault/203270/gallup-vault-football-rise-spectator-sport.aspx"
+},
+{
+"title": "ナショナル・リーグ会長の発言",
+"by": "Mental Floss",
+"url": "https://www.mentalfloss.com/sports/baseball/why-doesnt-national-league-have-designated-hitters"
+},
+{
+"title": "タイブレークの導入",
+"by": "Tennis Majors",
+"url": "https://www.tennismajors.com/our-features/on-this-day/july-25-1970-the-day-the-usta-announced-the-introduction-of-a-tie-break-277200.html"
+},
+{
+"title": "24秒ルールの歴史",
+"by": "WBUR",
+"year": "2015",
+"url": "https://www.wbur.org/onlyagame/2015/04/22/nba-shot-clock-history-basketball"
+},
+{
+"title": "ウィンブルドンの服装",
+"by": "Tennis.com",
+"url": "https://www.tennis.com/news/articles/wimbledon-relaxes-all-white-clothing-rule-for-women"
+},
+{
+"title": "パ・リーグの観客とDH",
+"by": "PRESIDENT Online",
+"url": "https://president.jp/articles/-/91081"
+},
+{
+"title": "パ・リーグDH誕生秘話",
+"by": "web Sportiva（集英社）",
+"year": "2021",
+"url": "https://sportiva.shueisha.co.jp/clm/baseball/npb/2021/02/10/dh_split/"
+},
+{
+"title": "高井保弘さんの記事",
+"by": "日刊ゲンダイ",
+"url": "https://www.nikkan-gendai.com/articles/view/sports/266477"
+},
+{
+"title": "年度別成績 1974年・1975年パシフィック・リーグ",
+"by": "日本野球機構（NPB）",
+"url": "https://npb.jp/bis/yearly/pacificleague_1975.html"
+},
+{
+"title": "1983年オールスターゲーム第3戦",
+"by": "日本野球機構（NPB）",
+"year": "1983",
+"url": "https://npb.jp/bis/scores/allstargame/boxscore1983_3.html"
+},
+{
+"title": "セ・リーグ公式Q&A（2012年時点のアーカイブ）",
+"by": "セントラル・リーグ",
+"url": "https://web.archive.org/web/20120203093614/http://www.npb.or.jp/cl/communication/qanda/1.html"
+},
+{
+"title": "セ・リーグの発表（2025年8月4日）",
+"by": "日本野球機構（NPB）",
+"year": "2025",
+"url": "https://npb.jp/news/detail/20250804_05.html"
+},
+{
+"title": "記録員コラム（2026年9月25日）",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/news/detail/20260925_02.html"
+},
+{
+"title": "高校野球のDH",
+"by": "ハイスクール野球ドットコム",
+"url": "https://www.hb-nippon.com/articles/7093"
+},
+{
+"title": "大谷ルール",
+"by": "Sports Illustrated",
+"year": "2022",
+"url": "https://www.si.com/mlb/2022/03/22/mlb-players-ohtani-rule-changes-ghost-runners-double-headers"
+}
+],
+"published": "2026-10-21"
+},
+{
+"id": "j8cD3ifYkLQ",
+"channel": "main",
+"title": "CSの5勝先取、ベーブ・ルースの時代にもあった？【プロ野球・MLB】",
+"lead": "2026年のCSで始まった「先に5勝したほうが勝ち」の勝負は、昔もあったのでしょうか。答えは、100年前のアメリカにありました。1921年のワールドシリーズで、ジャイアンツが0勝2敗からヤンキースに逆転した話を中心に見ていきます。",
+"points": [
+{
+"h": "2026年のCSの「先に5勝」",
+"t": "CSでは、リーグ1位に試合前から1勝が与えられます。2026年からは、1位と大きく差がついたチームが挑むとき、これが2勝になりました。その2勝も入れて先に5勝で決まるので、日本のプロ野球では初めての「先に5勝」の勝負になりました。"
+},
+{
+"h": "100年前は9試合制だった",
+"t": "メジャーリーグのワールドシリーズは、1919年から先に5勝、最大9試合で行われていました。表向きは見たい人が多いからとされましたが、今のメジャーリーグは収入を増やすためだったと説明しています。"
+},
+{
+"h": "同じ球場のニューヨーク対決",
+"t": "1921年は、ジャイアンツとヤンキースの対決でした。ヤンキースはジャイアンツの球場を借りていましたが、ベーブ・ルースの人気で、借りている側のほうがお客さんを集めるようになっていました。8試合すべてが同じ球場で行われました。"
+},
+{
+"h": "0勝2敗からの逆転",
+"t": "ジャイアンツは最初の2試合で1点も取れずに負けました。そこから追い上げ、ひじのけがでルースが出られなくなった試合もあって、最後は1対0で勝ちました。5勝3敗で逆転優勝です。答えは、先に5勝の勝負は100年前にもあった、です。"
+},
+{
+"h": "5勝だから続いた逆転",
+"t": "1921年は先に4勝でもジャイアンツの優勝でした。ただ、1924年のマイナーリーグの王者決定戦や、1926年のニグロリーグの決勝では、2勝4敗から3連勝した逆転がありました。先に4勝なら、その前に終わっていた勝負です。"
+}
+],
+"timeline": [
+{
+"y": 1919,
+"text": "ワールドシリーズが先に5勝・最大9試合に戻る"
+},
+{
+"y": 1921,
+"text": "ジャイアンツ、0勝2敗からヤンキースに逆転して世界一"
+},
+{
+"y": 1922,
+"text": "ワールドシリーズ第2戦、「暗くなった」として引き分けに"
+},
+{
+"y": 1923,
+"text": "ヤンキースの本拠地、ヤンキー・スタジアムができる"
+},
+{
+"y": 1924,
+"text": "セントポール、2勝4敗から3連勝でマイナーの王者に"
+},
+{
+"y": 1926,
+"text": "ニグロリーグの決勝、シカゴのチームが2勝4敗から逆転"
+},
+{
+"y": 2026,
+"text": "プロ野球のCSで「先に5勝」の勝負が始まる"
+}
+],
+"sources": [
+{
+"title": "2026年 セ・パ クライマックスシリーズについてのお知らせ",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/games/2026/info_cs.html"
+},
+{
+"title": "Baseball postseason format changes",
+"by": "MLB.com",
+"url": "https://www.mlb.com/news/baseball-postseason-format-changes"
+},
+{
+"title": "1921 World Series recap",
+"by": "MLB.com",
+"url": "https://www.mlb.com/news/1921-world-series-recap"
+},
+{
+"title": "1921 World Series",
+"by": "Baseball Almanac",
+"url": "https://www.baseball-almanac.com/ws/yr1921ws.shtml"
+},
+{
+"title": "1921 World Series",
+"by": "Wikipedia（英語版）",
+"url": "https://en.wikipedia.org/wiki/1921_World_Series"
+},
+{
+"title": "October 5, 1921",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/october-5-1921-the-yankees-first-world-series-game/"
+},
+{
+"title": "October 7, 1921",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/october-7-1921-giants-blow-out-yankees-in-game-3-to-get-back-into-first-subway-series/"
+},
+{
+"title": "October 9, 1921",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/october-9-1921-an-injured-babe-wallops-his-first-world-series-home-run-while-shufflin-phil-steals-the-show"
+},
+{
+"title": "October 11, 1921",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/october-11-1921-another-stellar-relief-outing-from-barnes-knots-the-series-at-three-games-each/"
+},
+{
+"title": "October 13, 1921",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/october-13-1921-giants-beat-yankees-1-0-to-clinch-world-series-championship/"
+},
+{
+"title": "The Evolution of World Series Scheduling",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/the-evolution-of-world-series-scheduling/"
+},
+{
+"title": "1921 Winter Meetings",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/1921-winter-meetings-first-with-landis"
+},
+{
+"title": "Yankee Stadium: The Giants' Greatest Mistake",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/yankee-stadium-the-giants-greatest-mistake/"
+},
+{
+"title": "Irish Meusel",
+"by": "SABR",
+"url": "https://sabr.org/bioproj/person/irish-meusel/"
+},
+{
+"title": "Home Run Baker",
+"by": "SABR",
+"url": "https://sabr.org/bioproj/person/home-run-baker/"
+},
+{
+"title": "Waite Hoyt",
+"by": "SABR",
+"url": "https://sabr.org/bioproj/person/waite-hoyt/"
+},
+{
+"title": "John McGraw",
+"by": "Baseball Hall of Fame",
+"url": "https://baseballhall.org/hall-of-famers/mcgraw-john"
+},
+{
+"title": "Fans crowd Polo Grounds",
+"by": "UPI",
+"year": "1921",
+"url": "https://www.upi.com/Archives/1921/10/05/Fans-crowd-polo-grounds-for-World-Series-Game-1/3731570240047/"
+},
+{
+"title": "Omaha Daily Bee 1919年9月23日",
+"by": "Omaha Daily Bee",
+"year": "1919",
+"url": "https://nebnewspapers.unl.edu/lccn/sn99021999/1919-09-23/ed-1/seq-11/"
+},
+{
+"title": "Omaha Daily Bee 1921年12月16日",
+"by": "Omaha Daily Bee",
+"year": "1921",
+"url": "https://nebnewspapers.unl.edu/lccn/sn99021999/1921-12-16/ed-1/seq-8/"
+},
+{
+"title": "Beatrice Daily Express 1921年11月23日",
+"by": "Beatrice Daily Express",
+"year": "1921",
+"url": "https://nebnewspapers.unl.edu/lccn/sn84020107/1921-11-23/ed-1/seq-6/"
+},
+{
+"title": "Daily Advance 1921年10月7日",
+"by": "Daily Advance",
+"year": "1921",
+"url": "https://newspapers.digitalnc.org/lccn/sn92074042/1921-10-07/ed-1/seq-1/"
+},
+{
+"title": "Daily Advance 1921年10月12日",
+"by": "Daily Advance",
+"year": "1921",
+"url": "https://newspapers.digitalnc.org/lccn/sn92074042/1921-10-12/ed-1/seq-1/"
+},
+{
+"title": "1922 World Series recap",
+"by": "MLB.com",
+"url": "https://www.mlb.com/news/1922-world-series-recap"
+},
+{
+"title": "1922 World Series",
+"by": "BR Bullpen（Baseball-Reference）",
+"url": "https://www.baseball-reference.com/bullpen/1922_World_Series"
+},
+{
+"title": "The 1924 Junior World Series: The St. Paul Saints' Magnificent Comeback",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/the-1924-junior-world-series-the-st-paul-saints-magnificent-comeback/"
+},
+{
+"title": "1926 Negro World Series",
+"by": "Retrosheet",
+"url": "https://www.retrosheet.org/NegroLeagues/1926WS.html"
+},
+{
+"title": "1926 Colored World Series",
+"by": "Wikipedia（英語版）",
+"url": "https://en.wikipedia.org/wiki/1926_Colored_World_Series"
+},
+{
+"title": "ABEMAトーナメント2025",
+"by": "日本将棋連盟",
+"year": "2025",
+"url": "https://www.shogi.or.jp/match/abematv/2025/index.html"
+}
+],
+"published": "2026-10-20"
+},
+{
+"id": "VW8JoGDPAJY",
+"channel": "main",
+"title": "44年ぶりワールドシリーズ！なぜブルワーズはリーグを移った？【MLB】",
+"lead": "ブルワーズは1982年にはアメリカン・リーグのチームでしたが、1998年にナショナル・リーグへ移りました。理由は、球団が増えて両リーグが奇数になることと、ミルウォーキーがもともとナショナル・リーグのブレーブスの町だったことの2つです。",
+"points": [
+{
+"h": "15と15では余りが出る",
+"t": "1998年に大リーグの球団が2つ増えると、どちらのリーグも15球団になります。15は奇数なので、毎日どこか1チームが相手のいない状態になってしまいます。そこでアメリカン・リーグから1球団だけ、ナショナル・リーグへ移すことになりました。"
+},
+{
+"h": "断ったロイヤルズ",
+"t": "最初に声がかかったのはロイヤルズでしたが、ファンが残りたがったこともあり断りました。ブルワーズのオーナーのセリグは大リーグ全体のまとめ役でもあったので、先によそに選ばせたそうです。そのあとブルワーズが自分から手を挙げました。"
+},
+{
+"h": "何度も置いていかれた町",
+"t": "ミルウォーキーの大リーグ球団は、1901年に1年でセントルイスへ移りました。1953年に来たブレーブスは1957年に世界一になるほど人気でしたが、お客さんが減って1966年にアトランタへ移りました。"
+},
+{
+"h": "野球を取り戻したセリグ",
+"t": "ブレーブスの大ファンだったセリグたちは、1970年にシアトル・パイロッツを買ってミルウォーキーへ移し、ブルワーズにしました。もとがアメリカン・リーグの球団だったので、リーグもそのままでした。"
+},
+{
+"h": "答え：ふるさとに帰る移籍",
+"t": "移籍の理由の1つは、リーグが奇数にならないように1球団を移す必要があったことです。もう1つは、ミルウォーキーがブレーブスのいたナショナル・リーグの町だったことです。セリグは「ふるさとに帰るようなもの」と話し、ファンの多くも賛成しました。"
+}
+],
+"timeline": [
+{
+"y": 1901,
+"text": "アメリカン・リーグが始まり、ミルウォーキーの球団も加わる"
+},
+{
+"y": 1953,
+"text": "ボストン・ブレーブスがミルウォーキーへ移る"
+},
+{
+"y": 1957,
+"text": "ミルウォーキー・ブレーブス、ヤンキースを破り世界一"
+},
+{
+"y": 1966,
+"text": "ブレーブスがミルウォーキーからアトランタへ移る"
+},
+{
+"y": 1970,
+"text": "シアトル・パイロッツがミルウォーキーへ移りブルワーズに"
+},
+{
+"y": 1982,
+"text": "ブルワーズ、アメリカン・リーグで優勝"
+},
+{
+"y": 1998,
+"text": "ブルワーズ、ナショナル・リーグへ移る"
+},
+{
+"y": 2026,
+"text": "ブルワーズ、44年ぶりにワールドシリーズへ進む"
+}
+],
+"sources": [
+{
+"title": "The Christian Science Monitor（1997年11月の記事）",
+"by": "The Christian Science Monitor",
+"year": "1997",
+"url": "https://www.csmonitor.com/1997/1117/111797.feat.sports.1.html"
+},
+{
+"title": "How Bud Selig got his way in 1997",
+"by": "bill37mccurdy.com",
+"year": "2015",
+"url": "https://bill37mccurdy.com/2015/06/02/how-bud-selig-got-his-way-in-1997/"
+},
+{
+"title": "The Birth of the American League",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/the-birth-of-the-american-league/"
+},
+{
+"title": "1902年、ブルワーズがセントルイスへ移ってブラウンズになった話",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/the-milwaukee-brewers-move-to-st-louis-and-become-the-browns-in-1902/"
+},
+{
+"title": "1953年、ブレーブスの移転",
+"by": "SABR",
+"url": "https://www.sabr.org/journal/article/the-franchise-transfer-that-fostered-a-broadcasting-revolution/"
+},
+{
+"title": "1957年、アーロンのサヨナラ本塁打",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/september-23-1957-hank-aarons-walk-off-home-run-gives-milwaukee-braves-the-flag/"
+},
+{
+"title": "Why Milwaukee Lost the Braves",
+"by": "Marquette Law School",
+"year": "2012",
+"url": "https://law.marquette.edu/facultyblog/2012/01/why-milwaukee-lost-the-braves-perspectives-on-law-and-culture-from-a-half-century-later/"
+},
+{
+"title": "カウンティ・スタジアムのビール持ちこみ禁止",
+"by": "Milwaukee Record",
+"url": "https://milwaukeerecord.com/sports/remembering-milwaukee-county-stadium-banned-carry-ins-everyone-got-pissed/"
+},
+{
+"title": "1970年、ブルワーズの最初の開幕戦",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/april-7-1970-milwaukee-brewers-make-their-debut-at-county-stadium/"
+},
+{
+"title": "ミルト・メイソン、最初のバーニー・ブルワー",
+"by": "MLB.com",
+"url": "https://www.mlb.com/news/milt-mason-the-original-bernie-brewer"
+},
+{
+"title": "ブルワーズの経営",
+"by": "Front Office Sports",
+"url": "https://frontofficesports.com/newsletter/brewers-defy-peers-deep-pockets/"
+},
+{
+"title": "2022年、ホームランの滑り台でのけが",
+"by": "FOX Sports",
+"year": "2022",
+"url": "https://amp.foxsports.com/stories/mlb/dodgers-announcer-breaks-wrist-on-brewers-home-run-slide-video"
+},
+{
+"title": "2026年のナショナル・リーグ優勝決定シリーズ",
+"by": "MLB.com",
+"year": "2026",
+"url": "https://www.mlb.com/news/brewers-win-nlcs-2026"
+}
+],
+"published": "2026-10-19"
+},
+{
+"id": "OQp0bJRDWeM",
+"channel": "main",
+"title": "なぜ近鉄は1つも負けずに優勝を逃したのか？伝説の10.19、川崎球場の2試合【プロ野球】",
+"lead": "1988年10月19日、近鉄はロッテとの2試合で1つも負けなかったのに、優勝できませんでした。優勝は勝率で決まり、引き分けは勝ちに数えないからです。あわせて、この1日がなぜ今も語られているのかを見ていきます。",
+"points": [
+{
+"h": "追いつめられた近鉄",
+"t": "近鉄は6月の終わりには首位の西武と8ゲーム差でしたが、途中から来たブライアントの活躍で追い上げました。ただ雨で流れた試合がたまり、最後は13日間で15試合です。10月17日に阪急に負けたことで、残りを全部勝つしかなくなりました。"
+},
+{
+"h": "1試合め、最後のヒット",
+"t": "1試合めは延長がなく、9回で終わる決まりでした。3対3で迎えた9回表、この年で引退するベテランの梨田昌孝さんがヒットを打ち、4対3で勝ちました。梨田さんにとって、これが現役最後のヒットでした。"
+},
+{
+"h": "2試合めは時計とも勝負",
+"t": "2試合めは延長がありましたが、始まって4時間をすぎたら次の回に入れない決まりがありました。最下位のロッテも本気で戦い、9回裏には9分間の抗議もありました。10回裏の途中で4時間をこえ、4対4の引き分けで終わりました。"
+},
+{
+"h": "答えは勝率と引き分け",
+"t": "優勝は勝った数ではなく勝率で決まり、引き分けは勝ちにも負けにも数えません。近鉄は勝った数では西武より多かったのに、勝率の差わずか0.0014で2位になりました。あの引き分けが勝ちなら、近鉄が優勝していました。"
+},
+{
+"h": "今も語られるわけ",
+"t": "ふだんテレビに映らないパ・リーグの試合が、この夜は予定のドラマをやめて全国に中継されました。両チームが最後まで本気で戦い、今はチームも球場も時間の決まりもありません。だから、もう見られない1日として語りつがれています。"
+}
+],
+"timeline": [
+{
+"y": 1952,
+"text": "神奈川県に川崎球場ができる"
+},
+{
+"y": 1988,
+"m": 10,
+"d": 17,
+"text": "近鉄、阪急に1対2で負けて残り3試合全勝が条件に"
+},
+{
+"y": 1988,
+"m": 10,
+"d": 19,
+"text": "近鉄、川崎球場のダブルヘッダーで優勝を逃す"
+},
+{
+"y": 1989,
+"text": "近鉄、ブライアントの活躍などでリーグ優勝"
+},
+{
+"y": 1992,
+"text": "ロッテが千葉へ移り、川崎球場は本拠地でなくなる"
+},
+{
+"y": 2001,
+"text": "梨田昌孝監督の近鉄がリーグ優勝"
+},
+{
+"y": 2004,
+"text": "近鉄がオリックスと1つになり、チームがなくなる"
+},
+{
+"y": 2010,
+"text": "NPBの「最高の試合」アンケートで10.19が上位に"
+}
+],
+"sources": [
+{
+"title": "年度別成績 1988年 パシフィック・リーグ",
+"by": "日本野球機構（NPB）",
+"year": "1988",
+"url": "https://npb.jp/bis/yearly/pacificleague_1988.html"
+},
+{
+"title": "「最高の試合」アンケート",
+"by": "日本野球機構（NPB）",
+"year": "2010",
+"url": "https://npb.jp/npb/20100927release.html"
+},
+{
+"title": "10.19",
+"by": "Wikipedia",
+"url": "https://ja.wikipedia.org/wiki/10.19"
+},
+{
+"title": "1988年の近鉄バファローズ",
+"by": "Wikipedia",
+"url": "https://ja.wikipedia.org/wiki/1988年の近鉄バファローズ"
+},
+{
+"title": "パシフィック・リーグ（時間・回数制限）",
+"by": "Wikipedia",
+"url": "https://ja.wikipedia.org/wiki/パシフィック・リーグ"
+},
+{
+"title": "川崎球場",
+"by": "Wikipedia",
+"url": "https://ja.wikipedia.org/wiki/川崎球場"
+},
+{
+"title": "【プロ野球10・19の舞台裏】西武球場の駐車場車内で確認したV3",
+"by": "スポニチアネックス",
+"year": "2021",
+"url": "https://www.sponichi.co.jp/baseball/news/2021/10/19/kiji/20211019s00001173014000c.html"
+},
+{
+"title": "梨田昌孝が語る『10.19決戦』秘話",
+"by": "web Sportiva（集英社）",
+"year": "2023",
+"url": "https://sportiva.shueisha.co.jp/clm/baseball/npb/2023/10/19/1019_1/"
+},
+{
+"title": "水上善雄さんインタビュー",
+"by": "web Sportiva（集英社）",
+"year": "2025",
+"url": "https://sportiva.shueisha.co.jp/clm/baseball/npb/2025/12/03/post_280/"
+},
+{
+"title": "プロ野球選手から保育士（高沢秀昭さん）",
+"by": "文藝春秋 2025年12月号",
+"year": "2025",
+"url": "https://bunshun.jp/bungeishunju/articles/h10978"
+},
+{
+"title": "テレビ朝日 早河洋さんの話（全国中継の経緯）",
+"by": "PRESIDENT",
+"url": "https://president.jp/articles/-/1227"
+},
+{
+"title": "“名将”仰木彬監督の“知られざる晩年”",
+"by": "文春オンライン（関川夏央）",
+"year": "2022",
+"url": "https://bunshun.jp/articles/-/51323"
+},
+{
+"title": "阪急ブレーブス売却（1988）",
+"by": "the-shashi",
+"url": "https://the-shashi.com/tse/9042/decisions/braves-sale-1988/"
+},
+{
+"title": "富士通スタジアム川崎 公式サイト",
+"by": "富士通スタジアム川崎",
+"url": "https://kawasaki-fujimi.com/"
+}
+],
+"published": "2026-10-18"
+}
+]
+}

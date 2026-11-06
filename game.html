@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ミニゲーム（なぜなぜクイズ・反射ゲーム）｜シマ先生とコトニちゃんのなぜなぜ資料館</title>
-<meta name="description" content="動画に出てきた「なぜ？」の3択クイズと、棚から出てくるシマ先生をタップする30秒の反射ゲーム。シマ先生とコトニちゃんと遊べます。">
+<title>ミニゲーム（今日の1問・なぜなぜクイズ・どっちが先？・年表ならべ・反射ゲーム）｜シマ先生とコトニちゃんのなぜなぜ資料館</title>
+<meta name="description" content="なぜなぜ資料館のミニゲーム。今日の1問・なぜなぜクイズ・どっちが先？・年表ならべ・反射ゲーム。動画で話した「なぜ？」や年表で遊べます。">
 <link rel="canonical" href="https://iou1996.github.io/nazenaze-shiryokan/game.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="シマ先生とコトニちゃんのなぜなぜ資料館">
-<meta property="og:title" content="ミニゲーム（なぜなぜクイズ・反射ゲーム）｜シマ先生とコトニちゃんのなぜなぜ資料館">
-<meta property="og:description" content="動画に出てきた「なぜ？」の3択クイズと、棚から出てくるシマ先生をタップする30秒の反射ゲーム。シマ先生とコトニちゃんと遊べます。">
+<meta property="og:title" content="ミニゲーム（今日の1問・なぜなぜクイズ・どっちが先？・年表ならべ・反射ゲーム）｜シマ先生とコトニちゃんのなぜなぜ資料館">
+<meta property="og:description" content="なぜなぜ資料館のミニゲーム。今日の1問・なぜなぜクイズ・どっちが先？・年表ならべ・反射ゲーム。動画で話した「なぜ？」や年表で遊べます。">
 <meta property="og:url" content="https://iou1996.github.io/nazenaze-shiryokan/game.html">
 <meta property="og:image" content="https://iou1996.github.io/nazenaze-shiryokan/images/banner.jpg">
 <meta property="og:locale" content="ja_JP">
@@ -22,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="p-game">
+<body class="p-game" data-game="hub">
 
 <header id="hdr">
   <div class="bar">
@@ -45,47 +45,33 @@
   <div class="wrap">
     <p class="label rv">GAME</p>
     <h1 class="rv d1 h2">資料館のミニゲーム</h1>
-    <p class="lead rv d2">シマ先生とコトニちゃんと、ちょっとひと休み。</p>
-
-    <div class="tabs rv" role="tablist" id="gameTabs" style="margin-bottom:20px">
-      <span class="pill"></span>
-      <button class="tab" role="tab" aria-selected="true" data-panel="gQuiz">なぜなぜクイズ</button>
-      <button class="tab" role="tab" aria-selected="false" data-panel="gHit">反射ゲーム</button>
-    </div>
-
-    <div class="panel game-card" id="gQuiz">
-      <div id="quizBox">
-        <div class="g-intro">
-          <div class="talk"><img src="images/chars/kotoni_face2.png" alt="コトニちゃん"><p class="bubble">べつに、あなたがどれくらい知ってるか気になるわけじゃないけど……動画に出てきた「なぜ？」、答えられる？</p></div>
-          <p class="note" id="quizCount">問題を読みこんでいます…</p>
-          <div class="q-pick">
-            <button class="q-cat main" data-ch="main" disabled><span class="tag">スポーツ編</span><b>プロ野球・MLB・サッカーの「なぜ？」</b><small id="qcMain"></small></button>
-            <button class="q-cat jiji" data-ch="jiji" disabled><span class="tag">時事・地域編</span><b>ニュースと地域の「なぜ？」</b><small id="qcJiji"></small></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel game-card" id="gHit" hidden>
-      <div class="hit-top">
-        <span>のこり <b id="hitTime">30</b>秒</span>
-        <span>点数 <b id="hitScore">0</b></span>
-        <span class="note">自己ベスト <b id="hitBest">0</b></span>
-      </div>
-      <p class="hit-rule"><img src="images/chars/shima_face1.png" alt=""> シマ先生が出たらタップ（＋1）　<img src="images/chars/kotoni_face1.png" alt=""> コトニちゃんはタップしない（−1）</p>
-      <div class="board" id="hitBoard">
-        <button class="hole" aria-label="棚"><img alt="" src="images/chars/shima_face1.png"></button>
-        <button class="hole" aria-label="棚"><img alt="" src="images/chars/shima_face1.png"></button>
-        <button class="hole" aria-label="棚"><img alt="" src="images/chars/shima_face1.png"></button>
-        <button class="hole" aria-label="棚"><img alt="" src="images/chars/shima_face1.png"></button>
-        <button class="hole" aria-label="棚"><img alt="" src="images/chars/shima_face1.png"></button>
-        <button class="hole" aria-label="棚"><img alt="" src="images/chars/shima_face1.png"></button>
-        <button class="hole" aria-label="棚"><img alt="" src="images/chars/shima_face1.png"></button>
-        <button class="hole" aria-label="棚"><img alt="" src="images/chars/shima_face1.png"></button>
-        <button class="hole" aria-label="棚"><img alt="" src="images/chars/shima_face1.png"></button>
-      </div>
-      <div id="hitMsg" hidden></div>
-      <button class="btn solid" id="hitStart">スタート <span class="arr">→</span></button>
+    <p class="lead rv d2">シマ先生とコトニちゃんと、ちょっとひと休み。どれも1回1分くらい。結果はSNSでシェアできます。</p>
+    <div class="g-cards rv d2">
+      <a class="g-card daily" href="daily.html">
+        <img src="images/chars/shima_face1.png" alt="">
+        <span class="g-txt"><b>今日の1問 <span class="gp-new">NEW</span></b><small>1日1問だけ。毎日つづけて連続正解をのばそう</small><span class="g-best" data-best="daily" hidden></span></span>
+        <span class="gp-go">遊ぶ ›</span>
+      </a>
+      <a class="g-card quiz" href="quiz.html">
+        <img src="images/chars/kotoni_face4.png" alt="">
+        <span class="g-txt"><b>なぜなぜクイズ</b><small>動画で話した「なぜ？」を3択で。1回5問</small><span class="g-best" data-best="quiz" hidden></span></span>
+        <span class="gp-go">遊ぶ ›</span>
+      </a>
+      <a class="g-card saki" href="saki.html">
+        <img src="images/chars/kotoni_face2.png" alt="">
+        <span class="g-txt"><b>どっちが先？ <span class="gp-new">NEW</span></b><small>2つの出来事、先に起きたのはどっち？ 何問つづけて当てられる？</small><span class="g-best" data-best="saki" hidden></span></span>
+        <span class="gp-go">遊ぶ ›</span>
+      </a>
+      <a class="g-card narabe" href="narabe.html">
+        <img src="images/chars/shima_face3.png" alt="">
+        <span class="g-txt"><b>年表ならべ <span class="gp-new">NEW</span></b><small>4つの出来事を古い順にタップ。5回で何点とれる？</small><span class="g-best" data-best="narabe" hidden></span></span>
+        <span class="gp-go">遊ぶ ›</span>
+      </a>
+      <a class="g-card hit" href="hit.html">
+        <img src="images/chars/shima_face2.png" alt="">
+        <span class="g-txt"><b>反射ゲーム</b><small>出てきたシマ先生だけをタップ。30秒で何点とれる？</small><span class="g-best" data-best="hit" hidden></span></span>
+        <span class="gp-go">遊ぶ ›</span>
+      </a>
     </div>
   </div>
 </section>
@@ -102,6 +88,7 @@
 </footer>
 
 <script src="assets/main.js"></script>
+<script src="assets/fx.js"></script>
 <script src="assets/game.js"></script>
 </body>
 </html>

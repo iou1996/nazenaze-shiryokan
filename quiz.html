@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>なぜなぜクイズ｜なぜなぜ資料館のミニゲーム</title>
+<meta name="description" content="なぜなぜ資料館の動画で話した「なぜ？」の3択クイズ。スポーツ編（プロ野球・MLB・サッカー）と時事・地域編から1回5問。解き終わると解説動画の一覧が出ます。">
+<link rel="canonical" href="https://iou1996.github.io/nazenaze-shiryokan/quiz.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="シマ先生とコトニちゃんのなぜなぜ資料館">
+<meta property="og:title" content="なぜなぜクイズ｜なぜなぜ資料館のミニゲーム">
+<meta property="og:description" content="なぜなぜ資料館の動画で話した「なぜ？」の3択クイズ。スポーツ編（プロ野球・MLB・サッカー）と時事・地域編から1回5問。解き終わると解説動画の一覧が出ます。">
+<meta property="og:url" content="https://iou1996.github.io/nazenaze-shiryokan/quiz.html">
+<meta property="og:image" content="https://iou1996.github.io/nazenaze-shiryokan/images/banner.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="max-image-preview:large">
+<meta name="theme-color" content="#16100b">
+<link rel="icon" href="images/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="p-game" data-game="quiz">
+
+<header id="hdr">
+  <div class="bar">
+    <a class="logo" href="index.html"><img src="images/icon.png" alt="">なぜなぜ資料館</a>
+    <nav id="nav">
+      <a href="index.html">トップ</a>
+      <a href="news.html">ニュース</a>
+      <a href="characters.html">登場人物</a>
+      <a href="videos.html">動画</a>
+      <a href="touha.html">踏破記録</a>
+      <a href="game.html">ゲーム<span class="new">NEW</span></a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <a class="hdr-game" href="game.html"><span aria-hidden="true">🎮</span>ゲーム</a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-top" id="game">
+  <div class="wrap">
+    <p class="label rv"><a href="game.html">GAME</a></p>
+    <h1 class="rv d1 h2">なぜなぜクイズ</h1>
+    <p class="lead rv d2">動画で話した「なぜ？」を3択で。1回5問</p>
+
+    <div class="panel game-card" id="gQuiz">
+      <div id="quizBox">
+        <div class="g-intro">
+          <div class="talk"><img src="images/chars/kotoni_face2.png" alt="コトニちゃん"><p class="bubble">べつに、あなたがどれくらい知ってるか気になるわけじゃないけど……動画に出てきた「なぜ？」、答えられる？</p></div>
+          <p class="note" id="quizCount">問題を読みこんでいます…</p>
+          <div class="q-pick">
+            <button class="q-cat main" data-ch="main" disabled><span class="tag">スポーツ編</span><b>プロ野球・MLB・サッカーの「なぜ？」</b><small id="qcMain"></small></button>
+            <button class="q-cat jiji" data-ch="jiji" disabled><span class="tag">時事・地域編</span><b>ニュースと地域の「なぜ？」</b><small id="qcJiji"></small></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="g-howto">
+      <h2>あそびかた</h2>
+      <p>スポーツ編と時事・地域編のどちらかを選ぶと、1回5問が出ます。同じ回の動画から2問は出ません。解き終わると、その5問の解説動画が一覧で出ます。</p>
+      <p>自己ベストは、この端末のブラウザにだけ保存されます。</p>
+    </div>
+    <div class="g-more">
+      <h2>ほかのゲーム</h2>
+      <div class="g-minis" id="moreGames"></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <span>© シマ先生とコトニちゃんのなぜなぜ資料館</span>
+    <span class="links">
+      <a href="https://www.youtube.com/@hghg1996iou" target="_blank" rel="noopener">スポーツ編</a>
+      <a href="https://www.youtube.com/@nazenaze-chiiki" target="_blank" rel="noopener">時事・地域編</a>
+      <a href="news.html">ニュース</a>
+      <a href="contact.html">お問い合わせ</a>
+    </span>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script src="assets/fx.js"></script>
+<script src="assets/game.js"></script>
+</body>
+</html>
