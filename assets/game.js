@@ -21,6 +21,7 @@
   addEventListener('resize', placeG);
   document.fonts.ready.then(placeG);
   placeG();
+  if (location.hash === '#hit') { const h = gtabs.find(t => t.dataset.panel === 'gHit'); if (h) h.click(); }
 
   /* ===== なぜなぜクイズ ===== */
   const ROUND = 5;

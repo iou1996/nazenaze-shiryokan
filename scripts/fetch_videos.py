@@ -159,6 +159,36 @@ try:
 except Exception as e:
     print(f"人気・お知らせは取れなかったので前のまま: {e}", file=sys.stderr)
 
+# ニュース一覧用の記録（通常の動画を日付つきでためる。消えた動画も記録には残す）
+def upload_date(vid):
+    req = urllib.request.Request(f"https://www.youtube.com/watch?v={vid}", headers={"Accept-Language": "ja", "User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        html = r.read().decode("utf-8", "replace")
+    m = re.search(r'"(?:uploadDate|publishDate)":"([^"]+)"', html)
+    return item(vid, m.group(1), "")["published"] if m else ""
+
+
+log = {v["id"]: v for v in out.get("log", [])}
+for v in (recent if "recent" in dir() else []):
+    log[v["id"]] = {"id": v["id"], "title": v["title"], "channel": v["channel"], "published": v["published"]}
+for key in CHANNELS:
+    for v in out.get(key, []):
+        if v["id"] in log:
+            log[v["id"]]["title"] = v["title"]
+        else:
+            try:
+                d = upload_date(v["id"])
+            except Exception as e:
+                print(f"日付が取れない {v['id']}: {e}", file=sys.stderr)
+                d = ""
+            if d:
+                log[v["id"]] = {"id": v["id"], "title": v["title"], "channel": key, "published": d}
+        if not v.get("published") and v["id"] in log:
+            v["published"] = log[v["id"]]["published"]
+out["log"] = sorted(log.values(), key=lambda v: v["published"], reverse=True)
+changed = True
+print("log", len(out["log"]))
+
 if changed:
     out["updated"] = datetime.now(JST).strftime("%Y-%m-%d %H:%M")
     with open("videos.json", "w", encoding="utf-8") as f:

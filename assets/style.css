@@ -61,7 +61,7 @@
   nav a:hover, nav a.on { color: var(--text); background: var(--surface-2); }
   .menu-btn { display: none; width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line-2); background: transparent; cursor: pointer; }
   .menu-btn span { display: block; width: 16px; height: 2px; background: var(--text); margin: 4px auto; border-radius: 2px; transition: transform .3s; }
-  @media (max-width: 820px) {
+  @media (max-width: 1080px) {
     .menu-btn { display: block; }
     nav {
       position: absolute; top: 70px; left: 12px; right: 12px; flex-direction: column; gap: 2px;
@@ -444,7 +444,7 @@
   nav a:hover { color: var(--amber-2); background: rgba(242,182,76,.14); }
   nav a.on { color: var(--ink); background: var(--amber); box-shadow: 0 6px 18px -8px rgba(242,182,76,.7); }
   nav a[href="contact.html"]:not(.on) { box-shadow: inset 0 0 0 1.5px var(--amber); color: var(--amber-2); }
-  @media (max-width: 820px) {
+  @media (max-width: 1080px) {
     nav { top: 76px; }
     nav a { font-size: 1.05rem; padding: 14px 18px; }
   }
@@ -456,7 +456,7 @@
   nav { gap: 8px; font-size: 1.05rem; }
   nav a { position: relative; padding: 10px 18px; }
   nav a .new { position: absolute; top: -6px; right: -4px; font-size: .6rem; line-height: 1; padding: 3px 6px; border-radius: 999px; background: var(--red); color: #fff; letter-spacing: .05em; box-shadow: 0 2px 8px rgba(224,83,63,.6); }
-  @media (max-width: 820px) {
+  @media (max-width: 1080px) {
     nav a .new { position: static; margin-left: 8px; vertical-align: 2px; }
   }
 
@@ -555,3 +555,102 @@
   .q-videos .watch { margin: 0; grid-template-columns: 130px 1fr; }
   .q-videos .w-lbl { font-size: .9rem; }
   @media (max-width: 600px) { .watch { grid-template-columns: 120px 1fr; gap: 10px; } .w-lbl { font-size: .92rem; } .q-videos { grid-template-columns: 1fr; } .q-videos .watch { grid-template-columns: 110px 1fr; } }
+
+  /* ===== お知らせバーの「一覧」 ===== */
+  .newsbar { display: flex; align-items: stretch; }
+  .newsbar a:first-child { flex: 1; min-width: 0; }
+  .newsbar a.nb-all { flex: none; padding: 7px 16px 7px 14px; border-left: 1px solid rgba(255,255,255,.4); font-size: .8rem; background: rgba(0,0,0,.14); }
+  .newsbar a.nb-all:hover { background: rgba(0,0,0,.26); }
+  @media (max-width: 600px) { .newsbar a.nb-all { padding: 6px 12px; font-size: .74rem; } }
+
+  /* ===== ニュース一覧 ===== */
+  #newsTabs { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  #newsTabs::-webkit-scrollbar { display: none; }
+  .news-list { display: grid; gap: 10px; max-width: 920px; }
+  .news-list .skel { aspect-ratio: auto; height: 96px; }
+  .nl-month { font-size: 1rem; margin: 22px 0 4px; color: var(--amber-2); letter-spacing: .04em; display: flex; align-items: center; gap: 12px; }
+  .nl-month::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .nl-month:first-child { margin-top: 0; }
+  .nl-row { display: grid; grid-template-columns: 168px 1fr auto; gap: 18px; align-items: center; padding: 12px 18px 12px 12px; border-radius: 18px; text-decoration: none; color: var(--text); background: var(--surface); border: 1px solid var(--line); transition: transform .25s var(--ease), border-color .25s; }
+  .nl-row:hover { transform: translateX(4px); border-color: var(--red); }
+  .nl-th { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: #2a1f16; }
+  .nl-th img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .nl-row.notice .nl-th { display: grid; place-items: center; background: linear-gradient(135deg, rgba(242,182,76,.25), rgba(224,83,63,.25)); }
+  .nl-row.notice .nl-th img { width: 52px; height: 52px; border-radius: 50%; }
+  .nl-play { position: absolute; left: 50%; top: 50%; width: 36px; height: 26px; margin: -13px 0 0 -18px; border-radius: 8px; background: rgba(224,83,63,.92); }
+  .nl-play::after { content: ""; position: absolute; left: 14px; top: 7px; border-left: 11px solid #fff; border-top: 6px solid transparent; border-bottom: 6px solid transparent; }
+  .nl-body { display: grid; gap: 6px; min-width: 0; }
+  .nl-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: .8rem; color: var(--sub); }
+  .nl-meta time { font-variant-numeric: tabular-nums; }
+  .nl-tag { font-size: .7rem; font-weight: 700; padding: 2px 9px; border-radius: 999px; background: var(--amber); color: var(--ink); }
+  .nl-tag.jiji { background: var(--blue); }
+  .nl-tag.notice { background: var(--red); color: #fff; }
+  .nl-t { font-weight: 700; line-height: 1.6; font-size: .98rem; word-break: normal; overflow-wrap: anywhere; }
+  .nl-go { font-size: 1.4rem; color: var(--sub); }
+  .nl-row:hover .nl-go { color: var(--red); }
+  #news .foot { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+  @media (max-width: 600px) {
+    .nl-row { grid-template-columns: 112px 1fr; gap: 12px; padding: 10px; border-radius: 14px; }
+    .nl-go { display: none; }
+    .nl-t { font-size: .88rem; line-height: 1.55; }
+    .nl-meta { font-size: .72rem; gap: 4px 8px; }
+    .nl-row.notice .nl-th img { width: 40px; height: 40px; }
+    .news-list .skel { height: 80px; }
+  }
+
+  /* ===== スマホでもゲームを見つけやすく ===== */
+  .hdr-game { display: none; }
+  @media (max-width: 1080px) {
+    .bar { gap: 10px; }
+    .hdr-game { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; padding: 9px 16px; border-radius: 999px; text-decoration: none;
+      font-family: "M PLUS Rounded 1c", sans-serif; font-weight: 800; font-size: .95rem; color: #fff;
+      background: linear-gradient(135deg, var(--red), #f07b3f); box-shadow: 0 6px 18px -6px rgba(224,83,63,.8); animation: hgPulse 2.6s ease-in-out infinite; }
+    body.p-game .hdr-game { display: none; }
+  }
+  @media (max-width: 380px) { .hdr-game { padding: 8px 12px; font-size: .86rem; } .logo { font-size: 1rem; } }
+  @keyframes hgPulse { 0%, 100% { box-shadow: 0 6px 18px -6px rgba(224,83,63,.8); } 50% { box-shadow: 0 6px 26px -2px rgba(224,83,63,.95); } }
+  @media (prefers-reduced-motion: reduce) { .hdr-game { animation: none; } }
+
+  /* ===== トップのゲーム入口 ===== */
+  .game-promo { max-width: 980px; margin: 28px auto 0; padding: 22px; border-radius: 24px; text-align: left;
+    background: linear-gradient(135deg, rgba(224,83,63,.22), rgba(242,182,76,.18)); border: 1.5px solid rgba(242,182,76,.5); }
+  .gp-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-bottom: 16px; }
+  .gp-head h2 { margin: 0; font-size: 1.3rem; }
+  .gp-head p { margin: 0; color: var(--sub); font-size: .88rem; flex-basis: 100%; }
+  .gp-new { font-size: .7rem; font-weight: 800; padding: 3px 9px; border-radius: 999px; background: var(--red); color: #fff; letter-spacing: .05em; }
+  .gp-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .gp-card { display: grid; grid-template-columns: 64px 1fr auto; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 18px; text-decoration: none; color: var(--text);
+    background: var(--surface); border: 1px solid var(--line-2); transition: transform .25s var(--ease), border-color .25s; }
+  .gp-card:hover { transform: translateY(-3px); border-color: var(--amber); }
+  .gp-card img { width: 64px; height: 64px; border-radius: 50%; background: var(--surface-2); object-fit: cover; }
+  .gp-txt { display: grid; gap: 4px; min-width: 0; }
+  .gp-txt b { font-family: "M PLUS Rounded 1c", sans-serif; font-size: 1.12rem; }
+  .gp-txt small { color: var(--sub); font-size: .8rem; line-height: 1.55; }
+  .gp-go { padding: 9px 16px; border-radius: 999px; background: var(--amber); color: var(--ink); font-weight: 800; font-size: .9rem; white-space: nowrap; }
+  .gp-card.hit .gp-go { background: var(--red); color: #fff; }
+  @media (max-width: 760px) {
+    .game-promo { padding: 16px; border-radius: 20px; }
+    .gp-cards { grid-template-columns: 1fr; gap: 10px; }
+    .gp-card { grid-template-columns: 52px 1fr auto; gap: 12px; padding: 12px; }
+    .gp-card img { width: 52px; height: 52px; }
+    .gp-head h2 { font-size: 1.15rem; }
+  }
+
+  .game-sec { padding-top: 0; }
+  .game-sec .game-promo { margin-top: 0; }
+
+  /* スマホのヘッダーを1行に */
+  .logo, .hdr-game { white-space: nowrap; }
+  @media (max-width: 480px) {
+    .logo { font-size: 1rem; gap: 8px; }
+    .logo img { width: 34px; height: 34px; }
+    .hdr-game { padding: 8px 13px; font-size: .88rem; gap: 4px; }
+  }
+  @media (max-width: 760px) {
+    .gp-card { grid-template-columns: 52px 1fr; }
+    .gp-go { grid-column: 1 / -1; text-align: center; padding: 10px; }
+  }
+  .btn.game { background: linear-gradient(135deg, var(--red), #f07b3f); border-color: transparent; color: #fff; box-shadow: 0 10px 30px -10px rgba(224,83,63,.7); }
+  .btn.game:hover { filter: brightness(1.08); }
+  .news-list { max-width: none; }
+  @media (max-width: 600px) { .hero .btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; } .hero .btns .btn { justify-content: center; } .hero .btns .btn.game { grid-column: 1 / -1; order: -1; } }

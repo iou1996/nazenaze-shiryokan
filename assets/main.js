@@ -425,6 +425,7 @@
           bar.innerHTML = n.notice
             ? `<a href="${esc(n.url || '#')}"><span class="nb-tag">お知らせ</span><span class="nb-date">${md(n.date)}</span><span class="nb-txt">${esc(n.text)}</span><span class="nb-go">見る ›</span></a>`
             : `<a href="https://www.youtube.com/watch?v=${encodeURIComponent(n.id)}" target="_blank" rel="noopener"><span class="nb-tag">新着動画</span><span class="nb-date">${md(n.published)}</span><span class="nb-txt">${CHL[n.channel] || ''}で「${esc(n.title)}」を解説しました</span><span class="nb-go">見る ›</span></a>`;
+          bar.insertAdjacentHTML('beforeend', '<a class="nb-all" href="news.html">一覧</a>');
           bar.classList.remove('in'); void bar.offsetWidth; bar.classList.add('in');
           i++;
         };
@@ -443,4 +444,59 @@
         popBox.hidden = false;
       }
     }).catch(() => {});
+  }
+
+  /* ===== ニュース一覧（news.html） ===== */
+  {
+    const list = document.getElementById('newsList');
+    if (list) {
+      const CHL = { main: 'スポーツ編', jiji: '時事・地域編', notice: 'お知らせ' };
+      const WD = '日月火水木金土';
+      const PAGE = 30;
+      const day = p => { const [y, m, d] = p.split('-').map(Number); return { y, m, d, w: WD[new Date(y, m - 1, d).getDay()] }; };
+      let rows = [], f = 'all', shown = PAGE;
+      const more = document.getElementById('newsMore');
+      const tabs = [...document.querySelectorAll('#newsTabs .tab')];
+      const pill = document.querySelector('#newsTabs .pill');
+      const place = () => { const t = tabs.find(x => x.getAttribute('aria-selected') === 'true'); pill.style.width = t.offsetWidth + 'px'; pill.style.transform = `translateX(${t.offsetLeft - 5}px)`; };
+      const row = r => {
+        const { y, m, d, w } = day(r.date);
+        const meta = `<span class="nl-meta"><time datetime="${r.date}">${y}.${m}.${d}（${w}）</time><span class="nl-tag ${r.kind}">${CHL[r.kind]}</span></span>`;
+        if (r.kind === 'notice') {
+          return `<a class="nl-row notice" href="${esc(r.url || 'index.html')}"><span class="nl-th"><img src="images/icon.png" alt=""></span>
+            <span class="nl-body">${meta}<span class="nl-t">${esc(r.text)}</span></span><span class="nl-go">›</span></a>`;
+        }
+        const id = encodeURIComponent(r.id);
+        return `<a class="nl-row ${r.kind}" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener"><span class="nl-th"><img src="https://i.ytimg.com/vi/${id}/mqdefault.jpg" alt="" loading="lazy"><span class="nl-play"></span></span>
+          <span class="nl-body">${meta}<span class="nl-t">「${esc(r.title)}」を解説しました</span></span><span class="nl-go">›</span></a>`;
+      };
+      const render = () => {
+        const hit = rows.filter(r => f === 'all' || r.kind === f);
+        if (!hit.length) { list.innerHTML = '<p class="empty">まだありません。</p>'; more.hidden = true; return; }
+        let html = '', mon = '';
+        hit.slice(0, shown).forEach(r => {
+          const { y, m } = day(r.date);
+          if (`${y}-${m}` !== mon) { mon = `${y}-${m}`; html += `<h2 class="nl-month">${y}年${m}月</h2>`; }
+          html += row(r);
+        });
+        list.innerHTML = html;
+        more.hidden = hit.length <= shown;
+      };
+      tabs.forEach(t => t.addEventListener('click', () => {
+        tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+        f = t.dataset.f; shown = PAGE; place(); render();
+      }));
+      more.addEventListener('click', () => { shown += PAGE; render(); });
+      addEventListener('resize', place);
+      document.fonts.ready.then(place);
+      place();
+      Promise.all([fetch('videos.json').then(r => r.json()), fetch('data/notices.json').then(r => r.json()).catch(() => ({}))]).then(([d, nt]) => {
+        const notes = (nt.notices || []).map(n => ({ kind: 'notice', date: n.date, text: n.text, url: n.url }));
+        const vids = (d.log || d.news || []).filter(v => v.published).map(v => ({ kind: v.channel, date: v.published, id: v.id, title: v.title }));
+        rows = [...notes, ...vids].sort((a, b) => b.date.localeCompare(a.date) || (a.kind === 'notice' ? -1 : 1));
+        const q = new URLSearchParams(location.search).get('f');
+        const t0 = tabs.find(t => t.dataset.f === q);
+        if (t0) t0.click(); else render();
+      }).catch(() => { list.innerHTML = '<p class="empty">読みこめませんでした。時間をおいて開きなおしてください。</p>'; });
+    }
   }
