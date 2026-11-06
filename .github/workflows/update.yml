@@ -19,6 +19,6 @@ jobs:
       - run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add videos.json
+          git add videos.json news.html sitemap.xml
           git diff --cached --quiet || git commit -m "動画一覧を更新"
           git push

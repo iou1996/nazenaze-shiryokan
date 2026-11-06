@@ -693,3 +693,7 @@
   .qv-title { font-size: .74rem; color: var(--sub); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
   .q-vrow .qv-go { align-self: center; }
   @media (max-width: 600px) { .qv-txt b { font-size: .86rem; } .qv-title { -webkit-line-clamp: 2; } }
+
+  /* 本文は文節で折らない（スマホで行がガタガタになるため）。見出しだけ文節で折る */
+  p, li, .lead, small, em, .video p, .char p, .pillar span { word-break: normal; text-wrap: pretty; line-break: strict; overflow-wrap: anywhere; }
+  .hero .intro p { text-wrap: pretty; }

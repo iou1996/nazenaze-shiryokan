@@ -209,3 +209,11 @@ if changed:
     out["updated"] = datetime.now(JST).strftime("%Y-%m-%d %H:%M")
     with open("videos.json", "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
+
+# 検索エンジン向けに、news.html にニュース一覧を直接書きこむ
+try:
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
+    import render_static
+    render_static.main()
+except Exception as e:
+    print(f"news.html は書きかえられなかった: {e}", file=sys.stderr)

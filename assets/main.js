@@ -374,7 +374,7 @@
     const enc = encodeURIComponent;
     window.nzShareHTML = (text, url) => `<div class="share"><span class="share-lbl">シェアする</span>
       <a class="sh x" href="https://x.com/intent/post?text=${enc(text)}&url=${enc(url)}" target="_blank" rel="noopener">X（Twitter）</a>
-      <a class="sh line" href="https://social-plugins.line.me/lineit/share?url=${enc(url)}&text=${enc(text)}" target="_blank" rel="noopener">LINE</a>
+      <a class="sh line" href="https://social-plugins.line.me/lineit/share?url=${enc(url)}&text=${enc(text)}" data-app="https://line.me/R/share?text=${enc(text + ' ' + url)}" target="_blank" rel="noopener">LINE</a>
       <a class="sh fb" href="https://www.facebook.com/sharer/sharer.php?u=${enc(url)}" target="_blank" rel="noopener">Facebook</a>
       <button class="sh copy" type="button" data-url="${esc(url)}">リンクをコピー</button>
       ${navigator.share ? `<button class="sh native" type="button" data-url="${esc(url)}" data-text="${esc(text)}">ほかのアプリ</button>` : ''}</div>`;
@@ -501,20 +501,27 @@
     }
   }
 
-  /* ===== スマホでは YouTube のリンクをアプリで開く ===== */
+  /* ===== スマホでは YouTube・X・LINE のリンクをアプリで開く ===== */
   {
     const ua = navigator.userAgent;
     const android = /Android/i.test(ua);
     const ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const APPS = [
+      [/^https:\/\/(www\.|m\.)?youtube\.com\/|^https:\/\/youtu\.be\//, 'com.google.android.youtube'],
+      [/^https:\/\/(x|twitter)\.com\//, 'com.twitter.android'],
+      [/^https:\/\/line\.me\//, 'jp.naver.line.android'],
+    ];
     if (android || ios) {
       document.addEventListener('click', e => {
-        const a = e.target.closest && e.target.closest('a[href^="https://www.youtube.com/"], a[href^="https://youtu.be/"]');
+        const a = e.target.closest && e.target.closest('a[href]');
         if (!a || e.defaultPrevented) return;
+        const url = a.dataset.app || a.href;            // LINE はアプリ用の共有URLに差しかえ
+        const app = APPS.find(([re]) => re.test(url));
+        if (!app) return;
         e.preventDefault();
-        const url = a.href;
         if (android) {
-          // YouTubeアプリがあればアプリ、なければブラウザ
-          location.href = `intent://${url.replace(/^https:\/\//, '')}#Intent;scheme=https;package=com.google.android.youtube;S.browser_fallback_url=${encodeURIComponent(url)};end`;
+          // アプリがあればアプリ、なければブラウザ
+          location.href = `intent://${url.replace(/^https:\/\//, '')}#Intent;scheme=https;package=${app[1]};S.browser_fallback_url=${encodeURIComponent(url)};end`;
         } else {
           // 新しいタブだとアプリに渡らないので、同じタブで開く（ユニバーサルリンク）
           location.href = url;
@@ -522,3 +529,4 @@
       });
     }
   }
+
