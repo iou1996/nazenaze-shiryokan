@@ -368,3 +368,41 @@
     const want = new URLSearchParams(location.search).get('tab');
     if (want) { const t = logTabs.find(x => x.dataset.panel === want); if (t) setTimeout(() => { t.click(); document.getElementById('logTabs').scrollIntoView({ block: 'start' }); }, 300); }
   }
+
+  /* ===== SNSで共有 ===== */
+  {
+    const enc = encodeURIComponent;
+    window.nzShareHTML = (text, url) => `<div class="share"><span class="share-lbl">シェアする</span>
+      <a class="sh x" href="https://x.com/intent/post?text=${enc(text)}&url=${enc(url)}" target="_blank" rel="noopener">X（Twitter）</a>
+      <a class="sh line" href="https://social-plugins.line.me/lineit/share?url=${enc(url)}&text=${enc(text)}" target="_blank" rel="noopener">LINE</a>
+      <a class="sh fb" href="https://www.facebook.com/sharer/sharer.php?u=${enc(url)}" target="_blank" rel="noopener">Facebook</a>
+      <button class="sh copy" type="button" data-url="${esc(url)}">リンクをコピー</button>
+      ${navigator.share ? `<button class="sh native" type="button" data-url="${esc(url)}" data-text="${esc(text)}">ほかのアプリ</button>` : ''}</div>`;
+    document.addEventListener('click', async e => {
+      const b = e.target.closest('.sh.copy, .sh.native');
+      if (!b) return;
+      if (b.classList.contains('native')) { try { await navigator.share({ text: b.dataset.text, url: b.dataset.url }); } catch (err) { /* 閉じただけ */ } return; }
+      try { await navigator.clipboard.writeText(b.dataset.url); b.textContent = 'コピーしました'; } catch (err) { prompt('このURLをコピーしてください', b.dataset.url); }
+      setTimeout(() => { b.textContent = 'リンクをコピー'; }, 2000);
+    });
+    const ft = document.querySelector('footer');
+    if (ft) {
+      const url = (document.querySelector('link[rel=canonical]') || {}).href || location.href;
+      ft.insertAdjacentHTML('afterbegin', `<div class="wrap page-share">${window.nzShareHTML(document.title, url)}</div>`);
+    }
+  }
+
+  /* ===== トップ：両チャンネルの最新動画 ===== */
+  const latestBox = document.getElementById('latest');
+  if (latestBox) {
+    fetch('videos.json').then(r => r.json()).then(d => {
+      latestBox.innerHTML = [['main', 'スポーツ編'], ['jiji', '時事・地域編']].map(([k, label]) => {
+        const v = (d[k] || [])[0];
+        if (!v) return '';
+        const id = encodeURIComponent(v.id);
+        return `<a class="latest-card ${k}" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">
+          <span class="th"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></span>
+          <span class="txt"><span class="tag">${label}の最新動画</span><b>${esc(v.title)}</b></span></a>`;
+      }).join('');
+    }).catch(() => { latestBox.remove(); });
+  }

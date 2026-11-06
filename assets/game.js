@@ -24,13 +24,16 @@
 
   /* ===== なぜなぜクイズ ===== */
   const ROUND = 5;
-  const quiz = { all: [], qs: [], i: 0, score: 0 };
+  const quiz = { all: [], qs: [], i: 0, score: 0, ch: 'main' };
+  const CH = { main: 'スポーツ編', jiji: '時事・地域編' };
+  const GAME_URL = (document.querySelector('link[rel=canonical]') || {}).href || location.href;
   const qBox = $('quizBox');
 
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 
-  function quizStart() {
-    quiz.qs = shuffle(quiz.all).slice(0, ROUND);
+  function quizStart(ch) {
+    if (typeof ch === 'string') quiz.ch = ch;
+    quiz.qs = shuffle(quiz.all.filter(q => q.channel === quiz.ch)).slice(0, ROUND);
     quiz.i = 0; quiz.score = 0;
     quizAsk();
   }
@@ -38,7 +41,7 @@
   function quizAsk() {
     const q = quiz.qs[quiz.i];
     qBox.innerHTML = `
-      <div class="q-head"><span class="q-no">第${quiz.i + 1}問 <small>/ ${quiz.qs.length}</small></span><span class="q-score">正解 ${quiz.score}</span></div>
+      <div class="q-head"><span class="q-no">${CH[quiz.ch]}　第${quiz.i + 1}問 <small>/ ${quiz.qs.length}</small></span><span class="q-score">正解 ${quiz.score}</span></div>
       <div class="talk"><img src="${face('kotoni', 4)}" alt="コトニちゃん"><p class="bubble">${esc(q.q)}</p></div>
       <div class="choices">${q.choices.map((c, k) => `<button class="choice" data-k="${k}">${'ABC'[k]}　${esc(c)}</button>`).join('')}</div>
       <div id="qAns"></div>`;
@@ -72,26 +75,36 @@
     const [sf, kf, msg] = n === all ? [2, 5, 'ぜんぶ正解です。館長の席をゆずりましょうか。']
       : n >= all - 2 ? [1, 3, 'なかなかです。まちがえたところは、動画で確かめてみてください。']
       : [6, 6, 'ちなみに、どの問題も動画で話しています。新聞は強いです。'];
-    const best = Math.max(n, +(store.get('nz_quiz_best') || 0));
-    store.set('nz_quiz_best', best);
+    const key = 'nz_quiz_best_' + quiz.ch;
+    const best = Math.max(n, +(store.get(key) || 0));
+    store.set(key, best);
+    const other = quiz.ch === 'main' ? 'jiji' : 'main';
+    const share = window.nzShareHTML ? window.nzShareHTML(`なぜなぜクイズ（${CH[quiz.ch]}）で${all}問中${n}問正解しました！ #なぜなぜ資料館`, GAME_URL) : '';
     qBox.innerHTML = `
       <div class="q-end">
         <p class="q-result">${all}問中 <b>${n}</b>問 正解</p>
         <div class="talk shima"><img src="${face('shima', sf)}" alt="シマ先生"><p class="bubble">${msg}</p></div>
         <div class="talk"><img src="${face('kotoni', kf)}" alt="コトニちゃん"><p class="bubble">${n === all ? 'べつに、すごいとか思ってないけど。' : 'もう1回やる？　べつに付き合ってあげてもいいけど。'}</p></div>
-        <p class="note">これまでの最高：${best}問</p>
-        <button class="btn solid" id="qAgain">もう1回やる <span class="arr">→</span></button>
+        <p class="note">${CH[quiz.ch]}のこれまでの最高：${best}問</p>
+        ${share}
+        <div class="q-next" style="justify-content:flex-start">
+          <button class="btn solid" id="qAgain">もう1回やる <span class="arr">→</span></button>
+          <button class="btn" id="qOther">${CH[other]}で遊ぶ</button>
+        </div>
       </div>`;
-    $('qAgain').addEventListener('click', quizStart);
+    $('qAgain').addEventListener('click', () => quizStart(quiz.ch));
+    $('qOther').addEventListener('click', () => quizStart(other));
   }
 
   fetch('data/quiz.json').then(r => r.json()).then(d => {
     quiz.all = (d.questions || []).filter(q => q.choices && q.choices.length === 3);
     if (!quiz.all.length) throw new Error('no questions');
-    $('quizCount').textContent = `全${quiz.all.length}問から${ROUND}問`;
-    $('quizStart').disabled = false;
+    const nM = quiz.all.filter(q => q.channel === 'main').length, nJ = quiz.all.filter(q => q.channel === 'jiji').length;
+    $('quizCount').textContent = `どちらで遊ぶ？　1回${ROUND}問です。`;
+    $('qcMain').textContent = `全${nM}問`; $('qcJiji').textContent = `全${nJ}問`;
+    document.querySelectorAll('.q-cat').forEach(b => { b.disabled = !quiz.all.some(q => q.channel === b.dataset.ch); });
   }).catch(() => { $('quizCount').textContent = '問題を準備中です。'; });
-  $('quizStart').addEventListener('click', quizStart);
+  document.querySelectorAll('.q-cat').forEach(b => b.addEventListener('click', () => quizStart(b.dataset.ch)));
 
   /* ===== 反射ゲーム：シマ先生だけタップ ===== */
   const TIME = 30;
@@ -150,7 +163,8 @@
         : s >= 18 ? [1, 'いい反射です。新聞を読むのも、これくらいの速さでどうぞ。']
         : [4, 'ちなみに、コトニちゃんをタップすると減点です。'];
       $('hitMsg').innerHTML = `<p class="q-result"><b>${s}</b>点${isBest ? '　<span class="best">自己ベスト！</span>' : ''}</p>
-        <div class="talk shima"><img src="${face('shima', f)}" alt="シマ先生"><p class="bubble">${msg}</p></div>`;
+        <div class="talk shima"><img src="${face('shima', f)}" alt="シマ先生"><p class="bubble">${msg}</p></div>
+        ${window.nzShareHTML ? window.nzShareHTML(`なぜなぜ資料館の反射ゲームで${s}点でした！ シマ先生、つかまえられる？ #なぜなぜ資料館`, GAME_URL) : ''}`;
       $('hitMsg').hidden = false;
       $('hitStart').hidden = false;
       $('hitStart').innerHTML = 'もう1回 <span class="arr">→</span>';
