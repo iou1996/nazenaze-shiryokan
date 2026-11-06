@@ -654,3 +654,33 @@
   .btn.game:hover { filter: brightness(1.08); }
   .news-list { max-width: none; }
   @media (max-width: 600px) { .hero .btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; } .hero .btns .btn { justify-content: center; } .hero .btns .btn.game { grid-column: 1 / -1; order: -1; } }
+
+  /* ===== クイズ：問題中は小さなリンク、解き終わりに解説動画の一覧 ===== */
+  .q-end { justify-items: stretch; }
+  .q-next { align-items: center; }
+  .q-vlink { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 999px; text-decoration: none; font-size: .88rem; font-weight: 700;
+    color: var(--text); border: 1px solid var(--line-2); background: var(--surface); }
+  .q-vlink:hover { border-color: var(--red); color: #fff; }
+  .q-best { font-size: .8rem; font-weight: 500; color: var(--sub); font-family: "Zen Kaku Gothic New", sans-serif; }
+  .q-vh { font-size: 1.05rem; margin: 18px 0 8px; }
+  .q-vlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 10px; margin-bottom: 4px; }
+  .q-vrow { display: grid; grid-template-columns: 128px 1fr auto; gap: 12px; align-items: center; padding: 8px 14px 8px 8px; border-radius: 14px; text-decoration: none; color: var(--text);
+    background: var(--surface-2); border: 1px solid var(--line); transition: border-color .2s, transform .2s var(--ease); }
+  .q-vrow:hover { border-color: var(--red); transform: translateY(-2px); }
+  .qv-th { position: relative; display: block; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; background: #2a1f16; }
+  .qv-th img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .qv-txt { display: grid; gap: 2px; min-width: 0; }
+  .qv-txt small { font-size: .72rem; color: var(--sub); }
+  .qv-txt b { font-size: .86rem; line-height: 1.5; word-break: normal; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .qv-go { font-size: .78rem; font-weight: 700; color: #fff; background: var(--red); padding: 5px 10px; border-radius: 999px; white-space: nowrap; }
+  @media (max-width: 600px) {
+    .q-next .q-vlink { flex: 1 1 100%; justify-content: center; order: 2; }
+    .q-vrow { grid-template-columns: 104px 1fr; gap: 10px; padding: 8px; }
+    .qv-go { display: none; }
+    .q-result { font-size: 1.1rem; }
+  }
+  .q-vlist { grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); }
+  .q-vrow .w-mark { width: 24px; height: 24px; font-size: .85rem; left: 4px; top: 4px; box-shadow: 0 2px 6px rgba(0,0,0,.5); }
+  .q-vrow .w-mark.ng { background: var(--red); }
+  .q-next .btn { white-space: nowrap; }
+  @media (max-width: 600px) { .q-end .q-next .btn { flex: 1 1 100%; } }

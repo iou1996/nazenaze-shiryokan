@@ -28,9 +28,9 @@
   const quiz = { all: [], qs: [], i: 0, score: 0, ch: 'main', res: [] };
   const TITLES = {};
   fetch('videos.json').then(r => r.json()).then(d => { for (const k of ['main', 'jiji']) (d[k] || []).forEach(v => { TITLES[v.id] = v.title; }); }).catch(() => {});
-  const watchCard = (id, mark) => `<a class="watch" href="https://www.youtube.com/watch?v=${encodeURIComponent(id)}" target="_blank" rel="noopener">
-      <span class="w-th"><img src="https://i.ytimg.com/vi/${encodeURIComponent(id)}/mqdefault.jpg" alt="" loading="lazy"><span class="w-play"></span>${mark || ''}</span>
-      <span class="w-txt"><span class="w-lbl">▶ この回の動画を見る</span><small>${esc(TITLES[id] || 'YouTubeで開く')}</small></span></a>`;
+  const vRow = (q, k) => `<a class="q-vrow" href="https://www.youtube.com/watch?v=${encodeURIComponent(q.video)}" target="_blank" rel="noopener">
+      <span class="qv-th"><img src="https://i.ytimg.com/vi/${encodeURIComponent(q.video)}/mqdefault.jpg" alt="" loading="lazy"><span class="w-mark ${quiz.res[k] ? 'ok' : 'ng'}">${quiz.res[k] ? '○' : '×'}</span></span>
+      <span class="qv-txt"><small>第${k + 1}問</small><b>${esc(TITLES[q.video] || q.q)}</b></span><span class="qv-go">見る ›</span></a>`;
   const CH = { main: 'スポーツ編', jiji: '時事・地域編' };
   const GAME_URL = (document.querySelector('link[rel=canonical]') || {}).href || location.href;
   const qBox = $('quizBox');
@@ -69,9 +69,9 @@
     const last = quiz.i === quiz.qs.length - 1;
     $('qAns').innerHTML = `
       <div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>
-      ${q.video ? watchCard(q.video) : ''}
       <div class="q-next">
-        <button class="btn solid" id="qNext">${last ? '結果を見る' : '次の問題'} <span class="arr">→</span></button>
+        ${q.video ? `<a class="q-vlink" href="https://www.youtube.com/watch?v=${encodeURIComponent(q.video)}" target="_blank" rel="noopener">▶ この回の動画</a>` : ''}
+        <button class="btn solid" id="qNext">${last ? '結果と動画一覧を見る' : '次の問題'} <span class="arr">→</span></button>
       </div>`;
     $('qNext').addEventListener('click', () => { if (last) quizEnd(); else { quiz.i++; quizAsk(); } });
     $('qNext').focus({ preventScroll: true });
@@ -89,12 +89,10 @@
     const share = window.nzShareHTML ? window.nzShareHTML(`なぜなぜクイズ（${CH[quiz.ch]}）で${all}問中${n}問正解しました！ #なぜなぜ資料館`, GAME_URL) : '';
     qBox.innerHTML = `
       <div class="q-end">
-        <p class="q-result">${all}問中 <b>${n}</b>問 正解</p>
+        <p class="q-result">${all}問中 <b>${n}</b>問 正解　<small class="q-best">${CH[quiz.ch]}の最高：${best}問</small></p>
         <div class="talk shima"><img src="${face('shima', sf)}" alt="シマ先生"><p class="bubble">${msg}</p></div>
-        <div class="talk"><img src="${face('kotoni', kf)}" alt="コトニちゃん"><p class="bubble">${n === all ? 'べつに、すごいとか思ってないけど。' : 'もう1回やる？　べつに付き合ってあげてもいいけど。'}</p></div>
-        <p class="note">${CH[quiz.ch]}のこれまでの最高：${best}問</p>
-        <h3 class="q-vh">今回の問題の動画</h3>
-        <div class="q-videos">${quiz.qs.map((q, k) => q.video ? watchCard(q.video, `<span class="w-mark ${quiz.res[k] ? 'ok' : 'ng'}">${quiz.res[k] ? '○' : '×'}</span>`) : '').join('')}</div>
+        <h3 class="q-vh">今回の問題の解説動画</h3>
+        <div class="q-vlist">${quiz.qs.map((q, k) => q.video ? vRow(q, k) : '').join('')}</div>
         ${share}
         <div class="q-next" style="justify-content:flex-start">
           <button class="btn solid" id="qAgain">もう1回やる <span class="arr">→</span></button>

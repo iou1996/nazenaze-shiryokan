@@ -500,3 +500,25 @@
       }).catch(() => { list.innerHTML = '<p class="empty">読みこめませんでした。時間をおいて開きなおしてください。</p>'; });
     }
   }
+
+  /* ===== スマホでは YouTube のリンクをアプリで開く ===== */
+  {
+    const ua = navigator.userAgent;
+    const android = /Android/i.test(ua);
+    const ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (android || ios) {
+      document.addEventListener('click', e => {
+        const a = e.target.closest && e.target.closest('a[href^="https://www.youtube.com/"], a[href^="https://youtu.be/"]');
+        if (!a || e.defaultPrevented) return;
+        e.preventDefault();
+        const url = a.href;
+        if (android) {
+          // YouTubeアプリがあればアプリ、なければブラウザ
+          location.href = `intent://${url.replace(/^https:\/\//, '')}#Intent;scheme=https;package=com.google.android.youtube;S.browser_fallback_url=${encodeURIComponent(url)};end`;
+        } else {
+          // 新しいタブだとアプリに渡らないので、同じタブで開く（ユニバーサルリンク）
+          location.href = url;
+        }
+      });
+    }
+  }
