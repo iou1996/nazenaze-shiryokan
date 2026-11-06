@@ -168,7 +168,23 @@ def upload_date(vid):
     return item(vid, m.group(1), "")["published"] if m else ""
 
 
+def is_public(vid):
+    """oEmbed が 200 なら公開（非公開・削除は 401/403/404）"""
+    try:
+        with urllib.request.urlopen(f"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={vid}&format=json", timeout=20) as r:
+            return r.status == 200
+    except urllib.error.HTTPError as e:
+        return e.code not in (401, 403, 404)
+    except Exception:
+        return True   # 通信の失敗では消さない
+
+
 log = {v["id"]: v for v in out.get("log", [])}
+listed = {v["id"] for key in CHANNELS for v in out.get(key, [])}
+for vid in [i for i in log if i not in listed]:
+    if not is_public(vid):
+        print("非公開・削除なので記録から外す", vid, log[vid]["title"][:20])
+        del log[vid]
 for v in (recent if "recent" in dir() else []):
     log[v["id"]] = {"id": v["id"], "title": v["title"], "channel": v["channel"], "published": v["published"]}
 for key in CHANNELS:
