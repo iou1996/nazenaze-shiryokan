@@ -932,3 +932,25 @@
     .rd-card-t .rd-meta { grid-column: 2; grid-row: 1; flex-direction: column; align-items: flex-start; gap: 4px; }
     .rd-card-t b, .rd-card-t small { grid-column: 1 / -1; padding: 0 2px; }
   }
+
+  /* ===================== 資料館ダッシュ（assets/run.js） ===================== */
+  .run-card-box { padding: clamp(10px, 2vw, 18px); }
+  .run-wrap { position: relative; border-radius: 18px; overflow: hidden; background: #1c140d; }
+  .run-wrap canvas { display: block; width: 100%; touch-action: none; user-select: none; -webkit-user-select: none; outline: none; cursor: pointer; }
+  .run-ov { position: absolute; inset: 0; display: grid; place-items: center; padding: 14px; background: radial-gradient(circle at 50% 40%, rgba(22,16,11,.55), rgba(22,16,11,.85)); }
+  .run-ov[hidden] { display: none; }
+  .run-card { width: min(560px, 100%); display: grid; gap: 10px; justify-items: center; text-align: center; }
+  .run-card .talk, .run-card .choices, .run-card .q-vlist, .run-card .share, .run-card #runAns, .run-card .q-next { width: 100%; text-align: left; justify-self: stretch; }
+  .run-hero { width: 110px; height: auto; animation: runBob .5s ease-in-out infinite alternate; filter: drop-shadow(0 8px 12px rgba(0,0,0,.5)); }
+  @keyframes runBob { from { transform: translateY(0) rotate(-2deg); } to { transform: translateY(-8px) rotate(2deg); } }
+  .run-gate { margin: 0; font-family: "M PLUS Rounded 1c", sans-serif; font-weight: 800; font-size: 1.5rem; background: linear-gradient(90deg, var(--amber), var(--red)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .run-how { margin: 0; color: #e7dcc7; font-size: .9rem; line-height: 1.8; max-width: 460px; }
+  .run-how b { color: var(--amber); }
+  .run-stat { margin: 0; color: var(--sub); font-size: .86rem; }
+  /* クイズ・結果のときはキャンバスを隠して、パネルを普通に流す */
+  .run-wrap.flow { background: transparent; overflow: visible; }
+  .run-wrap.flow canvas { display: none; }
+  .run-wrap.flow .run-ov { position: static; background: none; padding: 6px 0; }
+  .run-wrap.flow .run-card { justify-items: start; text-align: left; width: 100%; max-width: none; }
+  @media (prefers-reduced-motion: reduce) { .run-hero { animation: none; } }
+  @media (max-width: 600px) { .run-hero { width: 76px; } .run-gate { font-size: 1.25rem; } .run-how { font-size: .82rem; line-height: 1.7; } .run-ov { padding: 10px; } }

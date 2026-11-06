@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>資料館ダッシュ｜なぜなぜ資料館のミニゲーム</title>
+<meta name="description" content="コトニちゃんが資料館の棚の間を走るアクションゲーム。タップでジャンプ、本の山をよけて「？」カードを集めよう。5枚でなぜなぜゲートが開いてクイズ。正解するとバリア。">
+<link rel="canonical" href="https://iou1996.github.io/nazenaze-shiryokan/run.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="シマ先生とコトニちゃんのなぜなぜ資料館">
+<meta property="og:title" content="資料館ダッシュ｜なぜなぜ資料館のミニゲーム">
+<meta property="og:description" content="コトニちゃんが資料館の棚の間を走るアクションゲーム。タップでジャンプ、本の山をよけて「？」カードを集めよう。5枚でなぜなぜゲートが開いてクイズ。正解するとバリア。">
+<meta property="og:url" content="https://iou1996.github.io/nazenaze-shiryokan/run.html">
+<meta property="og:image" content="https://iou1996.github.io/nazenaze-shiryokan/images/banner.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="max-image-preview:large">
+<meta name="theme-color" content="#16100b">
+<link rel="icon" href="images/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="p-game" data-game="run">
+
+<header id="hdr">
+  <div class="bar">
+    <a class="logo" href="index.html"><img src="images/icon.png" alt="">なぜなぜ資料館</a>
+    <nav id="nav">
+      <a href="index.html">トップ</a>
+      <a href="news.html">ニュース</a>
+      <a href="characters.html">登場人物</a>
+      <a href="videos.html">動画</a>
+      <a href="kaisetsu.html">解説</a>
+      <a href="touha.html">踏破記録</a>
+      <a href="game.html">ゲーム<span class="new">NEW</span></a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <a class="hdr-game" href="game.html"><span aria-hidden="true">🎮</span>ゲーム</a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-top" id="game">
+  <div class="wrap">
+    <p class="label rv"><a href="game.html">GAME</a></p>
+    <h1 class="rv d1 h2">資料館ダッシュ</h1>
+    <p class="lead rv d2">棚の間を走って「？」を集めよう。ゲートではクイズ。どこまで行ける？</p>
+
+    <div class="panel game-card run-card-box" id="gRun">
+      <div class="run-wrap" id="runWrap">
+        <canvas id="runCanvas" tabindex="0" aria-label="資料館ダッシュのゲーム画面。タップかスペースキーでジャンプ"></canvas>
+        <div class="run-ov" id="runOverlay">
+          <div class="run-card">
+            <img class="run-hero" src="images/game/kotoni_run.png" alt="">
+            <p class="run-gate">資料館ダッシュ</p>
+            <p class="run-how"><b>タップ</b>（パソコンは<b>スペース</b>）でジャンプ。<b>2回</b>で2段ジャンプ。本の山をよけて「？」を<b>5枚</b>集めると、なぜなぜゲート。クイズに正解すると<b>バリア</b>。</p>
+            <button class="btn solid" id="runStart">スタート <span class="arr">→</span></button>
+            <p class="note">自己ベスト <b id="runBest">0</b>点</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="g-howto">
+      <h2>あそびかた</h2>
+      <p>画面をタップ（パソコンはスペースキー）でジャンプ。空中でもう1回タップすると2段ジャンプです。本の山やワゴンにぶつかるとライフが1つ減り、3つなくなると終わり。「？」カードを5枚集めると、なぜなぜゲートが出てクイズが1問。正解すると100点とバリア（1回だけぶつかっても平気）。走るほど速くなります。</p>
+      <p>自己ベストは、この端末のブラウザにだけ保存されます。</p>
+    </div>
+    <div class="g-more">
+      <h2>ほかのゲーム</h2>
+      <div class="g-minis" id="moreGames"></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <span>© シマ先生とコトニちゃんのなぜなぜ資料館</span>
+    <span class="links">
+      <a href="https://www.youtube.com/@hghg1996iou" target="_blank" rel="noopener">スポーツ編</a>
+      <a href="https://www.youtube.com/@nazenaze-chiiki" target="_blank" rel="noopener">時事・地域編</a>
+      <a href="news.html">ニュース</a>
+      <a href="kaisetsu.html">解説</a>
+      <a href="nenpyo.html">年表</a>
+      <a href="shuten.html">出典</a>
+      <a href="contact.html">お問い合わせ</a>
+    </span>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script src="assets/fx.js"></script>
+<script src="assets/game.js"></script>
+<script src="assets/run.js"></script>
+</body>
+</html>

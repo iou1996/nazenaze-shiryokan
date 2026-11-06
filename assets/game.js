@@ -29,6 +29,7 @@
 
   /* ゲームの一覧（一覧ページ・各ページ下の「ほかのゲーム」で使う） */
   const GAMES = [
+    { id: 'run', href: 'run.html', name: '資料館ダッシュ', img: 'images/chars/kotoni_pose1.png', desc: '棚の間を走って「？」を集めよう', best: () => { const n = +(store.get('nz_run_best') || 0); return n ? `最高 ${n}点` : ''; } },
     { id: 'quiz', href: 'quiz.html', name: 'なぜなぜクイズ', img: face('kotoni', 4), desc: '動画で話した「なぜ？」を3択で。1回5問', best: () => { const n = Math.max(+(store.get('nz_quiz_best_main') || 0), +(store.get('nz_quiz_best_jiji') || 0)); return n ? `最高 ${n}問正解` : ''; } },
     { id: 'daily', href: 'daily.html', name: '今日の1問', img: face('shima', 1), desc: '1日1問だけ。毎日つづけて記録をのばそう', best: () => { const n = +(store.get('nz_daily_streak') || 0); return n ? `${n}日連続` : ''; } },
     { id: 'saki', href: 'saki.html', name: 'どっちが先？', img: face('kotoni', 2), desc: '2つの出来事、先に起きたのはどっち？何問つづけて当てられる？', best: () => { const n = +(store.get('nz_saki_best') || 0); return n ? `最高 ${n}連続` : ''; } },
