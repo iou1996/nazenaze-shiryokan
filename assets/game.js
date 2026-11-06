@@ -129,8 +129,12 @@
       $('quizCount').textContent = `どちらで遊ぶ？　1回${ROUND}問です。`;
       $('qcMain').textContent = `全${nM}問`; $('qcJiji').textContent = `全${nJ}問`;
       document.querySelectorAll('.q-cat').forEach(b => { b.disabled = !quiz.all.some(q => q.channel === b.dataset.ch); });
-      const want = new URLSearchParams(location.search).get('ch');   // quiz.html?ch=jiji で時事から
-      if (want && CH[want]) start(want);
+      const qs = new URLSearchParams(location.search);
+      const want = qs.get('ch');   // quiz.html?ch=jiji で時事から
+      const only = qs.get('v');    // quiz.html?v=動画ID で、その回の問題だけ（解説ページから）
+      const mine = only ? quiz.all.filter(q => q.video === only) : [];
+      if (mine.length) { quiz.ch = mine[0].channel; quiz.qs = shuffle(mine); quiz.i = 0; quiz.score = 0; quiz.res = []; quiz.streak = 0; ask(); }
+      else if (want && CH[want]) start(want);
     }).catch(() => { $('quizCount').textContent = '問題を準備中です。'; });
     document.querySelectorAll('.q-cat').forEach(b => b.addEventListener('click', () => start(b.dataset.ch)));
   }

@@ -530,3 +530,44 @@
     }
   }
 
+
+/* ===== 年表（nenpyo.html）：チャンネルで絞る ===== */
+(() => {
+  const ny = document.getElementById('ny'), tabs = document.getElementById('nyTabs');
+  if (!ny || !tabs) return;
+  const pill = tabs.querySelector('.pill'), bs = [...tabs.querySelectorAll('.tab')];
+  const move = t => { pill.style.width = t.offsetWidth + 'px'; pill.style.transform = `translateX(${t.offsetLeft - 5}px)`; };
+  const apply = f => {
+    ny.querySelectorAll('.ny-ev').forEach(li => { li.hidden = f !== 'all' && li.dataset.ch !== f; });
+    // 中身が空になった年代の見出しは隠す
+    ny.querySelectorAll('.ny-era').forEach(h => { let n = h.nextElementSibling, any = false; while (n && !n.classList.contains('ny-era')) { if (!n.hidden) any = true; n = n.nextElementSibling; } h.hidden = !any; });
+  };
+  bs.forEach(b => b.addEventListener('click', () => { bs.forEach(x => x.setAttribute('aria-selected', x === b)); move(b); apply(b.dataset.f); }));
+  const place = () => move(bs.find(b => b.getAttribute('aria-selected') === 'true'));
+  addEventListener('resize', place); document.fonts.ready.then(place); place();
+  // 画面に入ったら1つずつ出す
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+    ny.querySelectorAll('li').forEach(li => { li.classList.add('ny-anim'); io.observe(li); });
+  }
+})();
+
+/* ===== 出典ライブラリ（shuten.html）：さがす ===== */
+(() => {
+  const q = document.getElementById('shQ'), list = document.getElementById('shList');
+  if (!q || !list) return;
+  const n = document.getElementById('shN');
+  const eps = [...list.querySelectorAll('.sh-ep')];
+  q.addEventListener('input', () => {
+    const w = q.value.trim().toLowerCase();
+    let hit = 0;
+    eps.forEach(ep => {
+      let any = false;
+      ep.querySelectorAll('li').forEach(li => { const ok = !w || li.textContent.toLowerCase().includes(w); li.hidden = !ok; if (ok) { any = true; if (w) hit++; } });
+      const t = ep.querySelector('summary b').textContent.toLowerCase().includes(w);
+      if (t && w) { ep.querySelectorAll('li').forEach(li => { li.hidden = false; }); any = true; }
+      ep.hidden = !any; ep.open = !!w && any;
+    });
+    n.textContent = w ? `${hit}件` : '';
+  });
+})();
