@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://iou1996.github.io/nazenaze-shiryokan/sitemap.xml

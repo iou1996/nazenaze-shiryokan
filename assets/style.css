@@ -392,3 +392,45 @@
 
   html { background: var(--bg); }
   .sd small.aka { color: var(--paper); opacity: .7; }
+
+  /* ===== ゲーム ===== */
+  .game-card { border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); padding: clamp(20px, 4vw, 36px); }
+  .g-intro { display: grid; gap: 18px; justify-items: start; }
+  .talk { display: flex; gap: 14px; align-items: flex-start; margin: 0 0 14px; }
+  .talk img { width: 72px; height: 72px; flex: none; border-radius: 50%; background: #f6efe2; padding: 3px; object-fit: contain; }
+  .talk .bubble { margin: 0; padding: 14px 18px; border-radius: 4px 18px 18px 18px; background: #f6ecd8; color: var(--ink); line-height: 1.8; max-width: 640px; }
+  .talk.shima .bubble { background: #e4eef6; }
+  .q-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+  .q-no { font-family: "M PLUS Rounded 1c"; font-weight: 800; font-size: 1.2rem; color: var(--amber); }
+  .q-no small, .q-score { color: var(--sub); font-size: .9rem; }
+  .choices { display: grid; gap: 10px; margin: 6px 0 18px; }
+  .choice { text-align: left; font: inherit; color: var(--text); background: var(--surface-2); border: 1px solid var(--line-2); border-radius: 14px; padding: 14px 18px; cursor: pointer; transition: background .2s, border-color .2s, transform .15s; }
+  .choice:hover:not(:disabled) { border-color: var(--amber); transform: translateX(3px); }
+  .choice:disabled { cursor: default; opacity: .6; }
+  .choice.right { opacity: 1; background: rgba(46,160,90,.22); border-color: #3fb27a; }
+  .choice.wrong { opacity: 1; background: rgba(224,83,63,.2); border-color: var(--red); }
+  .q-next { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+  .q-end { display: grid; gap: 6px; justify-items: start; }
+  .q-result { font-family: "M PLUS Rounded 1c"; font-weight: 800; font-size: 1.3rem; margin: 0 0 10px; }
+  .q-result b { font-size: 2.4rem; color: var(--amber); }
+  .q-result .best { font-size: .9rem; color: var(--red); }
+  .hit-top { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; margin-bottom: 8px; font-size: .95rem; }
+  .hit-top b { font-family: "M PLUS Rounded 1c"; font-weight: 800; font-size: 1.6rem; color: var(--amber); }
+  .hit-rule { font-size: .85rem; color: var(--sub); margin: 0 0 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+  .hit-rule img { width: 26px; height: 26px; border-radius: 50%; background: #f6efe2; }
+  .board { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(8px, 2vw, 16px); max-width: 520px; margin: 0 auto 20px; padding: 14px; border-radius: 20px; background: linear-gradient(#4a3423, #3a281b); box-shadow: inset 0 0 0 6px #5a412c; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+  .hole { position: relative; aspect-ratio: 1; border: 0; border-radius: 12px; overflow: hidden; cursor: pointer; padding: 0;
+    background: linear-gradient(transparent 70%, rgba(0,0,0,.25)), repeating-linear-gradient(90deg, #6b4a31 0 18%, #2a1d14 18% 20%); }
+  .hole::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 22%; background: #7a5638; box-shadow: 0 -3px 0 rgba(0,0,0,.25); }
+  .hole img { position: absolute; left: 12%; width: 76%; bottom: -80%; transition: bottom .14s ease-out; border-radius: 50%; background: #f6efe2; }
+  .hole.up img { bottom: 12%; }
+  .hole.got img { box-shadow: 0 0 0 4px #3fb27a; }
+  .hole.miss img { box-shadow: 0 0 0 4px var(--red); }
+  .board:not(.playing) { opacity: .85; }
+  #hitMsg { margin-bottom: 14px; }
+  #gHit > .btn:not([hidden]) { display: flex; margin: 0 auto; }
+  [hidden] { display: none !important; }
+  @media (max-width: 600px) { .talk img { width: 56px; height: 56px; } .talk .bubble { padding: 12px 14px; font-size: .92rem; } .q-next .btn { flex: 1; justify-content: center; } }
+
+  /* 下層ページの h1 は h2 と同じ見た目 */
+  h1.h2 { font-size: clamp(1.8rem, 4.2vw, 3rem); margin: 0 0 20px; line-height: 1.3; letter-spacing: -0.01em; }
