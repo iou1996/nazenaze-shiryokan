@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>踏破記録｜シマ先生とコトニちゃんのなぜなぜ資料館</title>
+<meta name="description" content="身近な「なぜ？」を、記録や論文をたどって解き明かすYouTubeチャンネル「なぜなぜ資料館」の公式サイト。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#16100b">
+<meta property="og:title" content="シマ先生とコトニちゃんのなぜなぜ資料館">
+<meta property="og:description" content="身近な「なぜ？」を、記録や論文をたどって解き明かすYouTubeチャンネル。">
+<meta property="og:image" content="images/banner.jpg">
+<link rel="icon" href="images/icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header id="hdr">
+  <div class="bar">
+    <a class="logo" href="index.html"><img src="images/icon.png" alt="">なぜなぜ資料館</a>
+    <nav id="nav">
+      <a href="index.html">トップ</a>
+      <a href="characters.html">登場人物</a>
+      <a href="videos.html">動画</a>
+      <a href="touha.html">踏破記録</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-top" id="touha">
+  <div class="wrap">
+    <p class="label rv">FIELD NOTES</p>
+    <h2 class="rv d1">シマ先生の踏破記録</h2>
+    <p class="lead rv d2">資料館の外では、球場めぐりと鉄道、町を訪ね歩くのが趣味。準備しすぎて、前の日のほうが楽しいタイプです。動画のネタも、ここから生まれています。</p>
+    <div class="bento">
+      <button class="stat big rv" data-go="pMap" aria-label="地図で見る：降り立った市区町村">
+        <div class="lbl">降り立った市区町村</div>
+        <div>
+          <div class="num"><span data-count="972">0</span><span class="of">/ 1,892</span></div>
+          <div class="meter"><i data-w="51.4"></i></div>
+          <div class="lbl">全国の 51.4%</div>
+        </div>
+        <span class="go">地図で見る →</span>
+      </button>
+      <button class="stat rv d1" data-go="pRail" aria-label="鉄道路線を見る：JR完乗率"><div class="num"><span data-count="99.8" data-dec="1">0</span><span class="of">%</span></div><div class="lbl">JR 完乗率</div><div class="meter"><i data-w="99.8"></i></div><span class="go">路線を見る →</span></button>
+      <button class="stat rv d2" data-go="pRail" aria-label="鉄道路線を見る：私鉄完乗率"><div class="num"><span data-count="99.5" data-dec="1">0</span><span class="of">%</span></div><div class="lbl">私鉄 完乗率</div><div class="meter"><i data-w="99.5"></i></div><span class="go">路線を見る →</span></button>
+      <button class="stat rv d1" data-go="pStad" aria-label="スタジアムの一覧を見る"><div class="num"><span data-count="142" id="nStad">0</span><span class="of">か所</span></div><div class="lbl">訪れたスタジアム</div><span class="go">一覧を見る →</span></button>
+      <button class="stat rv d2" data-go="pSki" aria-label="スキー場の一覧を見る"><div class="num"><span data-count="49" id="nSki">0</span><span class="of">か所</span></div><div class="lbl">滑ったスキー場</div><span class="go">一覧を見る →</span></button>
+    </div>
+    <div class="logs rv">
+      <div class="tabs" role="tablist" id="logTabs">
+        <span class="pill"></span>
+        <button class="tab" role="tab" aria-selected="true" data-panel="pMap">地図</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="pRail">鉄道路線</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="pStad">スタジアム</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="pSki">スキー場</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="pAir">空港</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="pAbroad">海外</button>
+      </div>
+
+      <div class="panel" id="pMap">
+        <div class="mapcard">
+          <div class="layers" id="layers">
+            <label><input type="checkbox" data-l="muni" checked><span><i style="background:#f5b98a"></i>市区町村</span></label>
+            <label><input type="checkbox" data-l="rail" checked><span><i class="ln" style="background:#b3261e"></i>鉄道</span></label>
+            <label><input type="checkbox" data-l="stad" checked><span><i class="pt" style="background:#2e86de"></i>スタジアム</span></label>
+            <label><input type="checkbox" data-l="ski" checked><span><i class="pt" style="background:#16a085"></i>スキー場</span></label>
+            <label><input type="checkbox" data-l="air" checked><span><i class="pt" style="background:#8e44ad"></i>空港</span></label>
+          </div>
+          <div class="map" id="map"></div>
+          <div class="legend" id="legend">
+            <span><i class="k2" style="background:#f5b98a"></i>降り立った <b id="cL">–</b></span>
+            <span><i class="k1" style="background:#fbe7bf"></i>通過 <b id="cP">–</b></span>
+            <span><i class="k0"></i>まだ <b id="cN">–</b></span>
+            <span><i class="ln" style="background:#b3261e"></i>乗った線路 <b id="cR">–</b></span>
+            <span><i class="ln" style="background:#8d8d8d"></i>乗っていない線路 <b id="cU">–</b></span>
+          </div>
+        </div>
+        <p class="note" style="margin-top:12px">市区町村（政令市は区ごと）の 1,892 で数えています。北方領土は数えていません。<br>背景：<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>（白地図）。鉄道：国土数値情報（鉄道データ）（国土交通省）を加工。市区町村界：国土数値情報（行政区域データ）を加工。</p>
+      </div>
+
+      <div class="panel" id="pRail" hidden>
+        <div class="unr" id="railUnr"></div>
+        <div class="tools">
+          <input type="search" id="railQ" placeholder="会社・路線・駅で探す（例：津軽、只見線）">
+          <span class="note" id="railSum"></span>
+        </div>
+        <div class="list" id="railList"></div>
+      </div>
+
+      <div class="panel" id="pStad" hidden>
+        <div class="tools">
+          <div class="chips" id="stadKinds"></div>
+          <input type="search" id="stadQ" placeholder="スタジアム・都道府県で探す">
+        </div>
+        <div class="stads" id="stadList"></div>
+      </div>
+
+      <div class="panel" id="pSki" hidden>
+        <div class="tools">
+          <span class="note" id="skiSum"></span>
+          <input type="search" id="skiQ" placeholder="スキー場・県で探す">
+        </div>
+        <div class="stads" id="skiList"></div>
+        <p class="note" style="margin-top:12px">日数はシーズンごとの滑走日数の合計（スキー場でのアルバイトの日を含む）。「〜2014」は日数を数えていなかったころに行ったところです。</p>
+      </div>
+
+      <div class="panel" id="pAir" hidden>
+        <div class="tools"><span class="note" id="airSum"></span></div>
+        <div class="stads" id="airList"></div>
+        <p class="note" style="margin-top:12px">海外の空港は「海外」タブにまとめています。</p>
+      </div>
+
+      <div class="panel" id="pAbroad" hidden>
+        <div class="tools"><span class="note" id="abroadSum"></span></div>
+        <div class="abroad" id="abroadList"></div>
+      </div>
+      <p class="note" id="logUpdated" style="margin-top:14px"></p>
+    </div>
+
+    <!-- 写真コーナーはいったん外す（2026-11-06 本人指示）。戻すときはこのコメントを外す
+    <div class="photos">
+      <figure class="rv"><img src="images/photos/photo1.jpg" alt="エスコンフィールドHOKKAIDO" loading="lazy"><figcaption>エスコンフィールドHOKKAIDO</figcaption></figure>
+      <figure class="rv d1"><img src="images/photos/photo2.jpg" alt="オリオール・パーク・アット・カムデンヤーズ" loading="lazy"><figcaption>カムデンヤーズ（ボルチモア）</figcaption></figure>
+      <figure class="rv d2"><img src="images/photos/photo3.jpg" alt="フェンウェイ・パーク" loading="lazy"><figcaption>フェンウェイ・パーク（ボストン）</figcaption></figure>
+      <figure class="rv d1"><img src="images/photos/photo4.jpg" alt="福岡ドーム" loading="lazy"><figcaption>みずほPayPayドーム福岡</figcaption></figure>
+      <figure class="rv d2"><img src="images/photos/photo5.jpg" alt="ナゴヤ球場" loading="lazy"><figcaption>ナゴヤ球場</figcaption></figure>
+      <figure class="rv d3"><img src="images/photos/photo6.jpg" alt="津軽鉄道" loading="lazy"><figcaption>津軽鉄道</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:16px">写真はすべて作者撮影。</p>
+    -->
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <span>© シマ先生とコトニちゃんのなぜなぜ資料館</span>
+    <span class="links">
+      <a href="https://www.youtube.com/@hghg1996iou" target="_blank" rel="noopener">スポーツ編</a>
+      <a href="https://www.youtube.com/@nazenaze-chiiki" target="_blank" rel="noopener">時事・地域編</a>
+      <a href="contact.html">お問い合わせ</a>
+    </span>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
