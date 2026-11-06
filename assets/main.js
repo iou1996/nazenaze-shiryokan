@@ -406,3 +406,41 @@
       }).join('');
     }).catch(() => { latestBox.remove(); });
   }
+
+  /* ===== お知らせバー（全ページ）と、トップの人気動画 ===== */
+  {
+    const hdrEl = document.getElementById('hdr');
+    const popBox = document.getElementById('popular');
+    const CHL = { main: 'スポーツ編', jiji: '時事・地域編' };
+    const md = p => { const [, m, d] = (p || '').split('-'); return m ? `${+m}/${+d}` : ''; };
+    Promise.all([fetch('videos.json').then(r => r.json()), fetch('data/notices.json').then(r => r.json()).catch(() => ({}))]).then(([d, nt]) => {
+      const notes = (nt.notices || []).map(n => ({ ...n, notice: true }));
+      const news = [...notes, ...(d.news || [])];
+      if (hdrEl && news.length) {
+        hdrEl.insertAdjacentHTML('beforeend', '<div class="newsbar" id="newsbar" aria-live="polite"></div>');
+        const bar = document.getElementById('newsbar');
+        let i = 0;
+        const show = () => {
+          const n = news[i % news.length];
+          bar.innerHTML = n.notice
+            ? `<a href="${esc(n.url || '#')}"><span class="nb-tag">お知らせ</span><span class="nb-date">${md(n.date)}</span><span class="nb-txt">${esc(n.text)}</span><span class="nb-go">見る ›</span></a>`
+            : `<a href="https://www.youtube.com/watch?v=${encodeURIComponent(n.id)}" target="_blank" rel="noopener"><span class="nb-tag">新着動画</span><span class="nb-date">${md(n.published)}</span><span class="nb-txt">${CHL[n.channel] || ''}で「${esc(n.title)}」を解説しました</span><span class="nb-go">見る ›</span></a>`;
+          bar.classList.remove('in'); void bar.offsetWidth; bar.classList.add('in');
+          i++;
+        };
+        show();
+        if (news.length > 1) setInterval(show, 6000);
+        document.body.classList.add('has-news');
+      }
+      const pop = d.popular || [];
+      if (popBox && pop.length) {
+        document.getElementById('popGrid').innerHTML = pop.map((v, k) => {
+          const id = encodeURIComponent(v.id);
+          return `<a class="pop-card ${v.channel}" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">
+            <span class="th"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="rank">${k + 1}</span></span>
+            <span class="tag">${CHL[v.channel] || ''}</span><b>${esc(v.title)}</b></a>`;
+        }).join('');
+        popBox.hidden = false;
+      }
+    }).catch(() => {});
+  }

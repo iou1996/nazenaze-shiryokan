@@ -11,7 +11,7 @@ CHANNELS = {
     "main": "UCb-sXnEYoj5ct9PKkdgUwsw",
     "jiji": "UC1-Dmk1fy6RNq1Ilp8UdqOQ",
 }
-NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
+NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015", "m": "http://search.yahoo.com/mrss/"}
 JST = timezone(timedelta(hours=9))
 API_KEY = os.environ.get("YT_API_KEY", "")
 
@@ -127,6 +127,37 @@ for key, cid in CHANNELS.items():
     out[key] = videos
     changed = True
     print(key, len(videos))
+
+# 人気（直近30日の通常の動画を再生数順に4本）と、お知らせ（新しい通常の動画3本）。RSSは各チャンネル新しい15本まで
+def rss_stats(channel_id):
+    root = ET.fromstring(get(f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"))
+    rows = []
+    for e in root.findall("a:entry", NS):
+        st = e.find("m:group/m:community/m:statistics", NS)
+        v = item(e.findtext("yt:videoId", "", NS), e.findtext("a:published", "", NS), e.findtext("a:title", "", NS))
+        v["views"] = int(st.get("views", 0)) if st is not None else 0
+        rows.append(v)
+    return rows
+
+
+try:
+    recent = []
+    for key, cid in CHANNELS.items():
+        for v in rss_stats(cid):
+            if "【リメイク前】" in v["title"] or is_short(v["id"]):
+                continue
+            v["channel"] = key
+            recent.append(v)
+    limit = (datetime.now(JST) - timedelta(days=30)).strftime("%Y-%m-%d")
+    pop = sorted((v for v in recent if v["published"] >= limit), key=lambda v: v["views"], reverse=True)[:4]
+    out["popular"] = [{k: v[k] for k in ("id", "title", "channel")} for v in pop]
+    news = sorted(recent, key=lambda v: v["published"], reverse=True)[:3]
+    out["news"] = [{k: v[k] for k in ("id", "title", "channel", "published")} for v in news]
+    changed = True
+    print("popular", [v["title"][:20] for v in pop])
+    print("news", [(v["published"], v["title"][:20]) for v in news])
+except Exception as e:
+    print(f"人気・お知らせは取れなかったので前のまま: {e}", file=sys.stderr)
 
 if changed:
     out["updated"] = datetime.now(JST).strftime("%Y-%m-%d %H:%M")

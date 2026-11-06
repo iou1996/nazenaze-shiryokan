@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06 21:52",
+  "updated": "2026-11-06 22:15",
   "main": [
     {
       "id": "bnsArTrW42c",
@@ -152,6 +152,48 @@
       "url": "https://www.youtube.com/watch?v=1ZuZd4dm6PI",
       "published": "",
       "title": "2026年、相次ぐ情報漏えい。本当に増えている？個人情報の135年【ニュース解説】"
+    }
+  ],
+  "popular": [
+    {
+      "id": "iQU1KUuaauQ",
+      "title": "ジャングリア沖縄、道なかば。北部の課題と1年めの数字を、自治体の目で整理【時事】",
+      "channel": "jiji"
+    },
+    {
+      "id": "pduWqLeQuhc",
+      "title": "王と長嶋の番号はなぜ永久欠番？始まりは「待つための番号」【プロ野球・MLB】",
+      "channel": "main"
+    },
+    {
+      "id": "YIjYMYX11pQ",
+      "title": "落合博満は、なぜ日本人で初めて年俸1億円を超えたのか【1986年】",
+      "channel": "main"
+    },
+    {
+      "id": "ETPjSGwUL4U",
+      "title": "阪神ファンの松井秀喜は、なぜ巨人へ行った？最後の2通と長嶋監督の「縁」【プロ野球】",
+      "channel": "main"
+    }
+  ],
+  "news": [
+    {
+      "id": "kSADf4Vx2kk",
+      "title": "睡眠が最も長い県は青森、短いのは東京。47都道府県の差は1年で5日ぶん【時事】",
+      "channel": "jiji",
+      "published": "2026-11-06"
+    },
+    {
+      "id": "bnsArTrW42c",
+      "title": "ヤクルト対西武も8対7！なぜ「ルーズベルトゲーム」？【プロ野球・MLB】",
+      "channel": "main",
+      "published": "2026-11-05"
+    },
+    {
+      "id": "N3h9Sn-gUSo",
+      "title": "クマの出没「過去最多」は、クマの数？秋田のデータとカナダの論文で検証【時事】",
+      "channel": "jiji",
+      "published": "2026-11-04"
     }
   ]
 }
