@@ -684,3 +684,12 @@
   .q-vrow .w-mark.ng { background: var(--red); }
   .q-next .btn { white-space: nowrap; }
   @media (max-width: 600px) { .q-end .q-next .btn { flex: 1 1 100%; } }
+
+  /* 解き終わりの一覧に問題と正解も出す */
+  .q-vrow { align-items: start; }
+  .qv-txt { gap: 4px; }
+  .qv-txt b { -webkit-line-clamp: unset; display: block; overflow: visible; font-size: .9rem; }
+  .qv-ans { font-size: .82rem; font-weight: 700; color: #7fd3a3; line-height: 1.5; }
+  .qv-title { font-size: .74rem; color: var(--sub); line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+  .q-vrow .qv-go { align-self: center; }
+  @media (max-width: 600px) { .qv-txt b { font-size: .86rem; } .qv-title { -webkit-line-clamp: 2; } }

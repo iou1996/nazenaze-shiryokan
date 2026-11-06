@@ -30,7 +30,7 @@
   fetch('videos.json').then(r => r.json()).then(d => { for (const k of ['main', 'jiji']) (d[k] || []).forEach(v => { TITLES[v.id] = v.title; }); }).catch(() => {});
   const vRow = (q, k) => `<a class="q-vrow" href="https://www.youtube.com/watch?v=${encodeURIComponent(q.video)}" target="_blank" rel="noopener">
       <span class="qv-th"><img src="https://i.ytimg.com/vi/${encodeURIComponent(q.video)}/mqdefault.jpg" alt="" loading="lazy"><span class="w-mark ${quiz.res[k] ? 'ok' : 'ng'}">${quiz.res[k] ? '○' : '×'}</span></span>
-      <span class="qv-txt"><small>第${k + 1}問</small><b>${esc(TITLES[q.video] || q.q)}</b></span><span class="qv-go">見る ›</span></a>`;
+      <span class="qv-txt"><small>第${k + 1}問</small><b>${esc(q.q)}</b><span class="qv-ans">正解：${esc(q.choices[q.answer])}</span>${TITLES[q.video] ? `<span class="qv-title">▶ ${esc(TITLES[q.video])}</span>` : ''}</span><span class="qv-go">見る ›</span></a>`;
   const CH = { main: 'スポーツ編', jiji: '時事・地域編' };
   const GAME_URL = (document.querySelector('link[rel=canonical]') || {}).href || location.href;
   const qBox = $('quizBox');
@@ -39,7 +39,9 @@
 
   function quizStart(ch) {
     if (typeof ch === 'string') quiz.ch = ch;
-    quiz.qs = shuffle(quiz.all.filter(q => q.channel === quiz.ch)).slice(0, ROUND);
+    // 1回の中で同じ動画の問題は1問まで
+    const seen = new Set();
+    quiz.qs = shuffle(quiz.all.filter(q => q.channel === quiz.ch)).filter(q => !seen.has(q.video) && seen.add(q.video)).slice(0, ROUND);
     quiz.i = 0; quiz.score = 0; quiz.res = [];
     quizAsk();
   }
