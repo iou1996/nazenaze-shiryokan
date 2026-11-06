@@ -697,3 +697,29 @@
   /* 本文は文節で折らない（スマホで行がガタガタになるため）。見出しだけ文節で折る */
   p, li, .lead, small, em, .video p, .char p, .pillar span { word-break: normal; text-wrap: pretty; line-break: strict; overflow-wrap: anywhere; }
   .hero .intro p { text-wrap: pretty; }
+
+  /* スマホの改行直し（2026-11-07）：ボタンは1行、最新動画は縦に積んで題名を全幅に */
+  .hero .btns .btn { white-space: nowrap; }
+  @media (max-width: 600px) {
+    .hero .btns .btn { padding: 13px 10px; font-size: .92rem; gap: 6px; }
+    .latest-card { grid-template-columns: 1fr; gap: 10px; padding: 10px 10px 14px; }
+    .latest-card .tag { margin-bottom: 6px; }
+    .latest-card .txt, .latest-card > span:last-child { padding: 0 4px; }
+    .latest-card b { font-size: .95rem; text-wrap: pretty; }
+  }
+  /* 幅の狭いスマホ（〜380px）：ヘッダーのロゴとゲームボタンが重ならないように */
+  @media (max-width: 380px) {
+    .bar { gap: 6px; padding-left: 12px; padding-right: 8px; }
+    .logo { font-size: .9rem; gap: 6px; min-width: 0; }
+    .logo img { width: 30px; height: 30px; }
+    .hdr-game { padding: 7px 10px; font-size: .8rem; }
+  }
+  /* 動画の題名は単語の途中で切らない（「ゲー／ム」を防ぐ）。本文は word-break: normal のまま */
+  .latest-card b, .pop-card b, .video p, .nl-t, .qv-txt b, .qv-title { word-break: auto-phrase; overflow-wrap: anywhere; }
+  /* 人気の動画：スマホは横長の1列（2列だと題名の幅が狭すぎる） */
+  @media (max-width: 600px) {
+    .pop-grid { grid-template-columns: 1fr; gap: 10px; }
+    .pop-card { grid-template-columns: 40% 1fr; grid-template-rows: auto 1fr; column-gap: 12px; row-gap: 6px; align-items: start; }
+    .pop-card .th { grid-row: 1 / span 2; }
+    .pop-card b { font-size: .86rem; }
+  }
