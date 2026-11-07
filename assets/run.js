@@ -20,15 +20,22 @@
 
   /* ---------- 画面の大きさ ---------- */
   let W = 800, H = 340, GROUND = 290, DPR = 1;
+  // 画面の大きさに合わせて、絵ごと拡大する。ゲームの中の大きさは「高さ360・幅380以上」を基準にして、倍率 K をかける
+  let K = 1;
   function fit() {
-    W = Math.min(wrap.clientWidth, 900);
-    H = W < 520 ? Math.round(W * 1.05) : Math.round(Math.min(400, Math.max(340, W * 0.45)));
-    GROUND = H - 46;
+    const full = wrap.classList.contains('full');
+    const cw = full ? innerWidth : wrap.clientWidth;
+    const ch = full ? innerHeight : (cw < 600 ? Math.round(cw * 1.15) : Math.round(Math.min(560, Math.max(380, cw * 0.5))));
+    K = Math.min(ch / 360, cw / 380);
+    const oldG = GROUND;
+    W = cw / K; H = ch / K; GROUND = H - 46;
     DPR = Math.min(2, devicePixelRatio || 1);
-    cv.width = W * DPR; cv.height = H * DPR;
-    cv.style.width = W + 'px'; cv.style.height = H + 'px';
-    cx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    cv.width = Math.round(cw * DPR); cv.height = Math.round(ch * DPR);
+    cv.style.width = cw + 'px'; cv.style.height = ch + 'px';
+    cx.setTransform(DPR * K, 0, 0, DPR * K, 0, 0);
     makeShelves();
+    // 遊んでいる途中で大きさが変わったら、床の高さの差だけ全部ずらす
+    if (st && oldG !== GROUND) { const d = GROUND - oldG; st.p.y += d; st.obs.forEach(o => { o.y += d; }); st.items.forEach(it => { it.y += d; }); }
   }
 
   /* ---------- 背景：棚の絵を一度だけ描いておく ---------- */
@@ -295,6 +302,10 @@
     cx.restore();
   }
   function hud() {
+    if (wrap.classList.contains('full') && H > W * 1.25 && st.t < 5) {
+      cx.textAlign = 'center'; cx.textBaseline = 'top'; cx.font = '700 14px "Zen Kaku Gothic New", sans-serif';
+      cx.fillStyle = 'rgba(255,241,214,.85)'; cx.fillText('📱 横向きにすると、広く遊べます', W / 2, 84);
+    }
     const f = '800 16px "M PLUS Rounded 1c", sans-serif';
     cx.font = f; cx.textBaseline = 'top'; cx.textAlign = 'left';
     cx.fillStyle = 'rgba(22,16,11,.65)'; cx.beginPath(); cx.roundRect ? cx.roundRect(10, 10, 210, 58, 12) : cx.rect(10, 10, 210, 58); cx.fill();
@@ -388,7 +399,30 @@
   fetch('data/quiz.json').then(r => r.json()).then(d => { qAll = (d.questions || []).filter(q => q.choices && q.choices.length === 3); }).catch(() => {});
   fetch('videos.json').then(r => r.json()).then(d => { for (const k of ['main', 'jiji', 'log']) (d[k] || []).forEach(v => { TITLES[v.id] = v.title; }); }).catch(() => {});
   fit();
-  addEventListener('resize', () => { if (!st || st.mode !== 'play') fit(); });
+  addEventListener('resize', fit);
+  /* ---------- 全画面 ---------- */
+  const fsBtn = document.getElementById('runFs');
+  function setFull(on) {
+    wrap.classList.toggle('full', on);
+    document.documentElement.classList.toggle('run-lock', on);
+    if (fsBtn) { fsBtn.textContent = on ? '✕' : '⛶'; fsBtn.setAttribute('aria-label', on ? '全画面をやめる' : '全画面で遊ぶ'); }
+    fit();
+  }
+  if (fsBtn) fsBtn.addEventListener('click', async e => {
+    e.stopPropagation();
+    const on = !wrap.classList.contains('full');
+    if (on) {
+      setFull(true);
+      try { if (wrap.requestFullscreen) await wrap.requestFullscreen({ navigationUI: 'hide' }); } catch (err) { /* iPhone はページの上に広げるだけ */ }
+      try { if (screen.orientation && screen.orientation.lock) await screen.orientation.lock('landscape'); } catch (err) { /* 横向き固定できない端末もある */ }
+      setTimeout(fit, 300);
+    } else {
+      try { if (document.fullscreenElement) await document.exitFullscreen(); } catch (err) {}
+      setFull(false);
+    }
+  });
+  document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && wrap.classList.contains('full')) setFull(false); else setTimeout(fit, 100); });
+  addEventListener('orientationchange', () => setTimeout(fit, 300));
   document.addEventListener('visibilitychange', () => { if (document.hidden && st && st.mode === 'play') { st.mode = 'pause'; showOv(`<div class="run-card"><p class="run-gate">ひと休み中</p><button class="btn solid" id="runRe">つづける <span class="arr">→</span></button></div>`, true); document.getElementById('runRe').addEventListener('click', resume); } });
   document.getElementById('runStart').addEventListener('click', start);
   const bEl = document.getElementById('runBest'); if (bEl) bEl.textContent = best();

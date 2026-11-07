@@ -954,3 +954,21 @@
   .run-wrap.flow .run-card { justify-items: start; text-align: left; width: 100%; max-width: none; }
   @media (prefers-reduced-motion: reduce) { .run-hero { animation: none; } }
   @media (max-width: 600px) { .run-hero { width: 76px; } .run-gate { font-size: 1.25rem; } .run-how { font-size: .82rem; line-height: 1.7; } .run-ov { padding: 10px; } }
+
+  /* 資料館ダッシュ：大きく（2026-11-07 本人「ゲームの画面が小さい」） */
+  .run-fs { position: absolute; right: 10px; top: 10px; z-index: 3; width: 42px; height: 42px; border-radius: 12px; border: 1px solid rgba(255,240,215,.35); background: rgba(22,16,11,.6); color: #fff1d6; font-size: 1.2rem; line-height: 1; cursor: pointer; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  .run-fs:hover { background: rgba(242,182,76,.35); }
+  .run-wrap.flow .run-fs { display: none; }
+  .run-wrap.full { position: fixed; inset: 0; z-index: 3000; border-radius: 0; background: #0f0b07; display: grid; place-items: center; }
+  .run-wrap.full .run-fs { display: block; top: max(10px, env(safe-area-inset-top)); right: max(10px, env(safe-area-inset-right)); }
+  .run-wrap.full.flow .run-ov { position: absolute; inset: 0; overflow-y: auto; display: block; padding: 20px max(16px, env(safe-area-inset-left)); background: #16100b; }
+  .run-wrap.full.flow .run-card { max-width: 640px; margin: 0 auto; }
+  .run-wrap.full.flow canvas { display: none; }
+  html.run-lock, html.run-lock body { overflow: hidden; }
+  html.run-lock header, html.run-lock .newsbar { visibility: hidden; }
+  @media (max-width: 600px) {
+    /* スマホは枠をなくして、画面の端から端まで */
+    .run-card-box { margin: 0 -20px; padding: 0; border-radius: 0; border-left: 0; border-right: 0; background: none; }
+    .run-wrap { border-radius: 0; }
+    .run-wrap.flow { padding: 0 20px; }
+  }
