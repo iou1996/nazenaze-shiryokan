@@ -28,8 +28,12 @@
     const cw = full ? innerWidth : wrap.clientWidth;
     const hdr = (document.getElementById('hdr') || {}).offsetHeight || 0;
     const room = Math.max(300, innerHeight - hdr - 24);          // 画面に収まる高さ
-    const ch = full ? innerHeight : Math.min(room, cw < 600 ? Math.round(cw * 1.15) : Math.round(Math.min(560, Math.max(380, cw * 0.5))));
-    K = Math.min(ch / 360, cw / 380);
+    // カメラを引く：ゲームの中の横幅を 600 以上にして、障害物が遠くから見えるようにする
+    // （本人「コトニちゃんがデカい分、端から本が出るスピードが速い。恐竜は引きの絵」2026-11-07）
+    const portrait = innerHeight > innerWidth;
+    const ch = full ? (portrait ? Math.min(innerHeight, Math.round(cw * 0.95)) : innerHeight)
+      : Math.min(room, cw < 600 ? Math.round(cw * 0.8) : Math.round(Math.min(560, Math.max(380, cw * 0.5))));
+    K = Math.min(ch / 360, cw / 600);
     const oldG = GROUND;
     W = cw / K; H = ch / K; GROUND = H - 46;
     DPR = Math.min(2, devicePixelRatio || 1);
@@ -102,7 +106,7 @@
   const best = (c = CHN) => +(store.get('nz_run_best_' + c) || (c === 'main' ? store.get('nz_run_best') : 0) || 0);
   function reset() {
     st = {
-      mode: 'play', t: 0, speed: 330, dist: 0, score: 0, lives: 3, cards: 0, total: 0, shield: false, inv: 0,
+      mode: 'play', t: 0, speed: 280, dist: 0, score: 0, lives: 3, cards: 0, total: 0, shield: false, inv: 0,
       p: { x: 70, y: GROUND, vy: 0, jumps: 0, sz: 66, squash: 0 },
       obs: [], items: [], parts: [], gate: null, nextObs: 3.2, nextCard: 0.8, scrollF: 0, scrollN: 0, shake: 0, flash: 0,
       asked: [], msg: null, buf: 0,
@@ -155,7 +159,7 @@
     const p = st.p;
     st.t += dt;
     // 加速：1秒に +10（前は +7。本人「プレイ時間がながい。加速をすこしだけはやめて」2026-11-07）。最高 780
-    st.speed = Math.min(780, 330 + st.t * 10);
+    st.speed = Math.min(680, 280 + st.t * 8);   // 2026-11-07 本人「もうちょいスピード落とした方が」で 330+10/秒・最高780 から下げた
     const dx = st.speed * dt;
     st.dist += dx / 40;
     st.scrollF = (st.scrollF + dx * 0.25) % far.width;
@@ -337,9 +341,12 @@
     cx.restore();
   }
   function hud() {
-    if (wrap.classList.contains('full') && H > W * 1.25 && st.t < 5) {
+    // 絵を引いて小さくしたぶん、点数などの表示は小さくなりすぎないように別に拡大する
+    const hs = Math.max(1, 0.9 / K), HW = W / hs;
+    cx.save(); cx.scale(hs, hs);
+    if (wrap.classList.contains('full') && innerHeight > innerWidth && st.t < 5) {
       cx.textAlign = 'center'; cx.textBaseline = 'top'; cx.font = '700 14px "Zen Kaku Gothic New", sans-serif';
-      cx.fillStyle = 'rgba(255,241,214,.85)'; cx.fillText('📱 横向きにすると、広く遊べます', W / 2, 84);
+      cx.fillStyle = 'rgba(255,241,214,.85)'; cx.fillText('📱 横向きにすると、もっと広く遊べます', HW / 2, 112);
     }
     const f = '800 16px "M PLUS Rounded 1c", sans-serif';
     cx.font = f; cx.textBaseline = 'top'; cx.textAlign = 'left';
@@ -353,9 +360,10 @@
     if (st.shield) { cx.fillStyle = '#86bde0'; cx.font = f; cx.fillText('🛡', 190, 40); }
     if (st.msg) {
       cx.globalAlpha = Math.min(1, st.msg.life * 2); cx.textAlign = 'center'; cx.font = '800 22px "M PLUS Rounded 1c", sans-serif';
-      cx.fillStyle = 'rgba(0,0,0,.5)'; cx.fillText(st.msg.text, W / 2 + 2, 82); cx.fillStyle = st.msg.color; cx.fillText(st.msg.text, W / 2, 80);
+      cx.fillStyle = 'rgba(0,0,0,.5)'; cx.fillText(st.msg.text, HW / 2 + 2, 82); cx.fillStyle = st.msg.color; cx.fillText(st.msg.text, HW / 2, 80);
       cx.globalAlpha = 1;
     }
+    cx.restore();
   }
 
   /* ---------- ループ ---------- */
