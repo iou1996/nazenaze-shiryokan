@@ -29,9 +29,9 @@
 
   /* ゲームの一覧（一覧ページ・各ページ下の「ほかのゲーム」で使う） */
   const GAMES = [
-    { id: 'run', href: 'run.html', name: '資料館ダッシュ', img: 'images/chars/kotoni_pose1.png', desc: '棚の間を走って「？」を集めよう', best: () => { const n = +(store.get('nz_run_best') || 0); return n ? `最高 ${n}点` : ''; } },
+    { id: 'run', href: 'run.html', name: '資料館ダッシュ', img: 'images/chars/kotoni_pose1.png', desc: '棚の間を走って「？」を集めよう', best: () => { const n = Math.max(+(store.get('nz_run_best_main') || store.get('nz_run_best') || 0), +(store.get('nz_run_best_jiji') || 0)); return n ? `最高 ${n}点` : ''; } },
     { id: 'quiz', href: 'quiz.html', name: 'なぜなぜクイズ', img: face('kotoni', 4), desc: '動画で話した「なぜ？」を3択で。1回5問', best: () => { const n = Math.max(+(store.get('nz_quiz_best_main') || 0), +(store.get('nz_quiz_best_jiji') || 0)); return n ? `最高 ${n}問正解` : ''; } },
-    { id: 'daily', href: 'daily.html', name: '今日の1問', img: face('shima', 1), desc: '1日1問だけ。毎日つづけて記録をのばそう', best: () => { const n = +(store.get('nz_daily_streak') || 0); return n ? `${n}日連続` : ''; } },
+    { id: 'daily', href: 'daily.html', name: '今日の1問', img: face('shima', 1), desc: '1日1問だけ。毎日つづけて記録をのばそう', best: () => { const n = Math.max(+(store.get('nz_daily_streak_main') || 0), +(store.get('nz_daily_streak_jiji') || 0)); return n ? `${n}日連続` : ''; } },
     { id: 'hit', href: 'hit.html', name: '反射ゲーム', img: face('shima', 2), desc: '出てきたシマ先生だけをタップ。30秒で何点とれる？', best: () => { const n = +(store.get('nz_hit_best') || 0); return n ? `最高 ${n}点` : ''; } },
   ];
   // 一覧ページ：自己ベストを出す
@@ -138,7 +138,7 @@
     document.querySelectorAll('.q-cat').forEach(b => b.addEventListener('click', () => start(b.dataset.ch)));
   }
 
-  /* ===================== 今日の1問 ===================== */
+  /* ===================== 今日の1問（スポーツ編・時事・地域編で1問ずつ） ===================== */
   const dBox = $('dailyBox');
   if (dBox) {
     // 日本時間の日付
@@ -146,51 +146,78 @@
     const today = jst(), yesterday = jst(-1);
     const dayNo = Math.floor(Date.parse(today) / 86400e3);
     const nextIn = () => { const ms = 86400e3 - ((Date.now() + 9 * 3600e3) % 86400e3); const h = Math.floor(ms / 3600e3), m = Math.floor(ms % 3600e3 / 60e3); return `${h}時間${m}分`; };
-    const done = () => { try { return JSON.parse(store.get('nz_daily_last') || 'null'); } catch (e) { return null; } };
+    const KEY = (c, k) => `nz_daily_${k}_${c}`;
+    const done = c => { try { return JSON.parse(store.get(KEY(c, 'last')) || 'null'); } catch (e) { return null; } };
+    const streakOf = c => +(store.get(KEY(c, 'streak')) || 0);
+    let all = [];
+    let ch = new URLSearchParams(location.search).get('ch') || store.get('nz_daily_ch') || 'main';
+    if (!CH[ch]) ch = 'main';
+    // 日付から決まる1問（毎日かわり、だれが開いても同じ問題）
+    const pick = c => {
+      const pool = all.filter(q => q.channel === c);
+      const order = pool.map((q, i) => i).sort((x, y) => ((x * 2654435761 + 97) % 1000003) - ((y * 2654435761 + 97) % 1000003));
+      return pool.length ? pool[order[dayNo % order.length]] : null;
+    };
 
-    fetch('data/quiz.json').then(r => r.json()).then(d => {
-      const all = (d.questions || []).filter(q => q.choices && q.choices.length === 3);
-      // 日付から決まる1問（毎日かわり、だれが開いても同じ問題）
-      const order = all.map((q, i) => i).sort((a, b) => ((a * 2654435761 + 97) % 1000003) - ((b * 2654435761 + 97) % 1000003));
-      const q = all[order[dayNo % order.length]];
-      const last = done();
-      const head = `<div class="q-head"><span class="q-no">今日の1問　<small>${today.replace(/-/g, '.')}</small></span><span class="q-score">${CH[q.channel] || ''}</span></div>`;
-      const streakNow = () => +(store.get('nz_daily_streak') || 0);
-
+    const render = () => {
+      store.set('nz_daily_ch', ch);
+      const q = pick(ch);
+      const tabs = `<div class="d-tabs" role="tablist">${['main', 'jiji'].map(c => {
+        const l = done(c), fin = l && l.date === today;
+        return `<button class="d-tab ${c}${c === ch ? ' on' : ''}" role="tab" aria-selected="${c === ch}" data-ch="${c}">${CH[c]}${fin ? `<span class="d-fin">${l.ok ? '○' : '×'}</span>` : ''}</button>`;
+      }).join('')}</div>`;
+      if (!q) { dBox.innerHTML = tabs + '<p class="note">問題を準備中です。</p>'; bindTabs(); return; }
+      const last = done(ch);
+      const other = ch === 'main' ? 'jiji' : 'main', ol = done(other);
       const result = (k, fresh) => {
         const ok = k === q.answer;
         if (fresh) {
-          const prev = done();
-          const s = ok ? ((prev && prev.date === yesterday && prev.ok) ? streakNow() + 1 : 1) : 0;
-          store.set('nz_daily_streak', s);
-          store.set('nz_daily_best', Math.max(s, +(store.get('nz_daily_best') || 0)));
-          store.set('nz_daily_last', JSON.stringify({ date: today, k, ok }));
+          const prev = done(ch);
+          const s = ok ? ((prev && prev.date === yesterday && prev.ok) ? streakOf(ch) + 1 : 1) : 0;
+          store.set(KEY(ch, 'streak'), s);
+          store.set(KEY(ch, 'best'), Math.max(s, +(store.get(KEY(ch, 'best')) || 0)));
+          store.set(KEY(ch, 'last'), JSON.stringify({ date: today, k, ok }));
+          const t = dBox.querySelector(`.d-tab[data-ch="${ch}"]`);
+          if (t && !t.querySelector('.d-fin')) t.insertAdjacentHTML('beforeend', `<span class="d-fin">${ok ? '○' : '×'}</span>`);
         }
-        const s = streakNow();
+        const s = streakOf(ch);
         dBox.querySelectorAll('.choice').forEach(b => {
           b.disabled = true;
           const n = +b.dataset.k;
           if (n === q.answer) b.classList.add('right'); else if (n === k) b.classList.add('wrong');
         });
+        const otherTodo = !(ol && ol.date === today);
         $('dAns').innerHTML = `
           <div class="talk shima ${fresh ? 'fx-in' : ''}"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>
-          <div class="d-streak"><span class="flame">${ok ? '🔥' : '📚'}</span><span><b id="dS">${s}</b>日連続正解</span><small>最高 ${store.get('nz_daily_best') || 0}日</small></div>
+          <div class="d-streak"><span class="flame">${ok ? '🔥' : '📚'}</span><span><b id="dS">${s}</b>日連続正解</span><small>${CH[ch]}の最高 ${store.get(KEY(ch, 'best')) || 0}日</small></div>
           <p class="note">次の問題まで あと${nextIn()}（毎日0時に入れかわります）</p>
           ${q.video ? `<div class="q-vlist">${vRow({ video: q.video, head: '今日の問題の解説動画', sub: '' })}</div>` : ''}
-          ${share(`今日の1問、${ok ? '正解' : '不正解'}でした！${s >= 2 ? `（${s}日連続正解）` : ''} #なぜなぜ資料館`)}
-          <div class="q-next" style="justify-content:flex-start"><a class="btn solid" href="quiz.html">クイズをもっと解く <span class="arr">→</span></a></div>`;
+          ${share(`今日の1問（${CH[ch]}）、${ok ? '正解' : '不正解'}でした！${s >= 2 ? `（${s}日連続正解）` : ''} #なぜなぜ資料館`)}
+          <div class="q-next" style="justify-content:flex-start">
+            ${otherTodo ? `<button class="btn solid" id="dOther">${CH[other]}の今日の1問も解く <span class="arr">→</span></button>` : ''}
+            <a class="btn${otherTodo ? '' : ' solid'}" href="quiz.html?ch=${ch}">クイズをもっと解く</a>
+          </div>`;
+        const ob = $('dOther'); if (ob) ob.addEventListener('click', () => { ch = other; render(); dBox.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
         if (fresh) {
           const btn = dBox.querySelector(`.choice[data-k="${k}"]`);
           if (ok) { FX.burst(btn); FX.float(btn, '正解！', 'ok'); FX.confetti(s >= 3); } else FX.shake(btn);
         }
-        titlesReady.then(() => { const r = $('dAns').querySelector('.q-vlist'); if (r && q.video) r.innerHTML = vRow({ video: q.video, head: '今日の問題の解説動画', sub: '' }); });
+        titlesReady.then(() => { const r = $('dAns') && $('dAns').querySelector('.q-vlist'); if (r && q.video) r.innerHTML = vRow({ video: q.video, head: '今日の問題の解説動画', sub: '' }); });
       };
-      dBox.innerHTML = `${head}
+      dBox.innerHTML = `${tabs}
+        <div class="q-head"><span class="q-no">今日の1問　<small>${today.replace(/-/g, '.')}</small></span><span class="q-score">${CH[ch]}</span></div>
         <div class="talk fx-in"><img src="${face('kotoni', 4)}" alt="コトニちゃん"><p class="bubble">${esc(q.q)}</p></div>
         <div class="choices">${q.choices.map((c, k) => `<button class="choice fx-in" style="animation-delay:${80 + k * 70}ms" data-k="${k}">${'ABC'[k]}　${esc(c)}</button>`).join('')}</div>
         <div id="dAns"></div>`;
+      bindTabs();
       if (last && last.date === today) result(last.k, false);
       else dBox.querySelectorAll('.choice').forEach(b => b.addEventListener('click', () => result(+b.dataset.k, true), { once: true }));
+    };
+    const bindTabs = () => dBox.querySelectorAll('.d-tab').forEach(t => t.addEventListener('click', () => { if (t.dataset.ch !== ch) { ch = t.dataset.ch; render(); } }));
+
+    fetch('data/quiz.json').then(r => r.json()).then(d => {
+      all = (d.questions || []).filter(q => q.choices && q.choices.length === 3);
+      render();
     }).catch(() => { dBox.innerHTML = '<p class="note">問題を準備中です。</p>'; });
   }
 

@@ -93,7 +93,10 @@
   /* ---------- 状態 ---------- */
   const G = 2300, J1 = -820, J2 = -720;
   let st, last = 0, raf = 0, qs = [], qAll = [], TITLES = {};
-  const best = () => +(store.get('nz_run_best') || 0);
+  const CHL = { main: 'スポーツ編', jiji: '時事・地域編' };
+  let CHN = store.get('nz_run_ch') === 'jiji' ? 'jiji' : 'main';
+  // 自己ベストはチャンネルごと（前の版の nz_run_best はスポーツ編として読む）
+  const best = (c = CHN) => +(store.get('nz_run_best_' + c) || (c === 'main' ? store.get('nz_run_best') : 0) || 0);
   function reset() {
     st = {
       mode: 'play', t: 0, speed: 330, dist: 0, score: 0, lives: 3, cards: 0, total: 0, shield: false, inv: 0,
@@ -196,7 +199,8 @@
     // ゲート
     if (st.gate) {
       st.gate.x -= dx;
-      if (st.gate.x < p.x + 20) { st.gate = null; st.cards = 0; ask(); }
+      // ゲートを通ったら、いきなりクイズにしない。いったん止めて「なぜなぜゲート！」を見せる（連打のまま選択肢を押さないように）
+      if (st.gate.x < p.x + 20) { st.gate = null; st.cards = 0; st.mode = 'gate'; st.gateT = 0.9; say('なぜなぜゲート！'); st.msg.life = 1; }
     }
     st.score = Math.max(st.score, 0);
   }
@@ -314,6 +318,7 @@
     // カード 5枚
     for (let i = 0; i < 5; i++) { cx.fillStyle = i < st.cards ? '#f2b64c' : 'rgba(255,240,215,.2)'; cx.fillRect(22 + i * 22, 44, 16, 16); }
     cx.fillStyle = '#bfae95'; cx.font = '700 11px "Zen Kaku Gothic New", sans-serif'; cx.fillText('→ゲート', 134, 46);
+    cx.fillStyle = CHN === 'jiji' ? '#86bde0' : '#f2b64c'; cx.font = '700 10px "Zen Kaku Gothic New", sans-serif'; cx.fillText(CHL[CHN], 134, 60);
     if (st.shield) { cx.fillStyle = '#86bde0'; cx.font = f; cx.fillText('🛡', 190, 40); }
     if (st.msg) {
       cx.globalAlpha = Math.min(1, st.msg.life * 2); cx.textAlign = 'center'; cx.font = '800 22px "M PLUS Rounded 1c", sans-serif';
@@ -327,22 +332,30 @@
     // 時間は performance.now() で測る（rAF の時刻はボタンを押した時刻より前のことがあり、最初の1コマがマイナスになるため）
     const now = performance.now(), dt = Math.max(0, Math.min(0.033, (now - last) / 1000 || 0)); last = now;
     if (st && st.mode === 'play') step(dt);
+    else if (st && st.mode === 'gate') { st.gateT -= dt; if (st.gateT <= 0) ask(); }
     draw();
     raf = requestAnimationFrame(loop);
   }
 
   /* ---------- クイズ（なぜなぜゲート） ---------- */
+  // 出てすぐは押せないボタン（ジャンプの連打がそのまま当たらないように）
+  function waitBtns(els, ms, then) {
+    els.forEach(b => { b.disabled = true; b.classList.add('wait'); });
+    setTimeout(() => { els.forEach(b => { b.disabled = false; b.classList.remove('wait'); }); if (then) then(); }, ms);
+  }
   function ask() {
-    if (!qs.length) qs = shuffle(qAll);
+    if (!qs.length) qs = shuffle(qAll.filter(x => x.channel === CHN));
     const q = qs.pop();
-    if (!q) { st.score += 50; say('ボーナス +50'); return; }
+    if (!q) { st.score += 50; say('ボーナス +50'); st.mode = 'play'; last = performance.now(); return; }
     st.mode = 'quiz';
     showOv(`<div class="run-card fx-in">
       <p class="run-gate">なぜなぜゲート</p>
       <div class="talk"><img src="${face('kotoni', 4)}" alt="コトニちゃん"><p class="bubble">${esc(q.q)}</p></div>
+      <p class="run-wait" id="runWait">問題を読んでから選んでね</p>
       <div class="choices">${q.choices.map((c, k) => `<button class="choice" data-k="${k}">${'ABC'[k]}　${esc(c)}</button>`).join('')}</div>
       <div id="runAns"></div></div>`, true);
     wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    waitBtns([...ov.querySelectorAll('.choice')], 1200, () => { const w = document.getElementById('runWait'); if (w) w.textContent = 'どれだと思う？'; });
     ov.querySelectorAll('.choice').forEach(b => b.addEventListener('click', () => {
       const k = +b.dataset.k, ok = k === q.answer;
       st.asked.push({ q, ok });
@@ -352,18 +365,19 @@
       document.getElementById('runAns').innerHTML = `<div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>
         <button class="btn solid" id="runGo">走りだす <span class="arr">→</span></button>`;
       const go = document.getElementById('runGo');
-      go.focus({ preventScroll: true });
       go.addEventListener('click', resume);
+      waitBtns([go], 800, () => go.focus({ preventScroll: true }));
     }, { once: true }));
   }
   function resume() {
     hideOv();
-    st.mode = 'play'; st.inv = 1; st.obs = st.obs.filter(o => o.x > st.p.x + 200); st.nextObs = 1;
+    st.mode = 'play'; st.inv = 1; st.msg = null; st.obs = st.obs.filter(o => o.x > st.p.x + 200); st.nextObs = 1;
     last = performance.now();
   }
 
   /* ---------- 始める・終わる ---------- */
-  function start() {
+  function start(c) {
+    if (c === 'main' || c === 'jiji') { if (c !== CHN) qs = []; CHN = c; store.set('nz_run_ch', c); }
     fit(); reset();
     hideOv();
     last = performance.now();
@@ -373,7 +387,7 @@
   function over() {
     st.mode = 'over';
     const s = Math.floor(st.score + st.dist), prev = best(), b = Math.max(s, prev);
-    store.set('nz_run_best', b);
+    store.set('nz_run_best_' + CHN, b);
     const okN = st.asked.filter(a => a.ok).length;
     const [f, msg] = s >= 2500 ? [2, '走りながら答えるなんて。資料館の新記録かもしれません。']
       : s >= 1000 ? [1, 'いい走りです。ゲートのクイズで、バリアを取るのがコツです。']
@@ -383,15 +397,18 @@
       <span class="qv-txt"><small>ゲート${i + 1}</small><b>${esc(a.q.q)}</b><span class="qv-ans">正解：${esc(a.q.choices[a.q.answer])}</span>${TITLES[a.q.video] ? `<span class="qv-title">▶ ${esc(TITLES[a.q.video])}</span>` : ''}</span><span class="qv-go">見る ›</span></a>`).join('');
     setTimeout(() => {
       showOv(`<div class="run-card fx-in">
-        <p class="q-result"><b id="runEndN">0</b>点　${s > prev && prev ? '<span class="best">自己ベスト！</span>' : ''}<small class="q-best">最高：${b}点</small></p>
+        <p class="q-result"><b id="runEndN">0</b>点　${s > prev && prev ? '<span class="best">自己ベスト！</span>' : ''}<small class="q-best">${CHL[CHN]}の最高：${b}点</small></p>
         <p class="run-stat">走った距離 ${Math.floor(st.dist)}m ・ 集めた「？」${st.total}枚 ・ ゲートのクイズ ${okN}/${st.asked.length}問正解</p>
         <div class="talk shima"><img src="${face('shima', f)}" alt="シマ先生"><p class="bubble">${msg}</p></div>
         ${rows ? `<h3 class="q-vh">ゲートで出た問題の解説動画</h3><div class="q-vlist">${rows}</div>` : ''}
-        ${window.nzShareHTML ? window.nzShareHTML(`資料館ダッシュで${s}点！ コトニちゃんと${Math.floor(st.dist)}m走りました #なぜなぜ資料館`, URL_) : ''}
-        <div class="q-next" style="justify-content:flex-start"><button class="btn solid" id="runAgain">もう1回 <span class="arr">→</span></button></div></div>`, true);
+        ${window.nzShareHTML ? window.nzShareHTML(`資料館ダッシュ（${CHL[CHN]}）で${s}点！ コトニちゃんと${Math.floor(st.dist)}m走りました #なぜなぜ資料館`, URL_) : ''}
+        <div class="q-next" style="justify-content:flex-start"><button class="btn solid" id="runAgain">もう1回 <span class="arr">→</span></button><button class="btn" id="runOther">${CHL[CHN === 'main' ? 'jiji' : 'main']}で走る</button></div></div>`, true);
       FX.countUp(document.getElementById('runEndN'), s);
       if (s > prev && prev) FX.confetti(true);
-      document.getElementById('runAgain').addEventListener('click', start);
+      const again = document.getElementById('runAgain'), oth = document.getElementById('runOther');
+      again.addEventListener('click', () => start(CHN));
+      oth.addEventListener('click', () => start(CHN === 'main' ? 'jiji' : 'main'));
+      waitBtns([again, oth], 1000);
     }, 700);
   }
 
@@ -424,9 +441,11 @@
   document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && wrap.classList.contains('full')) setFull(false); else setTimeout(fit, 100); });
   addEventListener('orientationchange', () => setTimeout(fit, 300));
   document.addEventListener('visibilitychange', () => { if (document.hidden && st && st.mode === 'play') { st.mode = 'pause'; showOv(`<div class="run-card"><p class="run-gate">ひと休み中</p><button class="btn solid" id="runRe">つづける <span class="arr">→</span></button></div>`, true); document.getElementById('runRe').addEventListener('click', resume); } });
-  document.getElementById('runStart').addEventListener('click', start);
-  const bEl = document.getElementById('runBest'); if (bEl) bEl.textContent = best();
+  // はじめの画面：どちらのチャンネルで走るか
+  ov.querySelectorAll('[data-run-ch]').forEach(b => b.addEventListener('click', () => start(b.dataset.runCh)));
+  const bM = document.getElementById('runBestMain'), bJ = document.getElementById('runBestJiji');
+  if (bM) bM.textContent = best('main'); if (bJ) bJ.textContent = best('jiji');
   raf = requestAnimationFrame(loop);
   // 確かめ用（_dbg2.html が run.html?debug=1 で使う。ふだんは何もしない）
-  if (/[?&]debug=1/.test(location.search)) { window.__runDbg = () => st; window.__runStep = dt => { step(dt); draw(); }; window.__runJump = jump; }
+  if (/[?&]debug=1/.test(location.search)) { window.__runDbg = () => st; window.__runStep = dt => { if (st.mode === 'play') step(dt); else if (st.mode === 'gate') { st.gateT -= dt; if (st.gateT <= 0) ask(); } draw(); }; window.__runJump = jump; }
 })();

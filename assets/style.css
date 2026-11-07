@@ -972,3 +972,16 @@
     .run-wrap { border-radius: 0; }
     .run-wrap.flow { padding: 0 20px; }
   }
+  .run-wait { margin: 0; font-size: .86rem; font-weight: 700; color: var(--amber); }
+  .choice.wait { opacity: .4; filter: grayscale(.4); transition: opacity .3s, filter .3s; }
+  /* スポーツ編・時事・地域編を選ぶ（今日の1問のタブ・資料館ダッシュのスタート） */
+  .d-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 18px; }
+  .d-tab { font: inherit; font-family: "M PLUS Rounded 1c", sans-serif; font-weight: 800; padding: 11px 10px; border-radius: 14px; border: 1.5px solid var(--line-2); background: var(--surface); color: var(--sub); cursor: pointer; display: flex; justify-content: center; align-items: center; gap: 8px; transition: background .2s, color .2s, border-color .2s; }
+  .d-tab.on.main { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+  .d-tab.on.jiji { background: var(--blue); border-color: var(--blue); color: var(--ink); }
+  .d-fin { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: rgba(22,16,11,.25); font-size: .8rem; }
+  .run-q { margin: 4px 0 0; font-weight: 700; color: #fff1d6; font-size: .92rem; }
+  .run-pick { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: min(460px, 100%); }
+  .run-pick .btn { justify-content: center; padding: 13px 10px; white-space: nowrap; }
+  .btn.run-jiji { background: var(--blue); border-color: var(--blue); color: var(--ink); box-shadow: 0 10px 30px -10px rgba(134,189,224,.6); }
+  @media (max-width: 400px) { .run-pick { grid-template-columns: 1fr; } }
