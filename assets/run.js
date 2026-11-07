@@ -154,7 +154,8 @@
   function step(dt) {
     const p = st.p;
     st.t += dt;
-    st.speed = Math.min(760, 330 + st.t * 7);
+    // 加速：1秒に +10（前は +7。本人「プレイ時間がながい。加速をすこしだけはやめて」2026-11-07）。最高 780
+    st.speed = Math.min(780, 330 + st.t * 10);
     const dx = st.speed * dt;
     st.dist += dx / 40;
     st.scrollF = (st.scrollF + dx * 0.25) % far.width;
@@ -175,7 +176,7 @@
     // 出す
     if (!st.gate) {
       st.nextObs -= dt; st.nextCard -= dt;
-      if (st.nextObs <= 0) { spawnObs(); st.nextObs = Math.max(0.62, 1.5 - st.t / 90) + Math.random() * 0.7; }
+      if (st.nextObs <= 0) { spawnObs(); st.nextObs = Math.max(0.6, 1.5 - st.t / 70) + Math.random() * 0.7; }
       if (st.nextCard <= 0) { spawnCards(); st.nextCard = 2.2 + Math.random() * 2; }
     }
     // 動かす
