@@ -223,3 +223,35 @@ footer a:hover { color: var(--red); }
 .run-fs { border-radius: 3px; }
 .q-vlink { border-radius: 3px !important; border: 1.5px solid var(--ink) !important; background: var(--surface) !important; }
 nav a .new { top: 2px; }
+
+/* ヘッダーの帯：前の版の影と金色の縁を消す */
+.bar { box-shadow: none !important; border: 0 !important; height: 58px !important; }
+
+/* 資料館ダッシュの最初の画面：文字が大きいスマホでも切れないように、
+   キャンバスと説明を同じマスに重ね、説明が長ければ枠ごと伸ばす */
+.run-wrap:not(.flow):not(.full) { display: grid; }
+.run-wrap:not(.flow):not(.full) > canvas, .run-wrap:not(.flow):not(.full) > .run-ov { grid-area: 1 / 1; }
+.run-wrap:not(.flow):not(.full) > .run-ov { position: relative; inset: auto; min-height: 100%; }
+.run-wrap:not(.flow):not(.full) > .run-ov[hidden] { display: none; }
+.run-wrap:not(.flow):not(.full) > .run-fs { grid-area: 1 / 1; justify-self: end; align-self: start; position: relative; margin: 10px; }
+
+/* ===== スマホ（とくに幅が狭い・文字を大きくしている端末）での直し 2026-11-07 ===== */
+.g-txt b, .gp-txt b { word-break: keep-all; overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  /* ゲームのカード：「遊ぶ」は下の段に横いっぱい。名前と説明に幅をとる */
+  .gp-card, .g-card { grid-template-columns: 48px 1fr !important; gap: 10px 12px !important; }
+  .gp-card img, .g-card img { width: 48px !important; height: 48px !important; }
+  .gp-card .gp-go, .g-card .gp-go { grid-column: 1 / -1 !important; text-align: center; padding: 9px !important; }
+}
+@media (max-width: 440px) {
+  .hdr-game { font-size: 0 !important; padding: 7px 10px !important; gap: 0 !important; }
+  .hdr-game span { font-size: 1.1rem; }
+  .hero h1 { font-size: min(1.55rem, 8vw); }
+  .btn.read small { display: none; }
+  .talk img { width: 44px !important; height: 44px !important; }
+  .talk { gap: 10px; }
+  .talk .bubble { padding: 10px 12px !important; }
+  .d-tab { white-space: nowrap; font-size: .88rem; padding: 10px 6px; gap: 4px; }
+  #dailyBox .q-head .q-score { display: none; }
+  .tab { padding: 10px 11px; }
+}
