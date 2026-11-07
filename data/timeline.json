@@ -460,6 +460,12 @@
 },
 {
 "y": 1992,
+"text": "ユーロディズニー（今のディズニーランド・パリ）が開業",
+"video": "KNN2OK7JUjg",
+"channel": "jiji"
+},
+{
+"y": 1992,
 "text": "ロッテが千葉へ移り、川崎球場は本拠地でなくなる",
 "video": "OQp0bJRDWeM",
 "channel": "main"
@@ -494,6 +500,12 @@
 },
 {
 "y": 1994,
+"text": "ユーロディズニー、借金を組みかえ新しい株でお金を集め直す",
+"video": "KNN2OK7JUjg",
+"channel": "jiji"
+},
+{
+"y": 1994,
 "text": "イチローの三振が振り逃げになり、サヨナラ勝ち",
 "video": "qrkjF9BKU74",
 "channel": "main"
@@ -510,6 +522,12 @@
 "d": 8,
 "text": "「10.8」で巨人が中日に勝って優勝、落合選手が先制ホームラン",
 "video": "YIjYMYX11pQ",
+"channel": "main"
+},
+{
+"y": 1996,
+"text": "小笠原道大選手、ドラフト3位で日本ハムに入る",
+"video": "6jtLt9XeI3M",
 "channel": "main"
 },
 {
@@ -534,6 +552,12 @@
 },
 {
 "y": 1998,
+"text": "日本ハムの落合博満選手が引退し、一塁が空く",
+"video": "6jtLt9XeI3M",
+"channel": "main"
+},
+{
+"y": 1998,
 "text": "ブルワーズ、ナショナル・リーグへ移る",
 "video": "VW8JoGDPAJY",
 "channel": "main"
@@ -551,6 +575,12 @@
 "text": "京都の宇治市から住民の記録21万件あまりが流出",
 "video": "1ZuZd4dm6PI",
 "channel": "jiji"
+},
+{
+"y": 1999,
+"text": "小笠原道大選手、バントをしない2番で25本塁打",
+"video": "6jtLt9XeI3M",
+"channel": "main"
 },
 {
 "y": 1999,
@@ -575,6 +605,12 @@
 "text": "工藤公康選手、FAで中日ではなく巨人を選ぶ",
 "video": "XglfLCuwIwo",
 "channel": "main"
+},
+{
+"y": 2000,
+"text": "スペインのテーマパーク、テラ・ミティカが開業",
+"video": "KNN2OK7JUjg",
+"channel": "jiji"
 },
 {
 "y": 2000,
@@ -622,6 +658,12 @@
 },
 {
 "y": 2004,
+"text": "テラ・ミティカ、支払いを止める（パークは営業を続ける）",
+"video": "KNN2OK7JUjg",
+"channel": "jiji"
+},
+{
+"y": 2004,
 "text": "北山村が新宮市との合併協議から離れる",
 "video": "n7XNZgVM8Dg",
 "channel": "jiji"
@@ -652,10 +694,22 @@
 },
 {
 "y": 2006,
+"text": "日本ハムが44年ぶりの日本一。小笠原選手はMVP",
+"video": "6jtLt9XeI3M",
+"channel": "main"
+},
+{
+"y": 2006,
 "m": 11,
 "text": "住民基本台帳の営利目的の閲覧ができなくなる",
 "video": "1ZuZd4dm6PI",
 "channel": "jiji"
+},
+{
+"y": 2007,
+"text": "小笠原道大選手、巨人1年目でセ・リーグのMVPに",
+"video": "6jtLt9XeI3M",
+"channel": "main"
 },
 {
 "y": 2007,
@@ -691,6 +745,12 @@
 },
 {
 "y": 2009,
+"text": "香港ディズニー、ディズニーが貸したお金を株に替える",
+"video": "KNN2OK7JUjg",
+"channel": "jiji"
+},
+{
+"y": 2009,
 "text": "退任する楽天の野村監督を、相手の日本ハムの選手も一緒に胴上げ",
 "video": "xEbL1BaO7Ic",
 "channel": "main"
@@ -722,10 +782,24 @@
 },
 {
 "y": 2011,
+"m": 5,
+"d": 5,
+"text": "小笠原道大選手、東京ドームの阪神戦で2000本安打",
+"video": "6jtLt9XeI3M",
+"channel": "main"
+},
+{
+"y": 2011,
 "m": 11,
 "text": "16歳のレイエス、パドレスと契約金70万ドルで契約",
 "video": "Z6AEn-k-CJ8",
 "channel": "main"
+},
+{
+"y": 2012,
+"text": "カリフォルニア・アドベンチャーにカーズ・ランドができる",
+"video": "KNN2OK7JUjg",
+"channel": "jiji"
 },
 {
 "y": 2012,
@@ -751,6 +825,14 @@
 "text": "アメリカのマイクロンが広島の工場を買う",
 "video": "xWcrhveouNk",
 "channel": "jiji"
+},
+{
+"y": 2013,
+"m": 6,
+"d": 5,
+"text": "小笠原道大選手、古巣の日本ハム戦で代打サヨナラ3ラン",
+"video": "6jtLt9XeI3M",
+"channel": "main"
 },
 {
 "y": 2014,
@@ -971,6 +1053,12 @@
 },
 {
 "y": 2025,
+"text": "ジャングリア沖縄、沖縄本島の北部に開業",
+"video": "KNN2OK7JUjg",
+"channel": "jiji"
+},
+{
+"y": 2025,
 "text": "全国のクマの出没が約5万件で過去最多になる（2025年度）",
 "video": "N3h9Sn-gUSo",
 "channel": "jiji",
@@ -1179,9 +1267,25 @@
 {
 "y": 2026,
 "m": 10,
+"d": 29,
+"text": "楽天、2027年の打撃コーチに小笠原道大さんを発表",
+"video": "6jtLt9XeI3M",
+"channel": "main"
+},
+{
+"y": 2026,
+"m": 10,
 "d": 30,
 "text": "ジャングリアの運営会社の代表が会見で収益を残せなかったとおわび",
 "video": "iQU1KUuaauQ",
+"channel": "jiji"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 30,
+"text": "ジャングリアの運営会社、会見で2年目の来場見込みを下げる",
+"video": "KNN2OK7JUjg",
 "channel": "jiji"
 }
 ]

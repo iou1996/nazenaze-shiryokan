@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-08 07:51",
+  "updated": "2026-11-08 07:55",
   "main": [
     {
       "id": "6jtLt9XeI3M",
       "url": "https://www.youtube.com/watch?v=6jtLt9XeI3M",
-      "published": "",
+      "published": "2026-11-07",
       "title": "小笠原道大は高校でホームラン0本。なぜ両リーグでMVPになれた？楽天コーチ就任の今【プロ野球】"
     },
     {
@@ -96,7 +96,7 @@
     {
       "id": "KNN2OK7JUjg",
       "url": "https://www.youtube.com/watch?v=KNN2OK7JUjg",
-      "published": "",
+      "published": "2026-11-07",
       "title": "ジャングリア沖縄は倒産しかない？来場は見込みの7割、海外のつまずいたパークと比べた【時事】"
     },
     {
@@ -184,25 +184,37 @@
   ],
   "news": [
     {
+      "id": "6jtLt9XeI3M",
+      "title": "小笠原道大は高校でホームラン0本。なぜ両リーグでMVPになれた？楽天コーチ就任の今【プロ野球】",
+      "channel": "main",
+      "published": "2026-11-07"
+    },
+    {
+      "id": "KNN2OK7JUjg",
+      "title": "ジャングリア沖縄は倒産しかない？来場は見込みの7割、海外のつまずいたパークと比べた【時事】",
+      "channel": "jiji",
+      "published": "2026-11-07"
+    },
+    {
       "id": "kSADf4Vx2kk",
       "title": "睡眠が最も長い県は青森、短いのは東京。47都道府県の差は1年で5日ぶん【時事】",
       "channel": "jiji",
       "published": "2026-11-06"
-    },
-    {
-      "id": "bnsArTrW42c",
-      "title": "ヤクルト対西武も8対7！なぜ「ルーズベルトゲーム」？【プロ野球・MLB】",
-      "channel": "main",
-      "published": "2026-11-05"
-    },
-    {
-      "id": "N3h9Sn-gUSo",
-      "title": "クマの出没「過去最多」は、クマの数？秋田のデータとカナダの論文で検証【時事】",
-      "channel": "jiji",
-      "published": "2026-11-04"
     }
   ],
   "log": [
+    {
+      "id": "6jtLt9XeI3M",
+      "title": "小笠原道大は高校でホームラン0本。なぜ両リーグでMVPになれた？楽天コーチ就任の今【プロ野球】",
+      "channel": "main",
+      "published": "2026-11-07"
+    },
+    {
+      "id": "KNN2OK7JUjg",
+      "title": "ジャングリア沖縄は倒産しかない？来場は見込みの7割、海外のつまずいたパークと比べた【時事】",
+      "channel": "jiji",
+      "published": "2026-11-07"
+    },
     {
       "id": "kSADf4Vx2kk",
       "title": "睡眠が最も長い県は青森、短いのは東京。47都道府県の差は1年で5日ぶん【時事】",
