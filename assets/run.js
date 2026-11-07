@@ -12,7 +12,7 @@
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const URL_ = (document.querySelector('link[rel=canonical]') || {}).href || location.href;
   const img = src => { const i = new Image(); i.src = src; return i; };
-  const SPR = { kotoni: img('images/game/kotoni_run.png'), shima: img('images/game/shima.png') };
+  const SPR = { kotoni: img('images/game/kotoni_run.png?v=2'), shima: img('images/game/shima.png') };
   const face = (w, n) => `images/chars/${w}_face${n}.png`;
   // flow=true：キャンバスを隠して、パネルを普通の流れで出す（クイズ・結果・休み）
   function showOv(html, flow) { ov.innerHTML = html; ov.hidden = false; wrap.classList.toggle('flow', !!flow); }
@@ -312,7 +312,7 @@
     }
     const f = '800 16px "M PLUS Rounded 1c", sans-serif';
     cx.font = f; cx.textBaseline = 'top'; cx.textAlign = 'left';
-    cx.fillStyle = 'rgba(22,16,11,.65)'; cx.beginPath(); cx.roundRect ? cx.roundRect(10, 10, 210, 58, 12) : cx.rect(10, 10, 210, 58); cx.fill();
+    cx.fillStyle = 'rgba(22,16,11,.65)'; cx.beginPath(); cx.roundRect ? cx.roundRect(10, 10, 210, 66, 12) : cx.rect(10, 10, 210, 66); cx.fill();
     cx.fillStyle = '#fff1d6'; cx.fillText(`${Math.floor(st.score + st.dist)} 点`, 22, 18);
     cx.fillStyle = '#e0533f'; cx.fillText('♥'.repeat(Math.max(0, st.lives)) + '♡'.repeat(Math.max(0, 3 - st.lives)), 130, 18);
     // カード 5枚
