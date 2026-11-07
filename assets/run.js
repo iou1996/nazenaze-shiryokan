@@ -457,7 +457,9 @@
     if (fsBtn) { fsBtn.textContent = on ? '✕' : '⛶'; fsBtn.setAttribute('aria-label', on ? '全画面をやめる' : '全画面で遊ぶ'); }
     fit();
   }
+  let quietUntil = 0;
   async function goFull(lockLand) {
+    quietUntil = performance.now() + 2500;
     setFull(true);
     try { if (wrap.requestFullscreen) await wrap.requestFullscreen({ navigationUI: 'hide' }); } catch (err) { /* iPhone はページの上に広げるだけ */ }
     if (lockLand) try { if (screen.orientation && screen.orientation.lock) await screen.orientation.lock('landscape'); } catch (err) { /* 横向き固定できない端末もある */ }
@@ -475,7 +477,17 @@
   });
   document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && wrap.classList.contains('full')) setFull(false); else setTimeout(fit, 100); });
   addEventListener('orientationchange', () => setTimeout(fit, 300));
-  document.addEventListener('visibilitychange', () => { if (document.hidden && st && st.mode === 'play') { st.mode = 'pause'; showOv(`<div class="run-card"><p class="run-gate">ひと休み中</p><button class="btn solid" id="runRe">つづける <span class="arr">→</span></button></div>`, true); document.getElementById('runRe').addEventListener('click', resume); } });
+  // ほかのアプリに切りかえたら一時停止。ただし全画面に切りかえた直後に一瞬「裏に回った」と言ってくるブラウザ（LINE など）があるので、
+  // 切りかえ直後の2.5秒は無視し、0.5秒たっても裏のままのときだけ止める（本人「なんで最初から続けるボタンやねん」2026-11-07）
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden || !st || st.mode !== 'play' || performance.now() < quietUntil) return;
+    setTimeout(() => {
+      if (!document.hidden || !st || st.mode !== 'play') return;
+      st.mode = 'pause';
+      showOv(`<div class="run-card"><p class="run-gate">ひと休み中</p><button class="btn solid run-go" id="runRe">つづける <span class="arr">→</span></button></div>`, true);
+      document.getElementById('runRe').addEventListener('click', resume);
+    }, 500);
+  });
   // はじめの画面：どちらのチャンネルで走るか
   ov.querySelectorAll('[data-run-ch]').forEach(b => b.addEventListener('click', () => start(b.dataset.runCh)));
   const bM = document.getElementById('runBestMain'), bJ = document.getElementById('runBestJiji');
