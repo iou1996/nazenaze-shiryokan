@@ -276,17 +276,32 @@
         for (let i = 0; i < 6; i++) { const a = t * 1.5 + i; cx.fillStyle = 'rgba(255,241,214,.8)'; cx.fillRect(g.x + g.w / 2 + Math.cos(a) * 30, 150 + Math.sin(a * 1.3) * 60, 3, 3); }
         if (SPR.shima.complete) cx.drawImage(SPR.shima, g.x + g.w + 6, GROUND - 92, 86, 92);
       }
-      // 本の山
+      // 背景の棚を少し暗くして、手前の障害物を目立たせる
+      cx.fillStyle = 'rgba(14,9,5,.3)'; cx.fillRect(0, 0, W, GROUND);
+      const dk = cx.createLinearGradient(0, GROUND - 170, 0, GROUND);
+      dk.addColorStop(0, 'rgba(10,6,3,0)'); dk.addColorStop(1, 'rgba(10,6,3,.55)');
+      cx.fillStyle = dk; cx.fillRect(0, GROUND - 170, W, 170);
+      // 本の山・ワゴン（黒い縁取り・ページの厚み・床の影）
+      const INK = '#120c07', PAGE = '#f4e7c8';
       for (const o of st.obs) {
+        cx.fillStyle = 'rgba(0,0,0,.45)'; cx.beginPath(); cx.ellipse(o.x + o.w / 2, GROUND + 2, o.w * .65, 6, 0, 0, 6.3); cx.fill();
+        // 白いふち
+        cx.lineJoin = 'round'; cx.lineWidth = 7; cx.strokeStyle = 'rgba(255,246,228,.95)';
+        if (o.kind === 'cart') cx.strokeRect(o.x - 1, o.y - 1, o.w + 2, GROUND - o.y + 1);
+        else { const bh0 = o.h / o.books.length; o.books.forEach((b, i) => cx.strokeRect(o.x + b.dx, GROUND - (i + 1) * bh0, o.w, bh0 - 1)); }
+        cx.lineWidth = 2.5; cx.strokeStyle = INK;
         if (o.kind === 'cart') {
-          cx.fillStyle = '#4a3423'; cx.fillRect(o.x, o.y + 10, o.w, o.h - 18);
-          cx.fillStyle = '#2a1f16'; cx.beginPath(); cx.arc(o.x + 12, GROUND - 6, 6, 0, 6.3); cx.arc(o.x + o.w - 12, GROUND - 6, 6, 0, 6.3); cx.fill();
-          o.books.slice(0, 5).forEach((b, i) => { cx.fillStyle = b.c; cx.fillRect(o.x + 6 + i * 12, o.y, 9, 14); });
+          cx.fillStyle = '#6b4a2c'; cx.fillRect(o.x, o.y + 12, o.w, o.h - 20); cx.strokeRect(o.x, o.y + 12, o.w, o.h - 20);
+          o.books.slice(0, 5).forEach((b, i) => { cx.fillStyle = b.c; cx.fillRect(o.x + 5 + i * 12, o.y, 10, 14); cx.fillStyle = PAGE; cx.fillRect(o.x + 5 + i * 12, o.y + 1, 10, 3); cx.strokeRect(o.x + 5 + i * 12, o.y, 10, 14); });
+          cx.fillStyle = INK; cx.beginPath(); cx.arc(o.x + 12, GROUND - 6, 7, 0, 6.3); cx.arc(o.x + o.w - 12, GROUND - 6, 7, 0, 6.3); cx.fill();
+          cx.fillStyle = '#b9a27a'; cx.beginPath(); cx.arc(o.x + 12, GROUND - 6, 2.5, 0, 6.3); cx.arc(o.x + o.w - 12, GROUND - 6, 2.5, 0, 6.3); cx.fill();
         } else {
+          const bh = o.h / o.books.length;
           o.books.forEach((b, i) => {
-            const y = GROUND - (i + 1) * (o.h / o.books.length);
-            cx.fillStyle = b.c; cx.fillRect(o.x + b.dx, y, o.w, o.h / o.books.length - 1);
-            cx.fillStyle = 'rgba(255,240,215,.35)'; cx.fillRect(o.x + b.dx + o.w - 5, y + 2, 3, o.h / o.books.length - 5);
+            const y = GROUND - (i + 1) * bh, x = o.x + b.dx;
+            cx.fillStyle = b.c; cx.fillRect(x, y, o.w, bh - 1);
+            cx.fillStyle = PAGE; cx.fillRect(x + o.w - 7, y + 2, 5, bh - 5);          // ページの厚み（クリーム色）
+            cx.strokeRect(x, y, o.w, bh - 1);
           });
         }
       }
