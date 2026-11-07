@@ -388,12 +388,11 @@
       ov.querySelectorAll('.choice').forEach(x => { x.disabled = true; const n = +x.dataset.k; if (n === q.answer) x.classList.add('right'); else if (n === k) x.classList.add('wrong'); });
       if (ok) { st.score += 100; st.shield = true; FX.burst(b); FX.float(b, '+100 バリア！', 'ok'); }
       else FX.shake(b);
-      // 「走りだす」は選択肢のすぐ下と、解説を読み終えた下の2か所（本人「選択肢の下にも置こう」）
+      // 「走りだす」は選択肢のすぐ下だけ（解説の下にも置いたが、本人「いらんかも」で1つに戻した 2026-11-07）
       const goBtn = id => `<button class="btn solid run-go" id="${id}">走りだす <span class="arr">→</span></button>`;
       document.getElementById('runAns').innerHTML = `<div class="run-go-row">${goBtn('runGo')}<span class="run-ok ${ok ? 'ok' : 'ng'}">${ok ? '○ 正解！ バリア獲得' : '× おしい'}</span></div>
-        <div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>
-        <div class="run-go-row">${goBtn('runGo2')}</div>`;
-      const gos = [document.getElementById('runGo'), document.getElementById('runGo2')];
+        <div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>`;
+      const gos = [document.getElementById('runGo')];
       gos.forEach(g => g.addEventListener('click', resume, { once: true }));
       waitBtns(gos, 800, () => gos[0].focus({ preventScroll: true }));
     }, { once: true }));
