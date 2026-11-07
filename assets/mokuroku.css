@@ -393,3 +393,6 @@ section.page-top#kan { min-height: 0; }
 .cw-more-d[open] summary::after { content: " ▲"; }
 .cw-more-d[open] summary { font-size: 0; padding: 0; border: 0; box-shadow: none; margin: 0; }
 .cw-more-d[open] summary::after { font-size: .8rem; content: "とじる ▲"; display: inline-block; margin-top: 12px; padding: 5px 14px; border: 1.5px solid var(--ink); border-radius: 2px; color: var(--ink); font-family: var(--fh); font-weight: 800; box-shadow: 2px 2px 0 var(--ink); }
+
+/* どこまで走れるか：10問クリアの知らせ（run.js の HARD_AT） */
+.run-up { margin: 10px 0 0; padding: 8px 12px; border: 2px solid var(--red); color: var(--red); font-family: var(--fh); font-weight: 800; border-radius: 2px; background: var(--surface); }

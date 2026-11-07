@@ -107,6 +107,9 @@ const SFX = n => { if (window.NZSFX) window.NZSFX.play(n); };
   // 遊び方：endless（どこまで走れるか）／ta（タイムアタック：ゲート5つを何秒で）
   let MODE = store.get('nz_run_mode') === 'ta' ? 'ta' : 'endless';
   const TA_GATES = 5;
+  // ゲートに要るカード：はじめは5枚。どこまで走れるかで10問といたら10枚に（本人 2026-11-07「10問もといたら満足するからなんいどあげてこ」）
+  const HARD_AT = 10;
+  const need = () => (MODE !== 'ta' && st.asked.length >= HARD_AT) ? 10 : 5;
   const taTime = () => st.t + st.pen;
   const taBest = (c = CHN) => +(store.get('nz_run_ta_' + c) || 0);   // 0 は記録なし
   const fmt = t => t.toFixed(1);
@@ -224,7 +227,7 @@ const SFX = n => { if (window.NZSFX) window.NZSFX.play(n); };
       const cy = it.y + Math.sin(it.bob) * 4;
       if (Math.abs(it.x - (hb.x + hb.w / 2)) < it.r + hb.w / 2 && cy > hb.y - it.r && cy < hb.y + hb.h + it.r) {
         SFX('card'); it.got = true; st.cards++; st.total++; st.score += 10; sparkle(it.x, cy);
-        if (st.cards >= 5 && !st.gate) { spawnGate(); say('なぜなぜゲートが来る！'); }
+        if (st.cards >= need() && !st.gate) { spawnGate(); say('なぜなぜゲートが来る！'); }
       }
     }
     // ゲート
@@ -373,8 +376,9 @@ const SFX = n => { if (window.NZSFX) window.NZSFX.play(n); };
       cx.fillStyle = '#fff1d6'; cx.fillText(`${Math.floor(st.score + st.dist)} 点`, 22, 18);
       cx.fillStyle = '#e0533f'; cx.fillText('♥'.repeat(Math.max(0, st.lives)) + '♡'.repeat(Math.max(0, 3 - st.lives)), 130, 18);
     }
-    // カード 5枚
-    for (let i = 0; i < 5; i++) { cx.fillStyle = i < st.cards ? '#f2b64c' : 'rgba(255,240,215,.2)'; cx.fillRect(22 + i * 22, 44, 16, 16); }
+    // カード 5枚（10問といたあとは10枚。枠に収まるよう小さく並べる）
+    const nd = need(), cs = nd > 5 ? 9 : 16, cg = nd > 5 ? 11 : 22, cy1 = nd > 5 ? 48 : 44;
+    for (let i = 0; i < nd; i++) { cx.fillStyle = i < st.cards ? '#f2b64c' : 'rgba(255,240,215,.2)'; cx.fillRect(22 + i * cg, cy1, cs, cs); }
     cx.fillStyle = '#bfae95'; cx.font = '700 11px "Zen Kaku Gothic New", sans-serif'; cx.fillText('→ゲート', 134, 46);
     cx.fillStyle = CHN === 'jiji' ? '#86bde0' : '#f2b64c'; cx.font = '700 10px "Zen Kaku Gothic New", sans-serif'; cx.fillText(CHL[CHN], 134, 60);
     if (st.shield) { cx.fillStyle = '#86bde0'; cx.font = f; cx.fillText('🛡', 190, 40); }
@@ -440,7 +444,7 @@ const SFX = n => { if (window.NZSFX) window.NZSFX.play(n); };
       const goBtn = id => `<button class="btn solid run-go" id="${id}">${last ? 'タイムを見る' : '走りだす'} <span class="arr">→</span></button>`;
       const okText = ok ? (last ? '○ 正解！' : '○ 正解！ 次のゲートまでバリア') : (MODE === 'ta' ? '× +5秒' : '× おしい');
       document.getElementById('runAns').innerHTML = `<div class="run-go-row">${goBtn('runGo')}<span class="run-ok ${ok ? 'ok' : 'ng'}">${okText}${MODE === 'ta' ? `　ゲート ${st.gates}/${TA_GATES}` : ''}</span></div>
-        <div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。次のゲートまで、バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>`;
+        <div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。次のゲートまで、バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>${MODE !== 'ta' && st.asked.length === HARD_AT ? `<p class="run-up">${HARD_AT}問クリア！ ここからは、カード10枚でゲートです。</p>` : ''}`;
       const gos = [document.getElementById('runGo')];
       gos.forEach(g => g.addEventListener('click', last ? finishTA : resume, { once: true }));
       waitBtns(gos, 800, () => gos[0].focus({ preventScroll: true }));
@@ -452,7 +456,7 @@ const SFX = n => { if (window.NZSFX) window.NZSFX.play(n); };
     // いきなり走らせず「よーい……ドン！」をはさむ
     // クイズ明けは画面の障害物を片付けて、2秒ほど何も出さない（安全区間）
     st.mode = 'ready'; st.readyT = 1.1; st.inv = 1.6; st.obs = []; st.nextObs = 2.0;
-    SFX('ready'); say('よーい……', '#fff1d6'); st.msg.life = 0.7;
+    SFX('ready'); say(st.asked.length === HARD_AT && MODE !== 'ta' ? 'ここからカード10枚！' : 'よーい……', '#fff1d6'); st.msg.life = 0.7;
     last = performance.now();
   }
 
