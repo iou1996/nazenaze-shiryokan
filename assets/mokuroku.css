@@ -1,0 +1,225 @@
+/* ============================================================
+   「資料館の目録」テーマ（2026-11-07 本人「Claude感えぐいから差別化しよ 見栄え」→ 目録を選んだ）
+   style.css の上にかぶせる。クリーム色の紙・黒インク・明朝の見出し・朱のハンコ・図書カード。
+   やめていること：グラデーション、光（glow）、まるいピル型のボタン、すりガラス。
+   ============================================================ */
+:root {
+  --bg: #f3ead7;          /* 紙 */
+  --bg2: #ebe0c7;         /* 少し古い紙 */
+  --surface: #fbf6ea;     /* カード */
+  --surface-2: #f5ecda;
+  --line: #ddd0b5;
+  --line-2: #bba98a;
+  --text: #2a2017;        /* 黒インク */
+  --sub: #6b5b46;
+  --amber: #9a6417;       /* 黄土（文字にも使える濃さ） */
+  --amber-2: #b47a22;
+  --red: #b8382a;         /* 朱（ハンコ） */
+  --blue: #2c5d80;        /* 藍（時事・地域編） */
+  --green: #2f7a4a;
+  --paper: #fbf6ea;
+  --ink: #2a2017;
+  --radius: 6px;
+  --fh: "Shippori Mincho B1", "Yu Mincho", "Hiragino Mincho ProN", serif;   /* 見出し */
+  --fb: "Zen Kaku Gothic New", "Hiragino Sans", "Meiryo", sans-serif;       /* ボタン・本文 */
+}
+html, body { background: var(--bg); color: var(--text); }
+body::before { opacity: .09; mix-blend-mode: multiply; }   /* 紙の粒 */
+::selection { background: #e9c46a; color: var(--ink); }
+
+/* ---------- 文字 ---------- */
+h1, h2, h3, h4, .logo, .num, .round { font-family: var(--fh); font-weight: 800; letter-spacing: .02em; }
+.btn, .tab, .d-tab, .sh, .gp-go, .qv-go { font-family: var(--fb); font-weight: 700; }
+.grad { background: linear-gradient(transparent 64%, rgba(233,196,106,.6) 64%) !important; -webkit-background-clip: border-box !important; background-clip: border-box !important; color: var(--red) !important; padding: 0 .1em; }
+.hero p, .story .body p, .rd-pt p { color: var(--text); }
+.lead { color: var(--sub); }
+
+/* 見出しの上の小さなラベル → 朱のハンコ */
+.label { color: var(--red); border: 2px solid currentColor; padding: 3px 12px 2px; letter-spacing: .3em; font-family: var(--fh); font-weight: 800; font-size: .74rem; transform: rotate(-2deg); border-radius: 3px; }
+.label::before { display: none; }
+.contact .label { color: var(--red); }
+
+/* ---------- ヘッダー：紙の帯に二重線 ---------- */
+header { top: 0; background: rgba(243,234,215,.97); border-bottom: 3px double var(--ink); }
+.bar { background: none; border: 0; border-radius: 0; backdrop-filter: none; -webkit-backdrop-filter: none; height: 58px; }
+.logo { font-size: 1.08rem; }
+.logo img { border: 1.5px solid var(--ink); }
+nav a { color: var(--sub); border-radius: 0; font-family: var(--fh); font-weight: 800; padding: 8px 12px; }
+nav a:hover { color: var(--ink); background: none; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+nav a.on { color: var(--ink); background: none; box-shadow: none; text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+nav a[href="contact.html"]:not(.on) { box-shadow: none; color: var(--paper); background: var(--ink); border-radius: 3px; }
+nav a .new { border-radius: 2px; background: var(--red); box-shadow: none; transform: rotate(6deg); }
+.menu-btn { border-radius: 3px; border: 2px solid var(--ink); }
+.menu-btn span { background: var(--ink); }
+@media (max-width: 1080px) {
+  nav { background: var(--surface); backdrop-filter: none; -webkit-backdrop-filter: none; border: 2px solid var(--ink); border-radius: 4px; box-shadow: 5px 5px 0 var(--ink); top: 64px; }
+  nav a { border-bottom: 1px dashed var(--line); }
+}
+.hdr-game { border-radius: 3px !important; background: var(--red) !important; color: var(--paper) !important; border: 2px solid var(--ink) !important; box-shadow: 2px 2px 0 var(--ink) !important; animation: none !important; }
+
+/* お知らせ：黒い帯（電光掲示板ではなく、新聞の速報帯） */
+.newsbar { width: 100%; max-width: none; margin: 0; border-radius: 0; background: var(--ink); box-shadow: none; }
+.newsbar a { color: var(--paper); font-weight: 500; }
+.newsbar .nb-tag { background: var(--red); border-radius: 2px; color: var(--paper); font-weight: 700; }
+.newsbar .nb-all { background: none !important; border-left: 1px solid rgba(251,246,234,.3); color: var(--paper) !important; }
+
+/* ---------- ボタン：活字のハンコ（角ばって、押すとへこむ） ---------- */
+.btn { border-radius: 3px; border: 2px solid var(--ink); background: var(--surface); color: var(--ink); box-shadow: 3px 3px 0 var(--ink); backdrop-filter: none; -webkit-backdrop-filter: none; transition: transform .08s, box-shadow .08s, background .15s; }
+.btn:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); background: #fffaf0; }
+.btn:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--ink); }
+.btn.solid { background: var(--ink); border-color: var(--ink); color: var(--paper); box-shadow: 3px 3px 0 var(--red); }
+.btn.solid:hover { background: #3a2d21; box-shadow: 4px 4px 0 var(--red); }
+.btn.solid:active { box-shadow: 0 0 0 var(--red); }
+.btn.red, .btn.game { background: var(--red); border-color: var(--ink); color: var(--paper); box-shadow: 3px 3px 0 var(--ink); filter: none; }
+.btn.game:hover { filter: none; background: #a83224; }
+.btn.read, .btn.run-jiji { background: var(--blue); border-color: var(--ink); color: var(--paper); box-shadow: 3px 3px 0 var(--ink); }
+.btn.read small { color: rgba(251,246,234,.8); }
+.btn.read:hover { background: #24506f; }
+.btn:disabled, .btn[disabled] { opacity: .45; transform: none; box-shadow: 1px 1px 0 var(--ink); }
+.contact .btn { background: var(--ink); color: var(--paper); }
+.contact .btn:hover { background: #3a2d21; }
+.chip { border-radius: 2px; border: 1.5px solid var(--red); background: transparent; color: var(--red); backdrop-filter: none; -webkit-backdrop-filter: none; font-family: var(--fh); }
+.chip i { box-shadow: none; animation: none; }
+
+/* ---------- タブ：見出しの下線 ---------- */
+.tabs { background: none; border: 0; border-bottom: 2px solid var(--ink); border-radius: 0; padding: 0; gap: 0; }
+.tab { border-radius: 0; color: var(--sub); padding: 10px 16px; font-family: var(--fh); font-weight: 800; }
+.tab[aria-selected="true"] { color: var(--ink); }
+.tabs .pill { top: auto; bottom: -2px; height: 5px; left: 0; border-radius: 0; background: var(--red); }
+.chips button { border-radius: 2px; border-color: var(--ink); }
+.chips button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+/* ---------- タグ：まわりを線で囲んだ印 ---------- */
+.tag, .tl-tag, .nl-tag, .latest-card .tag, .pop-card .tag, .channel .tag, .q-cat .tag {
+  background: transparent !important; color: var(--amber) !important; border: 1.5px solid currentColor; border-radius: 2px !important; font-weight: 700; }
+.jiji .tag, .tag.jiji, .tl-tag.jiji, .nl-tag.jiji, .latest-card.jiji .tag, .pop-card.jiji .tag, .channel.jiji .tag, .q-cat.jiji .tag { color: var(--blue) !important; }
+.nl-tag.notice { color: var(--red) !important; }
+.gp-new { background: var(--red); border-radius: 2px; transform: rotate(-4deg); display: inline-block; }
+
+/* ---------- カード：図書カード（朱の罫線・角はほぼ四角・影は紙の厚み） ---------- */
+.latest-card, .pop-card, .video, .gp-card, .g-card, .rd-card, .channel, .pillar, .char, .stat, .nl-row, .q-vrow, .sh-ep, .rd-pt,
+.game-card, .co, .sd, .country, .q-cat, .tl-card, .rd-pn a, .latest-read, .g-mini, .ny-ev a, .rd-quiz, .d-streak, .mapcard {
+  border-radius: 4px !important; background-color: var(--surface) !important; background-image: none !important;
+  border: 1px solid var(--line-2) !important; box-shadow: 0 1px 0 var(--line), 0 10px 18px -16px rgba(60,40,20,.55);
+}
+/* 動画のカードは、上に朱の罫線（図書カードの見出し線） */
+.latest-card, .pop-card, .video, .rd-card, .nl-row, .q-vrow { border-top: 4px solid var(--red) !important; }
+.latest-card.jiji, .pop-card.jiji, .rd-card.jiji, .nl-row.jiji { border-top-color: var(--blue) !important; }
+.latest-card:hover, .pop-card:hover, .video:hover, .gp-card:hover, .g-card:hover, .rd-card:hover, .channel:hover, .nl-row:hover, .q-vrow:hover, .latest-read:hover, .g-mini:hover, .rd-pn a:hover, .ny-ev a:hover {
+  border-color: var(--ink) !important; box-shadow: 4px 4px 0 var(--ink); transform: translate(-2px, -2px);
+}
+.latest-card .th, .pop-card .th, .video .th, .rd-card .th, .qv-th, .nl-th { border-radius: 2px !important; }
+.channel::before, .stat.big::after, .contact::before, .contact::after { display: none !important; }
+.alt { background: var(--bg2); }
+.alt::before { background: var(--ink) !important; height: 3px !important; opacity: .85; }
+.pillar::before, .stat .num, .rd-tl time, .ny-ev time, .tl-year { color: var(--red); font-family: var(--fh); }
+.ny-ev.jiji time { color: var(--blue); }
+.meter { background: var(--line); border-radius: 0; }
+.meter i { background: var(--red); border-radius: 0; }
+.char .pic { background: #fffaf0 !important; border-right: 1px dashed var(--line-2); }
+.face[aria-pressed="true"] { border-color: var(--red); box-shadow: none; }
+.marquee img { background: var(--surface); border: 1px solid var(--line-2); border-radius: 4px; }
+
+/* 資料番号（図書カードらしさ）：トップ・解説一覧のカードに No. を振る */
+.latest { counter-reset: shiryo; }
+.latest-item { counter-increment: shiryo; position: relative; }
+.rd-cards { counter-reset: shiryo; }
+.rd-card { counter-increment: shiryo; position: relative; }
+.rd-card::after { content: "No." counter(shiryo, decimal-leading-zero); position: absolute; right: 10px; top: 6px; font-family: var(--fh); font-weight: 800; font-size: .72rem; color: var(--sub); letter-spacing: .1em; }
+
+/* ---------- トップ ---------- */
+.hero { padding-top: 112px; }
+.hero .banner { border-radius: 2px; border: 10px solid var(--surface); outline: 1px solid var(--line-2); box-shadow: 0 1px 0 var(--line-2), 8px 10px 0 rgba(42,32,23,.12); transform: rotate(-.5deg); }
+.latest-card .play::after, .video .play::after { background-color: var(--red) !important; border-radius: 2px !important; }
+.game-promo { border-radius: 4px; background: var(--surface) !important; border: 2px solid var(--ink) !important; box-shadow: 6px 6px 0 var(--ink); }
+.gp-card img, .g-card img, .g-mini img, .talk img, .rd-quiz img { border: 1.5px solid var(--ink); background: #fffaf0 !important; }
+.gp-go { border-radius: 2px; background: var(--ink); color: var(--paper); border: 0; }
+.gp-card.hit .gp-go, .g-card.hit .gp-go { background: var(--red); }
+.gp-all { color: var(--red); font-family: var(--fh); font-weight: 800; }
+.contact { border-radius: 4px; background: var(--surface) !important; border: 2px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); }
+.contact p { color: var(--sub); }
+footer { color: var(--sub); }
+footer .wrap { border-top: 3px double var(--ink); }
+footer a:hover { color: var(--red); }
+
+/* ---------- 解説・年表・出典 ---------- */
+.rd-lead { background: var(--surface); border-left: 5px solid var(--red); border-radius: 2px; box-shadow: 0 1px 0 var(--line); }
+.rd-h2::before { background: var(--red); border-radius: 0; width: 8px; }
+.rd-pt::before { background: var(--ink); color: var(--paper); border-radius: 2px; font-family: var(--fh); }
+.rd-pt:last-child { border: 2px solid var(--red) !important; }
+.rd-video { border-radius: 2px; border: 8px solid var(--surface); outline: 1px solid var(--line-2); }
+.rd-play { border-radius: 2px; background: var(--red); box-shadow: 3px 3px 0 var(--ink); }
+.rd-sub a { border-radius: 2px; border: 1.5px solid var(--ink); background: var(--surface); font-family: var(--fh); }
+.rd-sub a.on, .rd-sub a:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.ny::before { background: var(--ink); opacity: 1; width: 2px; }
+.ny-era span { background: var(--ink); color: var(--paper); border-radius: 2px; font-family: var(--fh); }
+.ny-ev::before { background: var(--bg); border-color: var(--red); border-radius: 0; transform: rotate(45deg); }
+.ny-ev.jiji::before { border-color: var(--blue); }
+.rd-tl { border-left: 2px solid var(--ink); }
+.rd-tl li::before { background: var(--red); border-radius: 0; transform: rotate(45deg); box-shadow: none; }
+.rd-src a { text-decoration-color: var(--red); }
+.sh-tools input, .tools input { border-radius: 3px; border: 2px solid var(--ink); background: var(--surface); }
+.nl-month { color: var(--ink); font-family: var(--fh); }
+.nl-month::after { background: var(--ink); height: 2px; }
+.nl-row.notice .nl-th { background: var(--bg2) !important; }
+
+/* ---------- ゲーム ---------- */
+.talk .bubble { border: 1.5px solid var(--ink); border-radius: 2px 14px 14px 14px; background: #fffaf0; box-shadow: 2px 2px 0 var(--line-2); }
+.talk.shima .bubble { background: #eef3f6; }
+.choice { border-radius: 3px; border: 2px solid var(--ink); background: var(--surface); color: var(--ink); box-shadow: 2px 2px 0 var(--ink); }
+.choice:hover:not(:disabled) { border-color: var(--ink); background: #fffaf0; transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--ink); }
+.choice.right { background: #dcebd8 !important; border-color: var(--green) !important; color: var(--ink); box-shadow: 2px 2px 0 var(--green); }
+.choice.wrong { background: #f4dad3 !important; border-color: var(--red) !important; color: var(--ink); box-shadow: 2px 2px 0 var(--red); }
+.choice.wait { opacity: .35; }
+.q-cat { border: 2px solid var(--ink) !important; box-shadow: 3px 3px 0 var(--ink); }
+.q-cat:hover:not(:disabled) { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+.q-result, .q-result b, .hit-top b, .run-gate, .d-streak b, .g-txt b, .gp-txt b, .q-cat b { font-family: var(--fh); }
+.q-result b, .hit-top b, .d-streak b, .q-score b { color: var(--red); }
+.q-bar { background: var(--line); border-radius: 0; height: 5px; }
+.q-bar i { background: var(--ink); border-radius: 0; }
+.q-vlink { color: var(--red); }
+.qv-ans { color: var(--green) !important; }
+.qv-go { background: var(--ink); border-radius: 2px; }
+.w-mark { border-radius: 2px; }
+.w-mark.ok { background: var(--green); } .w-mark.ng, .q-vrow .w-mark.ng { background: var(--red); }
+.d-tab { border-radius: 3px; border: 2px solid var(--ink); background: var(--surface); color: var(--sub); font-family: var(--fh); }
+.d-tab.on.main { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.d-tab.on.jiji { background: var(--blue); color: var(--paper); border-color: var(--ink); }
+.d-streak { border: 2px solid var(--ink) !important; }
+.g-best { border-radius: 2px; color: var(--red); border-color: var(--red); }
+.board { border-radius: 4px; }
+.sh { border-radius: 3px; border: 1.5px solid var(--ink); background: var(--surface); color: var(--ink); }
+.sh.x, .sh.line, .sh.fb { border-color: var(--ink); }
+.run-card-box { background: var(--ink) !important; }
+.run-wrap { border-radius: 2px; }
+.run-wrap.flow .run-card { color: var(--text); }
+.run-wrap.flow { background: transparent; }
+.run-card-box:has(.run-wrap.flow) { background: var(--surface) !important; }
+@media (max-width: 600px) { .run-card-box { background: none !important; border: 0 !important; box-shadow: none; } }
+
+/* ---------- エフェクト（明るい紙の上で見えるように） ---------- */
+.fx-float { color: var(--red); text-shadow: 0 1px 0 #fffaf0, 0 0 8px #fffaf0; font-family: var(--fh); }
+.fx-float.ok { color: var(--green); }
+.fx-float.combo { background: var(--ink); color: var(--paper); border-radius: 2px; box-shadow: 3px 3px 0 var(--red); text-shadow: none; }
+.fx-ripple { background: rgba(42,32,23,.15); }
+.fx-q span { color: var(--ink); }
+@keyframes fxQ { 0% { opacity: 0; transform: translateY(0) rotate(-10deg); } 15% { opacity: .1; } 85% { opacity: .06; } 100% { opacity: 0; transform: translateY(-560px) rotate(14deg); } }
+@media (hover: hover) { .latest-card, .pop-card, .video, .gp-card, .g-card, .channel, .stat { background-image: none !important; } }
+
+/* ---------- 踏破記録 ---------- */
+.unr { border-radius: 4px; border: 2px solid var(--red); background: #f7e6df; }
+.unr h4, .unr li .km { color: var(--red); }
+.unr li { background: var(--surface); }
+.layers span { border-radius: 2px; border-color: var(--ink); }
+.region { color: var(--red); font-family: var(--fh); }
+.region::after { background: var(--ink); }
+.sd .n, .co li > span { color: var(--red); }
+.sd small.aka { color: var(--sub); }
+
+/* 資料館ダッシュの最初の画面（暗い絵の上）では、紙色のボタンと明るい字 */
+.run-wrap:not(.flow) .run-ov .note, .run-wrap:not(.flow) .run-ov .note b { color: #e6dac2; }
+.run-wrap:not(.flow) .run-pick .btn.solid { background: var(--paper); color: var(--ink); border-color: var(--paper); box-shadow: 3px 3px 0 var(--red); }
+.run-wrap:not(.flow) .run-pick .btn.run-jiji { border-color: var(--paper); box-shadow: 3px 3px 0 #0e0a06; }
+.run-fs { border-radius: 3px; }
+.q-vlink { border-radius: 3px !important; border: 1.5px solid var(--ink) !important; background: var(--surface) !important; }
+nav a .new { top: 2px; }
