@@ -220,7 +220,11 @@
     if (st.gate) {
       st.gate.x -= dx;
       // ゲートを通ったら、いきなりクイズにしない。いったん止めて「なぜなぜゲート！」を見せる（連打のまま選択肢を押さないように）
-      if (st.gate.x < p.x + 20) { st.gate = null; st.cards = 0; st.mode = 'gate'; st.gateT = 0.9; say('なぜなぜゲート！'); st.msg.life = 1; }
+      if (st.gate.x < p.x + 20) {
+        // バリアは「次のゲートまで」だけ（本人 2026-11-07「バリアは問題につき次のみ有効にしよか」）。使わずにここまで来たら消える
+        if (st.shield) { st.shield = false; sparkle(p.x + 30, p.y - 30, '#86bde0'); }
+        st.gate = null; st.cards = 0; st.mode = 'gate'; st.gateT = 0.9; say('なぜなぜゲート！'); st.msg.life = 1;
+      }
     }
     st.score = Math.max(st.score, 0);
   }
@@ -415,8 +419,8 @@
       else FX.shake(b);
       // 「走りだす」は選択肢のすぐ下だけ（解説の下にも置いたが、本人「いらんかも」で1つに戻した 2026-11-07）
       const goBtn = id => `<button class="btn solid run-go" id="${id}">走りだす <span class="arr">→</span></button>`;
-      document.getElementById('runAns').innerHTML = `<div class="run-go-row">${goBtn('runGo')}<span class="run-ok ${ok ? 'ok' : 'ng'}">${ok ? '○ 正解！ バリア獲得' : '× おしい'}</span></div>
-        <div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>`;
+      document.getElementById('runAns').innerHTML = `<div class="run-go-row">${goBtn('runGo')}<span class="run-ok ${ok ? 'ok' : 'ng'}">${ok ? '○ 正解！ 次のゲートまでバリア' : '× おしい'}</span></div>
+        <div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。次のゲートまで、バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>`;
       const gos = [document.getElementById('runGo')];
       gos.forEach(g => g.addEventListener('click', resume, { once: true }));
       waitBtns(gos, 800, () => gos[0].focus({ preventScroll: true }));

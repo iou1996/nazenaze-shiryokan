@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>資料館ダッシュ｜なぜなぜ資料館のミニゲーム</title>
-<meta name="description" content="コトニちゃんが資料館の棚の間を走るアクションゲーム。タップでジャンプ、本の山をよけて「？」カードを集めよう。5枚でなぜなぜゲートが開いてクイズ。正解するとバリア。">
+<meta name="description" content="コトニちゃんが資料館の棚の間を走るアクションゲーム。タップでジャンプ、本の山をよけて「？」カードを集めよう。5枚でなぜなぜゲートが開いてクイズ。正解すると次のゲートまでバリア。">
 <link rel="canonical" href="https://iou1996.github.io/nazenaze-shiryokan/run.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="シマ先生とコトニちゃんのなぜなぜ資料館">
 <meta property="og:title" content="資料館ダッシュ｜なぜなぜ資料館のミニゲーム">
-<meta property="og:description" content="コトニちゃんが資料館の棚の間を走るアクションゲーム。タップでジャンプ、本の山をよけて「？」カードを集めよう。5枚でなぜなぜゲートが開いてクイズ。正解するとバリア。">
+<meta property="og:description" content="コトニちゃんが資料館の棚の間を走るアクションゲーム。タップでジャンプ、本の山をよけて「？」カードを集めよう。5枚でなぜなぜゲートが開いてクイズ。正解すると次のゲートまでバリア。">
 <meta property="og:url" content="https://iou1996.github.io/nazenaze-shiryokan/run.html">
 <meta property="og:image" content="https://iou1996.github.io/nazenaze-shiryokan/images/banner.jpg">
 <meta property="og:locale" content="ja_JP">
@@ -20,8 +20,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Shippori+Mincho+B1:wght@700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=202611071032">
-<link rel="stylesheet" href="assets/mokuroku.css?v=202611071032">
+<link rel="stylesheet" href="assets/style.css?v=202611071033">
+<link rel="stylesheet" href="assets/mokuroku.css?v=202611071033">
 </head>
 <body class="p-game" data-game="run">
 
@@ -55,9 +55,9 @@
         <canvas id="runCanvas" tabindex="0" aria-label="資料館ダッシュのゲーム画面。タップかスペースキーでジャンプ"></canvas>
         <div class="run-ov" id="runOverlay">
           <div class="run-card">
-            <img class="run-hero" src="images/game/kotoni_run.png?v=202611071032" alt="">
+            <img class="run-hero" src="images/game/kotoni_run.png?v=202611071033" alt="">
             <p class="run-gate">資料館ダッシュ</p>
-            <p class="run-how"><b>タップ</b>（パソコンは<b>スペース</b>）でジャンプ。<b>2回</b>で2段ジャンプ。本の山をよけて「？」を<b>5枚</b>集めると、なぜなぜゲート。クイズに正解すると<b>バリア</b>。</p>
+            <p class="run-how"><b>タップ</b>（パソコンは<b>スペース</b>）でジャンプ。<b>2回</b>で2段ジャンプ。本の山をよけて「？」を<b>5枚</b>集めると、なぜなぜゲート。クイズに正解すると、次のゲートまで<b>バリア</b>。</p>
             <p class="run-q">ゲートで出るクイズは、どっち？</p>
             <div class="run-pick">
               <button class="btn solid" id="runStart" data-run-ch="main">スポーツ編で走る</button>
@@ -70,7 +70,7 @@
     </div>
     <div class="g-howto">
       <h2>あそびかた</h2>
-      <p>はじめに、ゲートで出るクイズをスポーツ編か時事・地域編から選びます。画面をタップ（パソコンはスペースキー）でジャンプ。空中でもう1回タップすると2段ジャンプです。本の山やワゴンにぶつかるとライフが1つ減り、3つなくなると終わり。「？」カードを5枚集めると、なぜなぜゲートが出てクイズが1問。正解すると100点とバリア（1回だけぶつかっても平気）。走るほど速くなります。</p>
+      <p>はじめに、ゲートで出るクイズをスポーツ編か時事・地域編から選びます。画面をタップ（パソコンはスペースキー）でジャンプ。空中でもう1回タップすると2段ジャンプです。本の山やワゴンにぶつかるとライフが1つ減り、3つなくなると終わり。「？」カードを5枚集めると、なぜなぜゲートが出てクイズが1問。正解すると100点と、次のゲートまで使えるバリア（1回だけぶつかっても平気。使わなかったら次のゲートで消えます）。走るほど速くなります。</p>
       <p>自己ベストは、この端末のブラウザにだけ保存されます。</p>
     </div>
     <div class="g-more">
@@ -94,9 +94,9 @@
   </div>
 </footer>
 
-<script src="assets/main.js?v=202611071032"></script>
-<script src="assets/fx.js?v=202611071032"></script>
-<script src="assets/game.js?v=202611071032"></script>
-<script src="assets/run.js?v=202611071032"></script>
+<script src="assets/main.js?v=202611071033"></script>
+<script src="assets/fx.js?v=202611071033"></script>
+<script src="assets/game.js?v=202611071033"></script>
+<script src="assets/run.js?v=202611071033"></script>
 </body>
 </html>
