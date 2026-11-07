@@ -103,13 +103,19 @@
   const CHL = { main: 'スポーツ編', jiji: '時事・地域編' };
   let CHN = store.get('nz_run_ch') === 'jiji' ? 'jiji' : 'main';
   // 自己ベストはチャンネルごと（前の版の nz_run_best はスポーツ編として読む）
+  // 遊び方：endless（どこまで走れるか）／ta（タイムアタック：ゲート5つを何秒で）
+  let MODE = store.get('nz_run_mode') === 'ta' ? 'ta' : 'endless';
+  const TA_GATES = 5;
+  const taTime = () => st.t + st.pen;
+  const taBest = (c = CHN) => +(store.get('nz_run_ta_' + c) || 0);   // 0 は記録なし
+  const fmt = t => t.toFixed(1);
   const best = (c = CHN) => +(store.get('nz_run_best_' + c) || (c === 'main' ? store.get('nz_run_best') : 0) || 0);
   function reset() {
     st = {
       mode: 'play', t: 0, speed: 280, dist: 0, score: 0, lives: 3, cards: 0, total: 0, shield: false, inv: 0,
       p: { x: 70, y: GROUND, vy: 0, jumps: 0, sz: 66, squash: 0 },
       obs: [], items: [], parts: [], gate: null, nextObs: 3.2, nextCard: 0.8, scrollF: 0, scrollN: 0, shake: 0, flash: 0,
-      asked: [], msg: null, buf: 0,
+      asked: [], msg: null, buf: 0, pen: 0, gates: 0,
     };
   }
 
@@ -181,7 +187,7 @@
     if (!st.gate) {
       st.nextObs -= dt; st.nextCard -= dt;
       if (st.nextObs <= 0) { spawnObs(); st.nextObs = Math.max(0.6, 1.5 - st.t / 70) + Math.random() * 0.7; }
-      if (st.nextCard <= 0) { spawnCards(); st.nextCard = 2.2 + Math.random() * 2; }
+      if (st.nextCard <= 0) { spawnCards(); st.nextCard = MODE === 'ta' ? 1.4 + Math.random() * 1.2 : 2.2 + Math.random() * 2; }
     }
     // 動かす
     st.obs.forEach(o => { o.x -= dx; });
@@ -201,7 +207,11 @@
         o.hit = true;
         if (st.inv > 0) continue;
         if (st.shield) { st.shield = false; st.inv = 1; sparkle(p.x + 30, p.y - 30, '#86bde0'); say('バリアで守った！', '#86bde0'); }
-        else {
+        else if (MODE === 'ta') {
+          st.pen += 2; st.inv = 1.2; st.shake = 0.3; st.flash = 0.2;
+          if (navigator.vibrate) try { navigator.vibrate(60); } catch (e) {}
+          say('+2秒', '#e0533f');
+        } else {
           st.lives--; st.inv = 1.6; st.shake = 0.35; st.flash = 0.25;
           if (navigator.vibrate) try { navigator.vibrate(60); } catch (e) {}
           say(st.lives > 0 ? 'いたっ！' : 'もうだめ……', '#e0533f');
@@ -355,8 +365,13 @@
     const f = '800 16px "M PLUS Rounded 1c", sans-serif';
     cx.font = f; cx.textBaseline = 'top'; cx.textAlign = 'left';
     cx.fillStyle = 'rgba(22,16,11,.65)'; cx.beginPath(); cx.roundRect ? cx.roundRect(10, 10, 210, 66, 12) : cx.rect(10, 10, 210, 66); cx.fill();
-    cx.fillStyle = '#fff1d6'; cx.fillText(`${Math.floor(st.score + st.dist)} 点`, 22, 18);
-    cx.fillStyle = '#e0533f'; cx.fillText('♥'.repeat(Math.max(0, st.lives)) + '♡'.repeat(Math.max(0, 3 - st.lives)), 130, 18);
+    if (MODE === 'ta') {
+      cx.fillStyle = '#fff1d6'; cx.fillText(`⏱ ${fmt(taTime())}秒`, 22, 18);
+      cx.fillStyle = '#f2b64c'; cx.fillText(`ゲート ${st.gates}/${TA_GATES}`, 130, 18);
+    } else {
+      cx.fillStyle = '#fff1d6'; cx.fillText(`${Math.floor(st.score + st.dist)} 点`, 22, 18);
+      cx.fillStyle = '#e0533f'; cx.fillText('♥'.repeat(Math.max(0, st.lives)) + '♡'.repeat(Math.max(0, 3 - st.lives)), 130, 18);
+    }
     // カード 5枚
     for (let i = 0; i < 5; i++) { cx.fillStyle = i < st.cards ? '#f2b64c' : 'rgba(255,240,215,.2)'; cx.fillRect(22 + i * 22, 44, 16, 16); }
     cx.fillStyle = '#bfae95'; cx.font = '700 11px "Zen Kaku Gothic New", sans-serif'; cx.fillText('→ゲート', 134, 46);
@@ -415,14 +430,17 @@
       const k = +b.dataset.k, ok = k === q.answer;
       st.asked.push({ q, ok });
       ov.querySelectorAll('.choice').forEach(x => { x.disabled = true; const n = +x.dataset.k; if (n === q.answer) x.classList.add('right'); else if (n === k) x.classList.add('wrong'); });
-      if (ok) { st.score += 100; st.shield = true; FX.burst(b); FX.float(b, '+100 バリア！', 'ok'); }
-      else FX.shake(b);
+      if (MODE === 'ta') { st.gates++; if (!ok) st.pen += 5; }
+      const last = MODE === 'ta' && st.gates >= TA_GATES;
+      if (ok) { st.score += 100; st.shield = true; FX.burst(b); FX.float(b, MODE === 'ta' ? 'バリア！' : '+100 バリア！', 'ok'); }
+      else { FX.shake(b); if (MODE === 'ta') FX.float(b, '+5秒', 'ng'); }
       // 「走りだす」は選択肢のすぐ下だけ（解説の下にも置いたが、本人「いらんかも」で1つに戻した 2026-11-07）
-      const goBtn = id => `<button class="btn solid run-go" id="${id}">走りだす <span class="arr">→</span></button>`;
-      document.getElementById('runAns').innerHTML = `<div class="run-go-row">${goBtn('runGo')}<span class="run-ok ${ok ? 'ok' : 'ng'}">${ok ? '○ 正解！ 次のゲートまでバリア' : '× おしい'}</span></div>
+      const goBtn = id => `<button class="btn solid run-go" id="${id}">${last ? 'タイムを見る' : '走りだす'} <span class="arr">→</span></button>`;
+      const okText = ok ? (last ? '○ 正解！' : '○ 正解！ 次のゲートまでバリア') : (MODE === 'ta' ? '× +5秒' : '× おしい');
+      document.getElementById('runAns').innerHTML = `<div class="run-go-row">${goBtn('runGo')}<span class="run-ok ${ok ? 'ok' : 'ng'}">${okText}${MODE === 'ta' ? `　ゲート ${st.gates}/${TA_GATES}` : ''}</span></div>
         <div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。次のゲートまで、バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>`;
       const gos = [document.getElementById('runGo')];
-      gos.forEach(g => g.addEventListener('click', resume, { once: true }));
+      gos.forEach(g => g.addEventListener('click', last ? finishTA : resume, { once: true }));
       waitBtns(gos, 800, () => gos[0].focus({ preventScroll: true }));
     }, { once: true }));
   }
@@ -445,6 +463,32 @@
     cv.focus({ preventScroll: true });
     // スマホは自動で全画面にする（クイズ・結果も全画面の中で出る）。✕ でいつでも戻れる
     if (TOUCH && !wrap.classList.contains('full')) goFull(false); else toGame();
+  }
+  function finishTA() {
+    st.mode = 'over';
+    const t = taTime(), prev = taBest(), isBest = !prev || t < prev;
+    if (isBest) store.set('nz_run_ta_' + CHN, t.toFixed(2));
+    const b = isBest ? t : prev;
+    const okN = st.asked.filter(a => a.ok).length;
+    const [f, msg] = t < 40 ? [2, 'はやい……！ 資料館の廊下を走ってはいけませんよ。今日だけは許します。']
+      : t < 60 ? [1, 'いいタイムです。まちがえると5秒ふえるので、クイズは落ち着いて。']
+      : [4, '本の山にぶつかると2秒、クイズをまちがえると5秒ふえます。動画で予習するのも手です。'];
+    const rows = st.asked.map((a, i) => `<a class="q-vrow" href="https://www.youtube.com/watch?v=${encodeURIComponent(a.q.video)}" target="_blank" rel="noopener">
+      <span class="qv-th"><img src="https://i.ytimg.com/vi/${encodeURIComponent(a.q.video)}/mqdefault.jpg" alt="" loading="lazy"><span class="w-mark ${a.ok ? 'ok' : 'ng'}">${a.ok ? '○' : '×'}</span></span>
+      <span class="qv-txt"><small>ゲート${i + 1}</small><b>${esc(a.q.q)}</b><span class="qv-ans">正解：${esc(a.q.choices[a.q.answer])}</span>${TITLES[a.q.video] ? `<span class="qv-title">▶ ${esc(TITLES[a.q.video])}</span>` : ''}</span><span class="qv-go">見る ›</span></a>`).join('');
+    showOv(`<div class="run-card fx-in">
+        <p class="q-result"><b>${fmt(t)}</b>秒　${isBest && prev ? '<span class="best">自己ベスト！</span>' : ''}<small class="q-best">${CHL[CHN]}の最速：${fmt(b)}秒</small></p>
+        <p class="run-stat">走った時間 ${fmt(st.t)}秒 ＋ ぶつかった・まちがえた分 ${fmt(st.pen)}秒 ・ クイズ ${okN}/${TA_GATES}問正解</p>
+        <div class="talk shima"><img src="${face('shima', f)}" alt="シマ先生"><p class="bubble">${msg}</p></div>
+        <h3 class="q-vh">ゲートで出た問題の解説動画</h3><div class="q-vlist">${rows}</div>
+        ${window.nzShareHTML ? window.nzShareHTML(`資料館ダッシュのタイムアタック（${CHL[CHN]}）で${fmt(t)}秒！ ゲート5つ、クイズ${okN}問正解 #なぜなぜ資料館`, URL_) : ''}
+        <div class="q-next" style="justify-content:flex-start"><button class="btn solid run-go" id="runAgain">もう1回 <span class="arr">→</span></button><button class="btn" id="runOther">${CHL[CHN === 'main' ? 'jiji' : 'main']}で走る</button></div></div>`, true);
+    toGame();
+    if (isBest && prev) FX.confetti(true); else if (okN === TA_GATES) FX.confetti(false);
+    const again = document.getElementById('runAgain'), oth = document.getElementById('runOther');
+    again.addEventListener('click', () => start(CHN));
+    oth.addEventListener('click', () => start(CHN === 'main' ? 'jiji' : 'main'));
+    waitBtns([again, oth], 1000);
   }
   function over() {
     st.mode = 'over';
@@ -520,8 +564,24 @@
   });
   // はじめの画面：どちらのチャンネルで走るか
   ov.querySelectorAll('[data-run-ch]').forEach(b => b.addEventListener('click', () => start(b.dataset.runCh)));
-  const bM = document.getElementById('runBestMain'), bJ = document.getElementById('runBestJiji');
-  if (bM) bM.textContent = best('main'); if (bJ) bJ.textContent = best('jiji');
+  const bestLine = document.getElementById('runBestLine');
+  const showBest = () => {
+    if (!bestLine) return;
+    if (MODE === 'ta') { const m = taBest('main'), j = taBest('jiji'); bestLine.textContent = `最速タイム　スポーツ編 ${m ? fmt(m) + '秒' : 'まだ'} ／ 時事・地域編 ${j ? fmt(j) + '秒' : 'まだ'}`; }
+    else bestLine.textContent = `自己ベスト　スポーツ編 ${best('main')}点 ／ 時事・地域編 ${best('jiji')}点`;
+  };
+  ov.querySelectorAll('[data-run-mode]').forEach(b => {
+    b.classList.toggle('on', b.dataset.runMode === MODE);
+    b.addEventListener('click', () => {
+      MODE = b.dataset.runMode; store.set('nz_run_mode', MODE);
+      ov.querySelectorAll('[data-run-mode]').forEach(x => x.classList.toggle('on', x === b));
+      const h = document.getElementById('runModeHow');
+      if (h) h.textContent = MODE === 'ta' ? 'ゲート5つを何秒で通れるか。ぶつかると+2秒、まちがえると+5秒。' : 'ライフは3つ。どこまで走れるか。';
+      showBest();
+    });
+  });
+  { const h = document.getElementById('runModeHow'); if (h) h.textContent = MODE === 'ta' ? 'ゲート5つを何秒で通れるか。ぶつかると+2秒、まちがえると+5秒。' : 'ライフは3つ。どこまで走れるか。'; }
+  showBest();
   raf = requestAnimationFrame(loop);
   // 確かめ用（_dbg2.html が run.html?debug=1 で使う。ふだんは何もしない）
   if (/[?&]debug=1/.test(location.search)) { window.__runDbg = () => st; window.__runStep = dt => { if (st.mode === 'play') step(dt); else if (st.mode === 'gate') { st.gateT -= dt; if (st.gateT <= 0) ask(); } else if (st.mode === 'ready') { st.readyT -= dt; if (st.readyT <= 0) st.mode = 'play'; } draw(); }; window.__runJump = jump; }

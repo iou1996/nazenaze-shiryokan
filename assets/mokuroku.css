@@ -275,3 +275,9 @@ nav a .new { top: 2px; }
 .btn.run-go:hover { background: #a83224; box-shadow: 4px 4px 0 var(--ink); }
 .btn.run-go:active { box-shadow: 0 0 0 var(--ink); }
 .btn.run-go.wait, .btn.run-go:disabled { background: #d9b3ab; color: rgba(251,246,234,.9); }
+
+/* 資料館ダッシュ：遊び方の切りかえ（エンドレス／タイムアタック） */
+.run-mode { display: grid; grid-template-columns: 1fr 1fr; gap: 0; width: min(460px, 100%); border: 2px solid var(--paper); border-radius: 3px; overflow: hidden; }
+.run-mode button { font: inherit; font-family: var(--fb); font-weight: 700; font-size: .9rem; padding: 9px 6px; border: 0; background: transparent; color: #e6dac2; cursor: pointer; white-space: nowrap; }
+.run-mode button.on { background: var(--paper); color: var(--ink); }
+.run-mode-how { margin: 0; color: #e6dac2; font-size: .84rem; }
