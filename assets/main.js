@@ -555,6 +555,39 @@
   }
 })();
 
+/* ===== 用語集（yougo.html）：チャンネルで分ける・さがす ===== */
+(() => {
+  const list = document.getElementById('ygList'), tabs = document.getElementById('ygTabs'), q = document.getElementById('ygQ');
+  if (!list || !tabs || !q) return;
+  const n = document.getElementById('ygN');
+  const items = [...list.querySelectorAll('.yg')], secs = [...list.querySelectorAll('.yg-cat')];
+  const pill = tabs.querySelector('.pill'), bs = [...tabs.querySelectorAll('.tab')];
+  let f = 'all';
+  const move = t => { pill.style.width = t.offsetWidth + 'px'; pill.style.transform = `translateX(${t.offsetLeft - 5}px)`; };
+  const apply = () => {
+    const w = q.value.trim().toLowerCase();
+    let hit = 0;
+    items.forEach(it => {
+      const ok = (f === 'all' || it.dataset.ch === f) && (!w || it.textContent.toLowerCase().includes(w));
+      it.hidden = !ok; if (ok) hit++;
+    });
+    secs.forEach(s => { s.hidden = !s.querySelector('.yg:not([hidden])'); });
+    n.textContent = w ? `${hit}語` : '';
+  };
+  bs.forEach(b => b.addEventListener('click', () => { bs.forEach(x => x.setAttribute('aria-selected', x === b)); move(b); f = b.dataset.f; apply(); }));
+  q.addEventListener('input', apply);
+  const place = () => move(bs.find(b => b.getAttribute('aria-selected') === 'true'));
+  addEventListener('resize', place); document.fonts.ready.then(place); place();
+  // 解説ページの「この回に出てくる言葉」から来たら、その語を目立たせる
+  const mark = () => {
+    items.forEach(x => x.classList.remove('hit'));
+    const id = decodeURIComponent(location.hash.slice(1));
+    const t = id && document.getElementById(id);
+    if (t) { t.classList.add('hit'); }
+  };
+  addEventListener('hashchange', mark); mark();
+})();
+
 /* ===== 出典ライブラリ（shuten.html）：さがす ===== */
 (() => {
   const q = document.getElementById('shQ'), list = document.getElementById('shList');
