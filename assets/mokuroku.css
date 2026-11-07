@@ -262,3 +262,14 @@ nav a .new { top: 2px; }
 .run-ok { font-family: var(--fh); font-weight: 800; }
 .run-ok.ok { color: var(--green); } .run-ok.ng { color: var(--red); }
 @media (max-width: 600px) { .run-go-row .btn { flex: 1 1 100%; } }
+
+/* 資料館ダッシュ：全画面のクイズ・結果も紙の色に（暗い地に黒いボタンで見えにくかった 2026-11-07） */
+.run-wrap.full.flow { background: var(--bg) !important; }
+.run-wrap.full.flow .run-ov { background: var(--bg) !important; padding-top: 68px !important; }
+.run-wrap.full.flow .run-fs { background: var(--surface); color: var(--ink); border: 2px solid var(--ink); box-shadow: 2px 2px 0 var(--ink); }
+.run-wrap.full.flow .run-wait { color: var(--amber); }
+/* 「走りだす」は朱色で目立たせる */
+.btn.run-go { background: var(--red); border-color: var(--ink); color: var(--paper); box-shadow: 3px 3px 0 var(--ink); }
+.btn.run-go:hover { background: #a83224; box-shadow: 4px 4px 0 var(--ink); }
+.btn.run-go:active { box-shadow: 0 0 0 var(--ink); }
+.btn.run-go.wait, .btn.run-go:disabled { background: #d9b3ab; color: rgba(251,246,234,.9); }
