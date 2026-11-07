@@ -383,8 +383,8 @@ section.page-top#kan { min-height: 0; }
 .cw-stage { position: relative; border: 2px solid var(--ink); border-radius: 2px; box-shadow: 6px 6px 0 var(--ink); transform: rotate(-.6deg); background: #22334a; overflow: hidden; }
 .cw-scene .cw-stage svg { border: 0; box-shadow: none; transform: none; }
 .cw-in { position: absolute; height: auto; filter: drop-shadow(3px 4px 0 rgba(10,16,26,.55)); }
-.cw-in.shima { width: 21%; left: 39.6%; bottom: 13%; }
-.cw-in.kotoni { width: 19%; left: 70%; bottom: 3%; transform: rotate(4deg); }
+.cw-in.shima { width: 17%; left: 37.5%; bottom: 10.5%; }
+.cw-in.kotoni { width: 17%; left: 77%; bottom: 3%; transform: rotate(4deg); }
 /* 資料カード：「もっと見る」で開く */
 .cw-more-d summary { cursor: pointer; list-style: none; display: inline-block; margin-top: 12px; padding: 5px 14px; border: 1.5px solid var(--ink); border-radius: 2px; font-family: var(--fh); font-weight: 800; font-size: .85rem; box-shadow: 2px 2px 0 var(--ink); background: var(--surface); }
 .cw-more-d summary::-webkit-details-marker { display: none; }
