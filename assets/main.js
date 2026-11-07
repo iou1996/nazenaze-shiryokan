@@ -395,14 +395,17 @@
   /* ===== トップ：両チャンネルの最新動画 ===== */
   const latestBox = document.getElementById('latest');
   if (latestBox) {
-    fetch('videos.json').then(r => r.json()).then(d => {
+    // 解説ページがある回には「この回の解説を読む」を付ける
+    const eps = fetch('data/episodes.json').then(r => r.json()).then(e => new Set((e.episodes || []).map(x => x.id))).catch(() => new Set());
+    Promise.all([fetch('videos.json').then(r => r.json()), eps]).then(([d, has]) => {
       latestBox.innerHTML = [['main', 'スポーツ編'], ['jiji', '時事・地域編']].map(([k, label]) => {
         const v = (d[k] || [])[0];
         if (!v) return '';
         const id = encodeURIComponent(v.id);
-        return `<a class="latest-card ${k}" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">
+        return `<div class="latest-item"><a class="latest-card ${k}" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">
           <span class="th"><img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span></span>
-          <span class="txt"><span class="tag">${label}の最新動画</span><b>${esc(v.title)}</b></span></a>`;
+          <span class="txt"><span class="tag">${label}の最新動画</span><b>${esc(v.title)}</b></span></a>
+          ${has.has(v.id) ? `<a class="latest-read ${k}" href="v/${id}.html">📖 この回の解説を読む <span aria-hidden="true">›</span></a>` : ''}</div>`;
       }).join('');
     }).catch(() => { latestBox.remove(); });
   }

@@ -985,3 +985,13 @@
   .run-pick .btn { justify-content: center; padding: 13px 10px; white-space: nowrap; }
   .btn.run-jiji { background: var(--blue); border-color: var(--blue); color: var(--ink); box-shadow: 0 10px 30px -10px rgba(134,189,224,.6); }
   @media (max-width: 400px) { .run-pick { grid-template-columns: 1fr; } }
+
+  /* トップ：解説ページへの入口（2026-11-07） */
+  .btn.read { background: linear-gradient(135deg, rgba(134,189,224,.22), rgba(242,182,76,.16)); border-color: rgba(134,189,224,.55); }
+  .btn.read small { font-family: "Zen Kaku Gothic New", sans-serif; font-weight: 500; font-size: .74rem; color: var(--sub); margin-left: 2px; }
+  .btn.read:hover { background: linear-gradient(135deg, rgba(134,189,224,.32), rgba(242,182,76,.24)); }
+  @media (max-width: 600px) { .hero .btns .btn.read { grid-column: 1 / -1; } }
+  .latest-item { display: grid; gap: 8px; align-content: start; }
+  .latest-read { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 14px; border-radius: 14px; text-decoration: none; font-weight: 700; font-size: .9rem; color: var(--text); background: var(--surface); border: 1px solid var(--line-2); transition: border-color .2s, transform .2s var(--ease); }
+  .latest-read:hover { border-color: var(--amber); transform: translateY(-2px); }
+  .latest-read.jiji:hover { border-color: var(--blue); }
