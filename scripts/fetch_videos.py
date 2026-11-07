@@ -157,6 +157,7 @@ try:
     print("popular", [v["title"][:20] for v in pop])
     print("news", [(v["published"], v["title"][:20]) for v in news])
 except Exception as e:
+    rss_failed = True
     print(f"人気・お知らせは取れなかったので前のまま: {e}", file=sys.stderr)
 
 # ニュース一覧用の記録（通常の動画を日付つきでためる。消えた動画も記録には残す）
@@ -202,6 +203,10 @@ for key in CHANNELS:
         if not v.get("published") and v["id"] in log:
             v["published"] = log[v["id"]]["published"]
 out["log"] = sorted(log.values(), key=lambda v: v["published"], reverse=True)
+# RSS が取れない日（2026-11-08 は 404）は、お知らせを記録の新しい順3本でつくる。人気（再生回数）は前のまま
+if "rss_failed" in dir() and out["log"]:
+    out["news"] = [{k: v[k] for k in ("id", "title", "channel", "published")} for v in out["log"][:3]]
+    print("news（記録から）", [(v["published"], v["title"][:20]) for v in out["news"]])
 changed = True
 print("log", len(out["log"]))
 
