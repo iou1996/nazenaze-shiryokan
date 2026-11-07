@@ -12,6 +12,7 @@
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const URL_ = (document.querySelector('link[rel=canonical]') || {}).href || location.href;
   const img = src => { const i = new Image(); i.src = src; return i; };
+  const TOUCH = matchMedia('(pointer: coarse)').matches;
   const SPR = { kotoni: img('images/game/kotoni_run.png?v=2'), shima: img('images/game/shima.png') };
   const face = (w, n) => `images/chars/${w}_face${n}.png`;
   // flow=true：キャンバスを隠して、パネルを普通の流れで出す（クイズ・結果・休み）
@@ -25,7 +26,9 @@
   function fit() {
     const full = wrap.classList.contains('full');
     const cw = full ? innerWidth : wrap.clientWidth;
-    const ch = full ? innerHeight : (cw < 600 ? Math.round(cw * 1.15) : Math.round(Math.min(560, Math.max(380, cw * 0.5))));
+    const hdr = (document.getElementById('hdr') || {}).offsetHeight || 0;
+    const room = Math.max(300, innerHeight - hdr - 24);          // 画面に収まる高さ
+    const ch = full ? innerHeight : Math.min(room, cw < 600 ? Math.round(cw * 1.15) : Math.round(Math.min(560, Math.max(380, cw * 0.5))));
     K = Math.min(ch / 360, cw / 380);
     const oldG = GROUND;
     W = cw / K; H = ch / K; GROUND = H - 46;
@@ -91,7 +94,7 @@
   const motes = Array.from({ length: 28 }, () => ({ x: Math.random(), y: Math.random(), s: .6 + Math.random() * 1.6, v: .2 + Math.random() * .6, ph: Math.random() * 6 }));
 
   /* ---------- 状態 ---------- */
-  const G = 2300, J1 = -820, J2 = -720;
+  const G = 2300, J1 = -820, J2 = -620, CEIL = 10;
   let st, last = 0, raf = 0, qs = [], qAll = [], TITLES = {};
   const CHL = { main: 'スポーツ編', jiji: '時事・地域編' };
   let CHN = store.get('nz_run_ch') === 'jiji' ? 'jiji' : 'main';
@@ -102,7 +105,7 @@
       mode: 'play', t: 0, speed: 330, dist: 0, score: 0, lives: 3, cards: 0, total: 0, shield: false, inv: 0,
       p: { x: 70, y: GROUND, vy: 0, jumps: 0, sz: 66, squash: 0 },
       obs: [], items: [], parts: [], gate: null, nextObs: 1.2, nextCard: 0.6, scrollF: 0, scrollN: 0, shake: 0, flash: 0,
-      asked: [], msg: null,
+      asked: [], msg: null, buf: 0,
     };
   }
 
@@ -110,9 +113,14 @@
   function jump() {
     if (!st || st.mode !== 'play') return;
     const p = st.p;
-    if (p.jumps < 2) { p.vy = p.jumps ? J2 : J1; p.jumps++; dust(p.x + 20, p.y, 6); }
+    if (p.jumps < 2) { p.vy = p.jumps ? J2 : J1; p.jumps++; st.buf = 0; dust(p.x + 20, p.y, 6); }
+    else st.buf = 0.16;   // 2段ジャンプを使い切っていたら、着地の直前に押した分として覚えておく
   }
-  cv.addEventListener('pointerdown', e => { e.preventDefault(); jump(); });
+  // ゲームの枠のどこをタップしても跳ぶ（ボタンの上はのぞく）
+  wrap.addEventListener('pointerdown', e => {
+    if (!st || st.mode !== 'play' || e.target.closest('button, a')) return;
+    e.preventDefault(); jump();
+  });
   addEventListener('keydown', e => {
     if (!st || st.mode !== 'play') return;
     if (e.code === 'Space' || e.code === 'ArrowUp' || e.code === 'KeyW') { e.preventDefault(); jump(); }
@@ -153,7 +161,13 @@
 
     // コトニちゃん
     p.vy += G * dt; p.y += p.vy * dt;
-    if (p.y >= GROUND) { if (p.vy > 600) { dust(p.x + 20, GROUND, 8); p.squash = 0.18; } p.y = GROUND; p.vy = 0; p.jumps = 0; }
+    if (p.y - p.sz < CEIL) { p.y = CEIL + p.sz; if (p.vy < 0) p.vy = 0; }      // 天井：画面の上に出ない
+    if (p.y >= GROUND) {
+      if (p.vy > 600) { dust(p.x + 20, GROUND, 8); p.squash = 0.18; }
+      p.y = GROUND; p.vy = 0; p.jumps = 0;
+      if (st.buf > 0) { st.buf = 0; jump(); }
+    }
+    if (st.buf > 0) st.buf -= dt;
     p.squash = Math.max(0, p.squash - dt);
     if (st.inv > 0) st.inv -= dt;
 
@@ -339,6 +353,11 @@
 
   /* ---------- クイズ（なぜなぜゲート） ---------- */
   // 出てすぐは押せないボタン（ジャンプの連打がそのまま当たらないように）
+  function toGame() {
+    if (wrap.classList.contains('full')) return;
+    const hdr = (document.getElementById('hdr') || {}).offsetHeight || 0;
+    scrollTo({ top: Math.max(0, wrap.getBoundingClientRect().top + scrollY - hdr - 10), behavior: 'smooth' });
+  }
   function waitBtns(els, ms, then) {
     els.forEach(b => { b.disabled = true; b.classList.add('wait'); });
     setTimeout(() => { els.forEach(b => { b.disabled = false; b.classList.remove('wait'); }); if (then) then(); }, ms);
@@ -354,7 +373,7 @@
       <p class="run-wait" id="runWait">問題を読んでから選んでね</p>
       <div class="choices">${q.choices.map((c, k) => `<button class="choice" data-k="${k}">${'ABC'[k]}　${esc(c)}</button>`).join('')}</div>
       <div id="runAns"></div></div>`, true);
-    wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    toGame();
     waitBtns([...ov.querySelectorAll('.choice')], 1200, () => { const w = document.getElementById('runWait'); if (w) w.textContent = 'どれだと思う？'; });
     ov.querySelectorAll('.choice').forEach(b => b.addEventListener('click', () => {
       const k = +b.dataset.k, ok = k === q.answer;
@@ -371,6 +390,7 @@
   }
   function resume() {
     hideOv();
+    toGame();
     st.mode = 'play'; st.inv = 1; st.msg = null; st.obs = st.obs.filter(o => o.x > st.p.x + 200); st.nextObs = 1;
     last = performance.now();
   }
@@ -382,7 +402,8 @@
     hideOv();
     last = performance.now();
     cv.focus({ preventScroll: true });
-    wrap.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // スマホは自動で全画面にする（クイズ・結果も全画面の中で出る）。✕ でいつでも戻れる
+    if (TOUCH && !wrap.classList.contains('full')) goFull(false); else toGame();
   }
   function over() {
     st.mode = 'over';
@@ -425,14 +446,17 @@
     if (fsBtn) { fsBtn.textContent = on ? '✕' : '⛶'; fsBtn.setAttribute('aria-label', on ? '全画面をやめる' : '全画面で遊ぶ'); }
     fit();
   }
+  async function goFull(lockLand) {
+    setFull(true);
+    try { if (wrap.requestFullscreen) await wrap.requestFullscreen({ navigationUI: 'hide' }); } catch (err) { /* iPhone はページの上に広げるだけ */ }
+    if (lockLand) try { if (screen.orientation && screen.orientation.lock) await screen.orientation.lock('landscape'); } catch (err) { /* 横向き固定できない端末もある */ }
+    setTimeout(fit, 300);
+  }
   if (fsBtn) fsBtn.addEventListener('click', async e => {
     e.stopPropagation();
     const on = !wrap.classList.contains('full');
     if (on) {
-      setFull(true);
-      try { if (wrap.requestFullscreen) await wrap.requestFullscreen({ navigationUI: 'hide' }); } catch (err) { /* iPhone はページの上に広げるだけ */ }
-      try { if (screen.orientation && screen.orientation.lock) await screen.orientation.lock('landscape'); } catch (err) { /* 横向き固定できない端末もある */ }
-      setTimeout(fit, 300);
+      await goFull(true);
     } else {
       try { if (document.fullscreenElement) await document.exitFullscreen(); } catch (err) {}
       setFull(false);
