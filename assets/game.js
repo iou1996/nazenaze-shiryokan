@@ -2,6 +2,7 @@
    quiz.html なぜなぜクイズ / daily.html 今日の1問 / hit.html 反射ゲーム / game.html 一覧 */
 (() => {
   const $ = id => document.getElementById(id);
+  const SFX = n => { if (window.NZSFX) window.NZSFX.play(n); };   // 効果音（assets/sfx.js。はじめは音なし）
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const face = (who, n) => `images/chars/${who}_face${n}.png`;
   const store = {
@@ -80,7 +81,8 @@
         else if (n === k) b.classList.add('wrong');
       });
       const sc = qBox.querySelector('.q-score b'); sc.textContent = quiz.score;
-      if (ok) { FX.burst(btn); FX.pop(sc); FX.float(btn, '正解！', 'ok'); if (quiz.streak >= 2) setTimeout(() => FX.combo(quiz.streak, sc), 250); }
+      SFX(ok ? 'ok' : 'ng');
+      if (ok) { FX.burst(btn); FX.pop(sc); FX.float(btn, '正解！', 'ok'); if (quiz.streak >= 2) setTimeout(() => { FX.combo(quiz.streak, sc); SFX('combo'); }, 250); }
       else FX.shake(btn);
       qBox.querySelector('.q-bar i').style.width = (quiz.i + 1) / quiz.qs.length * 100 + '%';
       const last = quiz.i === quiz.qs.length - 1;
@@ -116,6 +118,7 @@
         </div>`;
       FX.countUp($('qEndN'), n);
       if (n === all) FX.confetti(true); else if (n >= all - 1) FX.confetti(false);
+      SFX(n >= all - 1 ? 'fanfare' : 'over');
       $('qAgain').addEventListener('click', () => start(quiz.ch));
       $('qOther').addEventListener('click', () => start(other));
       qBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -200,6 +203,7 @@
         const ob = $('dOther'); if (ob) ob.addEventListener('click', () => { ch = other; render(); dBox.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
         if (fresh) {
           const btn = dBox.querySelector(`.choice[data-k="${k}"]`);
+          SFX(ok ? 'ok' : 'ng');
           if (ok) { FX.burst(btn); FX.float(btn, '正解！', 'ok'); FX.confetti(s >= 3); } else FX.shake(btn);
         }
         titlesReady.then(() => { const r = $('dAns') && $('dAns').querySelector('.q-vlist'); if (r && q.video) r.innerHTML = vRow({ video: q.video, head: '今日の問題の解説動画', sub: '' }); });
@@ -236,7 +240,7 @@
         board.classList.add('playing');
         this.tick = setInterval(() => {
           this.left--; $('hitTime').textContent = this.left;
-          if (this.left <= 5) FX.pop($('hitTime'));
+          if (this.left <= 5) { FX.pop($('hitTime')); if (this.left > 0) SFX('tick'); }
           if (this.left <= 0) this.end();
         }, 1000);
         this.pop();
@@ -268,11 +272,12 @@
           this.combo++;
           const add = this.combo >= 5 ? 2 : 1;   // 5連続から2点
           this.score += add; h.classList.add('got'); h.querySelector('img').src = face('shima', 2);
+          SFX(add > 1 ? 'combo' : 'tap');
           FX.burst(h); FX.float(h, '+' + add + (add > 1 ? ' コンボ' : ''), 'ok');
         } else {
           this.combo = 0;
           this.score = Math.max(0, this.score - 1); h.classList.add('miss'); h.querySelector('img').src = face('kotoni', 6);
-          FX.float(h, '−1', 'ng'); FX.shake(board);
+          SFX('miss'); FX.float(h, '−1', 'ng'); FX.shake(board);
         }
         $('hitScore').textContent = this.score; FX.pop($('hitScore'));
         clearTimeout(h._t);
@@ -295,6 +300,7 @@
         $('hitMsg').hidden = false;
         FX.countUp($('hitEndN'), s);
         if (isBest) FX.confetti(s >= 20);
+        SFX(isBest ? 'fanfare' : 'over');
         $('hitStart').hidden = false;
         $('hitStart').innerHTML = 'もう1回 <span class="arr">→</span>';
       },

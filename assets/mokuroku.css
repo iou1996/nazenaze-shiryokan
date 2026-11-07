@@ -4,12 +4,12 @@
    やめていること：グラデーション、光（glow）、まるいピル型のボタン、すりガラス。
    ============================================================ */
 :root {
-  --bg: #f3ead7;          /* 紙 */
-  --bg2: #ebe0c7;         /* 少し古い紙 */
-  --surface: #fbf6ea;     /* カード */
-  --surface-2: #f5ecda;
-  --line: #ddd0b5;
-  --line-2: #bba98a;
+  --bg: #eceff1;          /* 青みのグレー（2026-11-07 本人「背景色がAIっぽい」→ B を選んだ。前はベージュ #f3ead7） */
+  --bg2: #e2e6e9;
+  --surface: #fafbfc;     /* カード */
+  --surface-2: #f0f2f4;
+  --line: #d3d9de;
+  --line-2: #a3adb5;
   --text: #2a2017;        /* 黒インク */
   --sub: #6b5b46;
   --amber: #9a6417;       /* 黄土（文字にも使える濃さ） */
@@ -17,7 +17,7 @@
   --red: #b8382a;         /* 朱（ハンコ） */
   --blue: #2c5d80;        /* 藍（時事・地域編） */
   --green: #2f7a4a;
-  --paper: #fbf6ea;
+  --paper: #fafbfc;
   --ink: #2a2017;
   --radius: 6px;
   --fh: "Shippori Mincho B1", "Yu Mincho", "Hiragino Mincho ProN", serif;   /* 見出し */
@@ -40,7 +40,7 @@ h1, h2, h3, h4, .logo, .num, .round { font-family: var(--fh); font-weight: 800; 
 .contact .label { color: var(--red); }
 
 /* ---------- ヘッダー：紙の帯に二重線 ---------- */
-header { top: 0; background: rgba(243,234,215,.97); border-bottom: 3px double var(--ink); }
+header { top: 0; background: rgba(236,239,241,.97); border-bottom: 3px double var(--ink); }
 .bar { background: none; border: 0; border-radius: 0; backdrop-filter: none; -webkit-backdrop-filter: none; height: 58px; }
 .logo { font-size: 1.08rem; }
 .logo img { border: 1.5px solid var(--ink); }
@@ -166,7 +166,7 @@ footer a:hover { color: var(--red); }
 .nl-row.notice .nl-th { background: var(--bg2) !important; }
 
 /* ---------- ゲーム ---------- */
-.talk .bubble { border: 1.5px solid var(--ink); border-radius: 2px 14px 14px 14px; background: #fffaf0; box-shadow: 2px 2px 0 var(--line-2); }
+.talk .bubble { border: 1.5px solid var(--ink); border-radius: 2px 14px 14px 14px; background: #ffffff; box-shadow: 2px 2px 0 var(--line-2); }
 .talk.shima .bubble { background: #eef3f6; }
 .choice { border-radius: 3px; border: 2px solid var(--ink); background: var(--surface); color: var(--ink); box-shadow: 2px 2px 0 var(--ink); }
 .choice:hover:not(:disabled) { border-color: var(--ink); background: #fffaf0; transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--ink); }
@@ -286,3 +286,14 @@ nav a .new { top: 2px; }
 .rd-mid { margin: 22px 0 0; }
 .rd-watch { justify-content: center; }
 @media (max-width: 600px) { .rd-watch { width: 100%; } }
+
+/* 効果音の切りかえ（はじめは音なし 2026-11-07） */
+.sfx-row { margin: -6px 0 14px; }
+.sfx-tog { font: inherit; font-size: .85rem; font-family: var(--fh); padding: 5px 12px; border: 1.5px solid var(--line-2); border-radius: 2px; background: var(--surface); color: var(--sub); cursor: pointer; }
+.sfx-tog.on { border-color: var(--ink, #2a2017); color: var(--text); box-shadow: 2px 2px 0 var(--text); }
+.run-wrap .run-snd { right: 62px; font-size: 1.05rem; }
+.run-wrap.full .run-snd { right: calc(max(10px, env(safe-area-inset-right)) + 50px); }
+.run-wrap:not(.flow):not(.full) > .run-snd { margin: 10px 64px 10px 10px; right: auto; }
+
+/* 動画のタブ（スポーツ編／時事・地域編）は見出しのすぐ下に。右端に離れていると時事・地域編が遠い（本人 2026-11-07） */
+.head:has(> .tabs) { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 18px; }

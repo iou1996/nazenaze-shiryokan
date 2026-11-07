@@ -15,13 +15,13 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="max-image-preview:large">
-<meta name="theme-color" content="#f3ead7">
+<meta name="theme-color" content="#eceff1">
 <link rel="icon" href="images/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Shippori+Mincho+B1:wght@700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=202611071043">
-<link rel="stylesheet" href="assets/mokuroku.css?v=202611071043">
+<link rel="stylesheet" href="assets/style.css?v=202611071241">
+<link rel="stylesheet" href="assets/mokuroku.css?v=202611071241">
 </head>
 <body class="p-game" data-game="run">
 
@@ -48,14 +48,16 @@
     <p class="label rv"><a href="game.html">GAME</a></p>
     <h1 class="rv d1 h2">資料館ダッシュ</h1>
     <p class="lead rv d2">棚の間を走って「？」を集めよう。ゲートではクイズ。どこまで行ける？</p>
+    <p class="sfx-row"><button class="sfx-tog" data-sfx-tog type="button" aria-label="効果音を出す">🔇 音なし</button></p>
 
     <div class="panel game-card run-card-box" id="gRun">
       <div class="run-wrap" id="runWrap">
         <button class="run-fs" id="runFs" type="button" aria-label="全画面で遊ぶ">⛶</button>
+        <button class="run-fs run-snd" data-sfx-tog data-icon-only type="button" aria-label="効果音を出す">🔇</button>
         <canvas id="runCanvas" tabindex="0" aria-label="資料館ダッシュのゲーム画面。タップかスペースキーでジャンプ"></canvas>
         <div class="run-ov" id="runOverlay">
           <div class="run-card">
-            <img class="run-hero" src="images/game/kotoni_run.png?v=202611071043" alt="">
+            <img class="run-hero" src="images/game/kotoni_run.png?v=202611071241" alt="">
             <p class="run-gate">資料館ダッシュ</p>
             <p class="run-how"><b>タップ</b>（パソコンは<b>スペース</b>）でジャンプ。<b>2回</b>で2段ジャンプ。本の山をよけて「？」を<b>5枚</b>集めると、なぜなぜゲート。クイズに正解すると、次のゲートまで<b>バリア</b>。</p>
             <div class="run-mode" role="group" aria-label="遊び方">
@@ -99,9 +101,10 @@
   </div>
 </footer>
 
-<script src="assets/main.js?v=202611071043"></script>
-<script src="assets/fx.js?v=202611071043"></script>
-<script src="assets/game.js?v=202611071043"></script>
-<script src="assets/run.js?v=202611071043"></script>
+<script src="assets/main.js?v=202611071241"></script>
+<script src="assets/fx.js?v=202611071241"></script>
+<script src="assets/sfx.js?v=202611071241"></script>
+<script src="assets/game.js?v=202611071241"></script>
+<script src="assets/run.js?v=202611071241"></script>
 </body>
 </html>

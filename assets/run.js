@@ -98,6 +98,7 @@
   const motes = Array.from({ length: 28 }, () => ({ x: Math.random(), y: Math.random(), s: .6 + Math.random() * 1.6, v: .2 + Math.random() * .6, ph: Math.random() * 6 }));
 
   /* ---------- 状態 ---------- */
+const SFX = n => { if (window.NZSFX) window.NZSFX.play(n); };
   const G = 2300, J1 = -820, J2 = -620, CEIL = 10;
   let st, last = 0, raf = 0, qs = [], qAll = [], TITLES = {};
   const CHL = { main: 'スポーツ編', jiji: '時事・地域編' };
@@ -123,7 +124,7 @@
   function jump() {
     if (!st || st.mode !== 'play') return;
     const p = st.p;
-    if (p.jumps < 2) { p.vy = p.jumps ? J2 : J1; p.jumps++; st.buf = 0; dust(p.x + 20, p.y, 6); }
+    if (p.jumps < 2) { SFX(p.jumps ? 'jump2' : 'jump'); p.vy = p.jumps ? J2 : J1; p.jumps++; st.buf = 0; dust(p.x + 20, p.y, 6); }
     else st.buf = 0.16;   // 2段ジャンプを使い切っていたら、着地の直前に押した分として覚えておく
   }
   // ゲームの枠のどこをタップしても跳ぶ（ボタンの上はのぞく）
@@ -206,13 +207,13 @@
       if (hb.x < o.x + o.w - 6 && hb.x + hb.w > o.x + 6 && hb.y + hb.h > o.y + 4) {
         o.hit = true;
         if (st.inv > 0) continue;
-        if (st.shield) { st.shield = false; st.inv = 1; sparkle(p.x + 30, p.y - 30, '#86bde0'); say('バリアで守った！', '#86bde0'); }
+        if (st.shield) { SFX('shield'); st.shield = false; st.inv = 1; sparkle(p.x + 30, p.y - 30, '#86bde0'); say('バリアで守った！', '#86bde0'); }
         else if (MODE === 'ta') {
-          st.pen += 2; st.inv = 1.2; st.shake = 0.3; st.flash = 0.2;
+          SFX('hit'); st.pen += 2; st.inv = 1.2; st.shake = 0.3; st.flash = 0.2;
           if (navigator.vibrate) try { navigator.vibrate(60); } catch (e) {}
           say('+2秒', '#e0533f');
         } else {
-          st.lives--; st.inv = 1.6; st.shake = 0.35; st.flash = 0.25;
+          SFX('hit'); st.lives--; st.inv = 1.6; st.shake = 0.35; st.flash = 0.25;
           if (navigator.vibrate) try { navigator.vibrate(60); } catch (e) {}
           say(st.lives > 0 ? 'いたっ！' : 'もうだめ……', '#e0533f');
           if (st.lives <= 0) { over(); return; }
@@ -222,7 +223,7 @@
     for (const it of st.items) {
       const cy = it.y + Math.sin(it.bob) * 4;
       if (Math.abs(it.x - (hb.x + hb.w / 2)) < it.r + hb.w / 2 && cy > hb.y - it.r && cy < hb.y + hb.h + it.r) {
-        it.got = true; st.cards++; st.total++; st.score += 10; sparkle(it.x, cy);
+        SFX('card'); it.got = true; st.cards++; st.total++; st.score += 10; sparkle(it.x, cy);
         if (st.cards >= 5 && !st.gate) { spawnGate(); say('なぜなぜゲートが来る！'); }
       }
     }
@@ -233,7 +234,7 @@
       if (st.gate.x < p.x + 20) {
         // バリアは「次のゲートまで」だけ（本人 2026-11-07「バリアは問題につき次のみ有効にしよか」）。使わずにここまで来たら消える
         if (st.shield) { st.shield = false; sparkle(p.x + 30, p.y - 30, '#86bde0'); }
-        st.gate = null; st.cards = 0; st.mode = 'gate'; st.gateT = 0.9; say('なぜなぜゲート！'); st.msg.life = 1;
+        SFX('gate'); st.gate = null; st.cards = 0; st.mode = 'gate'; st.gateT = 0.9; say('なぜなぜゲート！'); st.msg.life = 1;
       }
     }
     st.score = Math.max(st.score, 0);
@@ -394,7 +395,7 @@
     else if (st && st.mode === 'ready') {
       st.readyT -= dt;
       if (st.msg) { st.msg.life -= dt; if (st.msg.life <= 0) st.msg = null; }
-      if (st.readyT <= 0.45 && st.msg && st.msg.text !== 'ドン！') { say('ドン！'); st.msg.life = 0.8; }
+      if (st.readyT <= 0.45 && st.msg && st.msg.text !== 'ドン！') { SFX('go'); say('ドン！'); st.msg.life = 0.8; }
       if (st.readyT <= 0) { st.mode = 'play'; }
     }
     draw();
@@ -432,6 +433,7 @@
       ov.querySelectorAll('.choice').forEach(x => { x.disabled = true; const n = +x.dataset.k; if (n === q.answer) x.classList.add('right'); else if (n === k) x.classList.add('wrong'); });
       if (MODE === 'ta') { st.gates++; if (!ok) st.pen += 5; }
       const last = MODE === 'ta' && st.gates >= TA_GATES;
+      SFX(ok ? 'ok' : 'ng');
       if (ok) { st.score += 100; st.shield = true; FX.burst(b); FX.float(b, MODE === 'ta' ? 'バリア！' : '+100 バリア！', 'ok'); }
       else { FX.shake(b); if (MODE === 'ta') FX.float(b, '+5秒', 'ng'); }
       // 「走りだす」は選択肢のすぐ下だけ（解説の下にも置いたが、本人「いらんかも」で1つに戻した 2026-11-07）
@@ -450,7 +452,7 @@
     // いきなり走らせず「よーい……ドン！」をはさむ
     // クイズ明けは画面の障害物を片付けて、2秒ほど何も出さない（安全区間）
     st.mode = 'ready'; st.readyT = 1.1; st.inv = 1.6; st.obs = []; st.nextObs = 2.0;
-    say('よーい……', '#fff1d6'); st.msg.life = 0.7;
+    SFX('ready'); say('よーい……', '#fff1d6'); st.msg.life = 0.7;
     last = performance.now();
   }
 
@@ -467,6 +469,7 @@
   function finishTA() {
     st.mode = 'over';
     const t = taTime(), prev = taBest(), isBest = !prev || t < prev;
+    SFX('fanfare');
     if (isBest) store.set('nz_run_ta_' + CHN, t.toFixed(2));
     const b = isBest ? t : prev;
     const okN = st.asked.filter(a => a.ok).length;
@@ -492,6 +495,7 @@
   }
   function over() {
     st.mode = 'over';
+    SFX('over');
     const s = Math.floor(st.score + st.dist), prev = best(), b = Math.max(s, prev);
     store.set('nz_run_best_' + CHN, b);
     const okN = st.asked.filter(a => a.ok).length;
@@ -510,7 +514,7 @@
         ${window.nzShareHTML ? window.nzShareHTML(`資料館ダッシュ（${CHL[CHN]}）で${s}点！ コトニちゃんと${Math.floor(st.dist)}m走りました #なぜなぜ資料館`, URL_) : ''}
         <div class="q-next" style="justify-content:flex-start"><button class="btn solid" id="runAgain">もう1回 <span class="arr">→</span></button><button class="btn" id="runOther">${CHL[CHN === 'main' ? 'jiji' : 'main']}で走る</button></div></div>`, true);
       FX.countUp(document.getElementById('runEndN'), s);
-      if (s > prev && prev) FX.confetti(true);
+      if (s > prev && prev) { FX.confetti(true); SFX('fanfare'); }
       const again = document.getElementById('runAgain'), oth = document.getElementById('runOther');
       again.addEventListener('click', () => start(CHN));
       oth.addEventListener('click', () => start(CHN === 'main' ? 'jiji' : 'main'));
