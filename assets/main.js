@@ -574,3 +574,20 @@
     n.textContent = w ? `${hit}件` : '';
   });
 })();
+
+/* ===== 新しい版があれば読みなおす（スマホや LINE の中のブラウザが古いページを使い続けないように） =====
+   下書き/_版を上げる.py が全ページの ?v=版 と version.txt をそろえる */
+(() => {
+  const me = document.querySelector('script[src*="assets/main.js?v="]');
+  const cur = me ? (me.getAttribute('src').split('v=')[1] || '') : '';
+  if (!cur || !window.fetch) return;
+  fetch('version.txt?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.text() : '').then(t => {
+    const v = (t || '').trim();
+    if (!v || v === cur || v < cur) return;
+    const key = 'nz_reload_' + v;
+    try { if (sessionStorage.getItem(key)) return; sessionStorage.setItem(key, '1'); } catch (e) { return; }
+    const u = new URL(location.href);
+    u.searchParams.set('_v', v);           // URL を変えて、保存された古いページを使わせない
+    location.replace(u.toString());
+  }).catch(() => {});
+})();
