@@ -347,16 +347,23 @@
     const now = performance.now(), dt = Math.max(0, Math.min(0.033, (now - last) / 1000 || 0)); last = now;
     if (st && st.mode === 'play') step(dt);
     else if (st && st.mode === 'gate') { st.gateT -= dt; if (st.gateT <= 0) ask(); }
+    else if (st && st.mode === 'ready') {
+      st.readyT -= dt;
+      if (st.msg) { st.msg.life -= dt; if (st.msg.life <= 0) st.msg = null; }
+      if (st.readyT <= 0.45 && st.msg && st.msg.text !== 'ドン！') { say('ドン！'); st.msg.life = 0.8; }
+      if (st.readyT <= 0) { st.mode = 'play'; }
+    }
     draw();
     raf = requestAnimationFrame(loop);
   }
 
   /* ---------- クイズ（なぜなぜゲート） ---------- */
   // 出てすぐは押せないボタン（ジャンプの連打がそのまま当たらないように）
-  function toGame() {
+  // ゲームの枠がヘッダーのすぐ下に来るようにスクロール（instant：走りだすときは一瞬で戻す）
+  function toGame(instant) {
     if (wrap.classList.contains('full')) return;
     const hdr = (document.getElementById('hdr') || {}).offsetHeight || 0;
-    scrollTo({ top: Math.max(0, wrap.getBoundingClientRect().top + scrollY - hdr - 10), behavior: 'smooth' });
+    scrollTo({ top: Math.max(0, wrap.getBoundingClientRect().top + scrollY - hdr - 10), behavior: instant ? 'instant' : 'smooth' });
   }
   function waitBtns(els, ms, then) {
     els.forEach(b => { b.disabled = true; b.classList.add('wait'); });
@@ -381,8 +388,9 @@
       ov.querySelectorAll('.choice').forEach(x => { x.disabled = true; const n = +x.dataset.k; if (n === q.answer) x.classList.add('right'); else if (n === k) x.classList.add('wrong'); });
       if (ok) { st.score += 100; st.shield = true; FX.burst(b); FX.float(b, '+100 バリア！', 'ok'); }
       else FX.shake(b);
-      document.getElementById('runAns').innerHTML = `<div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>
-        <button class="btn solid" id="runGo">走りだす <span class="arr">→</span></button>`;
+      // 「走りだす」は選択肢のすぐ下（指を大きく動かさなくていいように）。解説はその下
+      document.getElementById('runAns').innerHTML = `<div class="run-go-row"><button class="btn solid" id="runGo">走りだす <span class="arr">→</span></button><span class="run-ok ${ok ? 'ok' : 'ng'}">${ok ? '○ 正解！ バリア獲得' : '× おしい'}</span></div>
+        <div class="talk shima"><img src="${face('shima', ok ? 2 : 6)}" alt="シマ先生"><p class="bubble">${ok ? '正解です。バリアをどうぞ。' : `おしい。正解は「${esc(q.choices[q.answer])}」です。`}${esc(q.explain)}</p></div>`;
       const go = document.getElementById('runGo');
       go.addEventListener('click', resume);
       waitBtns([go], 800, () => go.focus({ preventScroll: true }));
@@ -390,8 +398,10 @@
   }
   function resume() {
     hideOv();
-    toGame();
-    st.mode = 'play'; st.inv = 1; st.msg = null; st.obs = st.obs.filter(o => o.x > st.p.x + 200); st.nextObs = 1;
+    toGame(true);
+    // いきなり走らせず「よーい……ドン！」をはさむ
+    st.mode = 'ready'; st.readyT = 1.1; st.inv = 1.6; st.obs = st.obs.filter(o => o.x > st.p.x + 260); st.nextObs = 1.2;
+    say('よーい……', '#fff1d6'); st.msg.life = 0.7;
     last = performance.now();
   }
 
@@ -471,5 +481,5 @@
   if (bM) bM.textContent = best('main'); if (bJ) bJ.textContent = best('jiji');
   raf = requestAnimationFrame(loop);
   // 確かめ用（_dbg2.html が run.html?debug=1 で使う。ふだんは何もしない）
-  if (/[?&]debug=1/.test(location.search)) { window.__runDbg = () => st; window.__runStep = dt => { if (st.mode === 'play') step(dt); else if (st.mode === 'gate') { st.gateT -= dt; if (st.gateT <= 0) ask(); } draw(); }; window.__runJump = jump; }
+  if (/[?&]debug=1/.test(location.search)) { window.__runDbg = () => st; window.__runStep = dt => { if (st.mode === 'play') step(dt); else if (st.mode === 'gate') { st.gateT -= dt; if (st.gateT <= 0) ask(); } else if (st.mode === 'ready') { st.readyT -= dt; if (st.readyT <= 0) st.mode = 'play'; } draw(); }; window.__runJump = jump; }
 })();

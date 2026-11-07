@@ -255,3 +255,10 @@ nav a .new { top: 2px; }
   #dailyBox .q-head .q-score { display: none; }
   .tab { padding: 10px 11px; }
 }
+
+/* 資料館ダッシュ：答えたあと「走りだす」は選択肢のすぐ下 */
+.run-go-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 2px 0 14px; }
+.run-go-row .btn { min-width: 200px; justify-content: center; }
+.run-ok { font-family: var(--fh); font-weight: 800; }
+.run-ok.ok { color: var(--green); } .run-ok.ng { color: var(--red); }
+@media (max-width: 600px) { .run-go-row .btn { flex: 1 1 100%; } }
