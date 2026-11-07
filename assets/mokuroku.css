@@ -281,3 +281,8 @@ nav a .new { top: 2px; }
 .run-mode button { font: inherit; font-family: var(--fb); font-weight: 700; font-size: .9rem; padding: 9px 6px; border: 0; background: transparent; color: #e6dac2; cursor: pointer; white-space: nowrap; }
 .run-mode button.on { background: var(--paper); color: var(--ink); }
 .run-mode-how { margin: 0; color: #e6dac2; font-size: .84rem; }
+
+/* 解説ページ：まんなかにも「動画を見る」（本人「スマホはとくに」2026-11-07） */
+.rd-mid { margin: 22px 0 0; }
+.rd-watch { justify-content: center; }
+@media (max-width: 600px) { .rd-watch { width: 100%; } }
