@@ -104,7 +104,7 @@
     st = {
       mode: 'play', t: 0, speed: 330, dist: 0, score: 0, lives: 3, cards: 0, total: 0, shield: false, inv: 0,
       p: { x: 70, y: GROUND, vy: 0, jumps: 0, sz: 66, squash: 0 },
-      obs: [], items: [], parts: [], gate: null, nextObs: 1.2, nextCard: 0.6, scrollF: 0, scrollN: 0, shake: 0, flash: 0,
+      obs: [], items: [], parts: [], gate: null, nextObs: 3.2, nextCard: 0.8, scrollF: 0, scrollN: 0, shake: 0, flash: 0,
       asked: [], msg: null, buf: 0,
     };
   }
@@ -129,7 +129,8 @@
   /* ---------- 出てくるもの ---------- */
   function spawnObs() {
     const lvl = Math.min(1, st.t / 70);
-    const r = Math.random();
+    // 最初の10秒は低い本の山だけ（スタート直後の3秒は何も出さない：reset の nextObs）
+    const r = st.t < 10 ? 0 : Math.random();
     let o;
     if (r < 0.55) o = { kind: 'stack', w: 38 + Math.random() * 18, h: 34 + Math.random() * 26 };
     else if (r < 0.85) o = { kind: 'stack', w: 44, h: 70 + Math.random() * 30 * (0.4 + lvl) };   // 高い山は2段ジャンプ
@@ -401,7 +402,8 @@
     hideOv();
     toGame(true);
     // いきなり走らせず「よーい……ドン！」をはさむ
-    st.mode = 'ready'; st.readyT = 1.1; st.inv = 1.6; st.obs = st.obs.filter(o => o.x > st.p.x + 260); st.nextObs = 1.2;
+    // クイズ明けは画面の障害物を片付けて、2秒ほど何も出さない（安全区間）
+    st.mode = 'ready'; st.readyT = 1.1; st.inv = 1.6; st.obs = []; st.nextObs = 2.0;
     say('よーい……', '#fff1d6'); st.msg.life = 0.7;
     last = performance.now();
   }
