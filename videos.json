@@ -1,6 +1,12 @@
 {
-  "updated": "2026-11-08 07:55",
+  "updated": "2026-11-09 00:30",
   "main": [
+    {
+      "id": "coCFQUTw_Y8",
+      "url": "https://www.youtube.com/watch?v=coCFQUTw_Y8",
+      "published": "2026-11-08",
+      "title": "カープFA宣言3人は「異常事態」？宣言して残った人0人、カープのピンチをふりかえる【プロ野球】"
+    },
     {
       "id": "6jtLt9XeI3M",
       "url": "https://www.youtube.com/watch?v=6jtLt9XeI3M",
@@ -94,6 +100,12 @@
   ],
   "jiji": [
     {
+      "id": "vu0Wgw2zDd0",
+      "url": "https://www.youtube.com/watch?v=vu0Wgw2zDd0",
+      "published": "2026-11-08",
+      "title": "ふるさと納税223億円の白糠町、そのお金で町は変わった？住民の記録12年分で検証【時事】"
+    },
+    {
       "id": "KNN2OK7JUjg",
       "url": "https://www.youtube.com/watch?v=KNN2OK7JUjg",
       "published": "2026-11-07",
@@ -162,6 +174,11 @@
   ],
   "popular": [
     {
+      "id": "KNN2OK7JUjg",
+      "title": "ジャングリア沖縄は倒産しかない？来場は見込みの7割、海外のつまずいたパークと比べた【時事】",
+      "channel": "jiji"
+    },
+    {
       "id": "iQU1KUuaauQ",
       "title": "ジャングリア沖縄、道なかば。北部の課題と1年めの数字を、自治体の目で整理【時事】",
       "channel": "jiji"
@@ -175,34 +192,41 @@
       "id": "YIjYMYX11pQ",
       "title": "落合博満は、なぜ日本人で初めて年俸1億円を超えたのか【1986年】",
       "channel": "main"
-    },
-    {
-      "id": "ETPjSGwUL4U",
-      "title": "阪神ファンの松井秀喜は、なぜ巨人へ行った？最後の2通と長嶋監督の「縁」【プロ野球】",
-      "channel": "main"
     }
   ],
   "news": [
+    {
+      "id": "coCFQUTw_Y8",
+      "title": "カープFA宣言3人は「異常事態」？宣言して残った人0人、カープのピンチをふりかえる【プロ野球】",
+      "channel": "main",
+      "published": "2026-11-08"
+    },
+    {
+      "id": "vu0Wgw2zDd0",
+      "title": "ふるさと納税223億円の白糠町、そのお金で町は変わった？住民の記録12年分で検証【時事】",
+      "channel": "jiji",
+      "published": "2026-11-08"
+    },
     {
       "id": "6jtLt9XeI3M",
       "title": "小笠原道大は高校でホームラン0本。なぜ両リーグでMVPになれた？楽天コーチ就任の今【プロ野球】",
       "channel": "main",
       "published": "2026-11-07"
-    },
-    {
-      "id": "KNN2OK7JUjg",
-      "title": "ジャングリア沖縄は倒産しかない？来場は見込みの7割、海外のつまずいたパークと比べた【時事】",
-      "channel": "jiji",
-      "published": "2026-11-07"
-    },
-    {
-      "id": "kSADf4Vx2kk",
-      "title": "睡眠が最も長い県は青森、短いのは東京。47都道府県の差は1年で5日ぶん【時事】",
-      "channel": "jiji",
-      "published": "2026-11-06"
     }
   ],
   "log": [
+    {
+      "id": "coCFQUTw_Y8",
+      "title": "カープFA宣言3人は「異常事態」？宣言して残った人0人、カープのピンチをふりかえる【プロ野球】",
+      "channel": "main",
+      "published": "2026-11-08"
+    },
+    {
+      "id": "vu0Wgw2zDd0",
+      "title": "ふるさと納税223億円の白糠町、そのお金で町は変わった？住民の記録12年分で検証【時事】",
+      "channel": "jiji",
+      "published": "2026-11-08"
+    },
     {
       "id": "6jtLt9XeI3M",
       "title": "小笠原道大は高校でホームラン0本。なぜ両リーグでMVPになれた？楽天コーチ就任の今【プロ野球】",
