@@ -396,3 +396,20 @@ section.page-top#kan { min-height: 0; }
 
 /* どこまで走れるか：10問クリアの知らせ（run.js の HARD_AT） */
 .run-up { margin: 10px 0 0; padding: 8px 12px; border: 2px solid var(--red); color: var(--red); font-family: var(--fh); font-weight: 800; border-radius: 2px; background: var(--surface); }
+
+/* ===== ヘッダーの虫めがね＝サイト内検索（search.html）2026-11-08 ===== */
+.hdr-search { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; flex: none; margin-left: 10px; border: 2px solid var(--ink); border-radius: 3px; background: var(--surface); color: var(--ink); box-shadow: 2px 2px 0 var(--ink); }
+.hdr-search:hover { background: var(--ink); color: var(--paper); }
+.hdr-search svg { width: 20px; height: 20px; }
+body.p-search .hdr-search { background: var(--ink); color: var(--paper); }
+@media (max-width: 1080px) { .hdr-search { margin-left: 0; } }
+@media (max-width: 440px) { .hdr-search { width: 36px; height: 36px; } .hdr-search svg { width: 18px; height: 18px; } }
+/* 虫めがねを足した分、狭いスマホ（文字大きめ含む）でヘッダーが重ならないように。ロゴは縮み、はみ出す分は隠す */
+@media (max-width: 440px) {
+  .bar { gap: 6px !important; padding-left: 10px !important; padding-right: 8px !important; }
+  .logo { flex: 1 1 auto; min-width: 0; overflow: hidden; font-size: .9rem !important; gap: 6px !important; }
+  .logo img { width: 30px !important; height: 30px !important; flex: none; }
+  .hdr-game, .hdr-search, .menu-btn { flex: none; }
+  .hdr-game { margin-left: 0 !important; }
+  .menu-btn { width: 38px; height: 38px; }
+}

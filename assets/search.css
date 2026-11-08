@@ -1,0 +1,42 @@
+/* サイト内検索（search.html）2026-11-08。目録テーマの上に読む */
+section.page-top.sr-page { min-height: 0; }
+.sr-form { display: flex; gap: 10px; margin-top: 22px; }
+.sr-form input { flex: 1; min-width: 0; font: inherit; font-size: 1.05rem; color: var(--ink); background: var(--surface); border: 2px solid var(--ink); border-radius: 3px; padding: 12px 14px; box-shadow: 3px 3px 0 var(--ink); }
+.sr-form input:focus { outline: none; box-shadow: 3px 3px 0 var(--red); }
+.sr-form .btn { flex: none; }
+.sr-n { min-height: 1.4em; margin: 10px 0 0; font-size: .85rem; color: var(--sub); }
+.sr-hint p { margin: 14px 0 8px; font-size: .85rem; color: var(--sub); }
+.sr-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.sr-chip { font: inherit; font-size: .9rem; font-weight: 700; color: var(--ink); background: var(--surface); border: 1.5px solid var(--ink); border-radius: 2px; padding: 6px 12px; cursor: pointer; }
+.sr-chip:hover { background: var(--ink); color: var(--paper); }
+
+.sr-tabs { display: flex; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; gap: 0; border-bottom: 2px solid var(--ink); margin: 18px 0 0; }
+.sr-tabs[hidden] { display: none; }
+.sr-tabs button { flex: none; white-space: nowrap; font: inherit; font-family: var(--fh); font-weight: 800; font-size: .95rem; color: var(--sub); background: none; border: 0; padding: 10px 12px 8px; cursor: pointer; border-bottom: 5px solid transparent; margin-bottom: -2px; }
+.sr-tabs button small { font-family: var(--fb); font-size: .75rem; font-weight: 700; margin-left: 4px; }
+.sr-tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--red); }
+.sr-tabs button:disabled { opacity: .35; cursor: default; }
+
+.sr-g { margin-top: 24px; }
+.sr-g h2 { font-family: var(--fh); font-size: 1.1rem; margin: 0 0 8px; display: flex; align-items: baseline; gap: 8px; }
+.sr-g h2 small { font-family: var(--fb); font-size: .8rem; color: var(--sub); }
+.sr-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.sr-res > .sr-list { margin-top: 18px; }
+.sr-it { background: var(--surface); border: 1.5px solid var(--line-2); border-radius: 4px; padding: 12px 14px; }
+.sr-h { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.sr-type { font-size: .72rem; font-weight: 700; color: var(--paper); background: var(--ink); border-radius: 2px; padding: 1px 7px; }
+.sr-t { display: block; font-weight: 700; color: var(--ink); text-decoration: none; line-height: 1.5; }
+.sr-t:hover { text-decoration: underline; }
+.sr-yomi { font-weight: 500; font-size: .8rem; color: var(--sub); margin-left: 8px; }
+.sr-ext { font-size: .8rem; color: var(--sub); margin-left: 4px; }
+.sr-b { margin: 4px 0 0; font-size: .88rem; line-height: 1.65; color: var(--text); }
+.sr-m { margin: 4px 0 0; font-size: .78rem; color: var(--sub); }
+.sr-m a { color: var(--sub); }
+.sr-page mark { background: #f6d9a8; color: inherit; border-radius: 2px; padding: 0 1px; }
+.sr-more { margin-top: 10px; font: inherit; font-size: .9rem; font-weight: 700; color: var(--ink); background: none; border: 0; padding: 6px 0; cursor: pointer; text-decoration: underline; }
+.sr-none { margin-top: 20px; }
+
+@media (max-width: 600px) {
+  .sr-form .btn { padding-left: 14px; padding-right: 14px; }
+  .sr-tabs button { padding: 9px 9px 7px; font-size: .88rem; }
+}
