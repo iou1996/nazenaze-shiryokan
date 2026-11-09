@@ -11,7 +11,7 @@
   };
   const FX = window.NZFX || { confetti() {}, burst() {}, float() {}, shake() {}, pop() {}, countUp(el, n) { el.textContent = n; }, combo() {} };
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
-  const CH = { main: 'スポーツ編', jiji: '時事・地域編' };
+  const CH = { jiji: '時事・地域編', main: 'スポーツ編' };
   const PAGE_URL = (document.querySelector('link[rel=canonical]') || {}).href || location.href;
   const share = text => window.nzShareHTML ? window.nzShareHTML(text, PAGE_URL) : '';
   const yt = id => `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`;
@@ -50,7 +50,7 @@
   const qBox = $('quizBox');
   if (qBox) {
     const ROUND = 5;
-    const quiz = { all: [], qs: [], i: 0, score: 0, ch: 'main', res: [], streak: 0 };
+    const quiz = { all: [], qs: [], i: 0, score: 0, ch: 'jiji', res: [], streak: 0 };
 
     const start = ch => {
       if (typeof ch === 'string') quiz.ch = ch;
@@ -153,8 +153,8 @@
     const done = c => { try { return JSON.parse(store.get(KEY(c, 'last')) || 'null'); } catch (e) { return null; } };
     const streakOf = c => +(store.get(KEY(c, 'streak')) || 0);
     let all = [];
-    let ch = new URLSearchParams(location.search).get('ch') || store.get('nz_daily_ch') || 'main';
-    if (!CH[ch]) ch = 'main';
+    let ch = new URLSearchParams(location.search).get('ch') || store.get('nz_daily_ch') || 'jiji';
+    if (!CH[ch]) ch = 'jiji';
     // 日付から決まる1問（毎日かわり、だれが開いても同じ問題）
     const pick = c => {
       const pool = all.filter(q => q.channel === c);
@@ -165,7 +165,7 @@
     const render = () => {
       store.set('nz_daily_ch', ch);
       const q = pick(ch);
-      const tabs = `<div class="d-tabs" role="tablist">${['main', 'jiji'].map(c => {
+      const tabs = `<div class="d-tabs" role="tablist">${['jiji', 'main'].map(c => {
         const l = done(c), fin = l && l.date === today;
         return `<button class="d-tab ${c}${c === ch ? ' on' : ''}" role="tab" aria-selected="${c === ch}" data-ch="${c}">${CH[c]}${fin ? `<span class="d-fin">${l.ok ? '○' : '×'}</span>` : ''}</button>`;
       }).join('')}</div>`;
