@@ -1,6 +1,587 @@
 {
 "episodes": [
 {
+"id": "S7y7SqS1u9E",
+"channel": "jiji",
+"title": "AIバブルは鉄道バブルのくり返し？株は下がっても線路は伸びた【時事】",
+"lead": "AIバブルがはじけたら、チャットGPTは使えなくなるのでしょうか。1840年代のイギリスの鉄道と、2000年ごろのネットの記録をたどると、同じ4つの共通点が見つかりました。株の値段はしぼんでも、下火のあいだに使う人は増えていたのです。",
+"points": [
+{
+"h": "バブルがはじける、とは",
+"t": "シールにたとえます。あとで高く売れると言われてみんなが買い集めると、値段が上がります。はやりが終わると、シールは手元にあるのに値段だけが一気に下がります。これが「はじける」です。つぶれる、消えるという意味ではありません。いまのAIでシールにあたるのは、AIの会社の株です。"
+},
+{
+"h": "いまのAIで3枚そろった",
+"t": "①みんなが熱くなって株の値段がふくらむ。オープンAIのアルトマン社長は2025年に「いまはバブル」と話し、IMFも2026年10月に警告しました。②使う前に大きな物を先に作る。大手4社が2026年にデータセンターなどへ使う予定のお金は、日本の国の1年の予算に近い額です。③もうけが追いつかない。"
+},
+{
+"h": "1840年代の鉄道も同じ",
+"t": "鉄道の会社の株に、たくさんの人が飛びつきました。『ジェーン・エア』を書いたシャーロット・ブロンテの株も、50ポンドが一時120ポンドまで上がります。1847年の鉄道への投資は国の予算に近い額でした。土地の取り合いや地元の反対でもめた点も、いまのデータセンターと重なります。"
+},
+{
+"h": "株は下がり、線路は伸びた",
+"t": "1845年の後半から株は下がり続けました。ブロンテの株も、1849年末の手紙では20ポンドです。ところが走っている線路は、同じ4年で2,441マイルから6,032マイルへ伸びていました。大金を使ってしまったので、やめるより作りきるほうがましだったのです。乗った回数も増えていました。"
+},
+{
+"h": "答え：使うことはなくならない",
+"t": "2000年ごろのネットも同じで、下火のあいだにネットを使う人は増えました。1855年の雑誌は鉄道を「技術としては自慢、商売としては大失敗」と書いています。ブームが下火になっても、AIを使うことはなくならないでしょう。ゆれるのは、株の値段と会社の顔ぶれのほうです。"
+}
+],
+"timeline": [
+{
+"y": 1845,
+"text": "イギリスの鉄道株の値段が下がりはじめる"
+},
+{
+"y": 1847,
+"text": "イギリスの鉄道への投資が約4,400万ポンドに"
+},
+{
+"y": 1849,
+"text": "ブロンテの鉄道株が120ポンドから20ポンドに"
+},
+{
+"y": 1855,
+"text": "エコノミスト誌が鉄道を「商売としては大失敗」と書く"
+},
+{
+"y": 2000,
+"m": 1,
+"text": "ヤフーの日本の会社の株が1株1億円をこえる"
+},
+{
+"y": 2004,
+"text": "ネットの下火のあとにフェイスブックが生まれる"
+},
+{
+"y": 2025,
+"m": 8,
+"text": "アルトマン社長が「いまはバブルだと思う」と話す"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 13,
+"text": "IMFがAI株の大幅な下落を世界の危険の1つに挙げる"
+}
+],
+"sources": [
+{
+"title": "国際金融安定性報告（2026年10月）",
+"by": "IMF（国際通貨基金）",
+"year": "2026",
+"url": "https://www.imf.org/-/media/files/publications/gfsr/2026/october/english/execsum.pdf"
+},
+{
+"title": "記者会見の記録（2026年10月13日）",
+"by": "IMF（国際通貨基金）",
+"year": "2026",
+"url": "https://imf.org/en/news/articles/2026/10/13/tr-101326-press-briefing-transcript-global-financial-stability-report-annual-meetings-2026"
+},
+{
+"title": "サム・アルトマン氏の発言（2025年8月）",
+"by": "Business Today",
+"year": "2025",
+"url": "https://www.businesstoday.in/technology/news/story/investors-are-overexcited-about-ai-says-openai-ceo-sam-altman-490236-2025-08-20"
+},
+{
+"title": "大手4社の設備投資の見通し（2026年4月時点）",
+"by": "Tom's Hardware",
+"year": "2026",
+"url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+},
+{
+"title": "AIの規模拡大に必要な売り上げの見こみ",
+"by": "ベイン・アンド・カンパニー",
+"year": "2025",
+"url": "https://www.bain.com/about/media-center/press-releases/20252/$2-trillion-in-new-revenue-needed-to-fund-ais-scaling-trend---bain--companys-6th-annual-global-technology-report/"
+},
+{
+"title": "苫小牧データセンター",
+"by": "ソフトバンク",
+"url": "https://www.softbank.jp/business/service/platform/datacenter/tomakomai"
+},
+{
+"title": "苫小牧のデータセンターと変電所",
+"by": "北海道新聞",
+"url": "https://www.hokkaido-np.co.jp/article/1232106/"
+},
+{
+"title": "データセンター計画の反対の集計（2026年第1四半期）",
+"by": "Data Center Watch",
+"year": "2026",
+"url": "https://datacenterwatch.org/q1-2026"
+},
+{
+"title": "Collective hallucinations and inefficient markets: The British Railway Mania of the 1840s",
+"by": "Andrew Odlyzko",
+"year": "2010",
+"url": "https://www-users.cse.umn.edu/~odlyzko/doc/hallucinations.pdf"
+},
+{
+"title": "Dispelling the myth of the naive investor during the British Railway Mania",
+"by": "Campbell & Turner",
+"year": "2012",
+"url": "https://www.cambridge.org/core/journals/business-history-review/article/abs/dispelling-the-myth-of-the-naive-investor-during-the-british-railway-mania-18451846/C2ECF0AB3880B37219FC78AB0D9CAFF1"
+},
+{
+"title": "鉄道監督官の報告（1850年）",
+"by": "The Spectator（アーカイブ）",
+"year": "1850",
+"url": "https://archive.spectator.co.uk/article/3rd-august-1850/16/the-report-of-her-majestys-commissioners-of-railwa"
+},
+{
+"title": "ヤフー株が1株1億円をこえた記録",
+"by": "ファイナンシャルフィールド",
+"url": "https://financial-field.com/assets/entry-483914"
+},
+{
+"title": "通信利用動向調査（情報通信白書 平成18年版）",
+"by": "総務省",
+"url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h18/pdf/i1020000.pdf"
+},
+{
+"title": "Americans' Internet Access 2000-2015",
+"by": "ピュー・リサーチ・センター",
+"year": "2015",
+"url": "https://www.pewresearch.org/internet/2015/06/26/americans-internet-access-2000-2015/"
+},
+{
+"title": "株主への手紙（2000年）",
+"by": "ジェフ・ベゾス（アマゾン）",
+"year": "2000",
+"url": "https://archive.seattletimes.com/archive/20010414/bezosletter/jeff-bezos-2000-letter-to-shareholders"
+},
+{
+"title": "Pets.com の閉鎖（2000年11月）",
+"by": "CNN Money",
+"year": "2000",
+"url": "https://money.cnn.com/2000/11/07/technology/pets/index.htm"
+},
+{
+"title": "ベライゾンとグーグルの光ファイバー契約",
+"by": "Data Center Dynamics",
+"year": "2026",
+"url": "https://www.datacenterdynamics.com/en/news/verizon-signs-1bn-fiber-deal-with-google-to-connect-hyperscalers-data-centers/"
+},
+{
+"title": "AIの設備の耐用年数についての草稿",
+"by": "Stijn Van Nieuwerburgh（ブルッキングス研究所）",
+"year": "2026",
+"url": "https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf"
+},
+{
+"title": "What if the AI stockmarket blows up?（2025年9月）",
+"by": "エコノミスト誌",
+"year": "2025",
+"url": "https://www.economist.com/finance-and-economics/2025/09/07/what-if-the-ai-stockmarket-blows-up"
+},
+{
+"title": "The Rapid Adoption of Generative AI",
+"by": "Bick ほか（NBER）",
+"year": "2024",
+"url": "https://www.nber.org/papers/w32966"
+}
+],
+"published": "2026-11-09"
+},
+{
+"id": "coCFQUTw_Y8",
+"channel": "main",
+"title": "カープFA宣言3人は「異常事態」？宣言して残った人0人、カープのピンチをふりかえる【プロ野球】",
+"lead": "カープの主力3人が2026年11月に3日続けてFA宣言し、新聞には「異常事態」の見出しが出ました。ただ、カープでFA宣言した11人のうち、宣言して残った人は0人です。カープのピンチは今回が初めてなのかを、球団ができた1950年代からふりかえりました。",
+"points": [
+{
+"h": "2026年に重なったこと",
+"t": "1月の選手の事件から始まり、9月21日には3年続けてのBクラスが決まりました。最後は4位、61勝78敗です。1試合平均のお客さんは約2万7千人で、セ・リーグでいちばん少なくなりました。10月には戦力外が合わせて10人。新井貴浩監督はシーズン中に辞意を申し出て、球団が引き止めています。"
+},
+{
+"h": "FA宣言3人と「宣言残留」",
+"t": "11月4日に森下暢仁投手、5日に坂倉将吾選手、6日に床田寛樹投手がFA宣言しました。同じ年に3人は、カープでは初めてです。ただ、FA宣言は出ていく約束ではありません。よその球団の話を聞いてから残る「宣言残留」があり、球団も「残りたいのであれば、残ればいい」と言っています。"
+},
+{
+"h": "宣言して残った人は0人",
+"t": "カープでFA宣言した選手は2025年までに11人いて、全員がよその球団へ移りました。宣言して残った人は0人です。一方、1つの球団で3人以上が宣言した過去11回のうち5回は、宣言した全員が残っています。1994年の巨人は4人宣言して、4人とも残りました。"
+},
+{
+"h": "1951年、解散のラジオ",
+"t": "球団ができたのは1950年。1年目は41勝96敗で、お金も足りませんでした。1951年2月20日、キャンプ中の球場にパトカーが来て、警察官が集めたはげましのお金を届けます。3月14日には合併がいったん決まり、その夜ラジオが「広島解散」と伝えました。それでも、この話は取り消されます。"
+},
+{
+"h": "答え：ピンチは初めてではない",
+"t": "球場の入口に置かれた樽にファンがお金を入れ、1951年7月の後援会の発会式には約2万人が集まりました。新球場のときも「たる募金」が集まっています。出ていった主力で戻ったのは黒田博樹投手と新井貴浩選手くらいですが、2026年は球団が残っていいと言った年です。1人でも残れば、カープで初めてです。"
+}
+],
+"timeline": [
+{
+"y": 1950,
+"text": "広島カープができる。1年目は41勝96敗"
+},
+{
+"y": 1951,
+"m": 2,
+"d": 20,
+"text": "キャンプ中の球場に警察官が募金を届ける"
+},
+{
+"y": 1975,
+"text": "カープが初めてリーグ優勝する"
+},
+{
+"y": 1993,
+"text": "プロ野球にFA（フリーエージェント）の決まりができる"
+},
+{
+"y": 2009,
+"text": "たる募金も集めたマツダスタジアムが開場"
+},
+{
+"y": 2014,
+"text": "黒田博樹投手と新井貴浩選手がカープに戻る"
+},
+{
+"y": 2016,
+"text": "カープが25年ぶりにリーグ優勝する"
+},
+{
+"y": 2026,
+"m": 11,
+"text": "カープの主力3人が3日続けてFA宣言する"
+}
+],
+"sources": [
+{
+"title": "広島に異常事態 球団史上初の同一年3人FA権行使（2026年11月6日）",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://www.daily.co.jp/baseball/carp/2026/11/06/0021006038.shtml"
+},
+{
+"title": "3日連続・球団史上初のFA宣言",
+"by": "ベースボールチャンネル",
+"year": "2026",
+"url": "https://www.baseballchannel.jp/npb/300410/"
+},
+{
+"title": "2026年 セントラル・リーグ 順位表",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/bis/2026/stats/std_c.html"
+},
+{
+"title": "2026年 入場者数",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/statistics/2026/attendance.html"
+},
+{
+"title": "フリーエージェント宣言選手の公示",
+"by": "日本野球機構（NPB）",
+"url": "https://npb.jp/announcement/2016/fa_filed.html"
+},
+{
+"title": "丸もFA権行使へ 広島は宣言後の残留認める方針（2018年11月7日）",
+"by": "日本経済新聞",
+"year": "2018",
+"url": "https://www.nikkei.com/article/DGXLSSXK30325_X01C18A1000000/"
+},
+{
+"title": "3人の宣言残留を認める（2026年10月16日）",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://news.yahoo.co.jp/articles/be93442a057c8ea657eb8263b6d79c7f4dc149f6"
+},
+{
+"title": "開幕戦、新人2人のサヨナラ（2026年3月27日）",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://www.daily.co.jp/baseball/carp/2026/03/27/0020174860.shtml"
+},
+{
+"title": "新井監督の続投（2026年9月23日）",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://www.daily.co.jp/baseball/carp/2026/09/23/0020849771.shtml"
+},
+{
+"title": "會澤翼選手の現役続行（2026年9月27日）",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://www.daily.co.jp/baseball/carp/2026/09/27/0020864602.shtml"
+},
+{
+"title": "戦力外についての球団の説明",
+"by": "熊本日日新聞（共同通信）",
+"year": "2026",
+"url": "https://kumanichi.com/articles/2041724"
+},
+{
+"title": "不起訴の決定",
+"by": "熊本日日新聞（共同通信）",
+"year": "2026",
+"url": "https://kumanichi.com/articles/2047227"
+},
+{
+"title": "人的補償の見直し（2026年10月30日）",
+"by": "NHK",
+"year": "2026",
+"url": "https://news.web.nhk/newsweb/na/nd-20261030de68700"
+},
+{
+"title": "球団70年を彩った男たち　窮地救った、たる募金",
+"by": "中国新聞",
+"url": "https://www.chugoku-np.co.jp/articles/-/67709"
+},
+{
+"title": "球団支えた後援会",
+"by": "中国新聞",
+"url": "https://www.chugoku-np.co.jp/articles/-/67602"
+},
+{
+"title": "安西巧『マツダとカープ』より",
+"by": "文春オンライン",
+"url": "https://bunshun.jp/articles/-/52922?page=5"
+},
+{
+"title": "黒田博樹投手の復帰（2014年12月27日）",
+"by": "デイリースポーツ",
+"year": "2014",
+"url": "https://www.daily.co.jp/baseball/carp/2014/12/27/0007616038.shtml"
+}
+],
+"published": "2026-11-08"
+},
+{
+"id": "vu0Wgw2zDd0",
+"channel": "jiji",
+"title": "ふるさと納税223億円の白糠町、そのお金で町は変わった？住民の記録12年分で検証【時事】",
+"lead": "人口7,000人に届かない北海道の白糠町に、ふるさと納税で223億円が集まりました。全国2位です。なぜ道東の小さな町にお金が集まるのか、そしてそのお金で町は変わったのかを、国の住民基本台帳12年分を使い、釧路・根室の13市町村とくらべて確かめました。",
+"points": [
+{
+"h": "理由1・2　海の幸と売り方",
+"t": "寄付先を選んだ理由を聞いた調べでは、4人に3人がお礼の品で選んでいました。北海道の海沿いの町では、選ばれる品の1位が海産物です。白糠町は、ふるさと納税が始まる前の2006年からネット通販のモールに店を出し、寄付した人を招く会も開いて、ファンを増やしてきました。"
+},
+{
+"h": "理由3　となりへしみ出す",
+"t": "全国の町の寄付を地図に置いて調べた研究では、となりに寄付の多い町があると、その町も寄付の多い町になりやすいと分かりました。釧路と根室のあたりでは、1年に10億円をこえる町が8年で8つに広がっています。白糠町は、近くの6つの町村と共通のお礼の品も出しています。"
+},
+{
+"h": "給食も医療費もタダの町",
+"t": "白糠町は、小学校から高校までの給食費、18歳までの医療費、保育料を無料にしています。高校の中には町がつくった無料の塾があり、小中一貫の学校も建てました。家を建てる人に町の土地をタダで渡す取り組みもあります。財源は、ふるさと納税と町の太陽光発電の税収の両方です。"
+},
+{
+"h": "検証　13市町村とくらべた",
+"t": "国の住民基本台帳を2014年から12年分ならべ、釧路・根室の13市町村とくらべました。白糠町の人口の減り方は、この5年で前の5年よりゆるくなり、13のうちそうなったのは2つだけでした。町から出ていく人と入ってくる人の差も、1年に150人ほどから10人ほどに縮んでいます。"
+},
+{
+"h": "答え：減り方にブレーキ",
+"t": "人は増えていません。12年で2,000人ほど減りました。ただ、出ていく人の差が小さくなり、減り方にブレーキがかかり始めたように見えます。寄付が大きくなった時期と重なりますが、原因までは確かめていません。秋鮭の不漁や、町に入るお金の半分以上が寄付という不安も残ります。"
+}
+],
+"timeline": [
+{
+"y": 2006,
+"text": "白糠町がネット通販の大きなモールに店を出す"
+},
+{
+"y": 2008,
+"text": "ふるさと納税の制度が始まる（2008年度）"
+},
+{
+"y": 2015,
+"m": 10,
+"text": "白糠町がふるさと納税のお礼の品を始める"
+},
+{
+"y": 2019,
+"m": 2,
+"text": "白糠町が東京で、寄付した人を招く感謝祭を開く"
+},
+{
+"y": 2022,
+"m": 8,
+"text": "白糠町に小中一貫の学校「白糠学園」が開校"
+},
+{
+"y": 2025,
+"text": "白糠町への寄付が223億円で全国2位に（2025年度）"
+},
+{
+"y": 2026,
+"m": 1,
+"text": "白糠町の人口が6,840人になる"
+}
+],
+"sources": [
+{
+"title": "各自治体のふるさと納税受入額及び受入件数",
+"by": "総務省",
+"url": "https://www.soumu.go.jp/main_content/001084990.xlsx"
+},
+{
+"title": "令和7年度の受入額等・使い道",
+"by": "総務省",
+"url": "https://www.soumu.go.jp/main_content/001084989.xlsx"
+},
+{
+"title": "ふるさと納税に関する現況調査",
+"by": "総務省",
+"url": "https://www.soumu.go.jp/main_content/001084951.pdf"
+},
+{
+"title": "住民基本台帳に基づく人口、人口動態及び世帯数",
+"by": "総務省（e-Stat）",
+"url": "https://www.e-stat.go.jp/stat-search/files?toukei=00200241&tstat=000001039591"
+},
+{
+"title": "市町村決算カード",
+"by": "総務省",
+"url": "https://www.soumu.go.jp/iken/zaisei/card-25.html"
+},
+{
+"title": "地場産品の基準（2026年10月から）",
+"by": "総務省",
+"year": "2026",
+"url": "https://www.soumu.go.jp/main_content/001067748.pdf"
+},
+{
+"title": "都道府県別の受入額",
+"by": "日本経済新聞",
+"year": "2026",
+"url": "https://www.nikkei.com/article/DGXZQOFC3125Y0R30C26A7000000/"
+},
+{
+"title": "道内の寄付の頭打ち",
+"by": "日本経済新聞",
+"year": "2026",
+"url": "https://www.nikkei.com/article/DGXZQOFC196F40Z10C26A8000000/"
+},
+{
+"title": "白糠町の売り方",
+"by": "日経ビジネス",
+"url": "https://business.nikkei.com/atcl/gen/19/00788/091900002/"
+},
+{
+"title": "寄付先を選んだ理由（小西葉子ほか）",
+"by": "RIETI（経済産業研究所）",
+"year": "2024",
+"url": "https://www.rieti.go.jp/jp/papers/contribution/konishi-yoko/05.html"
+},
+{
+"title": "北海道の沿岸の町は海産物が1位",
+"by": "RIETI（経済産業研究所）",
+"url": "https://www.rieti.go.jp/jp/columns/a01_0814.html"
+},
+{
+"title": "ふるさと納税の探索的空間データ分析（『GIS—理論と応用』）",
+"by": "江端杏奈ほか",
+"year": "2021",
+"url": "https://www.jstage.jst.go.jp/article/thagis/29/1/29_1/_article/-char/ja/"
+},
+{
+"title": "ふるさと納税と住民所得に関するワーキングペーパー",
+"by": "小川光・田村なつみ・深澤映司（東京大学）",
+"year": "2024",
+"url": "https://www.crei.e.u-tokyo.ac.jp/wp-content/uploads/2024/10/5c5ba0d25e6463afc9dcab31c1529757.pdf"
+},
+{
+"title": "消滅可能性自治体に関する報告",
+"by": "人口戦略会議",
+"year": "2024",
+"url": "https://www.hit-north.or.jp/cms/wp-content/uploads/2024/04/01_report-1.pdf"
+},
+{
+"title": "白糠町の地域再生計画",
+"by": "内閣府",
+"url": "https://www.chisou.go.jp/tiiki/tiikisaisei/plan/a(714).pdf"
+},
+{
+"title": "白糠町の財務状況",
+"by": "北海道財務局 釧路財務事務所",
+"url": "https://www.town.shiranuka.lg.jp/section/kikaku/h8v21a000000jxws-att/h8v21a000000jy1b.pdf"
+},
+{
+"title": "太陽の手子育て支援",
+"by": "白糠町",
+"url": "https://www.town.shiranuka.lg.jp/section/kikaku/h8v21a000000h6j6.html"
+},
+{
+"title": "白糠学園",
+"by": "白糠町",
+"url": "https://www.town.shiranuka.lg.jp/section/kyoiku/copy_of_index.html"
+},
+{
+"title": "町有地の無償譲渡",
+"by": "白糠町",
+"url": "https://www.town.shiranuka.lg.jp/section/kikaku/h8v21a00000021pm.html"
+},
+{
+"title": "久遠塾",
+"by": "白糠町 移住サイト",
+"url": "https://shiranuka-iju.jp/learn/kuon-juku/"
+},
+{
+"title": "白糠高校の魅力化",
+"by": "白糠町 移住サイト",
+"url": "https://shiranuka-iju.jp/learn/charmification/"
+},
+{
+"title": "バドミントンの取り組み",
+"by": "白糠町 移住サイト",
+"url": "https://shiranuka-iju.jp/learn/signature-programs/"
+},
+{
+"title": "白糠町 ふるさと納税特設サイト",
+"by": "白糠町",
+"url": "https://shiranuka-furusato.jp/manifesto/"
+},
+{
+"title": "白糠町の感謝祭",
+"by": "ふるさと納税ガイド",
+"url": "https://furu-sato.com/magazine/2566/"
+},
+{
+"title": "白糠町の応援の声",
+"by": "イミュー",
+"year": "2025",
+"url": "https://immue.co.jp/news/20250422/"
+},
+{
+"title": "『ふるさと納税から始まるまちづくり』（山田稔・黒田康平）",
+"by": "イミュー",
+"year": "2026",
+"url": "https://koubo.jp/press-release/prtimes/c81865_r79"
+},
+{
+"title": "秋サケの来遊数",
+"by": "北海道新聞",
+"url": "https://www.hokkaido-np.co.jp/article/1262159/"
+},
+{
+"title": "釧根で二極化顕著",
+"by": "北海道新聞",
+"url": "https://www.hokkaido-np.co.jp/article/1196905/"
+},
+{
+"title": "ふるさと納税による区民税の減収",
+"by": "世田谷区",
+"url": "https://www.city.setagaya.lg.jp/02210/27310.html"
+},
+{
+"title": "バドミントン教室のクラウドファンディング",
+"by": "ふるなび",
+"url": "https://fcf.furunavi.jp/Project/Detail?projectid=788"
+},
+{
+"title": "白糠町でのバドミントン教室",
+"by": "釧路新聞",
+"year": "2025",
+"url": "https://kushironews.jp/2025/11/09/627968/"
+}
+],
+"published": "2026-11-08"
+},
+{
 "id": "6jtLt9XeI3M",
 "channel": "main",
 "title": "小笠原道大は高校でホームラン0本。なぜ両リーグでMVPになれた？楽天コーチ就任の今【プロ野球】",

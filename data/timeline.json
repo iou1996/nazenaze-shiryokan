@@ -21,6 +21,30 @@
 "channel": "main"
 },
 {
+"y": 1845,
+"text": "イギリスの鉄道株の値段が下がりはじめる",
+"video": "S7y7SqS1u9E",
+"channel": "jiji"
+},
+{
+"y": 1847,
+"text": "イギリスの鉄道への投資が約4,400万ポンドに",
+"video": "S7y7SqS1u9E",
+"channel": "jiji"
+},
+{
+"y": 1849,
+"text": "ブロンテの鉄道株が120ポンドから20ポンドに",
+"video": "S7y7SqS1u9E",
+"channel": "jiji"
+},
+{
+"y": 1855,
+"text": "エコノミスト誌が鉄道を「商売としては大失敗」と書く",
+"video": "S7y7SqS1u9E",
+"channel": "jiji"
+},
+{
 "y": 1857,
 "text": "ニューヨークのクラブの集まりで、野球は9人と決まる",
 "video": "3uvWRKGnt2o",
@@ -228,8 +252,22 @@
 },
 {
 "y": 1950,
+"text": "広島カープができる。1年目は41勝96敗",
+"video": "coCFQUTw_Y8",
+"channel": "main"
+},
+{
+"y": 1950,
 "text": "松竹ロビンスの小西得郎監督が胴上げ。プロ野球で初めてとされる",
 "video": "xEbL1BaO7Ic",
+"channel": "main"
+},
+{
+"y": 1951,
+"m": 2,
+"d": 20,
+"text": "キャンプ中の球場に警察官が募金を届ける",
+"video": "coCFQUTw_Y8",
 "channel": "main"
 },
 {
@@ -310,6 +348,12 @@
 "y": 1975,
 "text": "パ・リーグがDHを使い始める",
 "video": "3uvWRKGnt2o",
+"channel": "main"
+},
+{
+"y": 1975,
+"text": "カープが初めてリーグ優勝する",
+"video": "coCFQUTw_Y8",
 "channel": "main"
 },
 {
@@ -488,6 +532,12 @@
 },
 {
 "y": 1993,
+"text": "プロ野球にFA（フリーエージェント）の決まりができる",
+"video": "coCFQUTw_Y8",
+"channel": "main"
+},
+{
+"y": 1993,
 "text": "日本のプロ野球でFAの仕組みが始まる",
 "video": "e_PG5SB2ArU",
 "channel": "main"
@@ -614,6 +664,13 @@
 },
 {
 "y": 2000,
+"m": 1,
+"text": "ヤフーの日本の会社の株が1株1億円をこえる",
+"video": "S7y7SqS1u9E",
+"channel": "jiji"
+},
+{
+"y": 2000,
 "m": 5,
 "d": 18,
 "text": "ストーカー規制法ができる",
@@ -675,6 +732,12 @@
 "channel": "main"
 },
 {
+"y": 2004,
+"text": "ネットの下火のあとにフェイスブックが生まれる",
+"video": "S7y7SqS1u9E",
+"channel": "jiji"
+},
+{
 "y": 2005,
 "text": "ピアジンスキーが振り逃げで一塁へ、ホワイトソックスがサヨナラ勝ち",
 "video": "qrkjF9BKU74",
@@ -697,6 +760,12 @@
 "text": "日本ハムが44年ぶりの日本一。小笠原選手はMVP",
 "video": "6jtLt9XeI3M",
 "channel": "main"
+},
+{
+"y": 2006,
+"text": "白糠町がネット通販の大きなモールに店を出す",
+"video": "vu0Wgw2zDd0",
+"channel": "jiji"
 },
 {
 "y": 2006,
@@ -739,9 +808,22 @@
 },
 {
 "y": 2008,
+"text": "ふるさと納税の制度が始まる（2008年度）",
+"video": "vu0Wgw2zDd0",
+"channel": "jiji",
+"fy": true
+},
+{
+"y": 2008,
 "text": "ウィスコンシン州が4万4千人あまりを医療制度に自動で加入させる",
 "video": "YOgnf4eU1eo",
 "channel": "jiji"
+},
+{
+"y": 2009,
+"text": "たる募金も集めたマツダスタジアムが開場",
+"video": "coCFQUTw_Y8",
+"channel": "main"
 },
 {
 "y": 2009,
@@ -841,6 +923,12 @@
 "channel": "jiji"
 },
 {
+"y": 2014,
+"text": "黒田博樹投手と新井貴浩選手がカープに戻る",
+"video": "coCFQUTw_Y8",
+"channel": "main"
+},
+{
 "y": 2015,
 "text": "日本年金機構から約125万件の情報が流出",
 "video": "1ZuZd4dm6PI",
@@ -856,6 +944,19 @@
 "y": 2015,
 "text": "メジャーの全球場に、打球を測る計測機が入る",
 "video": "Z6AEn-k-CJ8",
+"channel": "main"
+},
+{
+"y": 2015,
+"m": 10,
+"text": "白糠町がふるさと納税のお礼の品を始める",
+"video": "vu0Wgw2zDd0",
+"channel": "jiji"
+},
+{
+"y": 2016,
+"text": "カープが25年ぶりにリーグ優勝する",
+"video": "coCFQUTw_Y8",
 "channel": "main"
 },
 {
@@ -885,6 +986,13 @@
 "text": "バーランダーの通算3000個めの三振が振り逃げになる",
 "video": "qrkjF9BKU74",
 "channel": "main"
+},
+{
+"y": 2019,
+"m": 2,
+"text": "白糠町が東京で、寄付した人を招く感謝祭を開く",
+"video": "vu0Wgw2zDd0",
+"channel": "jiji"
 },
 {
 "y": 2020,
@@ -969,6 +1077,13 @@
 "d": 1,
 "text": "漏えい時の国への報告と本人への通知が義務になる",
 "video": "1ZuZd4dm6PI",
+"channel": "jiji"
+},
+{
+"y": 2022,
+"m": 8,
+"text": "白糠町に小中一貫の学校「白糠学園」が開校",
+"video": "vu0Wgw2zDd0",
 "channel": "jiji"
 },
 {
@@ -1066,6 +1181,13 @@
 },
 {
 "y": 2025,
+"text": "白糠町への寄付が223億円で全国2位に（2025年度）",
+"video": "vu0Wgw2zDd0",
+"channel": "jiji",
+"fy": true
+},
+{
+"y": 2025,
 "text": "アメリカの国内線でREAL IDの免許証かパスポートなどが必要になる",
 "video": "YOgnf4eU1eo",
 "channel": "jiji"
@@ -1114,6 +1236,13 @@
 "channel": "jiji"
 },
 {
+"y": 2025,
+"m": 8,
+"text": "アルトマン社長が「いまはバブルだと思う」と話す",
+"video": "S7y7SqS1u9E",
+"channel": "jiji"
+},
+{
 "y": 2026,
 "text": "プロ野球のCSで「先に5勝」の勝負が始まる",
 "video": "j8cD3ifYkLQ",
@@ -1154,6 +1283,13 @@
 "text": "レイエス、打率3割1分3厘でパ・リーグ首位打者",
 "video": "Z6AEn-k-CJ8",
 "channel": "main"
+},
+{
+"y": 2026,
+"m": 1,
+"text": "白糠町の人口が6,840人になる",
+"video": "vu0Wgw2zDd0",
+"channel": "jiji"
 },
 {
 "y": 2026,
@@ -1198,6 +1334,14 @@
 "d": 8,
 "text": "フランスの教育大臣が代わりの先生3000人を送ると発表",
 "video": "aNahxLI_JGc",
+"channel": "jiji"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 13,
+"text": "IMFがAI株の大幅な下落を世界の危険の1つに挙げる",
+"video": "S7y7SqS1u9E",
 "channel": "jiji"
 },
 {
@@ -1287,6 +1431,13 @@
 "text": "ジャングリアの運営会社、会見で2年目の来場見込みを下げる",
 "video": "KNN2OK7JUjg",
 "channel": "jiji"
+},
+{
+"y": 2026,
+"m": 11,
+"text": "カープの主力3人が3日続けてFA宣言する",
+"video": "coCFQUTw_Y8",
+"channel": "main"
 }
 ]
 }
