@@ -413,3 +413,12 @@ body.p-search .hdr-search { background: var(--ink); color: var(--paper); }
   .hdr-game { margin-left: 0 !important; }
   .menu-btn { width: 38px; height: 38px; }
 }
+
+/* 解説ページ一覧：時事・スポーツの切り替え */
+.rd-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 20px; }
+.rd-tab { cursor: pointer; padding: 10px 20px; border: 1.5px solid var(--ink); background: var(--surface); color: var(--text); font-family: var(--fh); font-weight: 800; font-size: 1rem; border-radius: 2px; display: inline-flex; align-items: baseline; gap: 8px; }
+.rd-tab small { font-size: .75rem; font-weight: 700; color: var(--sub); }
+.rd-tab[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+.rd-tab[aria-selected="true"] small { color: inherit; }
+.rd-panel[hidden] { display: none; }
+@media (max-width: 600px) { .rd-tab { flex: 1; justify-content: center; padding: 10px 8px; } }
