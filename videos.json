@@ -1,6 +1,12 @@
 {
-  "updated": "2026-11-10 11:40",
+  "updated": "2026-11-11 00:30",
   "main": [
+    {
+      "id": "fU_1MIxVWZw",
+      "url": "https://www.youtube.com/watch?v=fU_1MIxVWZw",
+      "published": "2026-11-10",
+      "title": "吉井理人、近鉄・オリックス・楽天。4つのチームにいた道のり【プロ野球・MLB】"
+    },
     {
       "id": "coCFQUTw_Y8",
       "url": "https://www.youtube.com/watch?v=coCFQUTw_Y8",
@@ -202,6 +208,12 @@
   ],
   "news": [
     {
+      "id": "fU_1MIxVWZw",
+      "title": "吉井理人、近鉄・オリックス・楽天。4つのチームにいた道のり【プロ野球・MLB】",
+      "channel": "main",
+      "published": "2026-11-10"
+    },
+    {
       "id": "S7y7SqS1u9E",
       "title": "AIバブルは鉄道バブルのくり返し？株は下がっても線路は伸びた【時事】",
       "channel": "jiji",
@@ -212,15 +224,15 @@
       "title": "カープFA宣言3人は「異常事態」？宣言して残った人0人、カープのピンチをふりかえる【プロ野球】",
       "channel": "main",
       "published": "2026-11-08"
-    },
-    {
-      "id": "vu0Wgw2zDd0",
-      "title": "ふるさと納税223億円の白糠町、そのお金で町は変わった？住民の記録12年分で検証【時事】",
-      "channel": "jiji",
-      "published": "2026-11-08"
     }
   ],
   "log": [
+    {
+      "id": "fU_1MIxVWZw",
+      "title": "吉井理人、近鉄・オリックス・楽天。4つのチームにいた道のり【プロ野球・MLB】",
+      "channel": "main",
+      "published": "2026-11-10"
+    },
     {
       "id": "S7y7SqS1u9E",
       "title": "AIバブルは鉄道バブルのくり返し？株は下がっても線路は伸びた【時事】",
