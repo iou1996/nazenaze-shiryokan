@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11 09:36",
+  "updated": "2026-11-12 00:30",
   "main": [
     {
       "id": "fU_1MIxVWZw",
@@ -106,6 +106,12 @@
   ],
   "jiji": [
     {
+      "id": "kUq-M0iDhFY",
+      "url": "https://www.youtube.com/watch?v=kUq-M0iDhFY",
+      "published": "2026-11-11",
+      "title": "そもそも「命の砂時計」ってなに？GMO会見の言葉を、砂時計の歴史と400年前の絵から調べた【時事】"
+    },
+    {
       "id": "S7y7SqS1u9E",
       "url": "https://www.youtube.com/watch?v=S7y7SqS1u9E",
       "published": "2026-11-09",
@@ -208,6 +214,12 @@
   ],
   "news": [
     {
+      "id": "kUq-M0iDhFY",
+      "title": "そもそも「命の砂時計」ってなに？GMO会見の言葉を、砂時計の歴史と400年前の絵から調べた【時事】",
+      "channel": "jiji",
+      "published": "2026-11-11"
+    },
+    {
       "id": "fU_1MIxVWZw",
       "title": "吉井理人、近鉄・オリックス・楽天。4つのチームにいた道のり【プロ野球・MLB】",
       "channel": "main",
@@ -218,15 +230,15 @@
       "title": "AIバブルは鉄道バブルのくり返し？株は下がっても線路は伸びた【時事】",
       "channel": "jiji",
       "published": "2026-11-09"
-    },
-    {
-      "id": "coCFQUTw_Y8",
-      "title": "カープFA宣言3人は「異常事態」？宣言して残った人0人、カープのピンチをふりかえる【プロ野球】",
-      "channel": "main",
-      "published": "2026-11-08"
     }
   ],
   "log": [
+    {
+      "id": "kUq-M0iDhFY",
+      "title": "そもそも「命の砂時計」ってなに？GMO会見の言葉を、砂時計の歴史と400年前の絵から調べた【時事】",
+      "channel": "jiji",
+      "published": "2026-11-11"
+    },
     {
       "id": "fU_1MIxVWZw",
       "title": "吉井理人、近鉄・オリックス・楽天。4つのチームにいた道のり【プロ野球・MLB】",
