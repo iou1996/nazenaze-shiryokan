@@ -101,8 +101,8 @@
 const SFX = n => { if (window.NZSFX) window.NZSFX.play(n); };
   const G = 2300, J1 = -820, J2 = -620, CEIL = 10;
   let st, last = 0, raf = 0, qs = [], qAll = [], TITLES = {};
-  const CHL = { jiji: '時事・地域編', main: 'スポーツ編' };
-  let CHN = store.get('nz_run_ch') === 'main' ? 'main' : 'jiji';
+  const CHL = { main: 'スポーツ編', jiji: '時事・地域編' };
+  let CHN = store.get('nz_run_ch') === 'jiji' ? 'jiji' : 'main';
   // 自己ベストはチャンネルごと（前の版の nz_run_best はスポーツ編として読む）
   // 遊び方：endless（どこまで走れるか）／ta（タイムアタック：ゲート5つを何秒で）
   let MODE = store.get('nz_run_mode') === 'ta' ? 'ta' : 'endless';

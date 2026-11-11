@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>シマ先生とコトニちゃんのなぜなぜ資料館｜時事とスポーツの「なぜ？」を記録でたどるYouTube</title>
+<title>シマ先生とコトニちゃんのなぜなぜ資料館｜スポーツと時事の「なぜ？」を記録でたどるYouTube</title>
 <meta name="description" content="プロ野球・MLB・サッカーのルールや言葉、ニュースや地域の「なぜ？」を、当時の新聞・公式記録・論文までさかのぼって、シマ先生とコトニちゃんの掛け合いで解き明かすYouTubeチャンネルの公式サイト。">
 <meta name="google-site-verification" content="q6RTdFmBUmg8BZqRvcRY0xe0QD8c_37V7Bg_pK-qYLc">
 <link rel="canonical" href="https://iou1996.github.io/nazenaze-shiryokan/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="シマ先生とコトニちゃんのなぜなぜ資料館">
-<meta property="og:title" content="シマ先生とコトニちゃんのなぜなぜ資料館｜時事とスポーツの「なぜ？」を記録でたどるYouTube">
+<meta property="og:title" content="シマ先生とコトニちゃんのなぜなぜ資料館｜スポーツと時事の「なぜ？」を記録でたどるYouTube">
 <meta property="og:description" content="プロ野球・MLB・サッカーのルールや言葉、ニュースや地域の「なぜ？」を、当時の新聞・公式記録・論文までさかのぼって、シマ先生とコトニちゃんの掛け合いで解き明かすYouTubeチャンネルの公式サイト。">
 <meta property="og:url" content="https://iou1996.github.io/nazenaze-shiryokan/">
 <meta property="og:image" content="https://iou1996.github.io/nazenaze-shiryokan/images/banner.jpg">
@@ -22,8 +22,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Shippori+Mincho+B1:wght@700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=202611081521">
-<link rel="stylesheet" href="assets/mokuroku.css?v=202611081521">
+<link rel="stylesheet" href="assets/style.css?v=202611111108">
+<link rel="stylesheet" href="assets/mokuroku.css?v=202611111108">
 </head>
 <body>
 
@@ -48,11 +48,26 @@
 
 <div class="hero" id="top">
   <div class="wrap">
+    <div class="bn-intro" id="bnIntro" aria-hidden="true">
+      <video id="bnVideo" src="media/knock_warm.mp4" poster="media/knock_warm_poster.png" muted playsinline autoplay preload="auto" tabindex="-1"></video>
+    </div>
+    <script>
+    // 開いたら上段で1回だけ流れ、終わったら消える（バナーだけが残る）
+    (function(){
+      var box=document.getElementById('bnIntro'),v=document.getElementById('bnVideo');
+      if(!box||!v)return;
+      function bye(){box.style.maxHeight=box.scrollHeight+'px';void box.offsetHeight;box.classList.add('done');setTimeout(function(){box.style.display='none';},1200);}
+      if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){box.style.display='none';return;}
+      v.addEventListener('ended',function(){setTimeout(bye,500);});
+      v.addEventListener('error',function(){box.style.display='none';});
+      var p=v.play();if(p&&p.catch)p.catch(function(){box.style.display='none';});
+    })();
+    </script>
     <img class="banner rv" src="images/banner.jpg" alt="シマ先生とコトニちゃんのなぜなぜ資料館" fetchpriority="high">
     <div class="intro">
       <span class="chip rv d1"><i></i>YouTubeで配信中</span>
       <h1 class="rv d1"><span class="nw">その「あたりまえ」、</span><span class="nw grad">なぜ今の形に？</span></h1>
-      <p class="rv d2">身近な「なぜ？」を、残っている記録や論文をたどって、シマ先生とコトニちゃんの掛け合いで解き明かすYouTubeチャンネルです。時事・地域編とスポーツ編の2つで<span class="nw">発信しています。</span></p>
+      <p class="rv d2">身近な「なぜ？」を、残っている記録や論文をたどって、シマ先生とコトニちゃんの掛け合いで解き明かすYouTubeチャンネルです。スポーツ編と時事・地域編の2つで<span class="nw">発信しています。</span></p>
       <div class="btns rv d3">
         <a class="btn solid" href="videos.html">動画を見る <span class="arr">→</span></a>
         <a class="btn game" href="game.html"><span aria-hidden="true">🎮</span> ゲームで遊ぶ</a>
@@ -72,7 +87,7 @@
       </a>
       <a class="gp-card daily" href="daily.html">
         <img src="images/chars/shima_face1.png" alt="">
-        <span class="gp-txt"><b>今日の1問</b><small>時事・地域編とスポーツ編で1日1問ずつ。毎日つづけて連続正解をのばそう</small></span>
+        <span class="gp-txt"><b>今日の1問</b><small>スポーツ編と時事・地域編で1日1問ずつ。毎日つづけて連続正解をのばそう</small></span>
         <span class="gp-go">遊ぶ ›</span>
       </a>
       <a class="gp-card quiz" href="quiz.html">
@@ -115,17 +130,17 @@
     <h2 class="rv d1">2つのチャンネル</h2>
     <p class="lead rv d2">資料館には、入口が2つあります。どちらも、シマ先生とコトニちゃんが案内します。</p>
     <div class="channels">
-      <div class="channel jiji rv">
-        <span class="tag">時事・地域編</span>
-        <h3>ニュースと地域の「なぜ？」</h3>
-        <p>いま話題のニュースや、地域の「なぜ？」。よく聞く話が本当なのかを、論文と自治体の資料で確かめます。</p>
-        <a class="btn red" href="https://www.youtube.com/@nazenaze-chiiki?sub_confirmation=1" target="_blank" rel="noopener">▶ チャンネル登録</a>
-      </div>
-      <div class="channel rv d1">
+      <div class="channel rv">
         <span class="tag">スポーツ編</span>
         <h3>スポーツの「なぜ？」</h3>
         <p>プロ野球、メジャーリーグ、サッカー。スポーツのルール・言葉・歴史の「なぜ？」を、100年前の記録までさかのぼって解き明かします。</p>
         <a class="btn red" href="https://www.youtube.com/@hghg1996iou?sub_confirmation=1" target="_blank" rel="noopener">▶ チャンネル登録</a>
+      </div>
+      <div class="channel jiji rv d1">
+        <span class="tag">時事・地域編</span>
+        <h3>ニュースと地域の「なぜ？」</h3>
+        <p>いま話題のニュースや、地域の「なぜ？」。よく聞く話が本当なのかを、論文と自治体の資料で確かめます。</p>
+        <a class="btn red" href="https://www.youtube.com/@nazenaze-chiiki?sub_confirmation=1" target="_blank" rel="noopener">▶ チャンネル登録</a>
       </div>
     </div>
   </div>
@@ -140,8 +155,8 @@
       </div>
       <div class="tabs rv d2" role="tablist" id="tabs">
         <span class="pill" id="pill"></span>
-        <button class="tab" role="tab" aria-selected="true" data-key="jiji">時事・地域編</button>
-        <button class="tab" role="tab" aria-selected="false" data-key="main">スポーツ編</button>
+        <button class="tab" role="tab" aria-selected="true" data-key="main">スポーツ編</button>
+        <button class="tab" role="tab" aria-selected="false" data-key="jiji">時事・地域編</button>
       </div>
     </div>
     <div class="grid" id="grid" data-limit="4">
@@ -150,7 +165,7 @@
     <div class="foot">
       <p class="note" id="updated"></p>
       <a class="btn solid" href="videos.html">動画をもっと見る <span class="arr">→</span></a>
-      <a class="btn" id="more" href="https://www.youtube.com/@nazenaze-chiiki/videos" target="_blank" rel="noopener">すべての動画を見る <span class="arr">→</span></a>
+      <a class="btn" id="more" href="https://www.youtube.com/@hghg1996iou/videos" target="_blank" rel="noopener">すべての動画を見る <span class="arr">→</span></a>
     </div>
   </div>
 </section>
@@ -193,7 +208,7 @@
       </a>
       <a class="gp-card daily" href="daily.html">
         <img src="images/chars/shima_face1.png" alt="">
-        <span class="gp-txt"><b>今日の1問</b><small>時事・地域編とスポーツ編で1日1問ずつ。毎日つづけて連続正解をのばそう</small></span>
+        <span class="gp-txt"><b>今日の1問</b><small>スポーツ編と時事・地域編で1日1問ずつ。毎日つづけて連続正解をのばそう</small></span>
         <span class="gp-go">遊ぶ ›</span>
       </a>
       <a class="gp-card quiz" href="quiz.html">
@@ -226,8 +241,8 @@
   <div class="wrap">
     <span>© シマ先生とコトニちゃんのなぜなぜ資料館</span>
     <span class="links">
-      <a href="https://www.youtube.com/@nazenaze-chiiki" target="_blank" rel="noopener">時事・地域編</a>
       <a href="https://www.youtube.com/@hghg1996iou" target="_blank" rel="noopener">スポーツ編</a>
+      <a href="https://www.youtube.com/@nazenaze-chiiki" target="_blank" rel="noopener">時事・地域編</a>
       <a href="news.html">ニュース</a>
       <a href="kaisetsu.html">解説</a>
       <a href="nenpyo.html">年表</a>
@@ -237,7 +252,7 @@
   </div>
 </footer>
 
-<script src="assets/main.js?v=202611081521"></script>
-<script src="assets/fx.js?v=202611081521"></script>
+<script src="assets/main.js?v=202611111108"></script>
+<script src="assets/fx.js?v=202611111108"></script>
 </body>
 </html>

@@ -146,7 +146,7 @@
       .then(r => r.json())
       .then(d => {
         DATA = d;
-        render('jiji');
+        render('main');
         if (d.updated) document.getElementById('updated').textContent = '一覧の自動更新：' + d.updated;
       })
       .catch(() => {
@@ -398,7 +398,7 @@
     // 解説ページがある回には「この回の解説を読む」を付ける
     const eps = fetch('data/episodes.json').then(r => r.json()).then(e => new Set((e.episodes || []).map(x => x.id))).catch(() => new Set());
     Promise.all([fetch('videos.json').then(r => r.json()), eps]).then(([d, has]) => {
-      latestBox.innerHTML = [['jiji', '時事・地域編'], ['main', 'スポーツ編']].map(([k, label]) => {
+      latestBox.innerHTML = [['main', 'スポーツ編'], ['jiji', '時事・地域編']].map(([k, label]) => {
         const v = (d[k] || [])[0];
         if (!v) return '';
         const id = encodeURIComponent(v.id);
