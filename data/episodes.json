@@ -1,6 +1,132 @@
 {
 "episodes": [
 {
+"id": "CaNFiBXahuQ",
+"channel": "main",
+"title": "セーブを作ったのは新聞記者!? 初代セーブ王は星野仙一、なぜ今の形に？【プロ野球・MLB】",
+"lead": "勝った試合の最後に投げても「勝ち」ではなく「セーブ」になるのはなぜか、そのセーブはなぜ今の形になったのかを考えました。答えは、ルールを決める側ではなく、1人の新聞記者が働きを見えるようにするために作った記録だったことです。",
+"points": [
+{
+"h": "セーブがつく4つの条件",
+"t": "勝った試合で最後まで投げて勝ち投手ではなく、アウトを1つ以上とることが基本です。そのうえで、3点差以内で出て1回以上投げる・同点の走者がいる場面で出る・3回以上投げる、のどれかに当てはまればセーブがつきます。日本には、次の投手につないだ人の記録「ホールド」もあります。"
+},
+{
+"h": "記者が気づいた、勝ちでは測れない働き",
+"t": "1959年、パイレーツのエルロイ・フェイス投手は救援で18勝1敗でした。しかしシカゴの記者ジェローム・ホルツマンさんが調べると、そのうち10は同点や勝ち越しの点を許したあとに味方が取り返した勝ちでした。勝ちの数だけでは救援投手の働きが測れないと考え、独自の式を作りました。"
+},
+{
+"h": "新聞が先、公式はあと",
+"t": "ホルツマンさんの式は野球の専門紙に載るようになり、1969年にメジャーの公式記録になりました。日本でも1972年に報知新聞が独自に「S」をつけ始め、1974年に公式に。最初の最多セーブは、中日の星野仙一投手と南海の佐藤道郎投手でした。"
+},
+{
+"h": "ゆるすぎ・きびしすぎを直した条件",
+"t": "1969年は点差に関係なくリードを守って最後まで投げればセーブがつく、ゆるい条件でした。1974年にきびしくし、1975年に今の「3点差以内で1回／同点の走者／3回以上」の形になりました。日本も最初は勝ちとセーブを同時にもらえましたが、翌年以降に条件を整えています。"
+},
+{
+"h": "答え：残りの1割弱を見えるようにした記録",
+"t": "9回にリードして勝つ割合は、抑えがいてもいなくても昔から「9割ちょっと」で変わりません。セーブとは、その残りの1割弱を背負って出ていく人の仕事を見えるようにした記録だ、というのがシマ先生の見方です。"
+}
+],
+"timeline": [
+{
+"y": 1959,
+"text": "パイレーツのエルロイ・フェイス投手が救援で18勝1敗を記録する"
+},
+{
+"y": 1969,
+"text": "セーブがメジャーの公式記録になり、ドジャースのビル・シンガー投手が最初のセーブをあげる"
+},
+{
+"y": 1972,
+"text": "報知新聞が救援投手に独自に「S」をつけ始める"
+},
+{
+"y": 1974,
+"text": "セーブが日本の公式記録になり、星野仙一投手と佐藤道郎投手が初代の最多セーブ投手になる"
+},
+{
+"y": 1975,
+"text": "メジャーのセーブの条件が今の形（3点差以内で1回など）になる"
+},
+{
+"y": 2004,
+"text": "中日の岩瀬仁紀投手が抑えとして起用され、日本最多セーブ投手になる"
+},
+{
+"y": 2025,
+"m": 12,
+"text": "ドジャースのエドウィン・ディアス投手が1年2300万ドルで契約する"
+}
+],
+"sources": [
+{
+"title": "Saving Face: Reconsidering relief pitching",
+"by": "SABR",
+"url": "https://sabr.org/journal/article/saving-face-reconsidering-relief-pitching/"
+},
+{
+"title": "最初の公式のセーブ（1969年4月7日）",
+"by": "SABR",
+"url": "https://sabr.org/gamesproj/game/april-7-1969-dodgers-bill-singer-credited-with-first-official-save/"
+},
+{
+"title": "ジェローム・ホルツマンさんの式について",
+"by": "Sports Collectors Digest",
+"url": "https://sportscollectorsdigest.com/news/saveholtzman"
+},
+{
+"title": "記録の決まりの移り変わり",
+"by": "Retrosheet",
+"url": "https://retrosheet.org/rules/ScoringRulesYearbyYear1950-.pdf"
+},
+{
+"title": "Official Baseball Rules 2026（公認野球規則）",
+"by": "MLB",
+"year": "2026",
+"url": "https://mktg.mlbstatic.com/mlb/official-information/2026-official-baseball-rules.pdf"
+},
+{
+"title": "The Myth of the Closer",
+"by": "David Smith（Retrosheet）",
+"year": "2016",
+"url": "https://www.retrosheet.org/Research/SmithD/MythOfTheCloser.pdf"
+},
+{
+"title": "Relief Pitching Strategy: Past, Present, and Future",
+"by": "Pete Palmer（SABR）",
+"year": "2018",
+"url": "https://sabr.org/journal/article/relief-pitching-strategy-past-present-and-future/"
+},
+{
+"title": "報知新聞の「S」、星野仙一投手・佐藤道郎投手について",
+"by": "スポルティーバ",
+"year": "2024",
+"url": "https://sportiva.shueisha.co.jp/clm/baseball/npb/2024/07/30/post_216/"
+},
+{
+"title": "1974年セ・リーグ成績",
+"by": "NPB",
+"url": "https://npb.jp/bis/yearly/centralleague_1974.html"
+},
+{
+"title": "記録の決まり",
+"by": "NPB",
+"url": "https://npb.jp/npb/20050203stats.html"
+},
+{
+"title": "2026年 最多セーブ",
+"by": "NPB",
+"url": "https://npb.jp/bis/2026/stats/llp_c.html"
+},
+{
+"title": "エドウィン・ディアス投手の契約について",
+"by": "Spotrac",
+"url": "https://www.spotrac.com/news/_/id/3180/breaking-down-edwin-diaz-3-year-69m-dodgers-contract"
+}
+],
+"published": "2026-11-12"
+},
+{
 "id": "kUq-M0iDhFY",
 "channel": "jiji",
 "title": "そもそも「命の砂時計」ってなに？GMO会見の言葉を、砂時計の歴史と400年前の絵から調べた【時事】",
