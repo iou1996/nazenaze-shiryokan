@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>なぜなぜ日本一周｜なぜなぜ資料館のミニゲーム</title>
+<meta name="description" content="シマ先生とコトニちゃんが、サイコロで日本地図の上を進むすごろくRPG。都道府県のスタンプを集め、仲間に会い、モヤモヤをクイズで晴らそう。地方めぐりと日本一周の2つの遊び方。続きから遊べます。">
+<link rel="canonical" href="https://iou1996.github.io/nazenaze-shiryokan/tabi.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="シマ先生とコトニちゃんのなぜなぜ資料館">
+<meta property="og:title" content="なぜなぜ日本一周｜なぜなぜ資料館のミニゲーム">
+<meta property="og:description" content="シマ先生とコトニちゃんが、サイコロで日本地図の上を進むすごろくRPG。都道府県のスタンプを集め、仲間に会い、モヤモヤをクイズで晴らそう。">
+<meta property="og:url" content="https://iou1996.github.io/nazenaze-shiryokan/tabi.html">
+<meta property="og:image" content="https://iou1996.github.io/nazenaze-shiryokan/images/banner.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="max-image-preview:large">
+<meta name="theme-color" content="#eceff1">
+<link rel="icon" href="images/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Shippori+Mincho+B1:wght@700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=202611111108">
+<link rel="stylesheet" href="assets/mokuroku.css?v=202611111108">
+<link rel="stylesheet" href="assets/tabi.css?v=202611131200">
+</head>
+<body class="p-game" data-game="tabi">
+
+<header id="hdr">
+  <div class="bar">
+    <a class="logo" href="index.html"><img src="images/icon.png" alt="">なぜなぜ資料館</a>
+    <nav id="nav">
+      <a href="index.html">トップ</a>
+      <a href="news.html">ニュース</a>
+      <a href="characters.html">登場人物</a>
+      <a href="kaisetsu.html">解説</a>
+      <a href="videos.html">動画</a>
+      <a href="touha.html">踏破記録</a>
+      <a href="game.html">ゲーム<span class="new">NEW</span></a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <a class="hdr-game" href="game.html"><span aria-hidden="true">🎮</span>ゲーム</a>
+    <a class="hdr-search" href="search.html" aria-label="サイト内検索" title="サイト内検索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-top" id="game">
+  <div class="wrap">
+    <p class="label rv"><a href="game.html">GAME</a></p>
+    <h1 class="rv d1 h2">なぜなぜ日本一周</h1>
+    <p class="lead rv d2">サイコロで日本地図の上を進んで、都道府県のスタンプを集めるすごろくRPG。続きから遊べます。</p>
+    <p class="sfx-row"><button class="sfx-tog" data-sfx-tog type="button" aria-label="効果音を出す">🔇 音なし</button></p>
+
+    <div class="panel tb-box" id="tbBox">
+      <div class="tb-stat">
+        <span class="tb-mode" id="tbMode">—</span>
+        <span><small>日数</small><b id="tbDay">1日め</b></span>
+        <span><small>旅費</small><b id="tbMoney">0円</b></span>
+        <span class="tb-hp"><small>元気</small><b id="tbHp">0/0</b><i class="tb-bar"><i id="tbHpBar"></i></i></span>
+        <span class="tb-lv"><small>知識</small><b id="tbLv">Lv1</b><i class="tb-bar blue"><i id="tbExpBar"></i></i></span>
+        <span><small>スタンプ</small><b id="tbStamp">0/0</b></span>
+        <span class="tb-mates"><small>仲間</small><b id="tbMates"></b></span>
+      </div>
+      <div class="tb-map">
+        <canvas id="tabiCanvas" aria-label="なぜなぜ日本一周の地図。ドラッグで動かし、ピンチやホイールで拡大できます"></canvas>
+        <div class="tb-mapbtn">
+          <button type="button" id="tbZin" aria-label="拡大">＋</button>
+          <button type="button" id="tbZout" aria-label="縮小">－</button>
+          <button type="button" id="tbAllMap">全体</button>
+          <button type="button" id="tbMe">現在地</button>
+          <button type="button" id="tbMenu">メニュー</button>
+        </div>
+        <p class="tb-maperr" id="tbMapErr" hidden>地図の形を読みこめませんでした。マスと道だけで遊べます。</p>
+        <div class="tb-ov" id="tbOv"></div>
+      </div>
+      <div class="tb-talk" id="tbTalk"></div>
+      <div class="tb-act" id="tbAct"></div>
+      <details class="tb-logbox"><summary>旅の記録</summary><div class="tb-log" id="tbLog"></div></details>
+    </div>
+
+    <div class="g-howto">
+      <h2>あそびかた</h2>
+      <p>はじめに、まわる地方を選びます。短めの6つの地方めぐりと、47都道府県をぜんぶまわる日本一周があります。サイコロをふると、出た目の数だけ進める行き先が光ります。地図の光ったマスか、下の一覧から行き先を選んでください。都道府県の丸を通るか止まると、スタンプがもらえます。止まったときはクイズが1問出て、正解すると知識と旅費がもらえます。</p>
+      <p>マスの色：<b style="color:#2c6fb0">青</b>は旅費がふえる、<b style="color:#c0392b">赤</b>は旅費がへる、<b style="color:#e0a800">？</b>はできごと、<b style="color:#2e9d62">★</b>は仲間との出会い、<b style="color:#6d5c8a">！</b>はモヤモヤ（戦い）。モヤモヤには、シマ先生の「説明する」、コトニちゃんの「ひらめく」、動画のクイズで答える「クイズで調べる」で立ち向かいます。仲間はそれぞれ、旅を楽にする力を持っています。</p>
+      <p>1日すぎるごとに旅費が1,000円かかります。旅費がマイナスになったら、1日アルバイト。目標の都道府県のスタンプをぜんぶ集めたらクリアで、少ない日数ほど上手です。続きと最高記録は、この端末のブラウザにだけ保存されます。</p>
+    </div>
+    <div class="g-more">
+      <h2>ほかのゲーム</h2>
+      <div class="g-minis" id="moreGames"></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <span>© シマ先生とコトニちゃんのなぜなぜ資料館</span>
+    <span class="links">
+      <a href="https://www.youtube.com/@hghg1996iou" target="_blank" rel="noopener">スポーツ編</a>
+      <a href="https://www.youtube.com/@nazenaze-chiiki" target="_blank" rel="noopener">時事・地域編</a>
+      <a href="news.html">ニュース</a>
+      <a href="kaisetsu.html">解説</a>
+      <a href="nenpyo.html">年表</a>
+      <a href="shuten.html">出典</a>
+      <a href="contact.html">お問い合わせ</a>
+    </span>
+  </div>
+</footer>
+
+<script src="assets/main.js?v=202611111108"></script>
+<script src="assets/fx.js?v=202611111108"></script>
+<script src="assets/sfx.js?v=202611111108"></script>
+<script src="assets/game.js?v=202611131200"></script>
+<script src="assets/tabi.js?v=202611131200"></script>
+</body>
+</html>
