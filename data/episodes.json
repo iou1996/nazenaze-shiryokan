@@ -1,6 +1,164 @@
 {
 "episodes": [
 {
+"id": "hI0UEPL5nFg",
+"channel": "jiji",
+"title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
+"lead": "ファイターズの球場エスコンフィールドが開業して3年。球場が来た北海道北広島市は、本当に人もお金も増えたのかを、駅の乗車人員・国勢調査の人口・地価と市税、開業前の見込みとの答え合わせで調べました。",
+"points": [
+{
+"h": "名前と土地の下地",
+"t": "北広島市は1884年に広島県から移り住んだ人たちの開拓地で、1996年に市になるときに北広島と名づけられました。球場の場所は、1970年に運動公園の予定地になったものの、2008年に工事計画が止まり、38年間広い土地のまま残っていました。"
+},
+{
+"h": "球場が来るまで",
+"t": "2016年にファイターズの新球場構想が報じられると、北広島市はすぐに誘致を申し入れ、2018年に建設地に決まりました。2023年3月、天然芝で屋根が開くエスコンフィールドが開業し、周辺を含めてFビレッジと呼ばれています。"
+},
+{
+"h": "来る人は増えたが、住む人は減っている",
+"t": "北広島駅の乗車人員は2025年度に記録上いちばん多くなりましたが、増えた分の大半は定期券を使わない来場者でした。一方、住む人の数は2020年から2025年の国勢調査で4.1%減っています。ただ北海道全体は4.7%減で、179市町村のうち増えたのは9つだけでした。"
+},
+{
+"h": "お金は増え、町のお店は道半ば",
+"t": "北広島の住宅地は2022年・2023年に地価上昇率で全国1位になり、市税も2017年度の77億円から2024年度の87億円に増えました。しかし2024年の商工会調査では、答えた98社の7割以上が開業後の売り上げを「変わらない」「減った」と答えています。"
+},
+{
+"h": "答え：来る人と税金は増えたが、住む人を増やすのはこれから",
+"t": "開業前に見込まれた来場者数は上回り、市税も増えましたが、人口は北海道のほとんどの町と同じく減っています。市は2028年に新駅と北海道医療大学がそろうのを次の山とし、来る人を住む人につなげる作戦を描いています。"
+}
+],
+"timeline": [
+{
+"y": 1884,
+"text": "広島県から25戸103人が移り住み、北広島の開拓が始まった"
+},
+{
+"y": 1970,
+"text": "札幌で働く人のための住宅団地づくりが、球場のある丘で始まった"
+},
+{
+"y": 1996,
+"text": "広島市との混同を避けるため、北広島市が発足した"
+},
+{
+"y": 2018,
+"m": 10,
+"text": "ファイターズの新球場の建設地が北広島に正式に決まった"
+},
+{
+"y": 2023,
+"m": 3,
+"text": "天然芝で屋根が開くエスコンフィールドHOKKAIDOが開業した"
+},
+{
+"y": 2025,
+"m": 3,
+"text": "北広島駅の西口に、お店とホテルの建物が開業した"
+},
+{
+"y": 2028,
+"text": "新しい駅Fビレッジ駅と北海道医療大学のキャンパスがそろう予定"
+}
+],
+"sources": [
+{
+"title": "北広島市の概要",
+"by": "北広島市",
+"url": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/detail/00001463.html"
+},
+{
+"title": "人口・人口動態",
+"by": "北広島市",
+"url": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/detail/00127308.html"
+},
+{
+"title": "北広島駅の乗車人員",
+"by": "北広島市",
+"url": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/detail/00128686.html"
+},
+{
+"title": "北広島市総合計画（第6次）中間年度の見直し",
+"by": "北広島市",
+"year": "2026",
+"url": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/detail/00155865.html"
+},
+{
+"title": "市の財政（市税）",
+"by": "北広島市",
+"url": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/files/00006500/00006510/r7zaisei.pdf"
+},
+{
+"title": "令和7年国勢調査 確定値",
+"by": "北海道",
+"url": "https://www.pref.hokkaido.lg.jp/ss/tuk/001ppc/270302.html"
+},
+{
+"title": "日本の地域別将来推計人口（令和5年推計）",
+"by": "国立社会保障・人口問題研究所",
+"url": "https://www.ipss.go.jp/pp-shicyoson/j/shicyoson23/t-page.asp"
+},
+{
+"title": "地価公示",
+"by": "国土交通省",
+"year": "2023",
+"url": "https://www.mlit.go.jp/page/kanbo01_hy_008391.html"
+},
+{
+"title": "ボールパークの経済効果の試算",
+"by": "北海道銀行",
+"year": "2023",
+"url": "https://www.hokkaidobank.co.jp/common/dat/2023/0316/1678933695151605751.pdf"
+},
+{
+"title": "北海道ボールパーク Annual Report 2025",
+"by": "北海道日本ハムファイターズ",
+"url": "https://www.fighters.co.jp/cmn/images/news/2026/01/hkdballpark_annual_report2025.pdf"
+},
+{
+"title": "新駅の市民説明会資料",
+"by": "北広島市",
+"year": "2024",
+"url": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/files/00154000/00154045/20240820141755.pdf"
+},
+{
+"title": "北広島商工会の調査",
+"by": "東洋経済オンライン",
+"year": "2024",
+"url": "https://toyokeizai.net/articles/-/907046"
+},
+{
+"title": "スタジアム・アリーナ建設と連動した複合開発の社会経済効果",
+"by": "大林幹雄（大阪公立大学大学院）・日本地理学会",
+"year": "2026",
+"url": "https://doi.org/10.14866/ajg.2026s.0_167"
+},
+{
+"title": "Journal of Economic Surveys 掲載論文",
+"by": "Bradbury, Coates & Humphreys",
+"year": "2023",
+"url": "https://ideas.repec.org/a/bla/jecsur/v37y2023i4p1389-1431.html"
+},
+{
+"title": "コブ郡の検証",
+"by": "Bradbury（Kennesaw State University）",
+"year": "2022",
+"url": "https://campus.kennesaw.edu/colleges-departments/coles/centers/markets-economic-opportunity/docs/bradbury-cobb-report-march-2022.pdf"
+},
+{
+"title": "ロンドンのスタジアムと住宅価格",
+"by": "Ahlfeldt & Kavetsos",
+"year": "2014",
+"url": "https://ideas.repec.org/a/bla/jorssa/v177y2014i1p169-190.html"
+},
+{
+"title": "ファイターズの2軍、恵庭市に内定",
+"by": "Impress Watch",
+"url": "https://www.watch.impress.co.jp/docs/news/2122153.html"
+}
+],
+"published": "2026-11-13"
+},
+{
 "id": "CaNFiBXahuQ",
 "channel": "main",
 "title": "セーブを作ったのは新聞記者!? 初代セーブ王は星野仙一、なぜ今の形に？【プロ野球・MLB】",

@@ -81,6 +81,12 @@
 "channel": "main"
 },
 {
+"y": 1884,
+"text": "広島県から25戸103人が移り住み、北広島の開拓が始まった",
+"video": "hI0UEPL5nFg",
+"channel": "jiji"
+},
+{
 "y": 1886,
 "m": 3,
 "text": "スポーツ新聞に「今の競走は熱いストーブのまわり」の便り",
@@ -346,6 +352,12 @@
 "y": 1970,
 "text": "ハーシュマンが『離脱・発言・忠誠』を書く",
 "video": "aNahxLI_JGc",
+"channel": "jiji"
+},
+{
+"y": 1970,
+"text": "札幌で働く人のための住宅団地づくりが、球場のある丘で始まった",
+"video": "hI0UEPL5nFg",
 "channel": "jiji"
 },
 {
@@ -651,6 +663,12 @@
 "text": "清原和博選手、FAで西武から巨人へ移る",
 "video": "e_PG5SB2ArU",
 "channel": "main"
+},
+{
+"y": 1996,
+"text": "広島市との混同を避けるため、北広島市が発足した",
+"video": "hI0UEPL5nFg",
+"channel": "jiji"
 },
 {
 "y": 1996,
@@ -1084,6 +1102,13 @@
 "channel": "main"
 },
 {
+"y": 2018,
+"m": 10,
+"text": "ファイターズの新球場の建設地が北広島に正式に決まった",
+"video": "hI0UEPL5nFg",
+"channel": "jiji"
+},
+{
 "y": 2019,
 "text": "国の調査で、日本の成人の約4割が睡眠6時間未満",
 "video": "kSADf4Vx2kk",
@@ -1234,6 +1259,13 @@
 "fy": true
 },
 {
+"y": 2023,
+"m": 3,
+"text": "天然芝で屋根が開くエスコンフィールドHOKKAIDOが開業した",
+"video": "hI0UEPL5nFg",
+"channel": "jiji"
+},
+{
 "y": 2024,
 "text": "アイルランドでデータセンターの建設と運用が約19,500人分の仕事に",
 "video": "WhzjWRdhYCY",
@@ -1317,6 +1349,13 @@
 "m": 2,
 "text": "東洋経済オンラインが印西市のデータセンターは11社30棟前後と報じる",
 "video": "WhzjWRdhYCY",
+"channel": "jiji"
+},
+{
+"y": 2025,
+"m": 3,
+"text": "北広島駅の西口に、お店とホテルの建物が開業した",
+"video": "hI0UEPL5nFg",
 "channel": "jiji"
 },
 {
@@ -1581,6 +1620,12 @@
 "d": 2,
 "text": "GMOの謝罪会見で熊谷代表が「命の砂時計」と話す",
 "video": "kUq-M0iDhFY",
+"channel": "jiji"
+},
+{
+"y": 2028,
+"text": "新しい駅Fビレッジ駅と北海道医療大学のキャンパスがそろう予定",
+"video": "hI0UEPL5nFg",
 "channel": "jiji"
 }
 ]

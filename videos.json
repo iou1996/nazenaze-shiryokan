@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 10:00",
+  "updated": "2026-11-14 00:30",
   "main": [
     {
       "id": "CaNFiBXahuQ",
@@ -112,6 +112,12 @@
   ],
   "jiji": [
     {
+      "id": "hI0UEPL5nFg",
+      "url": "https://www.youtube.com/watch?v=hI0UEPL5nFg",
+      "published": "2026-11-13",
+      "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】"
+    },
+    {
       "id": "kUq-M0iDhFY",
       "url": "https://www.youtube.com/watch?v=kUq-M0iDhFY",
       "published": "2026-11-11",
@@ -220,6 +226,12 @@
   ],
   "news": [
     {
+      "id": "hI0UEPL5nFg",
+      "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
+      "channel": "jiji",
+      "published": "2026-11-13"
+    },
+    {
       "id": "CaNFiBXahuQ",
       "title": "セーブを作ったのは新聞記者!? 初代セーブ王は星野仙一、なぜ今の形に？【プロ野球・MLB】",
       "channel": "main",
@@ -230,15 +242,15 @@
       "title": "そもそも「命の砂時計」ってなに？GMO会見の言葉を、砂時計の歴史と400年前の絵から調べた【時事】",
       "channel": "jiji",
       "published": "2026-11-11"
-    },
-    {
-      "id": "fU_1MIxVWZw",
-      "title": "吉井理人、近鉄・オリックス・楽天。4つのチームにいた道のり【プロ野球・MLB】",
-      "channel": "main",
-      "published": "2026-11-10"
     }
   ],
   "log": [
+    {
+      "id": "hI0UEPL5nFg",
+      "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
+      "channel": "jiji",
+      "published": "2026-11-13"
+    },
     {
       "id": "CaNFiBXahuQ",
       "title": "セーブを作ったのは新聞記者!? 初代セーブ王は星野仙一、なぜ今の形に？【プロ野球・MLB】",
