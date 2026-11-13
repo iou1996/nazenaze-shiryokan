@@ -511,7 +511,7 @@
     $('tbOv').hidden = false;
     $('tbOv').innerHTML = `<div class="tb-card">
       <div class="tb-heroes"><img src="images/chars/shima_pose2.png" alt=""><img src="images/chars/kotoni_pose3.png" alt=""></div>
-      <p class="tb-title">なぜなぜ日本一周</p>
+      <p class="tb-title">なぜなぜ日本一周 <span class="tb-soon">準備中</span></p>
       <p class="tb-how">サイコロで日本地図の上を進んで、都道府県のスタンプを集めよう。とちゅうで仲間に会ったり、モヤモヤと戦ったり。少ない日数でまわれたら上手。</p>
       ${sv ? `<button class="btn solid tb-big" id="tbCont">続きから（${esc(MODES[sv.mode].name)}・${sv.day}日め）</button>` : ''}
       <p class="tb-q2">${sv ? '新しく始める（いまの続きは消えます）' : 'どこをまわる？'}</p>

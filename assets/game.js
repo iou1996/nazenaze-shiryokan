@@ -30,7 +30,7 @@
 
   /* ゲームの一覧（一覧ページ・各ページ下の「ほかのゲーム」で使う） */
   const GAMES = [
-    { id: 'tabi', href: 'tabi.html', name: 'なぜなぜ日本一周', img: 'images/chars/shima_pose2.png', desc: 'サイコロで日本地図をめぐるすごろくRPG。続きから遊べる', best: () => { const n = +(store.get('nz_tabi_best_all') || 0); return n ? `日本一周 ${n}日` : ''; } },
+    { id: 'tabi', href: 'tabi.html', name: 'なぜなぜ日本一周（準備中）', img: 'images/chars/shima_pose2.png', desc: 'サイコロで日本地図をめぐるすごろくRPG。続きから遊べる', best: () => { const n = +(store.get('nz_tabi_best_all') || 0); return n ? `日本一周 ${n}日` : ''; } },
     { id: 'run', href: 'run.html', name: '資料館ダッシュ', img: 'images/chars/kotoni_pose1.png', desc: '棚の間を走って「？」を集めよう', best: () => { const n = Math.max(+(store.get('nz_run_best_main') || store.get('nz_run_best') || 0), +(store.get('nz_run_best_jiji') || 0)); return n ? `最高 ${n}点` : ''; } },
     { id: 'quiz', href: 'quiz.html', name: 'なぜなぜクイズ', img: face('kotoni', 4), desc: '動画で話した「なぜ？」を3択で。1回5問', best: () => { const n = Math.max(+(store.get('nz_quiz_best_main') || 0), +(store.get('nz_quiz_best_jiji') || 0)); return n ? `最高 ${n}問正解` : ''; } },
     { id: 'daily', href: 'daily.html', name: '今日の1問', img: face('shima', 1), desc: '1日1問だけ。毎日つづけて記録をのばそう', best: () => { const n = Math.max(+(store.get('nz_daily_streak_main') || 0), +(store.get('nz_daily_streak_jiji') || 0)); return n ? `${n}日連続` : ''; } },

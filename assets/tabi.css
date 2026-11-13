@@ -96,3 +96,7 @@
   .tb-mapbtn { top: auto; bottom: 6px; right: 6px; left: 6px; flex-direction: row; justify-content: flex-end; gap: 4px; }
   .tb-mapbtn button { min-width: 0; padding: 6px 7px; font-size: .72rem; box-shadow: 1px 1px 0 var(--ink); }
 }
+
+/* 準備中の札 */
+.tb-soon { display: inline-block; vertical-align: middle; font-size: .55em; color: var(--paper); background: var(--sub, #6b6860); padding: 2px 8px 1px; border-radius: 3px; letter-spacing: .05em; transform: rotate(-2deg); }
+.tb-soon-note { margin: -4px 0 10px; font-size: .88rem; color: var(--sub); border-left: 3px solid var(--red); padding-left: 8px; }
