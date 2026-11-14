@@ -1,6 +1,12 @@
 {
-  "updated": "2026-11-14 09:51",
+  "updated": "2026-11-15 00:30",
   "main": [
+    {
+      "id": "LwcWWJurZxU",
+      "url": "https://www.youtube.com/watch?v=LwcWWJurZxU",
+      "published": "2026-11-14",
+      "title": "稲尾和久はなぜ「神様」と呼ばれた？3連敗から4連勝の日本シリーズ【プロ野球】"
+    },
     {
       "id": "CaNFiBXahuQ",
       "url": "https://www.youtube.com/watch?v=CaNFiBXahuQ",
@@ -226,6 +232,12 @@
   ],
   "news": [
     {
+      "id": "LwcWWJurZxU",
+      "title": "稲尾和久はなぜ「神様」と呼ばれた？3連敗から4連勝の日本シリーズ【プロ野球】",
+      "channel": "main",
+      "published": "2026-11-14"
+    },
+    {
       "id": "hI0UEPL5nFg",
       "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
       "channel": "jiji",
@@ -236,15 +248,15 @@
       "title": "セーブを作ったのは新聞記者!? 初代セーブ王は星野仙一、なぜ今の形に？【プロ野球・MLB】",
       "channel": "main",
       "published": "2026-11-12"
-    },
-    {
-      "id": "kUq-M0iDhFY",
-      "title": "そもそも「命の砂時計」ってなに？GMO会見の言葉を、砂時計の歴史と400年前の絵から調べた【時事】",
-      "channel": "jiji",
-      "published": "2026-11-11"
     }
   ],
   "log": [
+    {
+      "id": "LwcWWJurZxU",
+      "title": "稲尾和久はなぜ「神様」と呼ばれた？3連敗から4連勝の日本シリーズ【プロ野球】",
+      "channel": "main",
+      "published": "2026-11-14"
+    },
     {
       "id": "hI0UEPL5nFg",
       "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
