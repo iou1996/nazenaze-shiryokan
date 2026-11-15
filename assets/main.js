@@ -220,12 +220,23 @@
             const all = items.filter(x => x[0] === i);
             const hit = all.filter(x => (cur === 'all' || x[2] === cur) && (!k || (pref + x[1]).includes(k)));
             if (!hit.length) return;
-            const l = all.filter(x => x[2] === 2).length, p = all.filter(x => x[2] === 1).length;
-            html += `<div class="mp"><h3>${esc(pref)}<small>降り立った ${l}・通過 ${p} / ${all.length}</small></h3><div class="mt">`
+            const l = all.filter(x => x[2] === 2).length, p = all.filter(x => x[2] === 1).length, r = all.length - l - p;
+            html += `<div class="mp" id="mp${i}"><h3>${esc(pref)}<small>${all.length}市区町村・降り立った ${l}・通過 ${p}・</small><b class="rest${r ? '' : ' zero'}">${r ? '残り ' + r : '制覇'}</b></h3><div class="mt">`
               + hit.map(x => `<span class="m s${x[2]}" title="${LABEL[x[2]]}">${esc(x[1])}</span>`).join('') + '</div></div>';
           });
           box.innerHTML = html || '<div class="empty">見つかりませんでした。</div>';
         };
+        // 県ごとの早見表（残りの数）。押すとその県へ
+        const sum = document.getElementById('muniSum');
+        sum.innerHTML = P.map((pref, i) => {
+          const all = items.filter(x => x[0] === i), r = all.filter(x => x[2] === 0).length;
+          return `<button type="button" data-i="${i}" class="${r ? '' : 'zero'}"><span>${esc(pref.replace(/[都府県]$/, ''))}</span><b>${r ? r : '制覇'}</b></button>`;
+        }).join('');
+        sum.addEventListener('click', e => {
+          const b = e.target.closest('button'); if (!b) return;
+          if (cur !== 'all' || q.value) { q.value = ''; cur = 'all'; chips.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x.dataset.s === 'all')); draw(); }
+          const t = document.getElementById('mp' + b.dataset.i); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
         chips.addEventListener('click', e => {
           const b = e.target.closest('button'); if (!b) return;
           cur = b.dataset.s === 'all' ? 'all' : +b.dataset.s;
@@ -293,11 +304,15 @@
       // 鉄道：会社ごとにたたむ。検索したら当たった会社を開く
       // 鉄道：まだ乗っていない区間 → 会社の種類ごと（距離の長い順）→ 開くと路線ごと
       const cos = d.rail.companies;
-      const unr = d.rail.unridden || [];
-      if (unr.length) {
+      // 不通で復旧待ちの区間は、区間数・キロ・完乗率の計算から外す（本人 2026-11-15）
+      const SUSP = { '肥薩線': '不通（2033年度ごろ復旧予定）のため、計算から外しています' };
+      const unrAll = d.rail.unridden || [];
+      const unr = unrAll.filter(u => !SUSP[u[1]]), susp = unrAll.filter(u => SUSP[u[1]]);
+      if (unrAll.length) {
         const ukm = unr.reduce((a, u) => a + u[4], 0);
         document.getElementById('railUnr').innerHTML = `<h4>まだ乗っていない区間 <small>${unr.length}区間・${ukm.toFixed(1)}km</small></h4><ul>` +
-          unr.map(u => `<li><b>${esc(u[0])}</b><span class="ln">${esc(u[1])}</span><span class="sec">${esc(u[2])} 〜 ${esc(u[3])}</span><span class="km">${u[4].toFixed(1)}km</span></li>`).join('') + '</ul>';
+          unr.map(u => `<li><b>${esc(u[0])}</b><span class="ln">${esc(u[1])}</span><span class="sec">${esc(u[2])} 〜 ${esc(u[3])}</span><span class="km">${u[4].toFixed(1)}km</span></li>`).join('') + '</ul>'
+          + (susp.length ? '<ul class="susp">' + susp.map(u => `<li><b>${esc(u[0])}</b><span class="ln">${esc(u[1])}</span><span class="sec">${esc(u[2])} 〜 ${esc(u[3])}</span><span class="km">${u[4].toFixed(1)}km</span><small>${esc(SUSP[u[1]])}</small></li>`).join('') + '</ul>' : '');
       }
       const BIG = ['東武鉄道', '西武鉄道', '京成電鉄', '京王電鉄', '小田急電鉄', '東急電鉄', '京浜急行電鉄', '東京地下鉄', '相模鉄道', '名古屋鉄道', '近畿日本鉄道', '南海電気鉄道', '京阪電気鉄道', '阪急電鉄', '阪神電気鉄道', '西日本鉄道'];
       const CABLE = /鋼索|ケーブル|ロープウェイ|トロリーバス|斜坑|天橋立/;

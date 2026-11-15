@@ -444,3 +444,16 @@ body.p-search .hdr-search { background: var(--ink); color: var(--paper); }
 .munis .m.s2 { background: #f5b98a; border-color: #d99a68; }
 .munis .m.s1 { background: #fbe7bf; border-color: #e2c792; }
 .munis .m.s0 { color: var(--sub); }
+.stat .lbl.xs { font-size: .72rem; line-height: 1.5; margin-top: 6px; }
+.unr ul.susp { margin-top: 6px; opacity: .75; }
+.unr ul.susp small { grid-column: 1 / -1; color: var(--sub); font-size: .78rem; }
+/* 市区町村：県ごとの残り（2026-11-15） */
+.msum-h { font-family: var(--fh); font-size: .95rem; margin: 4px 0 8px; }
+.msum { display: grid; grid-template-columns: repeat(auto-fill, minmax(78px, 1fr)); gap: 4px; margin-bottom: 20px; }
+.msum button { cursor: pointer; display: flex; justify-content: space-between; align-items: baseline; gap: 4px; padding: 4px 7px; border: 1px solid var(--line-2); background: #fafbfc; font: inherit; font-size: .8rem; color: var(--ink); }
+.msum button b { color: var(--red); font-variant-numeric: tabular-nums; }
+.msum button.zero { background: #f5b98a; border-color: #d99a68; }
+.msum button.zero b { color: var(--ink); font-size: .72rem; }
+.munis .mp { scroll-margin-top: 80px; }
+.munis .mp h3 .rest { font-size: .85rem; color: var(--red); }
+.munis .mp h3 .rest.zero { color: #c0772f; }
