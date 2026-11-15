@@ -457,3 +457,13 @@ body.p-search .hdr-search { background: var(--ink); color: var(--paper); }
 .munis .mp { scroll-margin-top: 80px; }
 .munis .mp h3 .rest { font-size: .85rem; color: var(--red); }
 .munis .mp h3 .rest.zero { color: #c0772f; }
+/* 訪問の残り｜通過の残り（2026-11-15 本人「格が違うのでわけて」） */
+.msum { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); }
+.msum button { display: grid; grid-template-columns: 1fr auto auto; column-gap: 8px; }
+.msum button b.rv-k, .msum-h .rv-k, .munis .rest.rv-k { color: var(--red); }
+.msum button b.rp-k, .msum-h .rp-k, .munis .rest.rp-k { color: #b8742f; }
+.msum button b.rp-k { font-size: .74rem; }
+.msum button.pz { background: #fbe7bf; border-color: #e2c792; }
+.msum button.zero b { color: var(--ink); }
+.munis .mp h3 .rest { margin-left: 4px; }
+.munis .mp h3 .rest.zero { color: var(--ink); background: #f5b98a; padding: 0 5px; font-size: .78rem; }

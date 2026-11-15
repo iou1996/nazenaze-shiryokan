@@ -204,11 +204,11 @@
       document.getElementById('cL').textContent = fmt(d.counts.landed);
       document.getElementById('cP').textContent = fmt(d.counts.passed);
       document.getElementById('cN').textContent = fmt(d.counts.none);
-      const FILL = ['#ffffff', '#fbe7bf', '#f5b98a'], LABEL = ['まだ', '通過', '降り立った'];
+      const FILL = ['#ffffff', '#fbe7bf', '#f5b98a'], LABEL = ['まだ', '通過', '訪問'];
       // 市区町村の一覧（1,741基準。政令市は1市）
       if (d.list) {
         const P = d.list.prefs, items = d.list.items, ST = ['all', 2, 1, 0];
-        const stName = { all: 'すべて', 2: '降り立った', 1: '通過', 0: 'まだ' };
+        const stName = { all: 'すべて', 2: '訪問', 1: '通過', 0: 'まだ' };
         const nOf = s => s === 'all' ? items.length : items.filter(x => x[2] === s).length;
         let cur = 'all';
         const chips = document.getElementById('muniSt'), q = document.getElementById('muniQ'), box = document.getElementById('muniList');
@@ -220,8 +220,9 @@
             const all = items.filter(x => x[0] === i);
             const hit = all.filter(x => (cur === 'all' || x[2] === cur) && (!k || (pref + x[1]).includes(k)));
             if (!hit.length) return;
-            const l = all.filter(x => x[2] === 2).length, p = all.filter(x => x[2] === 1).length, r = all.length - l - p;
-            html += `<div class="mp" id="mp${i}"><h3>${esc(pref)}<small>${all.length}市区町村・降り立った ${l}・通過 ${p}・</small><b class="rest${r ? '' : ' zero'}">${r ? '残り ' + r : '制覇'}</b></h3><div class="mt">`
+            const l = all.filter(x => x[2] === 2).length, p = all.filter(x => x[2] === 1).length, r = all.length - l - p, rv = all.length - l;
+            html += `<div class="mp" id="mp${i}"><h3>${esc(pref)}<small>${all.length}市区町村・訪問 ${l}・通過 ${p}</small>`
+              + `<b class="rest rv-k${rv ? '' : ' zero'}">${rv ? '訪問の残り ' + rv : '訪問制覇'}</b><b class="rest rp-k${r ? '' : ' zero'}">${r ? '通過の残り ' + r : '通過制覇'}</b></h3><div class="mt">`
               + hit.map(x => `<span class="m s${x[2]}" title="${LABEL[x[2]]}">${esc(x[1])}</span>`).join('') + '</div></div>';
           });
           box.innerHTML = html || '<div class="empty">見つかりませんでした。</div>';
@@ -229,8 +230,8 @@
         // 県ごとの早見表（残りの数）。押すとその県へ
         const sum = document.getElementById('muniSum');
         sum.innerHTML = P.map((pref, i) => {
-          const all = items.filter(x => x[0] === i), r = all.filter(x => x[2] === 0).length;
-          return `<button type="button" data-i="${i}" class="${r ? '' : 'zero'}"><span>${esc(pref.replace(/[都府県]$/, ''))}</span><b>${r ? r : '制覇'}</b></button>`;
+          const all = items.filter(x => x[0] === i), r = all.filter(x => x[2] === 0).length, rv = all.filter(x => x[2] !== 2).length;
+          return `<button type="button" data-i="${i}" class="${rv ? (r ? '' : 'pz') : 'zero'}"><span>${esc(pref.replace(/[都府県]$/, ''))}</span><b class="rv-k">${rv || '制覇'}</b><b class="rp-k">${r || '制覇'}</b></button>`;
         }).join('');
         sum.addEventListener('click', e => {
           const b = e.target.closest('button'); if (!b) return;
