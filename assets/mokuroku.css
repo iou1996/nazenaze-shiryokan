@@ -427,3 +427,20 @@ body.p-search .hdr-search { background: var(--ink); color: var(--paper); }
 .bn-intro { max-width: 720px; margin: 0 auto 28px; overflow: hidden; transition: max-height 1s ease, opacity .8s ease, margin .8s ease; line-height: 0; }
 .bn-intro video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #0b1230; border: 8px solid var(--surface); outline: 1px solid var(--line-2); box-shadow: 0 1px 0 var(--line-2), 6px 8px 0 rgba(42,32,23,.12); box-sizing: border-box; pointer-events: none; }
 .bn-intro.done { max-height: 0 !important; opacity: 0; margin-bottom: 0; }
+
+/* 踏破記録：通過の数・2色のメーター・市区町村の一覧（2026-11-15） */
+.meter.duo { display: flex; }
+.meter.duo i { flex: none; }
+.meter.duo i.pass { background: #e9b07a; }
+.stat .passed { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line-2); display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.stat .passed .k { color: var(--sub); font-size: .9rem; }
+.stat .passed b { font-family: var(--fh); color: #c0772f; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.05; font-variant-numeric: tabular-nums; }
+.stat .passed em { font-style: normal; font-weight: 700; color: #c0772f; }
+.munis { display: grid; gap: 14px; }
+.munis .mp h3 { font-family: var(--fh); font-size: 1.05rem; margin: 0 0 6px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.munis .mp h3 small { font-family: inherit; font-size: .8rem; color: var(--sub); font-weight: 400; }
+.munis .mt { display: flex; flex-wrap: wrap; gap: 4px; }
+.munis .m { font-size: .82rem; padding: 2px 7px; border: 1px solid #b9ad97; background: #fff; color: var(--ink); line-height: 1.5; }
+.munis .m.s2 { background: #f5b98a; border-color: #d99a68; }
+.munis .m.s1 { background: #fbe7bf; border-color: #e2c792; }
+.munis .m.s0 { color: var(--sub); }

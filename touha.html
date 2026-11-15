@@ -22,8 +22,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&family=Shippori+Mincho+B1:wght@700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=202611111108">
-<link rel="stylesheet" href="assets/mokuroku.css?v=202611111108">
+<link rel="stylesheet" href="assets/style.css?v=202611151316">
+<link rel="stylesheet" href="assets/mokuroku.css?v=202611151316">
 </head>
 <body>
 
@@ -57,12 +57,13 @@
         <div class="lbl">降り立った市区町村</div>
         <div>
           <div class="num"><span data-count="858">0</span><span class="of">/ 1,741</span></div>
-          <div class="meter"><i data-w="49.3"></i></div>
+          <div class="meter duo"><i data-w="49.3"></i><i class="pass" data-w="33.6"></i></div>
           <div class="lbl">全国の 49.3%</div>
+          <div class="passed"><span class="k">通過も入れると</span><b><span data-count="1443">0</span><span class="of">/ 1,741</span></b><span class="k">全国の <em id="passPct">82.9</em>%</span></div>
         </div>
         <span class="go">地図で見る →</span>
       </button>
-      <button class="stat rv d1" data-go="pRail" aria-label="鉄道路線を見る：JR完乗率"><div class="num"><span data-count="99.8" data-dec="1">0</span><span class="of">%</span></div><div class="lbl">JR 完乗率</div><div class="meter"><i data-w="99.8"></i></div><span class="go">路線を見る →</span></button>
+      <button class="stat rv d1" data-go="pRail" aria-label="鉄道路線を見る：JR完乗率"><div class="num"><span data-count="99.8" data-dec="1">0</span><span class="of">%</span></div><div class="lbl">JR 完乗率</div><div class="meter"><i data-w="49.3"></i></div><span class="go">路線を見る →</span></button>
       <button class="stat rv d2" data-go="pRail" aria-label="鉄道路線を見る：私鉄完乗率"><div class="num"><span data-count="99.5" data-dec="1">0</span><span class="of">%</span></div><div class="lbl">私鉄 完乗率</div><div class="meter"><i data-w="99.5"></i></div><span class="go">路線を見る →</span></button>
       <button class="stat rv d1" data-go="pStad" aria-label="スタジアムの一覧を見る"><div class="num"><span data-count="142" id="nStad">0</span><span class="of">か所</span></div><div class="lbl">訪れたスタジアム</div><span class="go">一覧を見る →</span></button>
       <button class="stat rv d2" data-go="pSki" aria-label="スキー場の一覧を見る"><div class="num"><span data-count="49" id="nSki">0</span><span class="of">か所</span></div><div class="lbl">滑ったスキー場</div><span class="go">一覧を見る →</span></button>
@@ -71,6 +72,7 @@
       <div class="tabs" role="tablist" id="logTabs">
         <span class="pill"></span>
         <button class="tab" role="tab" aria-selected="true" data-panel="pMap">地図</button>
+        <button class="tab" role="tab" aria-selected="false" data-panel="pMuni">市区町村</button>
         <button class="tab" role="tab" aria-selected="false" data-panel="pRail">鉄道路線</button>
         <button class="tab" role="tab" aria-selected="false" data-panel="pStad">スタジアム</button>
         <button class="tab" role="tab" aria-selected="false" data-panel="pSki">スキー場</button>
@@ -97,6 +99,15 @@
           </div>
         </div>
         <p class="note" style="margin-top:12px">全国の市町村1,718と東京の特別区23、あわせて1,741で数えています（政令市は1市として数え、地図は区ごとに塗っています）。北方領土は数えていません。<br>背景：<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>（白地図）。鉄道：国土数値情報（鉄道データ）（国土交通省）を加工。市区町村界：国土数値情報（行政区域データ）を加工。</p>
+      </div>
+
+      <div class="panel" id="pMuni" hidden>
+        <div class="tools">
+          <div class="chips" id="muniSt"></div>
+          <input type="search" id="muniQ" placeholder="市区町村・都道府県で探す（例：白川村、高知）">
+        </div>
+        <div class="munis" id="muniList"></div>
+        <p class="note" style="margin-top:12px">政令市は1市として数えています（地図は区ごとに塗っています）。北方領土は数えていません。</p>
       </div>
 
       <div class="panel" id="pRail" hidden>
@@ -166,7 +177,7 @@
   </div>
 </footer>
 
-<script src="assets/main.js?v=202611111108"></script>
-<script src="assets/fx.js?v=202611111108"></script>
+<script src="assets/main.js?v=202611151316"></script>
+<script src="assets/fx.js?v=202611151316"></script>
 </body>
 </html>

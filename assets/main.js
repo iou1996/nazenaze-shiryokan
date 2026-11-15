@@ -205,6 +205,36 @@
       document.getElementById('cP').textContent = fmt(d.counts.passed);
       document.getElementById('cN').textContent = fmt(d.counts.none);
       const FILL = ['#ffffff', '#fbe7bf', '#f5b98a'], LABEL = ['まだ', '通過', '降り立った'];
+      // 市区町村の一覧（1,741基準。政令市は1市）
+      if (d.list) {
+        const P = d.list.prefs, items = d.list.items, ST = ['all', 2, 1, 0];
+        const stName = { all: 'すべて', 2: '降り立った', 1: '通過', 0: 'まだ' };
+        const nOf = s => s === 'all' ? items.length : items.filter(x => x[2] === s).length;
+        let cur = 'all';
+        const chips = document.getElementById('muniSt'), q = document.getElementById('muniQ'), box = document.getElementById('muniList');
+        chips.innerHTML = ST.map(s => `<button type="button" data-s="${s}" aria-pressed="${s === 'all'}">${stName[s]} ${fmt(nOf(s))}</button>`).join('');
+        const draw = () => {
+          const k = q.value.trim();
+          let html = '';
+          P.forEach((pref, i) => {
+            const all = items.filter(x => x[0] === i);
+            const hit = all.filter(x => (cur === 'all' || x[2] === cur) && (!k || (pref + x[1]).includes(k)));
+            if (!hit.length) return;
+            const l = all.filter(x => x[2] === 2).length, p = all.filter(x => x[2] === 1).length;
+            html += `<div class="mp"><h3>${esc(pref)}<small>降り立った ${l}・通過 ${p} / ${all.length}</small></h3><div class="mt">`
+              + hit.map(x => `<span class="m s${x[2]}" title="${LABEL[x[2]]}">${esc(x[1])}</span>`).join('') + '</div></div>';
+          });
+          box.innerHTML = html || '<div class="empty">見つかりませんでした。</div>';
+        };
+        chips.addEventListener('click', e => {
+          const b = e.target.closest('button'); if (!b) return;
+          cur = b.dataset.s === 'all' ? 'all' : +b.dataset.s;
+          chips.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b));
+          draw();
+        });
+        q.addEventListener('input', draw);
+        draw();
+      }
       for (const [code, name, st, shape] of d.f) {
         if (st === 0) continue;                           // 「まだ」は白地図のまま見せる
         L.polygon(shape.map(poly => poly.map(ll)), { color: '#b9ad97', weight: 0.4, fillColor: FILL[st], fillOpacity: 0.75 })
