@@ -1,6 +1,197 @@
 {
 "episodes": [
 {
+"id": "yMl116R2olg",
+"channel": "jiji",
+"title": "エヌビディア社長が辞任　会社は終わるのか？社長が辞めた7社の3年後で確かめた【時事】",
+"lead": "エヌビディアの社長が辞任したニュースを受け、社長が辞めた7社の3年後の売上を会社の書類で比べ、社長交代だけで会社が終わるかを確かめました。答えは、終わるとしたら顧客の注文からだという見方です。",
+"points": [
+{
+"h": "7社の記録カードで比べる",
+"t": "社長が辞めた7社（アップル・マイクロソフト・ウーバー・任天堂・アマゾン・ウィーワーク・ペロトン）について、辞めた年と3年後の売上高を会社の書類で1社ずつ比べました。結果は、5社が増え、2社が減っていました。"
+},
+{
+"h": "伸びた5社の理由は社長の名前ではない",
+"t": "アップルはジョブズ氏の退任後3年でiPhoneだけで会社全体の売上に並ぶほど伸び、任天堂は岩田氏のまま6年後に3倍半になりました。マイクロソフトやウーバー、アマゾンも社長交代後に売上は増えており、動かしたのは社長の名前より欲しい商品や需要だったと見ています。"
+},
+{
+"h": "傾いた2社の理由も社長の名前ではない",
+"t": "減った2社のうち、ウィーワークは過去に結んだ賃貸契約と財務の立て直しが理由で2023年11月に経営破綻し、ペロトンは消費者の需要の減少で解約率が2年で倍になりました。どちらも会社の報告書に、辞めた社長の名前は出てきません。"
+},
+{
+"h": "エヌビディアの大口顧客と注文",
+"t": "エヌビディアの売上は、サーバーを組み立てる会社を通じて、マイクロソフト・アマゾン・グーグル・メタなどのクラウド大手に集中しています。社長の辞任より、こうした大口顧客の注文の変化のほうが売上に響くと見ています。"
+},
+{
+"h": "答え：終わるなら顧客の注文から",
+"t": "シマ先生の答えは、社長が辞めたくらいでエヌビディアは終わらない、というものです。終わるとしたら、クラウド大手など大口顧客の注文が減ったときだと見ています。"
+}
+],
+"timeline": [
+{
+"y": 1993,
+"text": "ジェンスン・フアン氏らがエヌビディアを創業した"
+},
+{
+"y": 2000,
+"m": 1,
+"text": "マイクロソフトのビル・ゲイツ氏がCEOをバルマー氏に譲った"
+},
+{
+"y": 2002,
+"m": 5,
+"text": "任天堂の社長が山内溥氏から岩田聡氏に代わった"
+},
+{
+"y": 2011,
+"m": 8,
+"text": "アップルのスティーブ・ジョブズ氏がCEOを辞任した"
+},
+{
+"y": 2017,
+"m": 6,
+"text": "ウーバーの創業者トラビス・カラニック氏がCEOを辞任した"
+},
+{
+"y": 2019,
+"m": 9,
+"text": "ウィーワークの創業者アダム・ニューマン氏がCEOを退いた"
+},
+{
+"y": 2022,
+"m": 2,
+"text": "ペロトンの共同創業者ジョン・フォーリー氏がCEOを退いた"
+},
+{
+"y": 2026,
+"m": 11,
+"d": 12,
+"text": "エヌビディアのジェンスン・フアン氏が社長・CEO・取締役を辞任した"
+}
+],
+"sources": [
+{
+"title": "エヌビディア 辞任の発表（8-K）",
+"by": "エヌビディア",
+"year": "2026",
+"url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+},
+{
+"title": "エヌビディア 年次報告書（10-K、2026年1月期）",
+"by": "エヌビディア",
+"year": "2026",
+"url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+},
+{
+"title": "エヌビディア 四半期報告書（10-Q、2026年4月期）",
+"by": "エヌビディア",
+"year": "2026",
+"url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000052/nvda-20260426.htm"
+},
+{
+"title": "エヌビディア 四半期報告書（10-Q、2026年7月期）",
+"by": "エヌビディア",
+"year": "2026",
+"url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm"
+},
+{
+"title": "NVIDIA CEOの社員向けメッセージ・取締役会の調査について",
+"by": "NBC News",
+"url": "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-investigation-rcna608148"
+},
+{
+"title": "アップル（10-K）",
+"by": "アップル",
+"url": "https://www.sec.gov/Archives/edgar/data/320193/000119312514383437/d783162d10k.htm"
+},
+{
+"title": "マイクロソフト 2003年度の決算発表",
+"by": "マイクロソフト",
+"year": "2003",
+"url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312503020704/dex991.htm"
+},
+{
+"title": "ウーバー 2020年の決算発表",
+"by": "Business Wire",
+"year": "2020",
+"url": "https://www.businesswire.com/news/home/20210210005860/en"
+},
+{
+"title": "任天堂 連結損益の推移",
+"by": "任天堂",
+"url": "https://www.nintendo.co.jp/ir/finance/historical_data/pdf/consolidated_pl1603.pdf"
+},
+{
+"title": "アマゾン CEO交代の発表",
+"by": "アマゾン",
+"year": "2021",
+"url": "https://press.aboutamazon.com/2021/2/amazon-com-announces-financial-results-and-ceo-transition"
+},
+{
+"title": "ウィーワーク 2022年第4四半期決算発表",
+"by": "ウィーワーク",
+"url": "https://www.sec.gov/Archives/edgar/data/1813756/000181375623000012/wework2022q4pressrelease.htm"
+},
+{
+"title": "ウィーワーク 経営破綻（米連邦破産法11条申請）の発表",
+"by": "ウィーワーク",
+"year": "2023",
+"url": "https://www.wework.com/newsroom/wework-takes-strategic-action-to-significantly-strengthen-balance-sheet-and-further-streamline-real-estate-footprint"
+},
+{
+"title": "ペロトン（10-K）",
+"by": "ペロトン",
+"url": "https://www.sec.gov/Archives/edgar/data/1639825/000163982523000132/pton-20230630.htm"
+},
+{
+"title": "AWSとエヌビディアの提携発表",
+"by": "エヌビディア",
+"url": "https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai"
+},
+{
+"title": "メタとエヌビディアの提携発表",
+"by": "エヌビディア",
+"url": "https://nvidianews.nvidia.com/news/meta-builds-ai-infrastructure-with-nvidia"
+},
+{
+"title": "国別のAI計算力の推計（AI Chip Imports Explorer）",
+"by": "Epoch AI",
+"url": "https://epoch.ai/latest/introducing-the-ai-chip-imports-explorer"
+},
+{
+"title": "CEO succession, strategic change, and post-succession performance: A meta-analysis",
+"by": "Schepker, D. J., et al.（The Leadership Quarterly）",
+"year": "2017"
+},
+{
+"title": "When the former CEO stays on as board chair: Effects on successor discretion, strategic change, and performance",
+"by": "Quigley, T. J., & Hambrick, D. C.（Strategic Management Journal）",
+"year": "2012"
+},
+{
+"title": "The impact of CEO turnover on equity volatility",
+"by": "Clayton, M. C., et al.（Federal Reserve Bank of New York Staff Reports, No. 166）",
+"year": "2003"
+},
+{
+"title": "Founder turnover and organizational change",
+"by": "Kim, J. D., & Kim, M.（Organization Science）",
+"year": "2024"
+},
+{
+"title": "NPOの事業承継における創設者シンドローム",
+"by": "横山恵子・小室達章・山本義郎（企業家研究）",
+"year": "2023"
+},
+{
+"title": "ImageNet classification with deep convolutional neural networks",
+"by": "Krizhevsky, A., et al.（NeurIPS 25）",
+"year": "2012"
+}
+],
+"published": "2026-11-15"
+},
+{
 "id": "LwcWWJurZxU",
 "channel": "main",
 "title": "稲尾和久はなぜ「神様」と呼ばれた？3連敗から4連勝の日本シリーズ【プロ野球】",

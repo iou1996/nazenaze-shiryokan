@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 08:50",
+  "updated": "2026-11-16 00:30",
   "main": [
     {
       "id": "LwcWWJurZxU",
@@ -118,6 +118,12 @@
   ],
   "jiji": [
     {
+      "id": "yMl116R2olg",
+      "url": "https://www.youtube.com/watch?v=yMl116R2olg",
+      "published": "2026-11-15",
+      "title": "エヌビディア社長が辞任　会社は終わるのか？社長が辞めた7社の3年後で確かめた【時事】"
+    },
+    {
       "id": "hI0UEPL5nFg",
       "url": "https://www.youtube.com/watch?v=hI0UEPL5nFg",
       "published": "2026-11-13",
@@ -215,8 +221,8 @@
       "channel": "jiji"
     },
     {
-      "id": "iQU1KUuaauQ",
-      "title": "ジャングリア沖縄、道なかば。北部の課題と1年めの数字を、自治体の目で整理【時事】",
+      "id": "hI0UEPL5nFg",
+      "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
       "channel": "jiji"
     },
     {
@@ -232,6 +238,12 @@
   ],
   "news": [
     {
+      "id": "yMl116R2olg",
+      "title": "エヌビディア社長が辞任　会社は終わるのか？社長が辞めた7社の3年後で確かめた【時事】",
+      "channel": "jiji",
+      "published": "2026-11-15"
+    },
+    {
       "id": "LwcWWJurZxU",
       "title": "稲尾和久はなぜ「神様」と呼ばれた？3連敗から4連勝の日本シリーズ【プロ野球】",
       "channel": "main",
@@ -242,15 +254,15 @@
       "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
       "channel": "jiji",
       "published": "2026-11-13"
-    },
-    {
-      "id": "CaNFiBXahuQ",
-      "title": "セーブを作ったのは新聞記者!? 初代セーブ王は星野仙一、なぜ今の形に？【プロ野球・MLB】",
-      "channel": "main",
-      "published": "2026-11-12"
     }
   ],
   "log": [
+    {
+      "id": "yMl116R2olg",
+      "title": "エヌビディア社長が辞任　会社は終わるのか？社長が辞めた7社の3年後で確かめた【時事】",
+      "channel": "jiji",
+      "published": "2026-11-15"
+    },
     {
       "id": "LwcWWJurZxU",
       "title": "稲尾和久はなぜ「神様」と呼ばれた？3連敗から4連勝の日本シリーズ【プロ野球】",
