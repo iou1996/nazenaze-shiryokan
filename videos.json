@@ -1,6 +1,12 @@
 {
-  "updated": "2026-11-16 08:56",
+  "updated": "2026-11-17 00:30",
   "main": [
+    {
+      "id": "4890HltKZM4",
+      "url": "https://www.youtube.com/watch?v=4890HltKZM4",
+      "published": "2026-11-16",
+      "title": "ファイターズはホークスに5勝18敗。29対1の2003年オリックスより一方的？【プロ野球】"
+    },
     {
       "id": "LwcWWJurZxU",
       "url": "https://www.youtube.com/watch?v=LwcWWJurZxU",
@@ -118,6 +124,12 @@
   ],
   "jiji": [
     {
+      "id": "8iC2E1WUiPs",
+      "url": "https://www.youtube.com/watch?v=8iC2E1WUiPs",
+      "published": "2026-11-16",
+      "title": "外国人労働者とどう向き合う？先行事例の群馬県大泉町から考える【時事】"
+    },
+    {
       "id": "yMl116R2olg",
       "url": "https://www.youtube.com/watch?v=yMl116R2olg",
       "published": "2026-11-15",
@@ -216,47 +228,59 @@
   ],
   "popular": [
     {
+      "id": "hI0UEPL5nFg",
+      "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
+      "channel": "jiji"
+    },
+    {
       "id": "KNN2OK7JUjg",
       "title": "ジャングリア沖縄は倒産しかない？来場は見込みの7割、海外のつまずいたパークと比べた【時事】",
       "channel": "jiji"
     },
     {
-      "id": "hI0UEPL5nFg",
-      "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
-      "channel": "jiji"
-    },
-    {
-      "id": "pduWqLeQuhc",
-      "title": "王と長嶋の番号はなぜ永久欠番？始まりは「待つための番号」【プロ野球・MLB】",
+      "id": "YIjYMYX11pQ",
+      "title": "落合博満は、なぜ日本人で初めて年俸1億円を超えたのか【1986年】",
       "channel": "main"
     },
     {
-      "id": "YIjYMYX11pQ",
-      "title": "落合博満は、なぜ日本人で初めて年俸1億円を超えたのか【1986年】",
+      "id": "coCFQUTw_Y8",
+      "title": "カープFA宣言3人は「異常事態」？宣言して残った人0人、カープのピンチをふりかえる【プロ野球】",
       "channel": "main"
     }
   ],
   "news": [
     {
+      "id": "4890HltKZM4",
+      "title": "ファイターズはホークスに5勝18敗。29対1の2003年オリックスより一方的？【プロ野球】",
+      "channel": "main",
+      "published": "2026-11-16"
+    },
+    {
+      "id": "8iC2E1WUiPs",
+      "title": "外国人労働者とどう向き合う？先行事例の群馬県大泉町から考える【時事】",
+      "channel": "jiji",
+      "published": "2026-11-16"
+    },
+    {
       "id": "yMl116R2olg",
       "title": "エヌビディア社長が辞任　会社は終わるのか？社長が辞めた7社の3年後で確かめた【時事】",
       "channel": "jiji",
       "published": "2026-11-15"
-    },
-    {
-      "id": "LwcWWJurZxU",
-      "title": "稲尾和久はなぜ「神様」と呼ばれた？3連敗から4連勝の日本シリーズ【プロ野球】",
-      "channel": "main",
-      "published": "2026-11-14"
-    },
-    {
-      "id": "hI0UEPL5nFg",
-      "title": "エスコンが来た北広島、人もお金も増えた？駅と人口と税金で答え合わせ【プロ野球・地域】",
-      "channel": "jiji",
-      "published": "2026-11-13"
     }
   ],
   "log": [
+    {
+      "id": "4890HltKZM4",
+      "title": "ファイターズはホークスに5勝18敗。29対1の2003年オリックスより一方的？【プロ野球】",
+      "channel": "main",
+      "published": "2026-11-16"
+    },
+    {
+      "id": "8iC2E1WUiPs",
+      "title": "外国人労働者とどう向き合う？先行事例の群馬県大泉町から考える【時事】",
+      "channel": "jiji",
+      "published": "2026-11-16"
+    },
     {
       "id": "yMl116R2olg",
       "title": "エヌビディア社長が辞任　会社は終わるのか？社長が辞めた7社の3年後で確かめた【時事】",
