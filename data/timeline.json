@@ -491,6 +491,12 @@
 "channel": "jiji"
 },
 {
+"y": 1981,
+"text": "サウジアラビアが国を横切る石油パイプラインを造る",
+"video": "J83cs36oS2s",
+"channel": "jiji"
+},
+{
 "y": 1982,
 "text": "ブルワーズ、アメリカン・リーグで優勝",
 "video": "VW8JoGDPAJY",
@@ -545,6 +551,12 @@
 "text": "阪神、清原選手のくじを外し遠山奬志投手を外れ1位に",
 "video": "ETPjSGwUL4U",
 "channel": "main"
+},
+{
+"y": 1985,
+"text": "サウジアラビアとイギリスが戦闘機の売買契約を結ぶ",
+"video": "J83cs36oS2s",
+"channel": "jiji"
 },
 {
 "y": 1985,
@@ -1206,9 +1218,21 @@
 "channel": "main"
 },
 {
+"y": 2014,
+"text": "イエメンの反政府勢力が首都を占領する",
+"video": "J83cs36oS2s",
+"channel": "jiji"
+},
+{
 "y": 2015,
 "text": "日本年金機構から約125万件の情報が流出",
 "video": "1ZuZd4dm6PI",
+"channel": "jiji"
+},
+{
+"y": 2015,
+"text": "サウジアラビア中心の連合軍がイエメンへの空爆を始める",
+"video": "J83cs36oS2s",
 "channel": "jiji"
 },
 {
@@ -1235,6 +1259,12 @@
 "text": "カープが25年ぶりにリーグ優勝する",
 "video": "coCFQUTw_Y8",
 "channel": "main"
+},
+{
+"y": 2016,
+"text": "サウジアラビアが石油以外の稼ぎを増やす計画を発表する",
+"video": "J83cs36oS2s",
+"channel": "jiji"
 },
 {
 "y": 2016,
@@ -1371,6 +1401,12 @@
 },
 {
 "y": 2022,
+"text": "国連の仲立ちでイエメンの戦争が停戦する",
+"video": "J83cs36oS2s",
+"channel": "jiji"
+},
+{
+"y": 2022,
 "text": "NBA全体でビル・ラッセルの6番が永久欠番に",
 "video": "pduWqLeQuhc",
 "channel": "main"
@@ -1410,6 +1446,12 @@
 "text": "吉井理人さんがWBCの投手コーチとして優勝",
 "video": "fU_1MIxVWZw",
 "channel": "main"
+},
+{
+"y": 2023,
+"text": "サウジアラビアの皇太子が大会開催の理由を語る",
+"video": "J83cs36oS2s",
+"channel": "jiji"
 },
 {
 "y": 2023,
@@ -1811,6 +1853,14 @@
 "d": 2,
 "text": "GMOの謝罪会見で熊谷代表が「命の砂時計」と話す",
 "video": "kUq-M0iDhFY",
+"channel": "jiji"
+},
+{
+"y": 2026,
+"m": 11,
+"d": 3,
+"text": "アジアカップの延期が発表される",
+"video": "J83cs36oS2s",
 "channel": "jiji"
 },
 {

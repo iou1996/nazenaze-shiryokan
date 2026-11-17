@@ -1,6 +1,185 @@
 {
 "episodes": [
 {
+"id": "J83cs36oS2s",
+"channel": "jiji",
+"title": "サウジアラビアで何が起きているのか　首都にミサイル アジアカップは11か月延期【時事】",
+"lead": "この回は「いまサウジアラビアで何が起きているのか」に答えました。アジアカップが11か月延びた理由を、石油ではなく、首都への攻撃や物価・財政など人の暮らしへの影響から確かめています。",
+"points": [
+{
+"h": "入口はアジアカップの延期",
+"t": "2027年に開催予定だったアジアカップが11か月延び、アジアサッカー連盟が挙げた理由は「地域の情勢から生じる、例外的な状況」の一言だけでした。首都リヤドには9月からミサイルが落ちています。"
+},
+{
+"h": "石油の出口が一度は全部ふさがった",
+"t": "サウジアラビアから石油が出る道は、東のホルムズ海峡と西の紅海の2つだけ。2026年9月には、西へ回すためのパイプラインも含めて3つとも一時ふさがり、輸出は年初の3割を切りました。"
+},
+{
+"h": "日付が石油説と合わない",
+"t": "9月後半には石油の輸出はむしろ戻り、延期の発表(11月3日)は、試合日程がすべて決まった(10月26日)わずか8日後でした。石油の動きだけでは、延期の理由が説明できません。"
+},
+{
+"h": "止まっているのは人の暮らし",
+"t": "8月のナジュラーン空港、10月のリヤド空港と、首都への攻撃が続いています。物の値段は上がり、国の財政赤字の見通しも拡大。隣国イエメンでは32万人が家を離れ、80万人が囲まれた町で暮らしています。"
+},
+{
+"h": "答え：石油は戻り、人の暮らしは止まったまま",
+"t": "石油の輸出はいったん回復しましたが、空港への攻撃や物価・財政への影響は続いています。延期が本当に収まったかどうかは、2027年12月に大会が実際に開けるかどうかで分かります。"
+}
+],
+"timeline": [
+{
+"y": 1981,
+"text": "サウジアラビアが国を横切る石油パイプラインを造る"
+},
+{
+"y": 1985,
+"text": "サウジアラビアとイギリスが戦闘機の売買契約を結ぶ"
+},
+{
+"y": 2014,
+"text": "イエメンの反政府勢力が首都を占領する"
+},
+{
+"y": 2015,
+"text": "サウジアラビア中心の連合軍がイエメンへの空爆を始める"
+},
+{
+"y": 2016,
+"text": "サウジアラビアが石油以外の稼ぎを増やす計画を発表する"
+},
+{
+"y": 2022,
+"text": "国連の仲立ちでイエメンの戦争が停戦する"
+},
+{
+"y": 2023,
+"text": "サウジアラビアの皇太子が大会開催の理由を語る"
+},
+{
+"y": 2026,
+"m": 11,
+"d": 3,
+"text": "アジアカップの延期が発表される"
+}
+],
+"sources": [
+{
+"title": "延期の発表",
+"by": "AFC（アジアサッカー連盟）",
+"url": "https://www.the-afc.com/en/national/afc_asian_cup.html/news/important-update-afc-asian-cup-saudi-arabia-2027%E2%84%A2"
+},
+{
+"title": "試合日程の確定",
+"by": "AFC（アジアサッカー連盟）",
+"url": "https://www.the-afc.com/en/national/afc_asian_cup.html/news/match-schedule-finalised-asiancup2027"
+},
+{
+"title": "ナジュラーン空港への攻撃に関する談話",
+"by": "外務省",
+"year": "2026",
+"url": "https://www.mofa.go.jp/mofaj/press/danwa/pageit_000001_00055.html"
+},
+{
+"title": "ホルムズ海峡での監視強化と石油流出の急減",
+"by": "アルジャジーラ",
+"year": "2026",
+"url": "https://www.aljazeera.com/news/2026/10/14/iran-steps-up-hormuz-surveillance-attacks-soar-oil-flows-crash-again"
+},
+{
+"title": "財政赤字の見通し",
+"by": "MUFGリサーチ",
+"year": "2026",
+"url": "https://mufgresearch.com/macro/middle-east-daily-01-october-2026/"
+},
+{
+"title": "イエメン人道対応計画2026",
+"by": "国連人道問題調整事務所",
+"year": "2026",
+"url": "https://yemen.un.org/en/312711-ocha-yemen-yemen-humanitarian-needs-and-response-plan-2026-march-2026"
+},
+{
+"title": "ネオム「ザ・ライン」の工事停止",
+"by": "Semafor",
+"year": "2026",
+"url": "https://www.semafor.com/article/05/22/2026/saudis-neom-halts-work-on-the-line-until-after-2030"
+},
+{
+"title": "リヤド空港への攻撃",
+"by": "アルジャジーラ",
+"year": "2026",
+"url": "https://www.aljazeera.com/news/2026/10/11/world-condemns-deadly-houthi-attack-on-saudi-arabias-riyadh-airport"
+},
+{
+"title": "ミサイルの迎撃",
+"by": "The National",
+"year": "2026",
+"url": "https://www.thenationalnews.com/news/gulf/2026/11/08/saudi-led-coalition-intercepts-two-houthi-missiles-fired-towards-riyadh/"
+},
+{
+"title": "イエメン側の死者（サウジの攻撃による33人、反政府勢力側の発表）",
+"by": "The New Arab",
+"year": "2026",
+"url": "https://www.newarab.com/news/houthis-say-33-killed-saudi-strikes-yemens-sanaa-province"
+},
+{
+"title": "国連特使「全面戦争に戻った」",
+"by": "アルジャジーラ",
+"year": "2026",
+"url": "https://www.aljazeera.com/news/2026/10/9/un-envoy-warns-yemen-has-returned-to-full-scale-war-urges-dialogue"
+},
+{
+"title": "人の被害と封鎖",
+"by": "アルジャジーラ",
+"year": "2026",
+"url": "https://www.aljazeera.com/news/2026/11/7/dozens-killed-as-humanitarian-crisis-mounts-in-yemen-what-next-for-war"
+},
+{
+"title": "石油輸出が戦争開始以来の高水準に回復",
+"by": "CNBC",
+"year": "2026",
+"url": "https://www.cnbc.com/2026/09/25/saudi-arabia-oil-iran-war-pipeline-strait-hormuz-red-sea-houthis.html"
+},
+{
+"title": "2026年Article IV協議",
+"by": "IMF",
+"year": "2026",
+"url": "https://www.imf.org/en/news/articles/2026/07/29/pr26267-saudi-arabia-imf-concludes-2026-aiv"
+},
+{
+"title": "SIPRIの武器輸入データ（サウジアラビアが最大の受け手）",
+"by": "The National",
+"year": "2026",
+"url": "https://www.thenationalnews.com/business/2026/03/08/us-tops-global-arms-supply-with-saudi-arabia-the-main-recipient-sipri-data-finds"
+},
+{
+"title": "皇太子のスポーツウォッシング発言",
+"by": "ESPN",
+"year": "2023",
+"url": "https://global.espn.com/golf/story/_/id/38457576/mohammed-bin-salman-says-saudis-continue-sportwashing"
+},
+{
+"title": "石油の国家備蓄の放出決定",
+"by": "経済産業省",
+"year": "2026",
+"url": "https://www.meti.go.jp/press/2025/03/20260316005/20260316005.html"
+},
+{
+"title": "石油備蓄の放出",
+"by": "JOGMEC",
+"year": "2026",
+"url": "https://www.jogmec.go.jp/news/release/release_01248.html"
+},
+{
+"title": "石油備蓄の第2弾放出",
+"by": "経済産業省",
+"year": "2026",
+"url": "https://www.meti.go.jp/press/2026/04/20260415002/20260415002.html"
+}
+],
+"published": "2026-11-17"
+},
+{
 "id": "4890HltKZM4",
 "channel": "main",
 "title": "ファイターズはホークスに5勝18敗。29対1の2003年オリックスより一方的？【プロ野球】",
