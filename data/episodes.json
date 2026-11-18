@@ -1,6 +1,328 @@
 {
 "episodes": [
 {
+"id": "AawE8E3IyL0",
+"channel": "main",
+"title": "ピッチクロック、日本でもいよいよ導入？アメリカは試合が24分短くなった【プロ野球・MLB】",
+"lead": "2026年8月、日本のプロ野球もピッチクロックの導入を決めました。アメリカでは2023年に入って、試合の平均が24分も短くなっています。置いたのはピッチャーを急かす時計1つだけなのに、なぜそんなに縮んだのかを、数えて確かめます。",
+"points": [
+{
+"h": "試合は24分短くなった",
+"t": "メジャーの9回で終わった試合の平均は、2022年が3時間4分、ピッチクロックが入った2023年は2時間40分でした。そのあとも2時間40分前後が続いています。日本とメジャーは2021年までほぼ同じ長さでしたが、2023年から日本のほうが27分長くなりました。"
+},
+{
+"h": "決まりは1901年からあった",
+"t": "じつは1901年に「20秒をこえて投げなければボール」という決まりがありました。それでもメジャーの試合は長くなり続け、2021年が3時間10分でいちばん長い年でした。決まりはあっても、ほとんど使われていませんでした。"
+},
+{
+"h": "足りなかったのは時計と罰",
+"t": "メジャーは1960年や1965年にも時計を試しましたが、見せるだけで役に立ちませんでした。日本も2008年から15秒の申し合わせがありましたが、球場に時計はありませんでした。2023年のメジャーは、ピッチクロックと、0になったら自動でボールやストライクが増えるペナルティを、両方そろえました。"
+},
+{
+"h": "日本も導入が決まった",
+"t": "2026年8月、NPBと12球団の実行委員会が導入を全会一致で決めました。いつから、何秒にするかは、まだ決まっていません。メジャーよりゆるい秒数で入れた韓国でも13分ほど短くなっていて、どれだけ縮むかは1球が何秒縮むかで変わります。"
+},
+{
+"h": "答え：3秒が295球ぶん",
+"t": "1球を投げてから次に投げるまでの間は、2022年の19.9秒から2023年は16.7秒へ、3.2秒縮みました。1試合の球数は約295球で変わっていないので、3.2秒かける295球で、だいたい16分です。残りは打者の入れかわりなどほかの間で、24分の全部がピッチクロックの分とは言えません。"
+}
+],
+"timeline": [
+{
+"y": 1901,
+"text": "メジャーに「20秒で投げなければボール」の決まり"
+},
+{
+"y": 1954,
+"text": "NBAが24秒のショットクロックを入れる"
+},
+{
+"y": 1960,
+"text": "ホワイトソックスのビル・ベックさんが球場に時計を置く"
+},
+{
+"y": 1965,
+"text": "メジャーが見せるだけの時計を試し、2試合で33回の違反"
+},
+{
+"y": 2008,
+"text": "日本のプロ野球で「ランナーなし15秒」の申し合わせが始まる"
+},
+{
+"y": 2022,
+"text": "マイナーリーグがピッチクロックを入れ、平均26分短くなる"
+},
+{
+"y": 2023,
+"text": "メジャーがピッチクロックと自動のペナルティを入れる"
+},
+{
+"y": 2026,
+"m": 8,
+"d": 3,
+"text": "NPBと12球団がピッチクロックの導入を決める"
+}
+],
+"sources": [
+{
+"title": "MLB規則（ピッチクロック）",
+"by": "MLB選手会",
+"url": "https://www.mlbplayers.com/_files/ugd/4d23dc_e2a4a105547247f598e81bc67dbea27b.pdf"
+},
+{
+"title": "2026年の試合時間とABSの61秒",
+"by": "AP",
+"year": "2026",
+"url": "https://www.clickorlando.com/sports/2026/09/28/mlb-average-game-time-up-nearly-4-minutes-to-242-partly-because-of-robot-umpires/"
+},
+{
+"title": "ピッチクロックの違反の数",
+"by": "AP",
+"year": "2026",
+"url": "https://www.news4jax.com/sports/2026/10/05/shane-baz-leads-pitch-clock-violations-for-2nd-straight-season-and-jose-caballero-tops-batters/"
+},
+{
+"title": "2023年の盗塁の増え方",
+"by": "MLB",
+"year": "2023",
+"url": "https://www.mlb.com/news/mlb-stolen-base-increase-in-2023-breakdown"
+},
+{
+"title": "マイナーリーグで26分短縮",
+"by": "Front Office Sports",
+"url": "https://frontofficesports.com/mlb-to-implement-rule-changes"
+},
+{
+"title": "ピッチクロックの歴史",
+"by": "The Ringer",
+"year": "2023",
+"url": "https://www.theringer.com/2023/03/29/mlb/the-forgotten-history-of-the-pitch-clock-in-baseball"
+},
+{
+"title": "2008年の試合時間短縮の申し合わせ",
+"by": "日本野球機構（NPB）",
+"year": "2008",
+"url": "https://npb.jp/gbp/2008/tanshuku.html"
+},
+{
+"title": "2009年の試合時間短縮の申し合わせ",
+"by": "日本野球機構（NPB）",
+"year": "2009",
+"url": "https://npb.jp/gbp/2009/tanshuku.html"
+},
+{
+"title": "15秒はストップウォッチで計っていた",
+"by": "ベースボールチャンネル",
+"url": "https://www.baseballchannel.jp/npb/42562/6/"
+},
+{
+"title": "日本のピッチクロック導入の決定（2026年8月3日）",
+"by": "NHK",
+"year": "2026",
+"url": "https://news.web.nhk/newsweb/na/na-k10015195221000"
+},
+{
+"title": "中村勝彦事務局長と近藤健介選手の言葉（2026年8月3日）",
+"by": "デイリースポーツ",
+"year": "2026",
+"url": "https://www.daily.co.jp/baseball/2026/08/03/0020666150.shtml"
+},
+{
+"title": "選手会の決議（2026年7月28日）",
+"by": "熊本日日新聞（共同通信）",
+"year": "2026",
+"url": "https://kumanichi.com/articles/2018637"
+},
+{
+"title": "平良海馬選手の言葉",
+"by": "ベースボールチャンネル",
+"year": "2025",
+"url": "https://www.baseballchannel.jp/japan/239885/"
+},
+{
+"title": "韓国プロ野球で13分短縮",
+"by": "Korea Times",
+"year": "2025",
+"url": "https://www.koreatimes.co.kr/sports/20250508/average-kbo-game-time-drops-13-minutes-in-1st-year-of-pitch-clock"
+},
+{
+"title": "平均試合時間",
+"by": "日本野球機構（NPB）",
+"year": "2026",
+"url": "https://npb.jp/statistics/2026/time.html"
+},
+{
+"title": "Pitch Tempo（1球の間の秒数）",
+"by": "Baseball Savant",
+"url": "https://baseballsavant.mlb.com/leaderboard/pitch-tempo"
+},
+{
+"title": "メジャーの試合時間の計算に使ったゲームログ",
+"by": "Retrosheet",
+"url": "https://www.retrosheet.org"
+}
+],
+"published": "2026-11-18"
+},
+{
+"id": "DLQXzVG6JfI",
+"channel": "jiji",
+"title": "関空〜米子に飛行機が復活？ 新幹線・特急に勝てるのか、挑戦する新会社ジェイキャスを検証【時事】",
+"lead": "新しい航空会社ジェイキャスエアウェイズが、関西空港と鳥取県の米子を結ぶ飛行機を2028年の春に飛ばしたいと、国へ許可を申請しました。新幹線と特急で行ける距離なのに、なぜ飛行機なのか。時間や採算の疑問をぶつけながら、それでも応援したくなる理由を探します。",
+"points": [
+{
+"h": "大阪方面の便は一度ゼロに",
+"t": "米子と大阪を結ぶ路線は1939年にでき、形を変えながら1990年代の終わりごろまで飛んでいました。関西空港から米子への便も1年ちょっとで運休し、富山と関西空港の路線も約2年半で休止しています。いま米子の国内線は羽田だけ、富山は羽田と新千歳だけです。"
+},
+{
+"h": "時間は少し有利だった",
+"t": "飛んでいる時間は約40分ですが、空港まで行って待つ時間も必要です。大阪駅から関西空港へ特急で行き、出発の30分前に着く前提で足すと、米子駅まで約2時間半でした。うまく乗り継げた鉄道の3時間くらいより30分ほど短く、関西空港に着いた人なら差はもっと広がります。"
+},
+{
+"h": "なぜ米子と富山なのか",
+"t": "創業者の白根清司さんはJAL出身で、交通の格差を直したいと話しています。会社は大手の就航状況や新幹線、長距離バスの動きを見て、競合しない路線を探したと説明しています。2024年には富山の12社と山陰の9社が合わせて5億円ほど出し、地元の企業が挑戦を支えています。"
+},
+{
+"h": "飛行機の商売は難しい",
+"t": "IATAの2026年6月の見通しでは、世界の航空会社の利益は売り上げの約2%でした。新潟のトキエアは同じ72席のプロペラ機で2024年に就航し、レキオス航空は一度も営業運航をしていません。国の運航費の補助は離島の路線が対象で、米子や富山は対象外と読めます。"
+},
+{
+"h": "答え：新しい選択肢になるか",
+"t": "近いから飛ばないのではなく、近い所に新しい選択肢ができるかどうかが、この飛行機の意味です。鳥取県の外国人の宿泊は2025年に約7割増え、関西空港に着いた人がそのまま米子へ飛べる道になります。ただ、時刻表も国の許可も機体も、これから決まることばかりです。"
+}
+],
+"timeline": [
+{
+"y": 1939,
+"text": "米子と大阪を結ぶ航空路線ができる"
+},
+{
+"y": 2014,
+"text": "橋本安男さんらが地方の航空路線の論文を出す"
+},
+{
+"y": 2019,
+"text": "白根清司さん、関西〜富山線は採算が合うと語る"
+},
+{
+"y": 2022,
+"text": "ジェイキャス、富山県の起業支援に選ばれる（2022年度）"
+},
+{
+"y": 2024,
+"text": "富山と山陰の21社がジェイキャスに5億円ほど出資"
+},
+{
+"y": 2026,
+"m": 6,
+"text": "IATA、世界の航空会社の利益率を売上の約2%と見通す"
+}
+],
+"sources": [
+{
+"title": "航空運送事業の許可申請を実施",
+"by": "ジェイキャスエアウェイズ",
+"year": "2026",
+"url": "https://www.jcas.co.jp/"
+},
+{
+"title": "白根清司さん・梅本祐紀さんのインタビュー",
+"by": "創業手帳",
+"year": "2026",
+"url": "https://sogyotecho.jp/jcas-airways-shirane-umemoto-interview/"
+},
+{
+"title": "関空ー米子便2028年春の運航開始へ",
+"by": "TSKさんいん中央テレビ",
+"year": "2026",
+"url": "https://news.yahoo.co.jp/articles/2dd48d4f29627e1237510210ff59908acbee4168"
+},
+{
+"title": "白根清司さんの経歴と関西〜富山線の構想",
+"by": "Aviation Wire",
+"year": "2019",
+"url": "https://www.aviationwire.jp/archives/188614/print/"
+},
+{
+"title": "富山と山陰の企業からの出資",
+"by": "THE BRIDGE",
+"year": "2024",
+"url": "https://thebridge.jp/2024/11/regional-airline-jcas-airways-raises-an-additional-200-million-in-funding"
+},
+{
+"title": "累計10.5億円の資金調達",
+"by": "THE BRIDGE",
+"year": "2025",
+"url": "https://thebridge.jp/2025/11/jcas-airways-raises-400-million-yen-in-pre-series-a-extension"
+},
+{
+"title": "ジェイキャスエアウェイズとの連携協定書",
+"by": "富山県",
+"year": "2024",
+"url": "https://www.pref.toyama.jp/documents/44375/kyouteisyo.pdf"
+},
+{
+"title": "T-Startup企業の選定資料",
+"by": "富山県",
+"url": "https://www.pref.toyama.jp/documents/42848/senntei.pdf"
+},
+{
+"title": "令和7年度助成事業の採択",
+"by": "北國銀行産業振興財団",
+"year": "2025",
+"url": "https://www.ccig.co.jp/news/20251202-1/"
+},
+{
+"title": "令和6年度 鳥取県空港の定期便利用状況",
+"by": "鳥取県",
+"year": "2025",
+"url": "https://www.pref.tottori.lg.jp/secure/288146/202503riyoujoukyou.pdf"
+},
+{
+"title": "2027年度の着陸料の見直し（概算要求）",
+"by": "タビリス",
+"year": "2026",
+"url": "https://tabiris.com/?p=65764"
+},
+{
+"title": "鳥取県の外国人宿泊が前年比68.0%増",
+"by": "訪日ラボ（観光庁 宿泊旅行統計調査より）",
+"year": "2026",
+"url": "https://honichi.com/news/2026/03/30/tottori-yonago/"
+},
+{
+"title": "2026年の航空会社の利益見通し（利益率約2%）",
+"by": "国際航空運送協会（IATA）",
+"year": "2026",
+"url": "https://www.iata.org/en/iata-repository/publications/economic-reports/profits-and-margins-to-shrink-in-2026-but-remain-positive/"
+},
+{
+"title": "地方航空路線の撤退要因と維持・拡充に係る研究",
+"by": "橋本安男・屋井鉄雄・伊東誠（運輸政策研究 Vol.17 No.3）",
+"year": "2014",
+"url": "https://www.jstage.jst.go.jp/article/tpsr/17/3/17_TPSR_17R_07/_article/-char/ja/"
+},
+{
+"title": "天草エアラインの経営（令和6年度の説明書類）",
+"by": "熊本県",
+"year": "2025",
+"url": "https://www.pref.kumamoto.jp/uploaded/attachment/289353.pdf"
+},
+{
+"title": "天草エアラインが累積損失を解消",
+"by": "熊本日日新聞",
+"url": "https://kumanichi.com/articles/2006756"
+},
+{
+"title": "ATR72-600のリース契約で基本合意",
+"by": "AviTrader",
+"year": "2024",
+"url": "https://avitrader.com/2024/07/29/jcas-airways-and-aviation-plc-sign-lease-agreement-for-atr-72-600-aircraft/"
+}
+],
+"published": "2026-11-18"
+},
+{
 "id": "J83cs36oS2s",
 "channel": "jiji",
 "title": "サウジアラビアで何が起きているのか　首都にミサイル アジアカップは11か月延期【時事】",

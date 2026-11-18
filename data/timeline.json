@@ -113,6 +113,12 @@
 },
 {
 "y": 1901,
+"text": "メジャーに「20秒で投げなければボール」の決まり",
+"video": "AawE8E3IyL0",
+"channel": "main"
+},
+{
+"y": 1901,
 "text": "アメリカン・リーグが始まり、ミルウォーキーの球団も加わる",
 "video": "VW8JoGDPAJY",
 "channel": "main"
@@ -231,6 +237,12 @@
 },
 {
 "y": 1939,
+"text": "米子と大阪を結ぶ航空路線ができる",
+"video": "DLQXzVG6JfI",
+"channel": "jiji"
+},
+{
+"y": 1939,
 "m": 7,
 "d": 4,
 "text": "ヤンキースがゲーリッグの4番を欠番にする",
@@ -319,6 +331,12 @@
 "channel": "main"
 },
 {
+"y": 1954,
+"text": "NBAが24秒のショットクロックを入れる",
+"video": "AawE8E3IyL0",
+"channel": "main"
+},
+{
 "y": 1956,
 "m": 3,
 "d": 21,
@@ -347,6 +365,12 @@
 "channel": "main"
 },
 {
+"y": 1960,
+"text": "ホワイトソックスのビル・ベックさんが球場に時計を置く",
+"video": "AawE8E3IyL0",
+"channel": "main"
+},
+{
 "y": 1961,
 "text": "稲尾和久、1年で42勝をあげる（今も並んで最多の記録）",
 "video": "LwcWWJurZxU",
@@ -356,6 +380,12 @@
 "y": 1963,
 "text": "工藤公康さん、名古屋市に生まれる",
 "video": "XglfLCuwIwo",
+"channel": "main"
+},
+{
+"y": 1965,
+"text": "メジャーが見せるだけの時計を試し、2試合で33回の違反",
+"video": "AawE8E3IyL0",
 "channel": "main"
 },
 {
@@ -1050,6 +1080,12 @@
 },
 {
 "y": 2008,
+"text": "日本のプロ野球で「ランナーなし15秒」の申し合わせが始まる",
+"video": "AawE8E3IyL0",
+"channel": "main"
+},
+{
+"y": 2008,
 "text": "ファン・ゾメレンらが、人が集まって動く理由の研究をまとめる",
 "video": "aNahxLI_JGc",
 "channel": "jiji"
@@ -1213,6 +1249,12 @@
 },
 {
 "y": 2014,
+"text": "橋本安男さんらが地方の航空路線の論文を出す",
+"video": "DLQXzVG6JfI",
+"channel": "jiji"
+},
+{
+"y": 2014,
 "text": "吉井理人さんが筑波大学の大学院で学び始める",
 "video": "fU_1MIxVWZw",
 "channel": "main"
@@ -1300,6 +1342,12 @@
 "m": 10,
 "text": "ファイターズの新球場の建設地が北広島に正式に決まった",
 "video": "hI0UEPL5nFg",
+"channel": "jiji"
+},
+{
+"y": 2019,
+"text": "白根清司さん、関西〜富山線は採算が合うと語る",
+"video": "DLQXzVG6JfI",
 "channel": "jiji"
 },
 {
@@ -1395,6 +1443,19 @@
 },
 {
 "y": 2022,
+"text": "マイナーリーグがピッチクロックを入れ、平均26分短くなる",
+"video": "AawE8E3IyL0",
+"channel": "main"
+},
+{
+"y": 2022,
+"text": "ジェイキャス、富山県の起業支援に選ばれる（2022年度）",
+"video": "DLQXzVG6JfI",
+"channel": "jiji",
+"fy": true
+},
+{
+"y": 2022,
 "text": "日本交通公社が観光の集まりと自治体の財政の研究を出す",
 "video": "iQU1KUuaauQ",
 "channel": "jiji"
@@ -1443,6 +1504,12 @@
 },
 {
 "y": 2023,
+"text": "メジャーがピッチクロックと自動のペナルティを入れる",
+"video": "AawE8E3IyL0",
+"channel": "main"
+},
+{
+"y": 2023,
 "text": "吉井理人さんがWBCの投手コーチとして優勝",
 "video": "fU_1MIxVWZw",
 "channel": "main"
@@ -1483,6 +1550,12 @@
 "m": 3,
 "text": "天然芝で屋根が開くエスコンフィールドHOKKAIDOが開業した",
 "video": "hI0UEPL5nFg",
+"channel": "jiji"
+},
+{
+"y": 2024,
+"text": "富山と山陰の21社がジェイキャスに5億円ほど出資",
+"video": "DLQXzVG6JfI",
 "channel": "jiji"
 },
 {
@@ -1695,6 +1768,13 @@
 {
 "y": 2026,
 "m": 6,
+"text": "IATA、世界の航空会社の利益率を売上の約2%と見通す",
+"video": "DLQXzVG6JfI",
+"channel": "jiji"
+},
+{
+"y": 2026,
+"m": 6,
 "text": "吉井理人さんが楽天の監督になる",
 "video": "fU_1MIxVWZw",
 "channel": "main"
@@ -1705,6 +1785,14 @@
 "text": "マイクロン広島工場を広げる工事が始まる",
 "video": "xWcrhveouNk",
 "channel": "jiji"
+},
+{
+"y": 2026,
+"m": 8,
+"d": 3,
+"text": "NPBと12球団がピッチクロックの導入を決める",
+"video": "AawE8E3IyL0",
+"channel": "main"
 },
 {
 "y": 2026,
