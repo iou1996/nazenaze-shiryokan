@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19 10:52",
+  "updated": "2026-11-20 00:30",
   "main": [
     {
       "id": "AawE8E3IyL0",
@@ -129,6 +129,12 @@
     }
   ],
   "jiji": [
+    {
+      "id": "tbp8k2izdig",
+      "url": "https://www.youtube.com/watch?v=tbp8k2izdig",
+      "published": "2026-11-19",
+      "title": "北見市は「夕張超え」なのか？赤字ではないのに、財政に余裕がない理由【検証】"
+    },
     {
       "id": "DLQXzVG6JfI",
       "url": "https://www.youtube.com/watch?v=DLQXzVG6JfI",
@@ -268,6 +274,12 @@
   ],
   "news": [
     {
+      "id": "tbp8k2izdig",
+      "title": "北見市は「夕張超え」なのか？赤字ではないのに、財政に余裕がない理由【検証】",
+      "channel": "jiji",
+      "published": "2026-11-19"
+    },
+    {
       "id": "AawE8E3IyL0",
       "title": "ピッチクロック、日本でもいよいよ導入？アメリカは試合が24分短くなった【プロ野球・MLB】",
       "channel": "main",
@@ -278,15 +290,15 @@
       "title": "関空〜米子に飛行機が復活？ 新幹線・特急に勝てるのか、挑戦する新会社ジェイキャスを検証【時事】",
       "channel": "jiji",
       "published": "2026-11-18"
-    },
-    {
-      "id": "J83cs36oS2s",
-      "title": "サウジアラビアで何が起きているのか　首都にミサイル アジアカップは11か月延期【時事】",
-      "channel": "jiji",
-      "published": "2026-11-17"
     }
   ],
   "log": [
+    {
+      "id": "tbp8k2izdig",
+      "title": "北見市は「夕張超え」なのか？赤字ではないのに、財政に余裕がない理由【検証】",
+      "channel": "jiji",
+      "published": "2026-11-19"
+    },
     {
       "id": "AawE8E3IyL0",
       "title": "ピッチクロック、日本でもいよいよ導入？アメリカは試合が24分短くなった【プロ野球・MLB】",

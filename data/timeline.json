@@ -1033,6 +1033,14 @@
 },
 {
 "y": 2006,
+"m": 3,
+"d": 5,
+"text": "北見市と端野町・留辺蘂町・常呂町が合併する",
+"video": "tbp8k2izdig",
+"channel": "jiji"
+},
+{
+"y": 2006,
 "m": 11,
 "text": "住民基本台帳の営利目的の閲覧ができなくなる",
 "video": "1ZuZd4dm6PI",
@@ -1384,6 +1392,12 @@
 },
 {
 "y": 2020,
+"text": "国勢調査で北見市の人口密度は1km²あたり81人",
+"video": "tbp8k2izdig",
+"channel": "jiji"
+},
+{
+"y": 2020,
 "text": "優勝したソフトバンク、コロナ対策で胴上げをせず万歳三唱",
 "video": "xEbL1BaO7Ic",
 "channel": "main"
@@ -1560,6 +1574,13 @@
 },
 {
 "y": 2024,
+"text": "北見市の将来負担比率が153.5%になる（2024年度）",
+"video": "tbp8k2izdig",
+"channel": "jiji",
+"fy": true
+},
+{
+"y": 2024,
 "text": "アイルランドでデータセンターの建設と運用が約19,500人分の仕事に",
 "video": "WhzjWRdhYCY",
 "channel": "jiji"
@@ -1615,6 +1636,13 @@
 "y": 2025,
 "text": "全国のクマの出没が約5万件で過去最多になる（2025年度）",
 "video": "N3h9Sn-gUSo",
+"channel": "jiji",
+"fy": true
+},
+{
+"y": 2025,
+"text": "北見市が予算を縮めるアクションプランを始める（2025年度）",
+"video": "tbp8k2izdig",
 "channel": "jiji",
 "fy": true
 },
@@ -1755,6 +1783,13 @@
 "m": 2,
 "text": "東京都が「東京アプリ生活応援事業」を始める",
 "video": "YOgnf4eU1eo",
+"channel": "jiji"
+},
+{
+"y": 2026,
+"m": 3,
+"text": "北見市常呂町の健康温水プールが廃止される",
+"video": "tbp8k2izdig",
 "channel": "jiji"
 },
 {
