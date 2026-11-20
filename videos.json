@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21 07:13",
+  "updated": "2026-11-21 08:03",
   "main": [
     {
       "id": "TfsxvLKaiEM",
@@ -135,6 +135,12 @@
     }
   ],
   "jiji": [
+    {
+      "id": "ZnS325xCVng",
+      "url": "https://www.youtube.com/watch?v=ZnS325xCVng",
+      "published": "2026-11-21",
+      "title": "赤い羽根2.5億円使途不明、北海道で募金4割減　守る仕組みは形だけだった【時事】"
+    },
     {
       "id": "tbp8k2izdig",
       "url": "https://www.youtube.com/watch?v=tbp8k2izdig",
@@ -280,6 +286,12 @@
   ],
   "news": [
     {
+      "id": "ZnS325xCVng",
+      "title": "赤い羽根2.5億円使途不明、北海道で募金4割減　守る仕組みは形だけだった【時事】",
+      "channel": "jiji",
+      "published": "2026-11-21"
+    },
+    {
       "id": "TfsxvLKaiEM",
       "title": "江夏豊さん死去。5回の移籍は、だれが決めた？阪神から36歳のブルワーズまで【プロ野球・MLB】",
       "channel": "main",
@@ -290,15 +302,15 @@
       "title": "北見市は「夕張超え」なのか？赤字ではないのに、財政に余裕がない理由【検証】",
       "channel": "jiji",
       "published": "2026-11-19"
-    },
-    {
-      "id": "AawE8E3IyL0",
-      "title": "ピッチクロック、日本でもいよいよ導入？アメリカは試合が24分短くなった【プロ野球・MLB】",
-      "channel": "main",
-      "published": "2026-11-18"
     }
   ],
   "log": [
+    {
+      "id": "ZnS325xCVng",
+      "title": "赤い羽根2.5億円使途不明、北海道で募金4割減　守る仕組みは形だけだった【時事】",
+      "channel": "jiji",
+      "published": "2026-11-21"
+    },
     {
       "id": "TfsxvLKaiEM",
       "title": "江夏豊さん死去。5回の移籍は、だれが決めた？阪神から36歳のブルワーズまで【プロ野球・MLB】",
