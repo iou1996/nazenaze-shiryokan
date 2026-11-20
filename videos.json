@@ -1,6 +1,12 @@
 {
-  "updated": "2026-11-20 10:45",
+  "updated": "2026-11-21 00:30",
   "main": [
+    {
+      "id": "TfsxvLKaiEM",
+      "url": "https://www.youtube.com/watch?v=TfsxvLKaiEM",
+      "published": "2026-11-20",
+      "title": "江夏豊さん死去。5回の移籍は、だれが決めた？阪神から36歳のブルワーズまで【プロ野球・MLB】"
+    },
     {
       "id": "AawE8E3IyL0",
       "url": "https://www.youtube.com/watch?v=AawE8E3IyL0",
@@ -274,6 +280,12 @@
   ],
   "news": [
     {
+      "id": "TfsxvLKaiEM",
+      "title": "江夏豊さん死去。5回の移籍は、だれが決めた？阪神から36歳のブルワーズまで【プロ野球・MLB】",
+      "channel": "main",
+      "published": "2026-11-20"
+    },
+    {
       "id": "tbp8k2izdig",
       "title": "北見市は「夕張超え」なのか？赤字ではないのに、財政に余裕がない理由【検証】",
       "channel": "jiji",
@@ -284,15 +296,15 @@
       "title": "ピッチクロック、日本でもいよいよ導入？アメリカは試合が24分短くなった【プロ野球・MLB】",
       "channel": "main",
       "published": "2026-11-18"
-    },
-    {
-      "id": "DLQXzVG6JfI",
-      "title": "関空〜米子に飛行機が復活？ 新幹線・特急に勝てるのか、挑戦する新会社ジェイキャスを検証【時事】",
-      "channel": "jiji",
-      "published": "2026-11-18"
     }
   ],
   "log": [
+    {
+      "id": "TfsxvLKaiEM",
+      "title": "江夏豊さん死去。5回の移籍は、だれが決めた？阪神から36歳のブルワーズまで【プロ野球・MLB】",
+      "channel": "main",
+      "published": "2026-11-20"
+    },
     {
       "id": "tbp8k2izdig",
       "title": "北見市は「夕張超え」なのか？赤字ではないのに、財政に余裕がない理由【検証】",
