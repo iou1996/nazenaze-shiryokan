@@ -1,6 +1,12 @@
 {
-  "updated": "2026-11-21 10:25",
+  "updated": "2026-11-22 00:31",
   "main": [
+    {
+      "id": "1NJglwC6w_I",
+      "url": "https://www.youtube.com/watch?v=1NJglwC6w_I",
+      "published": "2026-11-21",
+      "title": "「ベストナインの記者投票、名前を出すべき？三冠王・村上宗隆にも入らなかった1票【プロ野球・MLB】"
+    },
     {
       "id": "TfsxvLKaiEM",
       "url": "https://www.youtube.com/watch?v=TfsxvLKaiEM",
@@ -286,6 +292,12 @@
   ],
   "news": [
     {
+      "id": "1NJglwC6w_I",
+      "title": "「ベストナインの記者投票、名前を出すべき？三冠王・村上宗隆にも入らなかった1票【プロ野球・MLB】",
+      "channel": "main",
+      "published": "2026-11-21"
+    },
+    {
       "id": "ZnS325xCVng",
       "title": "赤い羽根2.5億円使途不明、北海道で募金4割減　守る仕組みは形だけだった【時事】",
       "channel": "jiji",
@@ -296,12 +308,6 @@
       "title": "江夏豊さん死去。5回の移籍は、だれが決めた？阪神から36歳のブルワーズまで【プロ野球・MLB】",
       "channel": "main",
       "published": "2026-11-20"
-    },
-    {
-      "id": "tbp8k2izdig",
-      "title": "北見市は「夕張超え」なのか？赤字ではないのに、財政に余裕がない理由【検証】",
-      "channel": "jiji",
-      "published": "2026-11-19"
     }
   ],
   "log": [
@@ -309,6 +315,12 @@
       "id": "ZnS325xCVng",
       "title": "赤い羽根2.5億円使途不明、北海道で募金4割減　守る仕組みは形だけだった【時事】",
       "channel": "jiji",
+      "published": "2026-11-21"
+    },
+    {
+      "id": "1NJglwC6w_I",
+      "title": "「ベストナインの記者投票、名前を出すべき？三冠王・村上宗隆にも入らなかった1票【プロ野球・MLB】",
+      "channel": "main",
       "published": "2026-11-21"
     },
     {

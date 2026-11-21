@@ -1,6 +1,361 @@
 {
 "episodes": [
 {
+"id": "1NJglwC6w_I",
+"channel": "main",
+"title": "「ベストナインの記者投票、名前を出すべき？三冠王・村上宗隆にも入らなかった1票【プロ野球・MLB】",
+"lead": "この回は「三冠王に入らなかった1票を、なぜだれも説明しなくていいのか」に答えました。答えは、投票した記者の名前が出ないからです。アメリカのMVPは記者の名前つきで全部の票を公開していて、公開を始めてから満票が増えました。",
+"points": [
+{
+"h": "三冠王に入らなかった1票",
+"t": "2022年、三冠王だったヤクルトの村上宗隆選手に、ベストナインの三塁手で1票だけ入りませんでした。有効299票のうち298票が村上選手、1票はDeNAの宮﨑敏郎選手です。宮﨑選手は首位打者を2回とった名手ですが、三冠王より上と言える理由は出ていません。だれが入れたのかも、理由があったのかさえ分かりません。"
+},
+{
+"h": "1人だけの1票は毎年ある",
+"t": "10年分のベストナインで、1人だけが入れた1票を数えると10年で248ありました。毎年、1クラス分くらいあります。名選手への1票も多いのですが、2022年には外野を7試合しか守っていない選手にも1票が入りました。理由が出ないので、いい1票か「えっ」の1票か、外からは見分けがつきません。"
+},
+{
+"h": "出てくるのは票の数だけ",
+"t": "選ぶのはプロ野球を長く取材してきた記者で、ベストナインでは社名と自分の名前も書くと報じられています。それでも発表されるのは、選手ごとの票の数だけです。2019年のゴールデン・グラブ賞も、坂本勇人選手167票・京田陽太選手110票という数しか出ません。記者の側からも、投票内容を公開すべきだという声が出ています。"
+},
+{
+"h": "アメリカは名前つきで全部出す",
+"t": "アメリカのMVPは、30人の記者がだれに何位を入れたかを名前つきで全部公開します。2012年に全部出すようになってから満票が増え、2026年は両リーグとも全員一致でした。公開された票は検算もできます。2019年のサイ・ヤング賞では得票表の誤りが見つかり、出来高が10万ドル変わるところでした。"
+},
+{
+"h": "答え：名前が出ないから、説明しなくていい",
+"t": "名前が出ないから、あの1票はだれも説明しなくてよいままです。名前を出すと悪口を受ける、取材先の顔色をうかがう、という反対もありますが、殿堂入りでは8割の記者が自分から公開しています。先生なら3つ変えます。名前つきで全部出す、1票ごとに理由をひとこと、ファンが加われる場を足す、です。"
+}
+],
+"timeline": [
+{
+"y": 1993,
+"text": "アメリカの中央銀行が会議の発言の全文公開を決める"
+},
+{
+"y": 2012,
+"text": "アメリカのMVP投票で全員の票が公開されるようになる"
+},
+{
+"y": 2017,
+"text": "記者の鷲田康さんが投票内容の公開を求める記事を書く"
+},
+{
+"y": 2019,
+"text": "サイ・ヤング賞の得票表の誤りが検算で見つかる"
+},
+{
+"y": 2022,
+"text": "三冠王の村上宗隆選手がベストナインで1票足りない"
+},
+{
+"y": 2023,
+"text": "山本由伸選手がベストナインで満票に1票足りない"
+},
+{
+"y": 2025,
+"text": "イチロー選手が殿堂入りも満票に1票届かない"
+},
+{
+"y": 2026,
+"text": "アメリカのMVPが両リーグとも全員一致で決まる"
+}
+],
+"sources": [
+{
+"title": "ベストナイン投票結果（2022年）",
+"by": "NPB",
+"year": "2022",
+"url": "https://npb.jp/award/2022/voting_bt9.html"
+},
+{
+"title": "ベストナイン投票結果（2023年）",
+"by": "NPB",
+"year": "2023",
+"url": "https://npb.jp/award/2023/voting_bt9.html"
+},
+{
+"title": "三井ゴールデン・グラブ賞投票結果（2019年）",
+"by": "NPB",
+"year": "2019",
+"url": "https://npb.jp/award/2019/voting_glove.html"
+},
+{
+"title": "三井ゴールデン・グラブ賞投票結果（2026年）",
+"by": "NPB",
+"year": "2026",
+"url": "https://npb.jp/award/2026/voting_glove.html"
+},
+{
+"title": "投票のしくみと記者の案",
+"by": "デイリースポーツ",
+"year": "2023",
+"url": "https://www.daily.co.jp/opinion-d/2023/11/29/0017077019.shtml"
+},
+{
+"title": "ベストナインの1票",
+"by": "日刊ゲンダイ",
+"year": "2024",
+"url": "https://www.nikkan-gendai.com/articles/view/sports/363987"
+},
+{
+"title": "投票内容を公開すべきだろう（鷲田康）",
+"by": "Number Web",
+"year": "2017",
+"url": "https://number.bunshun.jp/articles/-/829364"
+},
+{
+"title": "満票を避ける記者の心理",
+"by": "SPREAD",
+"year": "2022",
+"url": "https://spread-sports.jp/archives/171951"
+},
+{
+"title": "投票のQ&A",
+"by": "BBWAA",
+"url": "https://bbwaa.com/voting-faq/"
+},
+{
+"title": "2026年 ア・リーグMVP投票結果",
+"by": "BBWAA",
+"year": "2026",
+"url": "https://bbwaa.com/26-al-mvp/"
+},
+{
+"title": "2026年 ナ・リーグMVP投票結果",
+"by": "BBWAA",
+"year": "2026",
+"url": "https://bbwaa.com/26-nl-mvp/"
+},
+{
+"title": "イチロー選手の公開された321票",
+"by": "AP",
+"year": "2025",
+"url": "https://www.wsls.com/sports/2025/02/04/voter-who-passed-on-ichiro-for-hall-of-fame-still-a-mystery-after-321-of-394-ballots-released/"
+},
+{
+"title": "2019年サイ・ヤング賞の集計の直し",
+"by": "Yahoo Sports",
+"year": "2019",
+"url": "https://sports.yahoo.com/max-scherzer-loses-100-k-on-cy-young-recount-014502537.html"
+},
+{
+"title": "2022年の労使協定のボーナス",
+"by": "Fox 32",
+"year": "2022",
+"url": "https://www.fox32chicago.com/sports/cease-alvarez-manoah-receive-top-bonus-from-new-50m-pool"
+},
+{
+"title": "殿堂入りの公開した票と、しなかった票",
+"by": "Awful Announcing",
+"url": "https://awfulannouncing.com/mlb/public-private-hall-of-fame-votes-for-roger-clemens-and-barry-bonds-reveal-stark-differences-in-thinking.html"
+},
+{
+"title": "Do Voters Respond to Information Disclosures?（NBER w17628）",
+"by": "Kotchen & Potoski",
+"url": "https://www.nber.org/papers/w17628"
+},
+{
+"title": "Publicity of Debate and the Incentive to Dissent（Economic Journal）",
+"by": "Meade & Stasavage",
+"year": "2008"
+},
+{
+"title": "Transparency and Deliberation within the FOMC",
+"by": "Hansen, McMahon & Prat",
+"url": "https://econ-papers.upf.edu/papers/1425.pdf"
+},
+{
+"title": "Accounting for the Effects of Accountability（Psychological Bulletin）",
+"by": "Lerner & Tetlock",
+"year": "1999"
+},
+{
+"title": "Does Transparency Reduce Favoritism and Corruption?（NBER w17732）",
+"by": "Zitzewitz",
+"url": "https://www.nber.org/papers/w17732"
+}
+],
+"published": "2026-11-21"
+},
+{
+"id": "ZnS325xCVng",
+"channel": "jiji",
+"title": "赤い羽根2.5億円使途不明、北海道で募金4割減　守る仕組みは形だけだった【時事】",
+"lead": "この回は「赤い羽根は、本当に『地域のためのお金』を守れていたのか」に答えました。集めて地域に配るしくみは80年近く続いてきました。でも北海道では、お金を守るしくみが形だけでした。通帳と印鑑を1人に預け、気づいたのは会の中ではなく国税局でした。",
+"points": [
+{
+"h": "北海道で2億5千万円が消えた",
+"t": "北海道共同募金会で、当時の事務局長が約2億5千万円を引き出していたとみられています。北海道で1年に集まるのは、赤い羽根と年末のたすけあいを合わせて6億から7億円ほどです。1年分の3分の1より多いお金がなくなりました。穴をうめるため、うその議事録で金融機関から借り入れもしていたとみられています。"
+},
+{
+"h": "見つけたのは国税局だった",
+"t": "気づいたのは会の中の点検ではありません。2026年2月、脱税の疑いで国税局が強制調査に入り、そこから募金の話が出てきました。札幌市の特別な検査では、1人に通帳と印鑑の両方を預けていたことが分かりました。会の決まりでは許されないやり方で、決まりはあったのに分けていなかったのです。"
+},
+{
+"h": "100円のうち83円が福祉に届く",
+"t": "2024年度は165億円が集まり、助成に回ったのは137.9億円でした。100円なら83円です。中央共同募金会は、そのうち約7割が募金をした市町村の中で使われると説明しています。100円のうち半分より多くが、自分の町の配食やお年寄りの集まりの場に戻ってきます。"
+},
+{
+"h": "集めるのは町じゅう、守るのは1人",
+"t": "いちばん多い集め方は、町内会を通じた戸別募金で約3分の2です。回覧板で封筒が回る形は断りにくく、2007年には大阪高裁が自治会の会費への上乗せを行き過ぎと判断しました。小さな着服は各地でくり返され、韓国・アメリカ・イギリスでも不祥事のあと寄付はすぐには戻っていません。"
+},
+{
+"h": "答え：守るしくみが形だけだった",
+"t": "集めて地域に配るしくみ自体は、いまも良いしくみです。古くなったのは集め方と、お金の守り方です。寄付をしたい気持ちは減っておらず、個人の寄付は8年で1.5倍に増えています。信頼は、使い道を見せることでしか戻らないのではないでしょうか。"
+}
+],
+"timeline": [
+{
+"y": 1947,
+"text": "日本で共同募金（赤い羽根）が始まる"
+},
+{
+"y": 1992,
+"text": "アメリカの共同募金の全国組織の会長が辞任"
+},
+{
+"y": 1995,
+"text": "1995年度の全国の募金が266億円で最も多くなる"
+},
+{
+"y": 2007,
+"text": "大阪高裁が自治会の募金の上乗せを行き過ぎと判断"
+},
+{
+"y": 2010,
+"text": "韓国の共同募金会で幹部の募金の流用が分かる"
+},
+{
+"y": 2014,
+"text": "寄付の手紙の実験が科学雑誌サイエンスに載る"
+},
+{
+"y": 2023,
+"text": "24時間テレビの募金で元幹部の着服が分かる"
+},
+{
+"y": 2026,
+"m": 2,
+"text": "国税局の調査から北海道の募金の使途不明が表に出る"
+}
+],
+"sources": [
+{
+"title": "北海道内への緊急支援助成",
+"by": "中央共同募金会",
+"year": "2026",
+"url": "https://www.akaihane.or.jp/news/50875/"
+},
+{
+"title": "再発防止の中間まとめ",
+"by": "中央共同募金会",
+"year": "2026",
+"url": "https://www.akaihane.or.jp/news/50033/"
+},
+{
+"title": "令和5年度事業報告",
+"by": "中央共同募金会",
+"year": "2024",
+"url": "https://www.akaihane.or.jp/wp/wp-content/uploads/2023report.pdf"
+},
+{
+"title": "令和6年度の募金実績",
+"by": "中央共同募金会",
+"url": "https://www.akaihane.or.jp/wp/wp-content/uploads/kyoudoubokin2024.pdf"
+},
+{
+"title": "令和6年度 年次報告",
+"by": "中央共同募金会",
+"url": "https://www.akaihane.or.jp/wp/wp-content/uploads/annual-report-2024.pdf"
+},
+{
+"title": "共同募金の資料",
+"by": "厚生労働省",
+"url": "https://www.mhlw.go.jp/content/12000000/001581786.pdf"
+},
+{
+"title": "北海道共同募金会の会見",
+"by": "北海道新聞",
+"year": "2026",
+"url": "https://www.hokkaido-np.co.jp/article/1324995"
+},
+{
+"title": "安平町の社会福祉協議会への助成",
+"by": "北海道新聞",
+"year": "2026",
+"url": "https://www.hokkaido-np.co.jp/article/1371789/"
+},
+{
+"title": "苫小牧の集まりの場への影響",
+"by": "北海道新聞",
+"year": "2026",
+"url": "https://www.hokkaido-np.co.jp/article/1334195/"
+},
+{
+"title": "札幌市の特別監査",
+"by": "共同通信",
+"year": "2026",
+"url": "https://kumanichi.com/articles/2018228"
+},
+{
+"title": "うその議事録による借り入れ",
+"by": "共同通信",
+"year": "2026",
+"url": "https://kumanichi.com/articles/2026256"
+},
+{
+"title": "札幌の募金運動に参加する団体の減少",
+"by": "共同通信",
+"year": "2026",
+"url": "https://kumanichi.com/articles/2041668"
+},
+{
+"title": "発表後に寄せられた苦情",
+"by": "秋田魁新報",
+"year": "2026",
+"url": "https://www.sakigake.jp/news/article/20260616CO0118/"
+},
+{
+"title": "24時間テレビの募金の着服",
+"by": "東京スポーツ",
+"url": "https://www.tokyo-sports.co.jp/articles/-/284236"
+},
+{
+"title": "韓国の共同募金会の不正",
+"by": "中央日報",
+"url": "https://www.koreajoongangdaily.com/korea/community-chest-in-turmoil-over-scandal/11701252"
+},
+{
+"title": "アメリカのユナイテッド・ウェイの立て直し",
+"by": "Chronicle of Philanthropy",
+"url": "https://www.philanthropy.com/news/united-way-sees-end-to-dry-spell/"
+},
+{
+"title": "オックスファムの寄付の取りやめ",
+"by": "Civil Society",
+"url": "https://www.civilsociety.co.uk/news/over-1-200-direct-debits-to-oxfam-cancelled-since-haiti-scandal.html"
+},
+{
+"title": "Avoiding overhead aversion in charity",
+"by": "Gneezy, Keenan & Gneezy（Science）",
+"year": "2014"
+},
+{
+"title": "寄付白書2025",
+"by": "日本ファンドレイジング協会",
+"year": "2025",
+"url": "https://jfra.jp/pdf/gj2025_infographic.pdf"
+},
+{
+"title": "地域コミュニティに関する研究会",
+"by": "総務省",
+"url": "https://www.soumu.go.jp/main_sosiki/kenkyu/chiiki_community/index.html"
+}
+],
+"published": "2026-11-21"
+},
+{
 "id": "TfsxvLKaiEM",
 "channel": "main",
 "title": "江夏豊さん死去。5回の移籍は、だれが決めた？阪神から36歳のブルワーズまで【プロ野球・MLB】",
