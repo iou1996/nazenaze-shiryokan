@@ -1,6 +1,12 @@
 {
-  "updated": "2026-11-22 09:17",
+  "updated": "2026-11-23 00:30",
   "main": [
+    {
+      "id": "eazoFTNdHDo",
+      "url": "https://www.youtube.com/watch?v=eazoFTNdHDo",
+      "published": "2026-11-22",
+      "title": "墜落事故から助かったルシェウ選手が引退。シャペコエンセの6人とクラブの10年【サッカー】"
+    },
     {
       "id": "1NJglwC6w_I",
       "url": "https://www.youtube.com/watch?v=1NJglwC6w_I",
@@ -275,13 +281,13 @@
       "channel": "jiji"
     },
     {
-      "id": "YIjYMYX11pQ",
-      "title": "落合博満は、なぜ日本人で初めて年俸1億円を超えたのか【1986年】",
+      "id": "coCFQUTw_Y8",
+      "title": "カープFA宣言3人は「異常事態」？宣言して残った人0人、カープのピンチをふりかえる【プロ野球】",
       "channel": "main"
     },
     {
-      "id": "coCFQUTw_Y8",
-      "title": "カープFA宣言3人は「異常事態」？宣言して残った人0人、カープのピンチをふりかえる【プロ野球】",
+      "id": "YIjYMYX11pQ",
+      "title": "落合博満は、なぜ日本人で初めて年俸1億円を超えたのか【1986年】",
       "channel": "main"
     },
     {
@@ -291,6 +297,12 @@
     }
   ],
   "news": [
+    {
+      "id": "eazoFTNdHDo",
+      "title": "墜落事故から助かったルシェウ選手が引退。シャペコエンセの6人とクラブの10年【サッカー】",
+      "channel": "main",
+      "published": "2026-11-22"
+    },
     {
       "id": "1NJglwC6w_I",
       "title": "「ベストナインの記者投票、名前を出すべき？三冠王・村上宗隆にも入らなかった1票【プロ野球・MLB】",
@@ -302,15 +314,15 @@
       "title": "赤い羽根2.5億円使途不明、北海道で募金4割減　守る仕組みは形だけだった【時事】",
       "channel": "jiji",
       "published": "2026-11-21"
-    },
-    {
-      "id": "TfsxvLKaiEM",
-      "title": "江夏豊さん死去。5回の移籍は、だれが決めた？阪神から36歳のブルワーズまで【プロ野球・MLB】",
-      "channel": "main",
-      "published": "2026-11-20"
     }
   ],
   "log": [
+    {
+      "id": "eazoFTNdHDo",
+      "title": "墜落事故から助かったルシェウ選手が引退。シャペコエンセの6人とクラブの10年【サッカー】",
+      "channel": "main",
+      "published": "2026-11-22"
+    },
     {
       "id": "ZnS325xCVng",
       "title": "赤い羽根2.5億円使途不明、北海道で募金4割減　守る仕組みは形だけだった【時事】",

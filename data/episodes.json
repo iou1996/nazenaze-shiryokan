@@ -1,6 +1,151 @@
 {
 "episodes": [
 {
+"id": "eazoFTNdHDo",
+"channel": "main",
+"title": "墜落事故から助かったルシェウ選手が引退。シャペコエンセの6人とクラブの10年【サッカー】",
+"lead": "この回は「墜落事故から10年、生き残った6人とクラブはどうなったのか」に答えました。6人の10年は6通りで、選手としてピッチに戻れたのはアラン・ルシェウ選手1人だけでした。クラブは降格の免除を断り、3度落ちて2度自分の力で上がりました。",
+"points": [
+{
+"h": "決勝へ向かう飛行機が墜落",
+"t": "2016年11月28日の夜、ブラジルのシャペコエンセは、クラブで初めての国際大会の決勝へ、コロンビアのメデジンに向かいました。乗っていた77人のうち71人が亡くなり、選手は22人のうち19人が亡くなりました。コロンビアの航空当局が2018年に出した最終報告書の結論は、燃料切れです。積んだ燃料は約9,073キロで、決まりで要る1万1,603キロに届いていませんでした。"
+},
+{
+"h": "6人の10年は6通りだった",
+"t": "助かった6人は、選手3人、記者1人、乗務員2人です。乗務員の2人は母国ボリビアに戻り、その後も航空の仕事に関わりました。記者の人は事故のあとも仕事を続けました。選手では、1人が痛みのために公式戦に出られないまま2019年に引退し、もう1人は右脚を失って歌手になりました。"
+},
+{
+"h": "戻れたのはルシェウ選手1人",
+"t": "左サイドバックのアラン・ルシェウ選手は、背骨の手術を受けたあと、事故から239日めに練習試合に出ました。2017年8月にはバルセロナの本拠地での親善試合に出場し、9月には事故のときと同じコパ・スダメリカーナで公式戦に復帰します。2026年11月14日、最初に入ったクラブの本拠地で37歳の引退を迎えました。"
+},
+{
+"h": "クラブは免除を断った",
+"t": "事故のあと、ブラジルの9つのクラブが、3年間は降格させないでほしいと連盟に求めました。会長を事故で失ったクラブを率いたトッゾさんは、これを断ります。負けたら落ちる、勝てば残る、という考えでした。翌2017年、借りた選手も加えたチームで1部8位、クラブの歴史でいちばん上の順位になりました。"
+},
+{
+"h": "答え：6通りの10年と、ふつうの勝ち負け",
+"t": "答えは、6人の10年は6通りで、選手に戻れたのは1人だけ。クラブは免除を断り、3度落ちて2度自分の力で上がりました。求めどおりの免除があれば2019年の降格はありませんでした。10年たってふつうに勝ち、ふつうに負けていることが、いちばんの立ち直りだと先生は見ています。"
+}
+],
+"timeline": [
+{
+"y": 1949,
+"text": "イタリアのトリノが飛行機事故で選手18人を失う"
+},
+{
+"y": 2016,
+"m": 11,
+"d": 28,
+"text": "シャペコエンセを乗せた飛行機がコロンビアで墜落"
+},
+{
+"y": 2017,
+"m": 8,
+"d": 7,
+"text": "ルシェウ選手がバルセロナ戦でピッチに戻る"
+},
+{
+"y": 2018,
+"m": 4,
+"d": 27,
+"text": "コロンビアの航空当局が事故の最終報告書を出す"
+},
+{
+"y": 2019,
+"text": "シャペコエンセがブラジル2部へ降格する"
+},
+{
+"y": 2020,
+"text": "シャペコエンセが2部で優勝し1部へ戻る"
+},
+{
+"y": 2025,
+"text": "シャペコエンセが2部3位で1部へ昇格する"
+},
+{
+"y": 2026,
+"m": 11,
+"d": 14,
+"text": "ルシェウ選手が37歳で引退する"
+}
+],
+"sources": [
+{
+"title": "事故の最終報告書についての報道",
+"by": "La FM",
+"year": "2018",
+"url": "https://www.lafm.com.co/deportes/tragedia-de-chapecoense-aeronautica-civil-revelo-el-informe-final"
+},
+{
+"title": "搭乗を見送った人たちの報道",
+"by": "CNN.co.jp",
+"year": "2016",
+"url": "https://www.cnn.co.jp/world/35093039-2.html"
+},
+{
+"title": "生存者6人のいまを伝えた記事",
+"by": "T13",
+"year": "2023",
+"url": "https://www.t13.cl/noticia/deportest13/siete-anos-del-accidente-del-chapecoense-estan-seis-sobrevivientes-26-11-2023"
+},
+{
+"title": "生存した記者の訃報",
+"by": "Sports Illustrated",
+"year": "2019",
+"url": "https://www.si.com/soccer/2019/03/27/rafael-henzel-journalist-brazil-chapecoense-crash-dies"
+},
+{
+"title": "ネト選手の引退を伝えた記事",
+"by": "Folha de Pernambuco",
+"year": "2019",
+"url": "https://www.folhape.com.br/esportes/neto-um-dos-sobreviventes-do-acidente-da-chapecoense-se-aposenta/125196/"
+},
+{
+"title": "バルセロナとの親善試合の記事",
+"by": "Tribuna PR",
+"year": "2017",
+"url": "https://www.tribunapr.com.br/esportes/barcelona-faz-5-a-0-na-chapecoense-em-dia-de-homenagens-e-volta-de-alan-ruschel/"
+},
+{
+"title": "公式戦復帰を伝えた記事",
+"by": "Gazeta Esportiva",
+"year": "2017",
+"url": "https://www.gazetaesportiva.com/?p=2490479"
+},
+{
+"title": "引退試合と昇格を伝えた記事",
+"by": "VAVEL",
+"year": "2026",
+"url": "https://www.vavel.com/br/futebol/2026/11/14/serie-b/1279307-juventude-vence-botafogo-sp-confirma-acesso-a-serie-a-e-se-despede-de-alan-ruschel.html"
+},
+{
+"title": "降格の免除を断ったことを伝えた記事",
+"by": "Libero",
+"year": "2016",
+"url": "https://libero.pe/futbol-internacional/2016-12-09-chapecoense-rechaza-blindaje-para-evitar-descenso-el-cupo-debemos-ganarlo-en-la-cancha"
+},
+{
+"title": "浦和レッズとの対戦（スルガ銀行チャンピオンシップ）",
+"by": "日本サッカー協会",
+"year": "2017",
+"url": "https://www.jfa.jp/match/suruga_2017/news/00014792/"
+},
+{
+"title": "トリノの色のユニフォームの記事",
+"by": "Tupi FM",
+"year": "2026",
+"url": "https://www.tupi.fm/esportes/chape-lanca-camisa-homenagem-torino/"
+},
+{
+"title": "事故現場の訪問と親善試合の記事",
+"by": "Gazeta Esportiva",
+"year": "2026",
+"url": "https://www.gazetaesportiva.com/times/chapecoense/chapecoense-retorna-ao-local-da-tragedia-aerea-dez-anos-depois/"
+}
+],
+"published": "2026-11-22"
+},
+{
 "id": "1NJglwC6w_I",
 "channel": "main",
 "title": "「ベストナインの記者投票、名前を出すべき？三冠王・村上宗隆にも入らなかった1票【プロ野球・MLB】",
