@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23 09:46",
+  "updated": "2026-11-24 00:30",
   "main": [
     {
       "id": "eazoFTNdHDo",
@@ -147,6 +147,12 @@
     }
   ],
   "jiji": [
+    {
+      "id": "YRi9v6bNQ1Q",
+      "url": "https://www.youtube.com/watch?v=YRi9v6bNQ1Q",
+      "published": "2026-11-23",
+      "title": "黒部峡谷鉄道は観光客ゼロでも走る？全線再開のトロッコを7つの記録で確かめた【時事】"
+    },
     {
       "id": "ZnS325xCVng",
       "url": "https://www.youtube.com/watch?v=ZnS325xCVng",
@@ -298,6 +304,12 @@
   ],
   "news": [
     {
+      "id": "YRi9v6bNQ1Q",
+      "title": "黒部峡谷鉄道は観光客ゼロでも走る？全線再開のトロッコを7つの記録で確かめた【時事】",
+      "channel": "jiji",
+      "published": "2026-11-23"
+    },
+    {
       "id": "eazoFTNdHDo",
       "title": "墜落事故から助かったルシェウ選手が引退。シャペコエンセの6人とクラブの10年【サッカー】",
       "channel": "main",
@@ -308,15 +320,15 @@
       "title": "「ベストナインの記者投票、名前を出すべき？三冠王・村上宗隆にも入らなかった1票【プロ野球・MLB】",
       "channel": "main",
       "published": "2026-11-21"
-    },
-    {
-      "id": "ZnS325xCVng",
-      "title": "赤い羽根2.5億円使途不明、北海道で募金4割減　守る仕組みは形だけだった【時事】",
-      "channel": "jiji",
-      "published": "2026-11-21"
     }
   ],
   "log": [
+    {
+      "id": "YRi9v6bNQ1Q",
+      "title": "黒部峡谷鉄道は観光客ゼロでも走る？全線再開のトロッコを7つの記録で確かめた【時事】",
+      "channel": "jiji",
+      "published": "2026-11-23"
+    },
     {
       "id": "eazoFTNdHDo",
       "title": "墜落事故から助かったルシェウ選手が引退。シャペコエンセの6人とクラブの10年【サッカー】",

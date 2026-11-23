@@ -176,6 +176,12 @@
 "channel": "main"
 },
 {
+"y": 1923,
+"text": "日本電力が黒部峡谷の線路の工事を始める",
+"video": "YRi9v6bNQ1Q",
+"channel": "jiji"
+},
+{
 "y": 1924,
 "text": "セントポール、2勝4敗から3連勝でマイナーの王者に",
 "video": "j8cD3ifYkLQ",
@@ -343,10 +349,22 @@
 "channel": "main"
 },
 {
+"y": 1953,
+"text": "客を乗せる鉄道として国に認められる",
+"video": "YRi9v6bNQ1Q",
+"channel": "jiji"
+},
+{
 "y": 1954,
 "text": "NBAが24秒のショットクロックを入れる",
 "video": "AawE8E3IyL0",
 "channel": "main"
+},
+{
+"y": 1956,
+"text": "関西電力が黒部のルートを公園の利用に開く約束をする",
+"video": "YRi9v6bNQ1Q",
+"channel": "jiji"
 },
 {
 "y": 1956,
@@ -1447,6 +1465,12 @@
 },
 {
 "y": 2017,
+"text": "関西電力が富山県の会議で黒部ルートの通行者数を説明",
+"video": "YRi9v6bNQ1Q",
+"channel": "jiji"
+},
+{
+"y": 2017,
 "m": 6,
 "text": "ウーバーの創業者トラビス・カラニック氏がCEOを辞任した",
 "video": "yMl116R2olg",
@@ -1459,6 +1483,14 @@
 "text": "ルシェウ選手がバルセロナ戦でピッチに戻る",
 "video": "eazoFTNdHDo",
 "channel": "main"
+},
+{
+"y": 2018,
+"m": 1,
+"d": 11,
+"text": "日本経済新聞が冬の逓送さんを取材した記事を載せる",
+"video": "YRi9v6bNQ1Q",
+"channel": "jiji"
 },
 {
 "y": 2018,
@@ -1762,6 +1794,13 @@
 {
 "y": 2024,
 "m": 1,
+"text": "能登半島地震で鐘釣橋に落石が当たり猫又で折り返しに",
+"video": "YRi9v6bNQ1Q",
+"channel": "jiji"
+},
+{
+"y": 2024,
+"m": 1,
 "text": "レイエス、日本ハムファイターズと契約",
 "video": "Z6AEn-k-CJ8",
 "channel": "main"
@@ -1893,6 +1932,14 @@
 "m": 8,
 "text": "アルトマン社長が「いまはバブルだと思う」と話す",
 "video": "S7y7SqS1u9E",
+"channel": "jiji"
+},
+{
+"y": 2025,
+"m": 8,
+"d": 7,
+"text": "大雨で土砂が流入し冬期歩道で乗客が避難する",
+"video": "YRi9v6bNQ1Q",
 "channel": "jiji"
 },
 {
@@ -2041,6 +2088,14 @@
 "d": 1,
 "text": "フランスで1000をこえる高校の授業が乱れる",
 "video": "aNahxLI_JGc",
+"channel": "jiji"
+},
+{
+"y": 2026,
+"m": 10,
+"d": 1,
+"text": "黒部峡谷鉄道が終点の欅平まで全線再開する",
+"video": "YRi9v6bNQ1Q",
 "channel": "jiji"
 },
 {
