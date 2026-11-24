@@ -246,6 +246,23 @@
         });
         q.addEventListener('input', draw);
         draw();
+        // 政令市の区の表（数には入れない。地図の区の形と同じデータから）
+        const wl = document.getElementById('wardList');
+        if (wl) {
+          const city = new Map();
+          for (const [code, name, st] of d.f) {
+            const m = name.match(/^(.+?[都道府県])(.+?市)(.+区)$/);
+            if (!m || code.startsWith('131')) continue;      // 東京23区は特別区なので外す
+            const k = m[1] + '|' + m[2];
+            if (!city.has(k)) city.set(k, []);
+            city.get(k).push([m[3], st]);
+          }
+          wl.innerHTML = [...city].map(([k, ws]) => {
+            const [pref, c] = k.split('|'), l = ws.filter(w => w[1] === 2).length, p = ws.filter(w => w[1] === 1).length;
+            return `<div class="mp"><h3>${esc(c)}<small>${esc(pref)}・${ws.length}区・訪問 ${l}・通過 ${p}</small></h3><div class="mt">`
+              + ws.map(w => `<span class="m s${w[1]}" title="${LABEL[w[1]]}">${esc(w[0])}</span>`).join('') + '</div></div>';
+          }).join('');
+        }
       }
       for (const [code, name, st, shape] of d.f) {
         if (st === 0) continue;                           // 「まだ」は白地図のまま見せる
