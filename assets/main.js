@@ -82,7 +82,7 @@
 
   /* トップの数字をデータに合わせる */
   if (document.getElementById('nStad') && !document.getElementById('logTabs')) {
-    fetch('data/touha_lists.json').then(r => r.json()).then(d => {
+    fetch('data/touha_lists.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
       for (const [id, n] of [['nStad', d.stadium.stadiums.length], ['nSki', d.ski.areas.length]]) { const el = document.getElementById(id); el.dataset.count = n; if (el.textContent !== '0') el.textContent = n; }
     }).catch(() => {});
   }
@@ -200,7 +200,7 @@
     const tt = { sticky: true, className: 'tt', direction: 'top', offset: [0, -6] };
 
     // 市区町村
-    fetch('data/touha_map.json').then(r => r.json()).then(d => {
+    fetch('data/touha_map.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
       document.getElementById('cL').textContent = fmt(d.counts.landed);
       document.getElementById('cP').textContent = fmt(d.counts.passed);
       document.getElementById('cN').textContent = fmt(d.counts.none);
@@ -272,7 +272,7 @@
     }).catch(() => {});
 
     // 鉄道：乗った区間＝赤、乗っていない線路＝灰（正は乗車記録のCSV）
-    fetch('data/rail_map.json').then(r => r.json()).then(d => {
+    fetch('data/rail_map.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
       const STYLE = [{ color: '#8d8d8d', weight: 1.3, opacity: 0.85, dashArray: '3 3' }, { color: '#b3261e', weight: 2, opacity: 0.95 }];
       const groups = new Map();
       for (const [op, st, pts] of d.s) {
@@ -318,7 +318,7 @@
     };
 
     /* ===== 鉄道路線・スタジアム ===== */
-    fetch('data/touha_lists.json').then(r => r.json()).then(d => {
+    fetch('data/touha_lists.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
       // 鉄道：会社ごとにたたむ。検索したら当たった会社を開く
       // 鉄道：まだ乗っていない区間 → 会社の種類ごと（距離の長い順）→ 開くと路線ごと
       const cos = d.rail.companies;

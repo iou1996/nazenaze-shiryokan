@@ -669,7 +669,7 @@
   }
 
   /* 地図の形：touha_map.json の市区町村を都道府県ごとの Path2D にまとめる（遠い島は省く） */
-  fetch('data/touha_map.json').then(r => r.json()).then(d => {
+  fetch('data/touha_map.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
     const paths = [];
     for (const f of d.f || []) {
       const p = +String(f[0]).slice(0, 2);
