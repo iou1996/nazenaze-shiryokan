@@ -7,6 +7,7 @@
     CSV を省くと、ダウンロードのいちばん新しい export*.csv を使う。
 
 やること（--write のとき）：
+  0. 変わった自治体を 自治体データ/20261124訪問の更新ログ.csv に追記する（更新日・前・後）
   1. ドライブの元データ（個人/趣味/20260903自治体データ/元データ/20260903訪問記録_市区町村.csv）を差し替える。前の版は _旧/ へ
   2. 自治体データの _分析スクリプト.py を回す（訪問シート.xlsx と指標CSV）
   3. サイトの data/touha_map.json を作り直す
@@ -28,6 +29,8 @@ SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__))).replace("\\",
 DATA = "G:/マイドライブ/AItask/個人/趣味/20260903自治体データ/"
 SRC = DATA + "元データ/20260903訪問記録_市区町村.csv"
 SEIREI = DATA + "元データ/20261115訪問記録_政令市.csv"
+LOG = DATA + "20261124訪問の更新ログ.csv"
+WORD = {2: "降り立った", 1: "通過", 0: "なし"}
 CACHE = os.path.expanduser("~/.cache/touha_n03/")
 HOPPO = {"01695", "01696", "01697", "01698", "01699", "01700"}
 TOTAL = 1741
@@ -203,6 +206,20 @@ def main():
     if not write:
         print("\n確かめるだけで終えました。書きこむときは --write を付けてください。")
         return
+
+    # 0. 更新ログ（本人「自治体はログとしてのこしてほしい更新日付」2026-11-24）
+    #    前の元データと新しいCSVの差を、1自治体1行で追記する。消さない・書きかえない
+    prev = load_rows(SRC)
+    today = datetime.date.today().isoformat()
+    logrows = [[today, code, name, WORD[prev[code][1]] if code in prev else "（なし）", WORD[v], ""]
+               for code, (name, v) in sorted(rows.items()) if code not in prev or prev[code][1] != v]
+    new_log = not os.path.exists(LOG)
+    with open(LOG, "a", encoding="utf-8-sig" if new_log else "utf-8", newline="") as fp:
+        w = csv.writer(fp)
+        if new_log:
+            w.writerow(["更新日", "識別コード", "名称", "前", "後", "備考"])
+        w.writerows(logrows)
+    print("更新ログに", len(logrows), "行追記:", LOG)
 
     # 1. 元データの差し替え
     if os.path.abspath(src) != os.path.abspath(SRC):
