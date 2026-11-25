@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25 12:30",
+  "updated": "2026-11-26 08:34",
   "main": [
     {
       "id": "9ZnoYUR2CyI",
@@ -154,6 +154,12 @@
   ],
   "jiji": [
     {
+      "id": "yuqUsKsVGxw",
+      "url": "https://www.youtube.com/watch?v=yuqUsKsVGxw",
+      "published": "2026-11-25",
+      "title": "4億3,200万円の救急車を見つけたのは地方紙　新聞が消えたら町はどうなる？【時事】"
+    },
+    {
       "id": "YRi9v6bNQ1Q",
       "url": "https://www.youtube.com/watch?v=YRi9v6bNQ1Q",
       "published": "2026-11-23",
@@ -303,9 +309,9 @@
       "channel": "main"
     },
     {
-      "id": "S7y7SqS1u9E",
-      "title": "AIバブルは鉄道バブルのくり返し？株は下がっても線路は伸びた【時事】",
-      "channel": "jiji"
+      "id": "4890HltKZM4",
+      "title": "ファイターズはホークスに5勝18敗。29対1の2003年オリックスより一方的？【プロ野球】",
+      "channel": "main"
     }
   ],
   "news": [
@@ -316,16 +322,16 @@
       "published": "2026-11-25"
     },
     {
+      "id": "yuqUsKsVGxw",
+      "title": "4億3,200万円の救急車を見つけたのは地方紙　新聞が消えたら町はどうなる？【時事】",
+      "channel": "jiji",
+      "published": "2026-11-25"
+    },
+    {
       "id": "YRi9v6bNQ1Q",
       "title": "黒部峡谷鉄道は観光客ゼロでも走る？全線再開のトロッコを7つの記録で確かめた【時事】",
       "channel": "jiji",
       "published": "2026-11-23"
-    },
-    {
-      "id": "eazoFTNdHDo",
-      "title": "墜落事故から助かったルシェウ選手が引退。シャペコエンセの6人とクラブの10年【サッカー】",
-      "channel": "main",
-      "published": "2026-11-22"
     }
   ],
   "log": [
@@ -333,6 +339,12 @@
       "id": "9ZnoYUR2CyI",
       "title": "佐藤輝明は約31億円。山本由伸72億円、佐々木朗希2.5億円でなぜ31倍差？【プロ野球・MLB】",
       "channel": "main",
+      "published": "2026-11-25"
+    },
+    {
+      "id": "yuqUsKsVGxw",
+      "title": "4億3,200万円の救急車を見つけたのは地方紙　新聞が消えたら町はどうなる？【時事】",
+      "channel": "jiji",
       "published": "2026-11-25"
     },
     {
