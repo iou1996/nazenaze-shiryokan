@@ -1,6 +1,12 @@
 {
-  "updated": "2026-11-25 10:23",
+  "updated": "2026-11-25 12:30",
   "main": [
+    {
+      "id": "9ZnoYUR2CyI",
+      "url": "https://www.youtube.com/watch?v=9ZnoYUR2CyI",
+      "published": "2026-11-25",
+      "title": "佐藤輝明は約31億円。山本由伸72億円、佐々木朗希2.5億円でなぜ31倍差？【プロ野球・MLB】"
+    },
     {
       "id": "eazoFTNdHDo",
       "url": "https://www.youtube.com/watch?v=eazoFTNdHDo",
@@ -304,6 +310,12 @@
   ],
   "news": [
     {
+      "id": "9ZnoYUR2CyI",
+      "title": "佐藤輝明は約31億円。山本由伸72億円、佐々木朗希2.5億円でなぜ31倍差？【プロ野球・MLB】",
+      "channel": "main",
+      "published": "2026-11-25"
+    },
+    {
       "id": "YRi9v6bNQ1Q",
       "title": "黒部峡谷鉄道は観光客ゼロでも走る？全線再開のトロッコを7つの記録で確かめた【時事】",
       "channel": "jiji",
@@ -314,15 +326,15 @@
       "title": "墜落事故から助かったルシェウ選手が引退。シャペコエンセの6人とクラブの10年【サッカー】",
       "channel": "main",
       "published": "2026-11-22"
-    },
-    {
-      "id": "1NJglwC6w_I",
-      "title": "「ベストナインの記者投票、名前を出すべき？三冠王・村上宗隆にも入らなかった1票【プロ野球・MLB】",
-      "channel": "main",
-      "published": "2026-11-21"
     }
   ],
   "log": [
+    {
+      "id": "9ZnoYUR2CyI",
+      "title": "佐藤輝明は約31億円。山本由伸72億円、佐々木朗希2.5億円でなぜ31倍差？【プロ野球・MLB】",
+      "channel": "main",
+      "published": "2026-11-25"
+    },
     {
       "id": "YRi9v6bNQ1Q",
       "title": "黒部峡谷鉄道は観光客ゼロでも走る？全線再開のトロッコを7つの記録で確かめた【時事】",
