@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27 11:46",
+  "updated": "2026-11-28 08:22",
   "main": [
     {
       "id": "9ZnoYUR2CyI",
@@ -153,6 +153,12 @@
     }
   ],
   "jiji": [
+    {
+      "id": "-kTZ6YfmJJc",
+      "url": "https://www.youtube.com/watch?v=-kTZ6YfmJJc",
+      "published": "2026-11-27",
+      "title": "Suicaはタッチ決済に負けるのか？ 紫のうさぎと、25年の決まりを変える生き残り策【時事】"
+    },
     {
       "id": "yuqUsKsVGxw",
       "url": "https://www.youtube.com/watch?v=yuqUsKsVGxw",
@@ -316,6 +322,12 @@
   ],
   "news": [
     {
+      "id": "-kTZ6YfmJJc",
+      "title": "Suicaはタッチ決済に負けるのか？ 紫のうさぎと、25年の決まりを変える生き残り策【時事】",
+      "channel": "jiji",
+      "published": "2026-11-27"
+    },
+    {
       "id": "9ZnoYUR2CyI",
       "title": "佐藤輝明は約31億円。山本由伸72億円、佐々木朗希2.5億円でなぜ31倍差？【プロ野球・MLB】",
       "channel": "main",
@@ -326,15 +338,15 @@
       "title": "4億3,200万円の救急車を見つけたのは地方紙　新聞が消えたら町はどうなる？【時事】",
       "channel": "jiji",
       "published": "2026-11-25"
-    },
-    {
-      "id": "YRi9v6bNQ1Q",
-      "title": "黒部峡谷鉄道は観光客ゼロでも走る？全線再開のトロッコを7つの記録で確かめた【時事】",
-      "channel": "jiji",
-      "published": "2026-11-23"
     }
   ],
   "log": [
+    {
+      "id": "-kTZ6YfmJJc",
+      "title": "Suicaはタッチ決済に負けるのか？ 紫のうさぎと、25年の決まりを変える生き残り策【時事】",
+      "channel": "jiji",
+      "published": "2026-11-27"
+    },
     {
       "id": "9ZnoYUR2CyI",
       "title": "佐藤輝明は約31億円。山本由伸72億円、佐々木朗希2.5億円でなぜ31倍差？【プロ野球・MLB】",
